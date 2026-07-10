@@ -16,9 +16,17 @@
                 <a href="publications.html" class="active">出版物</a>
                 <a href="resume.html">简历</a>
                 <a href="notes.html">笔记</a>
+                <button id="search-btn" class="search-btn">搜索 <kbd>⌘K</kbd></button>
             </div>
         </div>
     </nav>
+
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-box">
+            <input id="search-input" class="search-input" type="text" placeholder="搜索笔记、出版物…" autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
 
     <main class="main fade-in">
         <h1 class="page-title">出版物</h1>
@@ -28,13 +36,13 @@
             <li class="fade-in">
                 <a href="post.html?file=micropolar-equations.md" class="item-link">
                     <span class="item-title">Linear and Nonlinear Enhanced Dissipation for the 2-D Micropolar Equations Near Couette Flow</span>
-                    <span class="item-meta">2024 · Discrete and Continuous Dynamical Systems - Series B</span>
+                    <span class="item-meta">2026 · Discrete and Continuous Dynamical Systems - Series B</span>
                 </a>
             </li>
             <li class="fade-in">
                 <a href="post.html?file=boussinesq-equations.md" class="item-link">
                     <span class="item-title">Global Well-Posedness and Large Time Behavior of Boussinesq Equations With Fractional Dissipation</span>
-                    <span class="item-meta">2024 · Studies in Applied Mathematics</span>
+                    <span class="item-meta">2026 · Studies in Applied Mathematics</span>
                 </a>
             </li>
         </ul>
@@ -46,5 +54,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>

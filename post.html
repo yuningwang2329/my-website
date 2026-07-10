@@ -16,9 +16,17 @@
                 <a href="publications.html">出版物</a>
                 <a href="resume.html">简历</a>
                 <a href="notes.html">笔记</a>
+                <button id="search-btn" class="search-btn">搜索 <kbd>⌘K</kbd></button>
             </div>
         </div>
     </nav>
+
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-box">
+            <input id="search-input" class="search-input" type="text" placeholder="搜索笔记、出版物…" autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
 
     <main class="main fade-in">
         <article id="content" class="md-body">
@@ -32,10 +40,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="search.js"></script>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const fileName = urlParams.get('file');
-        const contentDiv = document.getElementById('content');
+        var urlParams = new URLSearchParams(window.location.search);
+        var fileName = urlParams.get('file');
+        var contentDiv = document.getElementById('content');
 
         if (fileName) {
             fetch('notes/' + fileName)
