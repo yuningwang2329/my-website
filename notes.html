@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学习笔记</title>
+    <meta name="description" content="学习笔记与思考">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+    <title>笔记</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-content">
-            <a href="index.html" class="logo">主页</a>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">✦</a>
             <div class="nav-links">
                 <a href="publications.html">出版物</a>
                 <a href="resume.html">简历</a>
@@ -18,20 +20,25 @@
         </div>
     </nav>
 
-    <main class="container fade-in">
-        <div class="page-header">
-            <h1>笔记</h1>
-            <p class="subtitle">记录与思考</p>
-        </div>
+    <main class="main fade-in">
+        <h1 class="page-title">笔记</h1>
+        <p class="page-desc">记录与思考</p>
 
-        <ul class="notes-list">
-            <li>
-                <a href="post.html?file=hello-world.md" class="note-item">
-                    <span class="note-title">你好，世界！我的第一篇测试笔记</span>
-                    <span class="note-date">2026-07-10</span>
+        <ul class="item-list stagger">
+            <li class="fade-in">
+                <a href="post.html?file=hello-world.md" class="item-link">
+                    <span class="item-title">你好，世界！我的第一篇测试笔记</span>
+                    <span class="item-meta">2026-07-10</span>
                 </a>
             </li>
         </ul>
     </main>
+
+    <footer class="site-footer">
+        <span>💡 本站设计与代码框架由 AI 辅助生成</span>
+        <span id="last-updated"></span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

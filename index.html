@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的主页</title>
+    <meta name="description" content="个人主页 — 出版物、简历与学习笔记">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+    <title>主页</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar fade-in">
-        <div class="nav-content">
-            <a href="index.html" class="logo">主页</a>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">✦</a>
             <div class="nav-links">
                 <a href="publications.html">出版物</a>
                 <a href="resume.html">简历</a>
@@ -18,23 +20,24 @@
         </div>
     </nav>
 
-    <main class="container fade-in">
-        <h1 id="greeting">你好</h1>
-        <p class="subtitle">欢迎来到我的个人空间</p>
-        
-        <div class="content">
+    <main class="main fade-in">
+        <h1 class="page-title" id="greeting">你好</h1>
+        <p class="page-desc">欢迎来到我的个人空间</p>
+
+        <div class="prose">
             <p>这里是我整理思绪、记录学习的地方。崇尚极简，内容至上。</p>
-            <p>在这里，你会找到我的：</p>
             <ul>
-                <li><a href="notes.html" class="inline-link">学习笔记与思考</a></li>
-                <li><a href="resume.html" class="inline-link">个人经历与简历</a></li>
+                <li><a href="publications.html">出版物</a> — 已发表的论文与研究</li>
+                <li><a href="resume.html">简历</a> — 个人经历</li>
+                <li><a href="notes.html">笔记</a> — 学习笔记与思考</li>
             </ul>
         </div>
-
-        <footer style="margin-top: 60px; font-size: 0.9rem; color: var(--text-secondary); border-top: 1px solid var(--border-color); padding-top: 20px;">
-            <p>💡 声明：本网站的设计与底层代码框架由 AI 辅助生成。</p>
-        </footer>
     </main>
+
+    <footer class="site-footer">
+        <span>💡 本站设计与代码框架由 AI 辅助生成</span>
+        <span id="last-updated"></span>
+    </footer>
 
     <script src="script.js"></script>
 </body>

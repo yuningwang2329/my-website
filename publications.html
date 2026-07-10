@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="已发表的论文与研究成果">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
     <title>出版物</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-content">
-            <a href="index.html" class="logo">主页</a>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">✦</a>
             <div class="nav-links">
                 <a href="publications.html" class="active">出版物</a>
                 <a href="resume.html">简历</a>
@@ -18,26 +20,31 @@
         </div>
     </nav>
 
-    <main class="container fade-in">
-        <div class="page-header">
-            <h1>出版物</h1>
-            <p class="subtitle">已发表的论文与研究成果</p>
-        </div>
+    <main class="main fade-in">
+        <h1 class="page-title">出版物</h1>
+        <p class="page-desc">已发表的论文与研究成果</p>
 
-        <ul class="notes-list">
-            <li>
-                <a href="post.html?file=micropolar-equations.md" class="note-item">
-                    <span class="note-title">Linear and Nonlinear Enhanced Dissipation for the 2-D Micropolar Equations Near Couette Flow</span>
-                    <span class="note-date">Discrete and Continuous Dynamical Systems - Series B</span>
+        <ul class="item-list stagger">
+            <li class="fade-in">
+                <a href="post.html?file=micropolar-equations.md" class="item-link">
+                    <span class="item-title">Linear and Nonlinear Enhanced Dissipation for the 2-D Micropolar Equations Near Couette Flow</span>
+                    <span class="item-meta">Discrete and Continuous Dynamical Systems - Series B</span>
                 </a>
             </li>
-            <li>
-                <a href="post.html?file=boussinesq-equations.md" class="note-item">
-                    <span class="note-title">Global Well-Posedness and Large Time Behavior of Boussinesq Equations With Fractional Dissipation</span>
-                    <span class="note-date">Studies in Applied Mathematics</span>
+            <li class="fade-in">
+                <a href="post.html?file=boussinesq-equations.md" class="item-link">
+                    <span class="item-title">Global Well-Posedness and Large Time Behavior of Boussinesq Equations With Fractional Dissipation</span>
+                    <span class="item-meta">Studies in Applied Mathematics</span>
                 </a>
             </li>
         </ul>
     </main>
+
+    <footer class="site-footer">
+        <span>💡 本站设计与代码框架由 AI 辅助生成</span>
+        <span id="last-updated"></span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

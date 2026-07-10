@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>阅读笔记</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+    <title>阅读中…</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-content">
-            <a href="index.html" class="logo">主页</a>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">✦</a>
             <div class="nav-links">
                 <a href="publications.html">出版物</a>
                 <a href="resume.html">简历</a>
-                <a href="notes.html" class="active">返回笔记</a>
+                <a href="notes.html">笔记</a>
             </div>
         </div>
     </nav>
 
-    <main class="container fade-in">
-        <div id="content" class="content markdown-body">
-            <p>正在加载内容...</p>
-        </div>
+    <main class="main fade-in">
+        <article id="content" class="md-body">
+            <p style="color: var(--text-secondary);">正在加载…</p>
+        </article>
     </main>
 
+    <footer class="site-footer">
+        <span>💡 本站设计与代码框架由 AI 辅助生成</span>
+        <span id="last-updated"></span>
+    </footer>
+
+    <script src="script.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const fileName = urlParams.get('file');
         const contentDiv = document.getElementById('content');
 
         if (fileName) {
-            fetch(`notes/${fileName}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('网络响应错误，可能文件不存在。如果是在本地直接双击打开的，请确保使用本地服务器(运行 preview.command)打开。');
-                    }
+            fetch('notes/' + fileName)
+                .then(function(response) {
+                    if (!response.ok) throw new Error('文件不存在或无法加载。如果是本地预览，请使用 preview.command 启动服务器。');
                     return response.text();
                 })
-                .then(text => {
+                .then(function(text) {
                     contentDiv.innerHTML = marked.parse(text);
-                    const firstH1 = contentDiv.querySelector('h1');
-                    if (firstH1) {
-                        document.title = firstH1.innerText;
-                    }
+                    var firstH1 = contentDiv.querySelector('h1');
+                    if (firstH1) document.title = firstH1.innerText;
                 })
-                .catch(error => {
-                    contentDiv.innerHTML = `<h2 style="color: #ef4444;">加载失败 😢</h2><p>${error.message}</p>`;
+                .catch(function(error) {
+                    contentDiv.innerHTML = '<h1>加载失败</h1><p>' + error.message + '</p>';
                 });
         } else {
-            contentDiv.innerHTML = '<h2>未指定要阅读的笔记。</h2>';
+            contentDiv.innerHTML = '<h1>未指定笔记</h1><p>请从<a href="notes.html">笔记列表</a>中选择一篇阅读。</p>';
         }
     </script>
 </body>

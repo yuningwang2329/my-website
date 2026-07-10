@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历</title>
+    <meta name="description" content="个人简历 — 教育背景与工作经历">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+    <title>简历</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-content">
-            <a href="index.html" class="logo">主页</a>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">✦</a>
             <div class="nav-links">
                 <a href="publications.html">出版物</a>
                 <a href="resume.html" class="active">简历</a>
@@ -18,41 +20,48 @@
         </div>
     </nav>
 
-    <main class="container fade-in">
-        <div class="page-header">
-            <h1>个人简历</h1>
-            <p class="subtitle">经历与足迹</p>
-        </div>
+    <main class="main fade-in">
+        <h1 class="page-title">简历</h1>
+        <p class="page-desc">经历与足迹</p>
 
-        <div class="content">
-            <section class="resume-section">
+        <div class="prose">
+            <section class="resume-block">
                 <h2>教育背景</h2>
-                <div class="resume-item">
-                    <div class="resume-meta">202x - 202x | 某某大学</div>
-                    <h3>理学学士 / 计算机科学</h3>
+                <div class="resume-entry">
+                    <div class="resume-time">202x – 202x</div>
+                    <h3>某某大学 · 理学学士 / 计算机科学</h3>
                     <p>主修课程：数据结构、算法设计、计算机网络等。获得校级一等奖学金。</p>
                 </div>
             </section>
 
-            <section class="resume-section">
+            <hr class="divider">
+
+            <section class="resume-block">
                 <h2>工作经历</h2>
-                <div class="resume-item">
-                    <div class="resume-meta">202x - 至今 | 某科技公司</div>
-                    <h3>前端开发工程师</h3>
+                <div class="resume-entry">
+                    <div class="resume-time">202x – 至今</div>
+                    <h3>某科技公司 · 前端开发工程师</h3>
                     <p>负责公司核心产品的 Web 端开发，使用 React 和 Vue 构建高性能的用户界面。重构了遗留代码，将页面加载速度提升了 40%。</p>
                 </div>
             </section>
 
-            <section class="resume-section">
-                <h2>技能清单</h2>
-                <div class="resume-item">
-                    <ul>
-                        <li><strong>编程语言:</strong> JavaScript, HTML/CSS, Python, C++</li>
-                        <li><strong>框架与工具:</strong> React, Node.js, Git, Webpack</li>
-                    </ul>
-                </div>
+            <hr class="divider">
+
+            <section class="resume-block">
+                <h2>技能</h2>
+                <ul>
+                    <li><strong>编程语言:</strong> JavaScript, HTML/CSS, Python, C++</li>
+                    <li><strong>框架与工具:</strong> React, Node.js, Git, Webpack</li>
+                </ul>
             </section>
         </div>
     </main>
+
+    <footer class="site-footer">
+        <span>💡 本站设计与代码框架由 AI 辅助生成</span>
+        <span id="last-updated"></span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
