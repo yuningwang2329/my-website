@@ -3,51 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学习笔记与想法</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>学习笔记</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-    </div>
-
     <nav class="navbar">
         <div class="nav-content">
-            <a href="index.html" class="logo">首页</a>
+            <a href="index.html" class="logo">主页</a>
             <div class="nav-links">
                 <a href="resume.html">简历</a>
-                <a href="notes.html" style="color: var(--primary-color);">笔记</a>
+                <a href="notes.html" class="active">笔记</a>
             </div>
         </div>
     </nav>
 
     <main class="container fade-in">
         <div class="page-header">
-            <h1>我的笔记</h1>
-            <p class="subtitle">一些零碎的想法、技术总结与生活记录</p>
+            <h1>笔记</h1>
+            <p class="subtitle">记录与思考</p>
         </div>
 
         <ul class="notes-list">
-            <!-- 添加新笔记时，只需在这里复制一行 -->
             <li>
-                <a href="post.html?file=hello-world.md" class="note-item" style="display: block; text-decoration: none; color: inherit;">
+                <a href="post.html?file=hello-world.md" class="note-item">
                     <span class="note-title">你好，世界！我的第一篇测试笔记</span>
                     <span class="note-date">2026-07-10</span>
                 </a>
             </li>
-            
-            <!-- 未来添加更多笔记的例子：
-            <li>
-                <a href="post.html?file=my-second-post.md" class="note-item" style="display: block; text-decoration: none; color: inherit;">
-                    <span class="note-title">第二篇笔记的标题</span>
-                    <span class="note-date">2026-07-11</span>
-                </a>
-            </li>
-            -->
         </ul>
     </main>
 </body>
