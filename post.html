@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阅读笔记</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 marked.js 用于解析 Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">首页</a>
+            <div class="nav-links">
+                <a href="resume.html">简历</a>
+                <a href="notes.html">返回笔记列表</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container fade-in">
+        <div id="content" class="content serif-text markdown-body">
+            <p>正在加载内容...</p>
+        </div>
+    </main>
+
+    <script>
+        // 获取 URL 中的 file 参数，例如 post.html?file=hello-world.md
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileName = urlParams.get('file');
+        const contentDiv = document.getElementById('content');
+
+        if (fileName) {
+            // 请求 notes 文件夹下的 markdown 文件
+            fetch(`notes/${fileName}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('网络响应错误，可能文件不存在。如果是在本地直接双击打开的，请确保使用本地服务器(运行 preview.command)打开。');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    // 使用 marked 解析并将 HTML 注入页面
+                    contentDiv.innerHTML = marked.parse(text);
+                    // 尝试把第一行 <h1> 提出来做网页标题
+                    const firstH1 = contentDiv.querySelector('h1');
+                    if (firstH1) {
+                        document.title = firstH1.innerText;
+                    }
+                })
+                .catch(error => {
+                    contentDiv.innerHTML = `<h2 style="color: #ef4444;">加载失败 😢</h2><p>${error.message}</p>`;
+                });
+        } else {
+            contentDiv.innerHTML = '<h2>未指定要阅读的笔记。</h2>';
+        }
+    </script>
+</body>
+</html>
