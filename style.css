@@ -695,3 +695,83 @@ h3 {
         white-space: nowrap;
     }
 }
+
+/* Fluids UI Additions */
+.fluids-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+.segment-control {
+    display: flex;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.segment-control button {
+    flex: 1;
+    padding: 6px 0;
+    font-size: 0.85rem;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.segment-control button.active {
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 600;
+}
+.fluids-search {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+.fluids-search:focus {
+    outline: none;
+    border-color: #007aff;
+}
+.item-link {
+    position: relative;
+    padding-right: 40px;
+}
+.item-link.read .item-title {
+    color: var(--text-secondary);
+}
+.item-link.read .item-meta::after {
+    content: " [已读]";
+    font-size: 0.85em;
+    opacity: 0.6;
+}
+.star-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.star-btn:hover {
+    opacity: 0.6;
+    transform: translateY(-50%) scale(1.1);
+}
+.star-btn.active {
+    opacity: 1;
+    color: #ffcc00;
+    text-shadow: 0 0 8px rgba(255,204,0,0.4);
+}

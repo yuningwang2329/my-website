@@ -27,7 +27,7 @@
             <div class="search-box">
                 <div class="search-input-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    <input id="search-input" class="search-input" type="text" placeholder="搜索" autocomplete="off">
+                    <input id="search-input" class="search-input" type="text" placeholder="全局搜索" autocomplete="off">
                 </div>
                 <div id="search-label" class="search-results-label">快速链接</div>
                 <div id="search-results" class="search-results"></div>
@@ -40,8 +40,18 @@
         <p class="page-desc fade-in">每日自动更新的流体及偏微分方程文献阅读</p>
 
         <div class="fluids-layout fade-in">
-            <aside class="fluids-sidebar" id="fluids-sidebar">
-                <!-- Sidebar dates injected here -->
+            <aside class="fluids-sidebar">
+                <div class="fluids-controls">
+                    <div class="segment-control">
+                        <button id="btn-date" class="active" onclick="switchMode('date')">按日期</button>
+                        <button id="btn-source" onclick="switchMode('source')">按期刊</button>
+                        <button id="btn-stars" onclick="switchMode('stars')">⭐ 收藏</button>
+                    </div>
+                    <input type="text" id="fluids-local-search" class="fluids-search" placeholder="过滤论文..." onkeyup="render()">
+                </div>
+                <div id="fluids-sidebar-links">
+                    <!-- Sidebar dates injected here -->
+                </div>
             </aside>
             <div class="fluids-content" id="fluids-content">
                 <p style="color: var(--text-secondary); padding: 20px;">正在加载论文数据...</p>
@@ -50,10 +60,137 @@
     </main>
 
     <footer class="site-footer">
-                <span id="last-updated"></span>
+        <span id="last-updated"></span>
     </footer>
 
     <script>
+        let allPapers = [];
+        let currentMode = 'date'; // 'date', 'source', 'stars'
+
+        function getReadPapers() {
+            return JSON.parse(localStorage.getItem('fluids_read') || '[]');
+        }
+
+        function getStarredPapers() {
+            return JSON.parse(localStorage.getItem('fluids_stars') || '[]');
+        }
+
+        function toggleStar(e, filename) {
+            e.preventDefault();
+            e.stopPropagation();
+            let stars = getStarredPapers();
+            if (stars.includes(filename)) {
+                stars = stars.filter(f => f !== filename);
+            } else {
+                stars.push(filename);
+            }
+            localStorage.setItem('fluids_stars', JSON.stringify(stars));
+            render();
+        }
+
+        function markRead(filename) {
+            let read = getReadPapers();
+            if (!read.includes(filename)) {
+                read.push(filename);
+                localStorage.setItem('fluids_read', JSON.stringify(read));
+            }
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            document.getElementById('btn-date').className = mode === 'date' ? 'active' : '';
+            document.getElementById('btn-source').className = mode === 'source' ? 'active' : '';
+            document.getElementById('btn-stars').className = mode === 'stars' ? 'active' : '';
+            render();
+        }
+
+        function render() {
+            const contentEl = document.getElementById('fluids-content');
+            const sidebarEl = document.getElementById('fluids-sidebar-links');
+            contentEl.innerHTML = '';
+            sidebarEl.innerHTML = '';
+            
+            if (allPapers.length === 0) {
+                contentEl.innerHTML = '<p style="color: var(--text-secondary); padding: 20px;">暂无论文数据。</p>';
+                return;
+            }
+
+            const searchQuery = document.getElementById('fluids-local-search').value.toLowerCase();
+            const readPapers = getReadPapers();
+            const starredPapers = getStarredPapers();
+
+            let papersToRender = allPapers.filter(item => {
+                if (currentMode === 'stars' && !starredPapers.includes(item.filename)) return false;
+                if (searchQuery) {
+                    const text = (item.title + ' ' + item.authors).toLowerCase();
+                    if (!text.includes(searchQuery)) return false;
+                }
+                return true;
+            });
+
+            if (papersToRender.length === 0) {
+                contentEl.innerHTML = '<p style="color: var(--text-secondary); padding: 20px;">没有找到匹配的论文。</p>';
+                return;
+            }
+
+            const groups = {};
+            papersToRender.forEach(item => {
+                let groupId, displayGroup;
+                if (currentMode === 'date' || currentMode === 'stars') {
+                    const parts = item.date.split('-');
+                    displayGroup = `${parts[0]}年${parseInt(parts[1])}月${parseInt(parts[2])}日`;
+                    groupId = item.date;
+                } else if (currentMode === 'source') {
+                    displayGroup = item.source;
+                    groupId = item.source.replace(/[^a-zA-Z0-9]/g, '_');
+                }
+
+                if (!groups[groupId]) groups[groupId] = { display: displayGroup, items: [] };
+                groups[groupId].items.push(item);
+            });
+            
+            for (const [groupId, groupData] of Object.entries(groups)) {
+                const a = document.createElement('a');
+                a.href = '#' + groupId;
+                a.textContent = groupData.display;
+                sidebarEl.appendChild(a);
+                
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'date-group';
+                groupDiv.id = groupId;
+                
+                const header = document.createElement('h2');
+                header.className = 'date-header';
+                header.textContent = groupData.display;
+                groupDiv.appendChild(header);
+                
+                const ul = document.createElement('ul');
+                ul.className = 'item-list stagger';
+                
+                groupData.items.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'fade-in';
+                    
+                    const isRead = readPapers.includes(item.filename);
+                    const isStarred = starredPapers.includes(item.filename);
+                    const linkClass = isRead ? 'item-link read' : 'item-link';
+                    const starClass = isStarred ? 'star-btn active' : 'star-btn';
+                    
+                    li.innerHTML = `
+                        <a href="post.html?file=../fluids/${item.filename}" class="${linkClass}" onclick="markRead('${item.filename}')">
+                            <span class="item-title">${item.title}</span>
+                            <span class="item-meta">${item.date} · ${item.source} · ${item.authors}</span>
+                            <button class="${starClass}" onclick="toggleStar(event, '${item.filename}')" title="收藏/取消收藏">★</button>
+                        </a>
+                    `;
+                    ul.appendChild(li);
+                });
+                
+                groupDiv.appendChild(ul);
+                contentEl.appendChild(groupDiv);
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             fetch('fluids.json')
                 .then(response => {
@@ -61,57 +198,8 @@
                     return response.json();
                 })
                 .then(data => {
-                    const contentEl = document.getElementById('fluids-content');
-                    const sidebarEl = document.getElementById('fluids-sidebar');
-                    contentEl.innerHTML = '';
-                    sidebarEl.innerHTML = '';
-                    if (data.length === 0) {
-                        contentEl.innerHTML = '<p style="color: var(--text-secondary); padding: 20px;">暂无论文数据。</p>';
-                        return;
-                    }
-                    
-                    const groups = {};
-                    data.forEach(item => {
-                        const parts = item.date.split('-');
-                        const displayDate = `${parts[0]}年${parseInt(parts[1])}月${parseInt(parts[2])}日`;
-                        const groupId = item.date;
-                        if (!groups[groupId]) groups[groupId] = { display: displayDate, items: [] };
-                        groups[groupId].items.push(item);
-                    });
-                    
-                    for (const [groupId, groupData] of Object.entries(groups)) {
-                        const a = document.createElement('a');
-                        a.href = '#' + groupId;
-                        a.textContent = groupData.display;
-                        sidebarEl.appendChild(a);
-                        
-                        const groupDiv = document.createElement('div');
-                        groupDiv.className = 'date-group';
-                        groupDiv.id = groupId;
-                        
-                        const header = document.createElement('h2');
-                        header.className = 'date-header';
-                        header.textContent = groupData.display;
-                        groupDiv.appendChild(header);
-                        
-                        const ul = document.createElement('ul');
-                        ul.className = 'item-list stagger';
-                        
-                        groupData.items.forEach(item => {
-                            const li = document.createElement('li');
-                            li.className = 'fade-in';
-                            li.innerHTML = `
-                                <a href="post.html?file=../fluids/${item.filename}" class="item-link">
-                                    <span class="item-title">${item.title}</span>
-                                    <span class="item-meta">${item.date} · ${item.source} · ${item.authors}</span>
-                                </a>
-                            `;
-                            ul.appendChild(li);
-                        });
-                        
-                        groupDiv.appendChild(ul);
-                        contentEl.appendChild(groupDiv);
-                    }
+                    allPapers = data;
+                    render();
                 })
                 .catch(error => {
                     console.error('Error loading fluids.json:', error);
