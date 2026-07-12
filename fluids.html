@@ -39,16 +39,18 @@
         <h1 class="page-title fade-in">流体论文</h1>
         <p class="page-desc fade-in">每日自动更新的流体及偏微分方程文献阅读</p>
 
-        <ul class="item-list stagger fade-in" id="fluids-list">
-            <li class="fade-in">
+        <div class="fluids-layout fade-in">
+            <aside class="fluids-sidebar" id="fluids-sidebar">
+                <!-- Sidebar dates injected here -->
+            </aside>
+            <div class="fluids-content" id="fluids-content">
                 <p style="color: var(--text-secondary); padding: 20px;">正在加载论文数据...</p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </main>
 
     <footer class="site-footer">
-        <span>💡 本站设计与代码框架由 AI 辅助生成</span>
-        <span id="last-updated"></span>
+                <span id="last-updated"></span>
     </footer>
 
     <script>
@@ -59,28 +61,60 @@
                     return response.json();
                 })
                 .then(data => {
-                    const listEl = document.getElementById('fluids-list');
-                    listEl.innerHTML = '';
+                    const contentEl = document.getElementById('fluids-content');
+                    const sidebarEl = document.getElementById('fluids-sidebar');
+                    contentEl.innerHTML = '';
+                    sidebarEl.innerHTML = '';
                     if (data.length === 0) {
-                        listEl.innerHTML = '<li class="fade-in"><p style="color: var(--text-secondary); padding: 20px;">暂无论文数据。</p></li>';
+                        contentEl.innerHTML = '<p style="color: var(--text-secondary); padding: 20px;">暂无论文数据。</p>';
                         return;
                     }
+                    
+                    const groups = {};
                     data.forEach(item => {
-                        const li = document.createElement('li');
-                        li.className = 'fade-in';
-                        li.innerHTML = `
-                            <a href="post.html?file=../fluids/${item.filename}" class="item-link">
-                                <span class="item-title">${item.title}</span>
-                                <span class="item-meta">${item.date} · ${item.source} · ${item.authors}</span>
-                            </a>
-                        `;
-                        listEl.appendChild(li);
+                        const parts = item.date.split('-');
+                        const shortDate = parseInt(parts[1]) + '.' + parseInt(parts[2]);
+                        if (!groups[shortDate]) groups[shortDate] = [];
+                        groups[shortDate].push(item);
                     });
+                    
+                    for (const [date, items] of Object.entries(groups)) {
+                        const a = document.createElement('a');
+                        a.href = '#' + date;
+                        a.textContent = date;
+                        sidebarEl.appendChild(a);
+                        
+                        const groupDiv = document.createElement('div');
+                        groupDiv.className = 'date-group';
+                        groupDiv.id = date;
+                        
+                        const header = document.createElement('h2');
+                        header.className = 'date-header';
+                        header.textContent = date;
+                        groupDiv.appendChild(header);
+                        
+                        const ul = document.createElement('ul');
+                        ul.className = 'item-list stagger';
+                        
+                        items.forEach(item => {
+                            const li = document.createElement('li');
+                            li.className = 'fade-in';
+                            li.innerHTML = `
+                                <a href="post.html?file=../fluids/${item.filename}" class="item-link">
+                                    <span class="item-title">${item.title}</span>
+                                    <span class="item-meta">${item.date} · ${item.source} · ${item.authors}</span>
+                                </a>
+                            `;
+                            ul.appendChild(li);
+                        });
+                        
+                        groupDiv.appendChild(ul);
+                        contentEl.appendChild(groupDiv);
+                    }
                 })
                 .catch(error => {
                     console.error('Error loading fluids.json:', error);
-                    const listEl = document.getElementById('fluids-list');
-                    listEl.innerHTML = '<li class="fade-in"><p style="color: red; padding: 20px;">加载失败：请确保在本地服务器环境下运行。</p></li>';
+                    document.getElementById('fluids-content').innerHTML = '<p style="color: red; padding: 20px;">加载失败：请确保在本地服务器环境下运行。</p>';
                 });
         });
     </script>

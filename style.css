@@ -601,3 +601,96 @@ h3 {
     .main { max-width: 100%; padding: 0; }
     body { font-size: 12pt; }
 }
+
+/* ========== Fluids Layout ========== */
+.fluids-layout {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+.fluids-sidebar {
+    flex: 0 0 100px;
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+.fluids-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+.fluids-sidebar::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+
+.fluids-sidebar a {
+    display: block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.fluids-sidebar a:hover {
+    color: var(--text);
+}
+
+.fluids-sidebar a:active {
+    transform: scale(0.95);
+}
+
+.fluids-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.date-group {
+    margin-bottom: 64px;
+}
+
+.date-header {
+    position: sticky;
+    top: 56px;
+    background: var(--nav-bg);
+    padding: 24px 0 12px;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    z-index: 90;
+    border-bottom: 1px solid rgba(210, 210, 215, 0.3);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    color: var(--text);
+}
+
+@media (prefers-color-scheme: dark) {
+    .date-header {
+        border-bottom: 1px solid rgba(66, 66, 69, 0.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .fluids-layout {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .fluids-sidebar {
+        position: static;
+        flex: none;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 12px;
+        margin-bottom: 0;
+        border-bottom: 1px solid var(--border);
+    }
+    .fluids-sidebar a {
+        padding: 8px 16px;
+        white-space: nowrap;
+    }
+}
