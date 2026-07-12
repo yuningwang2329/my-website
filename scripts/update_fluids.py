@@ -27,6 +27,41 @@ FEEDS = [
         "name": "Arch. Ration. Mech. Anal.",
         "url": "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=205",
         "type": "standard_rss"
+    },
+    {
+        "name": "Commun. Math. Phys.",
+        "url": "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=220",
+        "type": "standard_rss"
+    },
+    {
+        "name": "Commun. Pure Appl. Math.",
+        "url": "https://onlinelibrary.wiley.com/action/showFeed?type=etoc&feed=rss&jc=10970312",
+        "type": "standard_rss"
+    },
+    {
+        "name": "Calc. Var. Partial Differ. Equ.",
+        "url": "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=526",
+        "type": "standard_rss"
+    },
+    {
+        "name": "J. Differ. Equ.",
+        "url": "https://rss.sciencedirect.com/publication/science/00220396",
+        "type": "standard_rss"
+    },
+    {
+        "name": "J. Funct. Anal.",
+        "url": "https://rss.sciencedirect.com/publication/science/00221236",
+        "type": "standard_rss"
+    },
+    {
+        "name": "SIAM J. Math. Anal.",
+        "url": "https://epubs.siam.org/action/showFeed?type=etoc&feed=rss&jc=sjmaah",
+        "type": "standard_rss"
+    },
+    {
+        "name": "J. Math. Pures Appl.",
+        "url": "https://rss.sciencedirect.com/publication/science/00217824",
+        "type": "standard_rss"
     }
 ]
 

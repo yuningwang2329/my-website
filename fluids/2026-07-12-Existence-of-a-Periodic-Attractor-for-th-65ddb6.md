@@ -1,0 +1,16 @@
+# Existence of a Periodic Attractor for the 3D Navier-Stokes Equations on &lt;math xmlns='http://www.w3.org/1998/Math/MathML'&gt; &lt;mrow&gt;  &lt;msup&gt;   &lt;mi mathvariant='double-struck'&gt;T&lt;/mi&gt;   &lt;mn&gt;3&lt;/mn&gt;  &lt;/msup&gt;  &lt;/mrow&gt;&lt;/math&gt;
+
+- **作者 (Authors)**: Terry Moschandreou
+- **来源 (Source)**: J. Funct. Anal.
+- **日期 (Date)**: 2026-07-12
+- **原文链接 (Link)**: [查看原始论文](https://www.sciencedirect.com/science/article/pii/S0022123626002661?dgcid=rss_sd_all)
+
+## 中文摘要
+
+出版日期：2026 年 11 月 15 日 资料来源：Journal of Function Analysis，第 291 卷，第 10 期 作者：Marcel Scherer
+
+---
+
+## 英文摘要
+
+ Publication date: 15 November 2026   Source:  Journal of Functional Analysis, Volume 291, Issue 10  Author(s): Marcel Scherer 
