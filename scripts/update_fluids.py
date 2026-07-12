@@ -4,23 +4,37 @@ import uuid
 import datetime
 import urllib.request
 import feedparser
+import re
 from deep_translator import GoogleTranslator
-from imap_tools import MailBox, AND
 
 # Constants
 JSON_FILE = 'fluids.json'
 MD_DIR = 'fluids'
 
-# Email Config
-# 用户需要在 GitHub Secrets 中配置 EMAIL_USER 和 EMAIL_PASS
-EMAIL_HOST = os.environ.get('EMAIL_HOST', 'imap.qq.com') # 默认QQ邮箱，可根据情况在 Secrets 配置
-EMAIL_USER = os.environ.get('EMAIL_USER')
-EMAIL_PASS = os.environ.get('EMAIL_PASS')
+# --- 订阅配置池 (Feeds Config) ---
+FEEDS = [
+    {
+        "name": "Arxiv (math.AP)",
+        "url": "http://export.arxiv.org/api/query?search_query=cat:math.AP&sortBy=submittedDate&sortOrder=descending&max_results=5",
+        "type": "arxiv"
+    },
+    {
+        "name": "AML",
+        "url": "https://rss.sciencedirect.com/publication/science/08939659",
+        "type": "standard_rss"
+    },
+    {
+        "name": "ARMA",
+        "url": "https://kill-the-newsletter.com/feeds/pwrewx6t1kh3dojlxg99.xml",
+        "type": "email_rss"
+    }
+]
 
 def translate_to_zh(text):
+    if not text or len(text.strip()) == 0:
+        return "无摘要内容。"
     try:
         translator = GoogleTranslator(source='auto', target='zh-CN')
-        # 简单截断处理超长文本
         if len(text) > 4999:
             text = text[:4999]
         return translator.translate(text)
@@ -29,8 +43,9 @@ def translate_to_zh(text):
         return text
 
 def create_markdown(title, authors, date, source, link, abstract_en, abstract_zh):
-    # Sanitize title for filename
-    safe_title = "".join([c if c.isalnum() else "-" for c in title])[:30].strip('-')
+    safe_title = "".join([c if c.isalnum() else "-" for c in title])[:40].strip('-')
+    if not safe_title:
+        safe_title = "paper"
     filename = f"{date}-{safe_title}-{str(uuid.uuid4())[:6]}.md"
     
     filepath = os.path.join(MD_DIR, filename)
@@ -54,64 +69,120 @@ def create_markdown(title, authors, date, source, link, abstract_en, abstract_zh
 """
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(md_content)
-    
     return filename
 
-def get_arxiv_papers():
-    # 抓取 math.AP
-    url = "http://export.arxiv.org/api/query?search_query=cat:math.AP&sortBy=submittedDate&sortOrder=descending&max_results=5"
-    papers = []
+def extract_doi(text):
+    match = re.search(r'(10\.\d{4,9}/[-._;()/:A-Z0-9a-z]+)', text, re.IGNORECASE)
+    if match:
+        return match.group(1).rstrip('."\'<>)')
+    return None
+
+def query_crossref_by_doi(doi):
     try:
-        feed = feedparser.parse(url)
-        for entry in feed.entries:
-            date_str = entry.published[:10]
-            title = entry.title.replace('\n', ' ')
-            authors = ", ".join(author.name for author in entry.authors)
-            abstract_en = entry.summary.replace('\n', ' ')
-            link = entry.link
+        url = f"https://api.crossref.org/works/{doi}"
+        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:test@example.com'})
+        res = urllib.request.urlopen(req, timeout=5)
+        data = json.loads(res.read())['message']
+        title = data.get('title', [''])[0]
+        authors = ", ".join([f"{a.get('given', '')} {a.get('family', '')}".strip() for a in data.get('author', [])])
+        abstract = data.get('abstract', '')
+        # CrossRef XML abstract stripping
+        abstract = re.sub(r'<[^>]+>', '', abstract)
+        return title, authors, abstract
+    except Exception:
+        return None, None, None
+
+def query_crossref_by_title(title):
+    try:
+        safe_title = urllib.parse.quote(title)
+        url = f"https://api.crossref.org/works?query.title={safe_title}&select=DOI,title,author,abstract&rows=1"
+        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:test@example.com'})
+        res = urllib.request.urlopen(req, timeout=5)
+        data = json.loads(res.read())['message']['items']
+        if not data:
+            return None, None, None
+        item = data[0]
+        cr_title = item.get('title', [''])[0]
+        authors = ", ".join([f"{a.get('given', '')} {a.get('family', '')}".strip() for a in item.get('author', [])])
+        abstract = item.get('abstract', '')
+        abstract = re.sub(r'<[^>]+>', '', abstract)
+        return cr_title, authors, abstract
+    except Exception:
+        return None, None, None
+
+def fetch_feed(feed_config):
+    papers = []
+    source_name = feed_config['name']
+    f_type = feed_config['type']
+    url = feed_config['url']
+    
+    print(f"Fetching {source_name}...")
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        res = urllib.request.urlopen(req, timeout=15)
+        feed = feedparser.parse(res.read())
+        
+        for entry in feed.entries[:5]: # Limit to 5 per feed per run to save time
+            title = entry.get('title', '').replace('\n', ' ').strip()
+            link = entry.get('link', '')
+            summary = entry.get('summary', entry.get('description', ''))
+            date_str = ""
             
+            if 'published_parsed' in entry and entry.published_parsed:
+                date_str = f"{entry.published_parsed.tm_year}-{entry.published_parsed.tm_mon:02d}-{entry.published_parsed.tm_mday:02d}"
+            else:
+                date_str = datetime.datetime.now().strftime("%Y-%m-%d")
+
+            authors = ""
+            abstract_en = ""
+            
+            if f_type == "arxiv":
+                authors = ", ".join(author.name for author in entry.get('authors', []))
+                abstract_en = summary.replace('\n', ' ')
+            
+            elif f_type == "standard_rss":
+                # AML etc. Usually don't have abstract. Try CrossRef by Title
+                cr_title, cr_auth, cr_abs = query_crossref_by_title(title)
+                authors = cr_auth if cr_auth else "见原链接 (See link)"
+                abstract_en = cr_abs if cr_abs else "无摘要提供，请点击原文链接查看。"
+                if not cr_abs:
+                    clean_summary = re.sub(r'<[^>]+>', ' ', summary)
+                    abstract_en = clean_summary[:1000]
+
+            elif f_type == "email_rss":
+                # Email RSS (ARMA). Real info is inside HTML content.
+                content = ""
+                if 'content' in entry:
+                    content = entry.content[0].value
+                else:
+                    content = summary
+                
+                doi = extract_doi(content)
+                if doi:
+                    cr_title, cr_auth, cr_abs = query_crossref_by_doi(doi)
+                    if cr_title:
+                        title = cr_title
+                    authors = cr_auth if cr_auth else "见原链接 (See link)"
+                    abstract_en = cr_abs if cr_abs else "摘要提取失败，请点击原文链接查看。"
+                    link = f"https://doi.org/{doi}"
+                else:
+                    clean_text = re.sub(r'<[^>]+>', ' ', content)
+                    abstract_en = clean_text[:2000]
+                    authors = "Email Sender"
+            
+            if not title or "ToC Alert" in title or "Table of Contents" in title:
+                continue
+                
             papers.append({
                 'title': title,
                 'authors': authors,
                 'date': date_str,
-                'source': 'Arxiv (math.AP)',
+                'source': source_name,
                 'link': link,
                 'abstract_en': abstract_en
             })
     except Exception as e:
-        print(f"Arxiv Fetch Error: {e}")
-    return papers
-
-def get_email_papers():
-    papers = []
-    if not EMAIL_USER or not EMAIL_PASS:
-        print("未提供邮箱凭据 EMAIL_USER/EMAIL_PASS。跳过邮件解析。")
-        return papers
-    
-    print(f"Connecting to IMAP {EMAIL_HOST} with {EMAIL_USER}...")
-    try:
-        with MailBox(EMAIL_HOST).login(EMAIL_USER, EMAIL_PASS) as mailbox:
-            # 获取所有未读邮件
-            for msg in mailbox.fetch(AND(seen=False)):
-                date_str = msg.date.strftime("%Y-%m-%d")
-                title = msg.subject
-                
-                # 简单粗暴地提取正文作为摘要（针对推送邮件）
-                # 实际应用中可能需要针对不同期刊（如JFM, PoF）的 HTML 结构用 BeautifulSoup 做解析
-                abstract_en = msg.text[:3000] if msg.text else "请查看原邮件。暂无法提取纯文本。"
-                if not msg.text and msg.html:
-                    abstract_en = msg.html[:3000]
-                
-                papers.append({
-                    'title': title,
-                    'authors': msg.from_,
-                    'date': date_str,
-                    'source': 'Email Subscription',
-                    'link': '#',
-                    'abstract_en': abstract_en
-                })
-    except Exception as e:
-        print(f"IMAP Error: {e}")
+        print(f"Error fetching {source_name}: {e}")
         
     return papers
 
@@ -119,45 +190,41 @@ def main():
     if not os.path.exists(MD_DIR):
         os.makedirs(MD_DIR)
 
+    existing_papers = []
     if os.path.exists(JSON_FILE):
-        with open(JSON_FILE, 'r', encoding='utf-8') as f:
-            existing_papers = json.load(f)
-    else:
-        existing_papers = []
+        try:
+            with open(JSON_FILE, 'r', encoding='utf-8') as f:
+                existing_papers = json.load(f)
+        except:
+            pass
 
-    # 去重判定：根据标题
-    existing_titles = {p['title'] for p in existing_papers}
+    existing_titles = {p['title'].strip().lower() for p in existing_papers}
     
     new_papers_data = []
+    all_fetched = []
     
-    print("Fetching Arxiv...")
-    arxiv_papers = get_arxiv_papers()
-    
-    print("Fetching Emails...")
-    email_papers = get_email_papers()
-    
-    all_fetched = arxiv_papers + email_papers
-    
+    for feed_conf in FEEDS:
+        all_fetched.extend(fetch_feed(feed_conf))
+        
     for p in all_fetched:
-        if p['title'] not in existing_titles:
+        compare_title = p['title'].strip().lower()
+        if compare_title not in existing_titles:
             print(f"-> 发现新论文: {p['title'][:50]}...")
             abstract_zh = translate_to_zh(p['abstract_en'])
             
             filename = create_markdown(p['title'], p['authors'], p['date'], p['source'], p['link'], p['abstract_en'], abstract_zh)
             
-            new_item = {
+            new_papers_data.append({
                 'title': p['title'],
                 'authors': p['authors'],
                 'date': p['date'],
                 'source': p['source'],
                 'filename': filename
-            }
-            new_papers_data.append(new_item)
-            existing_titles.add(p['title'])
+            })
+            existing_titles.add(compare_title)
 
     if new_papers_data:
         all_papers = new_papers_data + existing_papers
-        # 按照日期倒序排序
         all_papers.sort(key=lambda x: x['date'], reverse=True)
         
         with open(JSON_FILE, 'w', encoding='utf-8') as f:

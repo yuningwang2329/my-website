@@ -1,5 +1,40 @@
 [
     {
+        "title": "A dispersion minimizing finite difference scheme for the Helmholtz equation with discontinuous coefficients",
+        "authors": "Xiaojing Liu, Tingting Wu",
+        "date": "2026-07-12",
+        "source": "AML",
+        "filename": "2026-07-12-A-dispersion-minimizing-finite-differenc-cd9f70.md"
+    },
+    {
+        "title": "An adaptive time-filtered fully decoupled scheme for incompressible MHD equations",
+        "authors": "Xiaojing Wei, Yuxiang Ma, Liquan Mei",
+        "date": "2026-07-12",
+        "source": "AML",
+        "filename": "2026-07-12-An-adaptive-time-filtered-fully-decouple-e4e11a.md"
+    },
+    {
+        "title": "Global exponential convergence for almost periodic gene regulatory systems with negative feedback",
+        "authors": "Wenji Wu, Liu Yang, Hui Zhou",
+        "date": "2026-07-12",
+        "source": "AML",
+        "filename": "2026-07-12-Global-exponential-convergence-for-almos-8641a4.md"
+    },
+    {
+        "title": "Sobolev well-posedness for inviscid Second-Grade fluid equations in a thin strip",
+        "authors": "Tianyuan Yu",
+        "date": "2026-07-12",
+        "source": "AML",
+        "filename": "2026-07-12-Sobolev-well-posedness-for-inviscid-Seco-3a7f16.md"
+    },
+    {
+        "title": "Positive g-quasi-homoclinic solutions to damped difference equations with mixed nonlinearities",
+        "authors": "Yuhua Long",
+        "date": "2026-07-12",
+        "source": "AML",
+        "filename": "2026-07-12-Positive-g-quasi-homoclinic-solutions-to-a69c2b.md"
+    },
+    {
         "title": "A Short Proof of Optimal Regularity for minimizers of the Alt-Phillips Problem",
         "authors": "Kunyi, Ma",
         "date": "2026-07-09",
