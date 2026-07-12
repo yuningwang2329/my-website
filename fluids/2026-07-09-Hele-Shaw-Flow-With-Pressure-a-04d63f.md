@@ -1,9 +1,9 @@
 # Hele-Shaw Flow With Pressure and Shear Rate Dependent Viscosity
 
-**作者 (Authors)**: Benedetta Calusi, Liviu Iulian Palade
-**来源 (Source)**: Arxiv (math.AP)
-**日期 (Date)**: 2026-07-09
-**原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08509v1)
+- **作者 (Authors)**: Benedetta Calusi, Liviu Iulian Palade
+- **来源 (Source)**: Arxiv (math.AP)
+- **日期 (Date)**: 2026-07-09
+- **原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08509v1)
 
 ## 中文摘要
 

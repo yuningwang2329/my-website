@@ -1,9 +1,9 @@
 # Localized gradient enhancement near anisotropic scatterers
 
-**作者 (Authors)**: Weisheng Zhou, Huaian Diao, Hongyu Liu
-**来源 (Source)**: Arxiv (math.AP)
-**日期 (Date)**: 2026-07-09
-**原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08598v1)
+- **作者 (Authors)**: Weisheng Zhou, Huaian Diao, Hongyu Liu
+- **来源 (Source)**: Arxiv (math.AP)
+- **日期 (Date)**: 2026-07-09
+- **原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08598v1)
 
 ## 中文摘要
 

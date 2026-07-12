@@ -1,9 +1,9 @@
 # Stability of Equilibria in a Biofilm Reactor Model with Wall Attachment and Thermodynamic Growth Inhibition
 
-**作者 (Authors)**: Katerina Nik, Christoph Walker
-**来源 (Source)**: Arxiv (math.AP)
-**日期 (Date)**: 2026-07-09
-**原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08498v1)
+- **作者 (Authors)**: Katerina Nik, Christoph Walker
+- **来源 (Source)**: Arxiv (math.AP)
+- **日期 (Date)**: 2026-07-09
+- **原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08498v1)
 
 ## 中文摘要
 

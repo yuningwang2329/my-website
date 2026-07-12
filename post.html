@@ -7,6 +7,14 @@
     <title>阅读中…</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -63,6 +71,9 @@
                     contentDiv.innerHTML = marked.parse(text);
                     var firstH1 = contentDiv.querySelector('h1');
                     if (firstH1) document.title = firstH1.innerText;
+                    if (window.MathJax) {
+                        MathJax.typesetPromise([contentDiv]);
+                    }
                 })
                 .catch(function(error) {
                     contentDiv.innerHTML = '<h1>加载失败</h1><p>' + error.message + '</p>';

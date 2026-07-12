@@ -1,9 +1,9 @@
 # Existence of two embedded minimal spheres in $S^3$ with an arbitrary metric
 
-**作者 (Authors)**: Zhichao Wang, Xin Zhou
-**来源 (Source)**: Arxiv (math.AP)
-**日期 (Date)**: 2026-07-09
-**原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08631v1)
+- **作者 (Authors)**: Zhichao Wang, Xin Zhou
+- **来源 (Source)**: Arxiv (math.AP)
+- **日期 (Date)**: 2026-07-09
+- **原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08631v1)
 
 ## 中文摘要
 

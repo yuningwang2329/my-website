@@ -37,10 +37,10 @@ def create_markdown(title, authors, date, source, link, abstract_en, abstract_zh
     
     md_content = f"""# {title}
 
-**作者 (Authors)**: {authors}
-**来源 (Source)**: {source}
-**日期 (Date)**: {date}
-**原文链接 (Link)**: [查看原始论文]({link})
+- **作者 (Authors)**: {authors}
+- **来源 (Source)**: {source}
+- **日期 (Date)**: {date}
+- **原文链接 (Link)**: [查看原始论文]({link})
 
 ## 中文摘要
 

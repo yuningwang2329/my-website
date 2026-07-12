@@ -1,9 +1,9 @@
 # A Short Proof of Optimal Regularity for minimizers of the Alt-Phillips Problem
 
-**作者 (Authors)**: Kunyi, Ma
-**来源 (Source)**: Arxiv (math.AP)
-**日期 (Date)**: 2026-07-09
-**原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08685v1)
+- **作者 (Authors)**: Kunyi, Ma
+- **来源 (Source)**: Arxiv (math.AP)
+- **日期 (Date)**: 2026-07-09
+- **原文链接 (Link)**: [查看原始论文](https://arxiv.org/abs/2607.08685v1)
 
 ## 中文摘要
 
