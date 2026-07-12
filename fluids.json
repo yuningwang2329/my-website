@@ -175,6 +175,20 @@
         "filename": "2026-07-12-Positive-g-quasi-homoclinic-solutions-to-a69c2b.md"
     },
     {
+        "title": "Well-Posedness of the Stochastic Thin-Film Equation with an Interface Potential",
+        "authors": "Antonio Agresti, Max Sauerbrey",
+        "date": "2026-07-09",
+        "source": "Commun. Math. Phys.",
+        "filename": "2026-07-09-Well-Posedness-of-the-Stochastic-Thin-Fi-57b069.md"
+    },
+    {
+        "title": "On the Past Maximal Development of Near-FLRW Data for the Einstein Scalar-Field Vlasov System",
+        "authors": "David Fajman, Liam Urban",
+        "date": "2026-07-09",
+        "source": "Commun. Math. Phys.",
+        "filename": "2026-07-09-On-the-Past-Maximal-Development-of-Near-ab6978.md"
+    },
+    {
         "source": "Arxiv (math.AP)",
         "title": "A Short Proof of Optimal Regularity for minimizers of the Alt-Phillips Problem",
         "authors": "Kunyi, Ma",
@@ -236,6 +250,27 @@
         "authors": "Elia Bruè, Aaron Naber, Daniele Semola",
         "date": "2026-07-06",
         "filename": "2026-07-06-Compact-Manifolds-With-Unbounded-Nilpote-bad03d.md"
+    },
+    {
+        "title": "Asymptotic Stability of the Three-Dimensional Couette Flow for the Stokes-Transport Equations",
+        "authors": "Daniel Sinambela, Weiren Zhao, Ruizhao Zi",
+        "date": "2026-07-02",
+        "source": "Arch. Ration. Mech. Anal.",
+        "filename": "2026-07-02-Asymptotic-Stability-of-the-Three-Dimens-0e1c48.md"
+    },
+    {
+        "title": "Correction: Maximal Dissipation and Well-Posedness of the Euler System of Gas Dynamics",
+        "authors": "Eduard Feireisl, Ansgar Jüngel, Mária Lukáčová-Medviďová",
+        "date": "2026-07-02",
+        "source": "Arch. Ration. Mech. Anal.",
+        "filename": "2026-07-02-Correction--Maximal-Dissipation-and-Well-08e274.md"
+    },
+    {
+        "title": "Asymptotic stability of composite waves of viscous shock and rarefaction for relaxed compressible Navier-Stokes equations",
+        "authors": "Renyong Guan, Yuxi Hu",
+        "date": "2026-07-01",
+        "source": "Calc. Var. Partial Differ. Equ.",
+        "filename": "2026-07-01-Asymptotic-stability-of-composite-waves-5837db.md"
     },
     {
         "source": "Commun. Pure Appl. Math.",
