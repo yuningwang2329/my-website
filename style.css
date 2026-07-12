@@ -650,6 +650,7 @@ h3 {
 
 .date-group {
     margin-bottom: 64px;
+    scroll-margin-top: 120px;
 }
 
 .date-header {

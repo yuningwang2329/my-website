@@ -73,30 +73,31 @@
                     const groups = {};
                     data.forEach(item => {
                         const parts = item.date.split('-');
-                        const shortDate = parseInt(parts[1]) + '.' + parseInt(parts[2]);
-                        if (!groups[shortDate]) groups[shortDate] = [];
-                        groups[shortDate].push(item);
+                        const displayDate = `${parts[0]}年${parseInt(parts[1])}月${parseInt(parts[2])}日`;
+                        const groupId = item.date;
+                        if (!groups[groupId]) groups[groupId] = { display: displayDate, items: [] };
+                        groups[groupId].items.push(item);
                     });
                     
-                    for (const [date, items] of Object.entries(groups)) {
+                    for (const [groupId, groupData] of Object.entries(groups)) {
                         const a = document.createElement('a');
-                        a.href = '#' + date;
-                        a.textContent = date;
+                        a.href = '#' + groupId;
+                        a.textContent = groupData.display;
                         sidebarEl.appendChild(a);
                         
                         const groupDiv = document.createElement('div');
                         groupDiv.className = 'date-group';
-                        groupDiv.id = date;
+                        groupDiv.id = groupId;
                         
                         const header = document.createElement('h2');
                         header.className = 'date-header';
-                        header.textContent = date;
+                        header.textContent = groupData.display;
                         groupDiv.appendChild(header);
                         
                         const ul = document.createElement('ul');
                         ul.className = 'item-list stagger';
                         
-                        items.forEach(item => {
+                        groupData.items.forEach(item => {
                             const li = document.createElement('li');
                             li.className = 'fade-in';
                             li.innerHTML = `
