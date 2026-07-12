@@ -36,7 +36,7 @@ def ai_paper_filter(title, abstract):
             "Content-Type": "application/json",
             "Authorization": f"Bearer {LLM_API_KEY}"
         }
-        system_prompt = "You are an expert in fluid dynamics and PDEs. Does this paper belong to fluid mechanics or abstract math derived from it (e.g. Navier-Stokes, Euler, dispersive/parabolic equations, operator theory)? Answer ONLY 'YES' or 'NO'."
+        system_prompt = "You are a strict expert in fluid dynamics and PDEs. Does this paper belong to fluid mechanics, or abstract mathematics explicitly motivated by fluid mechanics (e.g., Navier-Stokes, Euler, fluid-related dispersive/parabolic equations, or fluid-related operator theory like Dongyi Wei's work)? Note: General operator theory, pure geometry, relativity, or unrelated PDEs must be 'NO'. Answer ONLY 'YES' or 'NO'."
         user_prompt = f"Title: {title}\nAbstract: {abstract}"
         data = {
             "model": LLM_MODEL,
