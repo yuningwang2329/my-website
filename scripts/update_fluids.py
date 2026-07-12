@@ -2,6 +2,7 @@ import os
 import json
 import uuid
 import datetime
+import time
 import urllib.request
 import feedparser
 import re
@@ -10,6 +11,52 @@ from deep_translator import GoogleTranslator
 # Constants
 JSON_FILE = 'fluids.json'
 MD_DIR = 'fluids'
+
+LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.siliconflow.cn/v1") # Defaulting to SiliconFlow as an example
+LLM_MODEL = os.environ.get("LLM_MODEL", "Qwen/Qwen2.5-7B-Instruct") # Fast cheap model
+
+def ai_paper_filter(title, abstract):
+    fallback_keywords = [
+        'fluid', 'navier', 'euler', 'hydrodynamic', 'mhd', 'magnetohydrodynamic',
+        'boussinesq', 'water wave', 'boundary layer', 'compressible', 'incompressible',
+        'vortex', 'vorticity', 'plasma', 'boltzmann', 'viscous', 'inviscid',
+        'burgers', 'korteweg', 'stokes', 'capillary', 'convection', 'turbulence', 'shallow water',
+        'dispersive', 'blow-up', 'blow up', 'well-posedness', 'operator', 'kdv', 'vlasov',
+        'schrodinger', 'schrödinger', 'dongyi wei', 'camassa', 'fluid-structure'
+    ]
+    text = (title + " " + abstract).lower()
+    
+    if not LLM_API_KEY:
+        return any(kw in text for kw in fallback_keywords)
+        
+    try:
+        url = f"{LLM_BASE_URL.rstrip('/')}/chat/completions"
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {LLM_API_KEY}"
+        }
+        system_prompt = "You are an expert in fluid dynamics and PDEs. Does this paper belong to fluid mechanics or abstract math derived from it (e.g. Navier-Stokes, Euler, dispersive/parabolic equations, operator theory)? Answer ONLY 'YES' or 'NO'."
+        user_prompt = f"Title: {title}\nAbstract: {abstract}"
+        data = {
+            "model": LLM_MODEL,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            "temperature": 0.0,
+            "max_tokens": 10
+        }
+        req = urllib.request.Request(url, headers=headers, data=json.dumps(data).encode('utf-8'))
+        res = urllib.request.urlopen(req, timeout=15)
+        res_data = json.loads(res.read().decode('utf-8'))
+        answer = res_data['choices'][0]['message']['content'].strip().upper()
+        time.sleep(2) # rate limit prevention
+        return "YES" in answer
+    except Exception as e:
+        print(f"AI Filter Error: {e}. Using fallback.")
+        return any(kw in text for kw in fallback_keywords)
+
 
 # --- 订阅配置池 (Feeds Config) ---
 FEEDS = [
@@ -230,8 +277,13 @@ def fetch_feed(feed_config):
                     })
     except Exception as e:
         print(f"Error fetching {source_name}: {e}")
-        
-    return papers
+    filtered_papers = []
+    for p in papers:
+        if ai_paper_filter(p['title'], p['abstract_en']):
+            filtered_papers.append(p)
+        else:
+            print(f"Skipped (AI/Keyword filter): {p['title'][:50]}...")
+    return filtered_papers
 
 def main():
     if not os.path.exists(MD_DIR):
