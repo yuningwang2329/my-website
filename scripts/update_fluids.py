@@ -25,8 +25,8 @@ FEEDS = [
     },
     {
         "name": "Arch. Ration. Mech. Anal.",
-        "url": "https://kill-the-newsletter.com/feeds/pwrewx6t1kh3dojlxg99.xml",
-        "type": "email_rss"
+        "url": "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=205",
+        "type": "standard_rss"
     }
 ]
 
