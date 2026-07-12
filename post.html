@@ -70,7 +70,7 @@
                     contentDiv.innerHTML = marked.parse(text);
                     var firstH1 = contentDiv.querySelector('h1');
                     if (firstH1) document.title = firstH1.innerText;
-                    if (window.MathJax) {
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
                         MathJax.typesetPromise([contentDiv]);
                     }
                 })

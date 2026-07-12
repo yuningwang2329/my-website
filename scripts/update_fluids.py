@@ -19,12 +19,12 @@ FEEDS = [
         "type": "arxiv"
     },
     {
-        "name": "AML",
+        "name": "Appl. Math. Lett.",
         "url": "https://rss.sciencedirect.com/publication/science/08939659",
         "type": "standard_rss"
     },
     {
-        "name": "ARMA",
+        "name": "Arch. Ration. Mech. Anal.",
         "url": "https://kill-the-newsletter.com/feeds/pwrewx6t1kh3dojlxg99.xml",
         "type": "email_rss"
     }
@@ -71,11 +71,17 @@ def create_markdown(title, authors, date, source, link, abstract_en, abstract_zh
         f.write(md_content)
     return filename
 
-def extract_doi(text):
-    match = re.search(r'(10\.\d{4,9}/[-._;()/:A-Z0-9a-z]+)', text, re.IGNORECASE)
-    if match:
-        return match.group(1).rstrip('."\'<>)')
-    return None
+def extract_all_dois(text):
+    dois = re.findall(r'(10\.\d{4,9}/[-._;()/:A-Z0-9a-z]+)', text, re.IGNORECASE)
+    # Deduplicate and clean up
+    cleaned = []
+    seen = set()
+    for d in dois:
+        d = d.rstrip('."\'<>)')
+        if d.lower() not in seen:
+            seen.add(d.lower())
+            cleaned.append(d)
+    return cleaned
 
 def query_crossref_by_doi(doi):
     try:
@@ -122,7 +128,7 @@ def fetch_feed(feed_config):
         res = urllib.request.urlopen(req, timeout=15)
         feed = feedparser.parse(res.read())
         
-        for entry in feed.entries[:5]: # Limit to 5 per feed per run to save time
+        for entry in feed.entries[:5]: # Limit parsing to save time
             title = entry.get('title', '').replace('\n', ' ').strip()
             link = entry.get('link', '')
             summary = entry.get('summary', entry.get('description', ''))
@@ -139,6 +145,10 @@ def fetch_feed(feed_config):
             if f_type == "arxiv":
                 authors = ", ".join(author.name for author in entry.get('authors', []))
                 abstract_en = summary.replace('\n', ' ')
+                papers.append({
+                    'title': title, 'authors': authors, 'date': date_str,
+                    'source': source_name, 'link': link, 'abstract_en': abstract_en
+                })
             
             elif f_type == "standard_rss":
                 # AML etc. Usually don't have abstract. Try CrossRef by Title
@@ -148,39 +158,41 @@ def fetch_feed(feed_config):
                 if not cr_abs:
                     clean_summary = re.sub(r'<[^>]+>', ' ', summary)
                     abstract_en = clean_summary[:1000]
+                papers.append({
+                    'title': cr_title if cr_title else title, 
+                    'authors': authors, 'date': date_str,
+                    'source': source_name, 'link': link, 'abstract_en': abstract_en
+                })
 
             elif f_type == "email_rss":
-                # Email RSS (ARMA). Real info is inside HTML content.
+                # Email RSS (ARMA). One email can have multiple DOIs
                 content = ""
                 if 'content' in entry:
                     content = entry.content[0].value
                 else:
                     content = summary
                 
-                doi = extract_doi(content)
-                if doi:
-                    cr_title, cr_auth, cr_abs = query_crossref_by_doi(doi)
-                    if cr_title:
-                        title = cr_title
-                    authors = cr_auth if cr_auth else "见原链接 (See link)"
-                    abstract_en = cr_abs if cr_abs else "摘要提取失败，请点击原文链接查看。"
-                    link = f"https://doi.org/{doi}"
+                dois = extract_all_dois(content)[:10] # limit to 10 DOIs per email
+                if dois:
+                    for doi in dois:
+                        cr_title, cr_auth, cr_abs = query_crossref_by_doi(doi)
+                        if cr_title:
+                            papers.append({
+                                'title': cr_title,
+                                'authors': cr_auth if cr_auth else "见原链接 (See link)",
+                                'date': date_str,
+                                'source': source_name,
+                                'link': f"https://doi.org/{doi}",
+                                'abstract_en': cr_abs if cr_abs else "摘要提取失败，请点击原文链接查看。"
+                            })
                 else:
+                    if not title or "ToC Alert" in title or "Table of Contents" in title:
+                        continue
                     clean_text = re.sub(r'<[^>]+>', ' ', content)
-                    abstract_en = clean_text[:2000]
-                    authors = "Email Sender"
-            
-            if not title or "ToC Alert" in title or "Table of Contents" in title:
-                continue
-                
-            papers.append({
-                'title': title,
-                'authors': authors,
-                'date': date_str,
-                'source': source_name,
-                'link': link,
-                'abstract_en': abstract_en
-            })
+                    papers.append({
+                        'title': title, 'authors': "Email Sender", 'date': date_str,
+                        'source': source_name, 'link': link, 'abstract_en': clean_text[:2000]
+                    })
     except Exception as e:
         print(f"Error fetching {source_name}: {e}")
         
