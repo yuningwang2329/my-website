@@ -27,7 +27,7 @@
             <div class="search-box">
                 <div class="search-input-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    <input id="search-input" class="search-input" type="text" placeholder="全局搜索" autocomplete="off">
+                    <input id="search-input" class="search-input" type="text" placeholder="搜索" autocomplete="off">
                 </div>
                 <div id="search-label" class="search-results-label">快速链接</div>
                 <div id="search-results" class="search-results"></div>
@@ -37,24 +37,24 @@
 
     <main class="main stagger">
         <h1 class="page-title fade-in">流体论文</h1>
-        <p class="page-desc fade-in">每日自动更新的流体及偏微分方程文献阅读</p>
+        <p class="page-desc fade-in">每日自动更新 · 来源 Arxiv (math.AP) 及期刊订阅</p>
 
         <div class="fluids-layout fade-in">
             <aside class="fluids-sidebar">
                 <div class="fluids-controls">
                     <div class="segment-control">
-                        <button id="btn-date" class="active" onclick="switchMode('date')">按日期</button>
-                        <button id="btn-source" onclick="switchMode('source')">按期刊</button>
-                        <button id="btn-stars" onclick="switchMode('stars')">⭐ 收藏</button>
+                        <button id="btn-date" class="active" onclick="switchMode('date')">日期</button>
+                        <button id="btn-source" onclick="switchMode('source')">期刊</button>
+                        <button id="btn-stars" onclick="switchMode('stars')">收藏</button>
                     </div>
-                    <input type="text" id="fluids-local-search" class="fluids-search" placeholder="过滤论文..." onkeyup="render()">
                 </div>
-                <div id="fluids-sidebar-links">
-                    <!-- Sidebar dates injected here -->
+                <div class="fluids-search-wrap">
+                    <input type="text" id="fluids-local-search" class="fluids-search" placeholder="搜索标题或作者…" oninput="render()">
                 </div>
+                <div class="fluids-sidebar-links" id="fluids-sidebar-links"></div>
             </aside>
             <div class="fluids-content" id="fluids-content">
-                <p style="color: var(--text-secondary); padding: 20px;">正在加载论文数据...</p>
+                <p style="color: var(--text-secondary); padding: 20px 0;">正在加载论文数据…</p>
             </div>
         </div>
     </main>
@@ -65,12 +65,11 @@
 
     <script>
         let allPapers = [];
-        let currentMode = 'date'; // 'date', 'source', 'stars'
+        let currentMode = 'date';
 
         function getReadPapers() {
             return JSON.parse(localStorage.getItem('fluids_read') || '[]');
         }
-
         function getStarredPapers() {
             return JSON.parse(localStorage.getItem('fluids_stars') || '[]');
         }
@@ -104,106 +103,133 @@
             render();
         }
 
+        function formatDate(dateStr) {
+            var parts = dateStr.split('-');
+            return parts[0] + '年' + parseInt(parts[1]) + '月' + parseInt(parts[2]) + '日';
+        }
+
         function render() {
-            const contentEl = document.getElementById('fluids-content');
-            const sidebarEl = document.getElementById('fluids-sidebar-links');
+            var contentEl = document.getElementById('fluids-content');
+            var sidebarEl = document.getElementById('fluids-sidebar-links');
             contentEl.innerHTML = '';
             sidebarEl.innerHTML = '';
-            
+
             if (allPapers.length === 0) {
-                contentEl.innerHTML = '<p style="color: var(--text-secondary); padding: 20px;">暂无论文数据。</p>';
+                contentEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">暂无论文。</p>';
                 return;
             }
 
-            const searchQuery = document.getElementById('fluids-local-search').value.toLowerCase();
-            const readPapers = getReadPapers();
-            const starredPapers = getStarredPapers();
+            var searchQuery = document.getElementById('fluids-local-search').value.toLowerCase();
+            var readPapers = getReadPapers();
+            var starredPapers = getStarredPapers();
 
-            let papersToRender = allPapers.filter(item => {
+            var papersToRender = allPapers.filter(function(item) {
                 if (currentMode === 'stars' && !starredPapers.includes(item.filename)) return false;
                 if (searchQuery) {
-                    const text = (item.title + ' ' + item.authors).toLowerCase();
+                    var text = (item.title + ' ' + item.authors).toLowerCase();
                     if (!text.includes(searchQuery)) return false;
                 }
                 return true;
             });
 
             if (papersToRender.length === 0) {
-                contentEl.innerHTML = '<p style="color: var(--text-secondary); padding: 20px;">没有找到匹配的论文。</p>';
+                var msg = currentMode === 'stars' ? '还没有收藏任何论文。' : '没有找到匹配的论文。';
+                contentEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">' + msg + '</p>';
                 return;
             }
 
-            const groups = {};
-            papersToRender.forEach(item => {
-                let groupId, displayGroup;
-                if (currentMode === 'date' || currentMode === 'stars') {
-                    const parts = item.date.split('-');
-                    displayGroup = `${parts[0]}年${parseInt(parts[1])}月${parseInt(parts[2])}日`;
-                    groupId = item.date;
-                } else if (currentMode === 'source') {
+            // Group
+            var groups = {};
+            var groupOrder = [];
+            papersToRender.forEach(function(item) {
+                var groupId, displayGroup;
+                if (currentMode === 'source') {
                     displayGroup = item.source;
                     groupId = item.source.replace(/[^a-zA-Z0-9]/g, '_');
+                } else {
+                    displayGroup = formatDate(item.date);
+                    groupId = item.date;
                 }
-
-                if (!groups[groupId]) groups[groupId] = { display: displayGroup, items: [] };
+                if (!groups[groupId]) {
+                    groups[groupId] = { display: displayGroup, items: [] };
+                    groupOrder.push(groupId);
+                }
                 groups[groupId].items.push(item);
             });
-            
-            for (const [groupId, groupData] of Object.entries(groups)) {
-                const a = document.createElement('a');
-                a.href = '#' + groupId;
+
+            groupOrder.forEach(function(groupId) {
+                var groupData = groups[groupId];
+
+                // Sidebar link
+                var a = document.createElement('a');
+                a.href = '#g-' + groupId;
                 a.textContent = groupData.display;
                 sidebarEl.appendChild(a);
-                
-                const groupDiv = document.createElement('div');
+
+                // Group container
+                var groupDiv = document.createElement('div');
                 groupDiv.className = 'date-group';
-                groupDiv.id = groupId;
-                
-                const header = document.createElement('h2');
+                groupDiv.id = 'g-' + groupId;
+
+                var header = document.createElement('h2');
                 header.className = 'date-header';
                 header.textContent = groupData.display;
                 groupDiv.appendChild(header);
-                
-                const ul = document.createElement('ul');
-                ul.className = 'item-list stagger';
-                
-                groupData.items.forEach(item => {
-                    const li = document.createElement('li');
-                    li.className = 'fade-in';
-                    
-                    const isRead = readPapers.includes(item.filename);
-                    const isStarred = starredPapers.includes(item.filename);
-                    const linkClass = isRead ? 'item-link read' : 'item-link';
-                    const starClass = isStarred ? 'star-btn active' : 'star-btn';
-                    
-                    li.innerHTML = `
-                        <a href="post.html?file=../fluids/${item.filename}" class="${linkClass}" onclick="markRead('${item.filename}')">
-                            <span class="item-title">${item.title}</span>
-                            <span class="item-meta">${item.date} · ${item.source} · ${item.authors}</span>
-                            <button class="${starClass}" onclick="toggleStar(event, '${item.filename}')" title="收藏/取消收藏">★</button>
-                        </a>
-                    `;
+
+                var ul = document.createElement('ul');
+                ul.className = 'item-list';
+
+                groupData.items.forEach(function(item) {
+                    var li = document.createElement('li');
+
+                    var isRead = readPapers.includes(item.filename);
+                    var isStarred = starredPapers.includes(item.filename);
+                    var linkClass = 'item-link' + (isRead ? ' read' : '');
+
+                    var link = document.createElement('a');
+                    link.href = 'post.html?file=../fluids/' + item.filename;
+                    link.className = linkClass;
+                    link.onclick = function() { markRead(item.filename); };
+
+                    var title = document.createElement('span');
+                    title.className = 'item-title';
+                    title.textContent = item.title;
+
+                    var meta = document.createElement('span');
+                    meta.className = 'item-meta';
+                    meta.textContent = item.source + ' · ' + item.authors;
+
+                    var starBtn = document.createElement('button');
+                    starBtn.className = 'star-btn' + (isStarred ? ' active' : '');
+                    starBtn.textContent = '★';
+                    starBtn.title = isStarred ? '取消收藏' : '收藏';
+                    starBtn.onclick = function(e) { toggleStar(e, item.filename); };
+
+                    link.appendChild(title);
+                    link.appendChild(meta);
+                    link.appendChild(starBtn);
+                    li.appendChild(link);
                     ul.appendChild(li);
                 });
-                
+
                 groupDiv.appendChild(ul);
                 contentEl.appendChild(groupDiv);
-            }
+            });
         }
 
         document.addEventListener('DOMContentLoaded', function() {
             fetch('fluids.json')
-                .then(response => {
+                .then(function(response) {
                     if (!response.ok) throw new Error('网络请求失败');
                     return response.json();
                 })
-                .then(data => {
+                .then(function(data) {
                     allPapers = data;
                     render();
                 })
-                .catch(error => {
+                .catch(function(error) {
                     console.error('Error loading fluids.json:', error);
-                    document.getElementById('fluids-content').innerHTML = '<p style="color: red; padding: 20px;">加载失败：请确保在本地服务器环境下运行。</p>';
+                    document.getElementById('fluids-content').innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">加载失败，请确保在服务器环境下运行。</p>';
                 });
         });
     </script>
