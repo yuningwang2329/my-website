@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="个人简历 — 教育背景与工作经历">
+    <meta name="description" content="个人简历与经历">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
     <title>简历</title>
     <link rel="stylesheet" href="style.css">
@@ -37,43 +37,41 @@
 
     <main class="main stagger">
         <h1 class="page-title fade-in">简历</h1>
-        <p class="page-desc fade-in">基本情况</p>
+        <p class="page-desc fade-in">学术与工作经历时间轴</p>
 
-        <div class="prose stagger">
-            <section class="resume-block fade-in">
-                <h2>教育背景</h2>
-                <div class="resume-entry">
-                    <div class="resume-time">202x – 202x</div>
-                    <h3>某某大学 · 理学学士 / 计算机科学</h3>
-                    <p>主修课程：数据结构、算法设计、计算机网络等。获得校级一等奖学金。</p>
+        <h2 class="fade-in">教育经历</h2>
+        <div class="timeline stagger fade-in">
+            <div class="timeline-item fade-in">
+                <div class="timeline-header">
+                    <span class="timeline-title">理学博士 · 北京应用物理与计算数学研究所</span>
+                    <span class="timeline-date">2022.09 — 至今</span>
                 </div>
-            </section>
-
-            <hr class="divider fade-in">
-
-            <section class="resume-block fade-in">
-                <h2>工作经历</h2>
-                <div class="resume-entry">
-                    <div class="resume-time">202x – 至今</div>
-                    <h3>某科技公司 · 前端开发工程师</h3>
-                    <p>负责公司核心产品的 Web 端开发，使用 React 和 Vue 构建高性能的用户界面。重构了遗留代码，将页面加载速度提升了 40%。</p>
+                <p class="timeline-desc">专业：流体力学。<br>导师：王术教授，主要研究方向为偏微分方程及其应用。</p>
+            </div>
+            
+            <div class="timeline-item fade-in">
+                <div class="timeline-header">
+                    <span class="timeline-title">理学学士 · 北京工业大学</span>
+                    <span class="timeline-date">2018.09 — 2022.07</span>
                 </div>
-            </section>
+                <p class="timeline-desc">专业：信息与计算科学。</p>
+            </div>
+        </div>
 
-            <hr class="divider fade-in">
-
-            <section class="resume-block fade-in">
-                <h2>技能</h2>
-                <ul>
-                    <li><strong>编程语言:</strong> JavaScript, HTML/CSS, Python, C++</li>
-                    <li><strong>框架与工具:</strong> React, Node.js, Git, Webpack</li>
-                </ul>
-            </section>
+        <h2 class="fade-in">实习经历</h2>
+        <div class="timeline stagger fade-in">
+            <div class="timeline-item fade-in">
+                <div class="timeline-header">
+                    <span class="timeline-title">AI Agent开发实习生 · 联想研究院</span>
+                    <span class="timeline-date">2024.11 — 2025.04</span>
+                </div>
+                <p class="timeline-desc">探索并参与基于大语言模型的智能体(AI Agent)应用开发与落地工作。</p>
+            </div>
         </div>
     </main>
 
     <footer class="site-footer">
-                <span id="last-updated"></span>
+        <span id="last-updated"></span>
     </footer>
 
     <script src="script.js"></script>

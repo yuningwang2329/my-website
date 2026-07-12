@@ -37,20 +37,30 @@
 
     <main class="main stagger">
         <h1 class="page-title fade-in" id="greeting">你好</h1>
+        <p class="page-desc fade-in">随便记点东西的地方，主要放一些学习笔记和偶尔冒出来的想法。</p>
         
-        <div class="prose fade-in">
-            <p>随便记点东西的地方，主要放一些学习笔记和偶尔冒出来的想法。</p>
-            <ul>
-                <li><a href="publications.html">出版物</a> — 发表过的论文</li>
-                <li><a href="resume.html">简历</a> — 个人经历</li>
-                <li><a href="notes.html">笔记</a> — 随手记的东西</li>
-                <li><a href="fluids.html">流体论文</a> — 每日最新流体文献</li>
-            </ul>
+        <div class="bento-grid stagger fade-in">
+            <a href="publications.html" class="bento-card fade-in">
+                <span class="bento-title">出版物</span>
+                <span class="bento-desc">发表过的学术论文及研究成果。</span>
+            </a>
+            <a href="resume.html" class="bento-card fade-in">
+                <span class="bento-title">简历</span>
+                <span class="bento-desc">个人的学术及工作经历时间轴。</span>
+            </a>
+            <a href="notes.html" class="bento-card fade-in">
+                <span class="bento-title">笔记</span>
+                <span class="bento-desc">学习过程中的随手记录和一些思考。</span>
+            </a>
+            <a href="fluids.html" class="bento-card fade-in">
+                <span class="bento-title">流体论文</span>
+                <span class="bento-desc">每日自动更新的流体及偏微分方程文献，包含 Arxiv 及核心期刊。</span>
+            </a>
         </div>
     </main>
 
     <footer class="site-footer">
-                <span id="last-updated"></span>
+        <span id="last-updated"></span>
     </footer>
 
     <script src="script.js"></script>
