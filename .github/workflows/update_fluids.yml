@@ -1,0 +1,40 @@
+name: Daily Fluid Papers Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天凌晨0点运行 (UTC时间)
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install feedparser deep-translator imap-tools
+
+    - name: Run update script
+      env:
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
+        EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
+      run: |
+        python scripts/update_fluids.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add fluids/ fluids.json
+        # 只有在有更改时才提交
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update fluid papers" && git push)
