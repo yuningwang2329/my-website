@@ -6,7 +6,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
     <title>阅读中…</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.bootcdn.net/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="https://cdn.staticfile.net/marked/4.3.0/marked.min.js"></script>
     <script>
       MathJax = {
         tex: {
@@ -14,7 +14,10 @@
         }
       };
     </script>
-    <script id="MathJax-script" async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.staticfile.net/mathjax/3.2.2/es5/tex-chtml.js"></script>
+    <link rel="preconnect" href="https://cdn.staticfile.net">
+    <script src="script.js" defer></script>
+    <script src="search.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -52,9 +55,6 @@
     <footer class="site-footer">
                 <span id="last-updated"></span>
     </footer>
-
-    <script src="script.js"></script>
-    <script src="search.js"></script>
     <script>
         var urlParams = new URLSearchParams(window.location.search);
         var fileName = urlParams.get('file');

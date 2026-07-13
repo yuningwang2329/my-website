@@ -23,8 +23,8 @@
         --link: #3b82f6;
         --nav-bg: rgba(9, 9, 11, 0.72);
         --surface: #18181b;
-        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -39,16 +39,17 @@ html {
 }
 
 body {
-    font-family: "SF Pro Text", "SF Pro Display", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
     color: var(--text);
-    min-height: 100vh;
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 15px;
-    line-height: 1.6;
     letter-spacing: -0.015em;
 }
 
@@ -996,13 +997,34 @@ h3 {
 @media (max-width: 768px) {
     .fluids-layout {
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
     }
     .fluids-sidebar {
         flex: none;
         width: 100%;
         position: static;
         max-height: none;
+        padding-bottom: 8px;
+    }
+    .folder-group {
+        margin-top: 16px !important;
+    }
+    .folder-list {
+        max-height: 180px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 4px;
+        background: var(--surface);
+    }
+    /* Scrollbar for mobile lists */
+    .folder-list::-webkit-scrollbar {
+        width: 4px;
+    }
+    .folder-list::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 4px;
     }
 }
 
