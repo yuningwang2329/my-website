@@ -43,21 +43,15 @@
                     <div class="folder-header">文献库</div>
                     <ul class="folder-list" id="main-folders">
                         <li>
-                            <a href="#" class="folder-link active" onclick="switchFolder('inbox', this); return false;">
-                                <span>收件箱</span>
-                                <span class="sidebar-count" id="count-inbox">0</span>
+                            <a href="#" class="folder-link active" onclick="switchFolder('archive', this); return false;">
+                                <span>所有文献</span>
+                                <span class="sidebar-count" id="count-archive">0</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="folder-link" onclick="switchFolder('starred', this); return false;">
                                 <span>收藏夹</span>
                                 <span class="sidebar-count" id="count-starred">0</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="folder-link" onclick="switchFolder('archive', this); return false;">
-                                <span>所有文献</span>
-                                <span class="sidebar-count" id="count-archive">0</span>
                             </a>
                         </li>
                     </ul>
@@ -86,7 +80,7 @@
             <!-- Right Content Area (List View) -->
             <div class="fluids-content">
                 <div class="content-header">
-                    <h1 class="page-title" id="view-title">收件箱</h1>
+                    <h1 class="page-title" id="view-title">所有文献</h1>
                     <div class="content-actions">
                         <button id="mark-all-read" class="action-btn" style="display: none;" onclick="markAllRead()">标为已读</button>
                     </div>
@@ -105,7 +99,7 @@
 
     <script>
         let allPapers = [];
-        let currentFolder = 'inbox'; // inbox | starred | archive | journal:{name} | topic:{tag}
+        let currentFolder = 'archive'; // archive | starred | journal:{name} | topic:{tag}
         
         function getReadPapers() {
             return JSON.parse(localStorage.getItem('fluids_read') || '[]');
@@ -126,8 +120,9 @@
             let read = getReadPapers();
             let added = false;
             allPapers.forEach(p => {
-                if (currentFolder === 'inbox' || 
-                   (currentFolder.startsWith('topic:') && (p.tags || []).includes(currentFolder.replace('topic:', '')))) {
+                if (currentFolder === 'archive' || 
+                   (currentFolder.startsWith('topic:') && (p.tags || []).includes(currentFolder.replace('topic:', ''))) ||
+                   (currentFolder.startsWith('journal:') && p.source === currentFolder.replace('journal:', ''))) {
                     if (!read.includes(p.filename)) {
                         read.push(p.filename);
                         added = true;
@@ -162,7 +157,6 @@
             
             // Update title
             const titles = {
-                'inbox': '收件箱',
                 'starred': '收藏夹',
                 'archive': '所有文献',
                 'topic:stability': '水动力稳定性'
@@ -186,22 +180,28 @@
             let starredPapers = getStarredPapers();
             
             // 1. Calculate and update sidebar counts
-            let inboxCount = 0;
             let starredCount = starredPapers.length;
             let archiveCount = allPapers.length;
             let topicCounts = { 'stability': 0 };
             let journalCounts = {};
             
+            let unreadInCurrentFolder = 0;
+            
             allPapers.forEach(p => {
-                if (!readPapers.includes(p.filename)) inboxCount++;
                 journalCounts[p.source] = (journalCounts[p.source] || 0) + 1;
                 let tags = p.tags || [];
                 tags.forEach(t => {
                     if (topicCounts[t] !== undefined) topicCounts[t]++;
                 });
+                
+                // Calculate unread items for current folder to decide if mark all read button is needed
+                if (!readPapers.includes(p.filename)) {
+                    if (currentFolder === 'archive') unreadInCurrentFolder++;
+                    if (currentFolder.startsWith('topic:') && tags.includes(currentFolder.replace('topic:', ''))) unreadInCurrentFolder++;
+                    if (currentFolder.startsWith('journal:') && p.source === currentFolder.replace('journal:', '')) unreadInCurrentFolder++;
+                }
             });
             
-            document.getElementById('count-inbox').textContent = inboxCount;
             document.getElementById('count-starred').textContent = starredCount;
             document.getElementById('count-archive').textContent = archiveCount;
             document.getElementById('count-stability').textContent = topicCounts['stability'];
@@ -319,6 +319,12 @@
                 groupDiv.appendChild(ul);
                 container.appendChild(groupDiv);
             });
+            
+            // 4. Toggle mark-all-read button visibility
+            let markBtn = document.getElementById('mark-all-read');
+            if (markBtn) {
+                markBtn.style.display = unreadInCurrentFolder > 0 ? 'inline-block' : 'none';
+            }
         }
 
         document.addEventListener('DOMContentLoaded', function() {
