@@ -363,6 +363,19 @@ def main():
             
             filename = create_markdown(p['title'], p['authors'], p['date'], p['source'], p['link'], p['abstract_en'], abstract_zh)
             
+            # Tag topics
+            tags = []
+            stab_keywords = [
+                'hydrodynamic stability', 'couette', 'poiseuille', 'shear flow', 
+                'inviscid damping', 'enhanced dissipation', 'dongyi wei', 
+                'zhifei zhang', 'taylor-couette', 'kolmogorov flow', 
+                'boundary layer stability', 'resolvent estimate', 'transition to turbulence', 
+                'orr-sommerfeld', 'rayleigh equation', 'hydrodynamic instability'
+            ]
+            text_for_tagging = (p['title'] + ' ' + p.get('abstract_en', '')).lower()
+            if any(k in text_for_tagging for k in stab_keywords):
+                tags.append('stability')
+            
             new_papers_data.append({
                 'title': clean_title(p['title']),
                 'authors': p['authors'],
@@ -370,7 +383,8 @@ def main():
                 'source': p['source'],
                 'link': p.get('link', ''),
                 'abstract_en': p.get('abstract_en', ''),
-                'filename': filename
+                'filename': filename,
+                'tags': tags
             })
             existing_titles.add(compare_title)
 
