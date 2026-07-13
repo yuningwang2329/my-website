@@ -836,6 +836,39 @@ h3 {
     transform: translateY(-1px);
 }
 
+.filter-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    min-height: 28px;
+}
+
+.filter-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    background: var(--surface);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+}
+
+.filter-tag-close {
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+
+.filter-tag-close:hover {
+    opacity: 1;
+    color: var(--text);
+}
+
 /* ---------- Paper List ---------- */
 .paper-group {
     margin-bottom: 32px;

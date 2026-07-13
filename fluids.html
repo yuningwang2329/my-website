@@ -70,8 +70,15 @@
                 </div>
                 
                 <div class="folder-group" style="margin-top: 24px;">
-                    <div class="folder-header">按期刊</div>
-                    <ul class="folder-list" id="journal-folders">
+                    <div class="folder-header">筛选：期刊</div>
+                    <ul class="folder-list" id="journal-filters">
+                        <!-- Dynamically populated -->
+                    </ul>
+                </div>
+                
+                <div class="folder-group" style="margin-top: 24px;">
+                    <div class="folder-header">筛选：月份</div>
+                    <ul class="folder-list" id="month-filters">
                         <!-- Dynamically populated -->
                     </ul>
                 </div>
@@ -79,11 +86,15 @@
             
             <!-- Right Content Area (List View) -->
             <div class="fluids-content">
-                <div class="content-header">
+                <div class="content-header" style="margin-bottom: 12px;">
                     <h1 class="page-title" id="view-title">所有文献</h1>
                     <div class="content-actions">
                         <button id="mark-all-read" class="action-btn" style="display: none;" onclick="markAllRead()">标为已读</button>
                     </div>
+                </div>
+                
+                <div id="filter-tags-container" class="filter-tags">
+                    <!-- Active filter tags will appear here -->
                 </div>
                 
                 <div id="fluids-list-container">
@@ -99,7 +110,9 @@
 
     <script>
         let allPapers = [];
-        let currentFolder = 'archive'; // archive | starred | journal:{name} | topic:{tag}
+        let baseView = 'archive'; // archive | starred | topic:stability
+        let filterJournal = null;
+        let filterMonth = null;
         
         function getReadPapers() {
             return JSON.parse(localStorage.getItem('fluids_read') || '[]');
@@ -116,17 +129,28 @@
             }
         }
         
+        function getPapersToRender() {
+            let readPapers = getReadPapers();
+            let starredPapers = getStarredPapers();
+            return allPapers.filter(p => {
+                if (baseView === 'starred' && !starredPapers.includes(p.filename)) return false;
+                if (baseView.startsWith('topic:') && !(p.tags || []).includes(baseView.replace('topic:', ''))) return false;
+                
+                if (filterJournal && p.source !== filterJournal) return false;
+                if (filterMonth && formatMonth(p.date) !== filterMonth) return false;
+                return true;
+            });
+        }
+        
         function markAllRead() {
             let read = getReadPapers();
             let added = false;
-            allPapers.forEach(p => {
-                if (currentFolder === 'archive' || 
-                   (currentFolder.startsWith('topic:') && (p.tags || []).includes(currentFolder.replace('topic:', ''))) ||
-                   (currentFolder.startsWith('journal:') && p.source === currentFolder.replace('journal:', ''))) {
-                    if (!read.includes(p.filename)) {
-                        read.push(p.filename);
-                        added = true;
-                    }
+            let currentPapers = getPapersToRender();
+            
+            currentPapers.forEach(p => {
+                if (!read.includes(p.filename)) {
+                    read.push(p.filename);
+                    added = true;
                 }
             });
             if (added) {
@@ -149,24 +173,42 @@
         }
 
         function switchFolder(folderId, element) {
-            currentFolder = folderId;
-            document.querySelectorAll('.folder-link').forEach(el => el.classList.remove('active'));
+            baseView = folderId;
+            document.querySelectorAll('#main-folders .folder-link, #topic-folders .folder-link').forEach(el => el.classList.remove('active'));
             if (element) {
                 element.classList.add('active');
             }
             
-            // Update title
-            const titles = {
-                'starred': '收藏夹',
-                'archive': '所有文献',
-                'topic:stability': '水动力稳定性'
-            };
-            if (folderId.startsWith('journal:')) {
-                document.getElementById('view-title').textContent = folderId.replace('journal:', '');
+            const titles = { 'starred': '收藏夹', 'archive': '所有文献', 'topic:stability': '水动力稳定性' };
+            document.getElementById('view-title').textContent = titles[baseView] || '文献库';
+            render();
+        }
+        
+        function toggleJournalFilter(j, element) {
+            if (filterJournal === j) {
+                filterJournal = null; 
             } else {
-                document.getElementById('view-title').textContent = titles[folderId] || '';
+                filterJournal = j;
             }
-            
+            render();
+        }
+        
+        function clearJournalFilter() {
+            filterJournal = null;
+            render();
+        }
+        
+        function toggleMonthFilter(m, element) {
+            if (filterMonth === m) {
+                filterMonth = null; 
+            } else {
+                filterMonth = m;
+            }
+            render();
+        }
+        
+        function clearMonthFilter() {
+            filterMonth = null;
             render();
         }
         
@@ -179,35 +221,29 @@
             let readPapers = getReadPapers();
             let starredPapers = getStarredPapers();
             
-            // 1. Calculate and update sidebar counts
             let starredCount = starredPapers.length;
             let archiveCount = allPapers.length;
             let topicCounts = { 'stability': 0 };
             let journalCounts = {};
-            
-            let unreadInCurrentFolder = 0;
+            let monthCounts = {};
             
             allPapers.forEach(p => {
                 journalCounts[p.source] = (journalCounts[p.source] || 0) + 1;
+                
+                let m = formatMonth(p.date);
+                monthCounts[m] = (monthCounts[m] || 0) + 1;
+                
                 let tags = p.tags || [];
                 tags.forEach(t => {
                     if (topicCounts[t] !== undefined) topicCounts[t]++;
                 });
-                
-                // Calculate unread items for current folder to decide if mark all read button is needed
-                if (!readPapers.includes(p.filename)) {
-                    if (currentFolder === 'archive') unreadInCurrentFolder++;
-                    if (currentFolder.startsWith('topic:') && tags.includes(currentFolder.replace('topic:', ''))) unreadInCurrentFolder++;
-                    if (currentFolder.startsWith('journal:') && p.source === currentFolder.replace('journal:', '')) unreadInCurrentFolder++;
-                }
             });
             
             document.getElementById('count-starred').textContent = starredCount;
             document.getElementById('count-archive').textContent = archiveCount;
             document.getElementById('count-stability').textContent = topicCounts['stability'];
             
-            // Populate Journals if empty
-            let journalList = document.getElementById('journal-folders');
+            let journalList = document.getElementById('journal-filters');
             if (journalList.children.length === 0) {
                 let sortedJournals = Object.keys(journalCounts).sort();
                 sortedJournals.forEach(j => {
@@ -215,7 +251,7 @@
                     let a = document.createElement('a');
                     a.href = '#';
                     a.className = 'folder-link';
-                    a.onclick = function(e) { e.preventDefault(); switchFolder('journal:' + j, this); };
+                    a.onclick = function(e) { e.preventDefault(); toggleJournalFilter(j, this); };
                     
                     let spanName = document.createElement('span');
                     spanName.textContent = j;
@@ -230,35 +266,76 @@
                 });
             }
             
-            // Show/hide mark all read button
-            document.getElementById('mark-all-read').style.display = (currentFolder === 'inbox' && inboxCount > 0) ? 'inline-block' : 'none';
-
-            // 2. Filter papers for the current view
-            let papersToRender = allPapers.filter(p => {
-                if (currentFolder === 'inbox') return !readPapers.includes(p.filename);
-                if (currentFolder === 'starred') return starredPapers.includes(p.filename);
-                if (currentFolder === 'archive') return true;
-                if (currentFolder.startsWith('topic:')) {
-                    return (p.tags || []).includes(currentFolder.replace('topic:', ''));
-                }
-                if (currentFolder.startsWith('journal:')) {
-                    return p.source === currentFolder.replace('journal:', '');
-                }
-                return true;
+            let monthList = document.getElementById('month-filters');
+            if (monthList.children.length === 0) {
+                let sortedMonths = Object.keys(monthCounts).sort((a, b) => {
+                    let pa = a.match(/(\d+)年(\d+)月/);
+                    let pb = b.match(/(\d+)年(\d+)月/);
+                    if (!pa || !pb) return 0;
+                    if (pa[1] !== pb[1]) return parseInt(pb[1]) - parseInt(pa[1]);
+                    return parseInt(pb[2]) - parseInt(pa[2]);
+                });
+                sortedMonths.forEach(m => {
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.href = '#';
+                    a.className = 'folder-link';
+                    a.onclick = function(e) { e.preventDefault(); toggleMonthFilter(m, this); };
+                    
+                    let spanName = document.createElement('span');
+                    spanName.textContent = m;
+                    let spanCount = document.createElement('span');
+                    spanCount.className = 'sidebar-count';
+                    spanCount.textContent = monthCounts[m];
+                    
+                    a.appendChild(spanName);
+                    a.appendChild(spanCount);
+                    li.appendChild(a);
+                    monthList.appendChild(li);
+                });
+            }
+            
+            document.querySelectorAll('#journal-filters .folder-link').forEach(el => {
+                el.classList.toggle('active', el.querySelector('span').textContent === filterJournal);
             });
+            document.querySelectorAll('#month-filters .folder-link').forEach(el => {
+                el.classList.toggle('active', el.querySelector('span').textContent === filterMonth);
+            });
+            
+            let tagsContainer = document.getElementById('filter-tags-container');
+            tagsContainer.innerHTML = '';
+            if (filterJournal) {
+                let tag = document.createElement('div');
+                tag.className = 'filter-tag';
+                tag.innerHTML = `${filterJournal} <span class="filter-tag-close" onclick="clearJournalFilter()">✕</span>`;
+                tagsContainer.appendChild(tag);
+            }
+            if (filterMonth) {
+                let tag = document.createElement('div');
+                tag.className = 'filter-tag';
+                tag.innerHTML = `${filterMonth} <span class="filter-tag-close" onclick="clearMonthFilter()">✕</span>`;
+                tagsContainer.appendChild(tag);
+            }
+
+            let papersToRender = getPapersToRender();
 
             let container = document.getElementById('fluids-list-container');
             container.innerHTML = '';
             
+            let markBtn = document.getElementById('mark-all-read');
             if (papersToRender.length === 0) {
-                container.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">当前文件夹为空。</p>';
+                container.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">该筛选条件下无文献。</p>';
+                if (markBtn) markBtn.style.display = 'none';
                 return;
             }
             
-            // 3. Render list grouped by month
             let groups = {};
             let groupOrder = [];
+            let unreadInCurrentFolder = 0;
+            
             papersToRender.forEach(p => {
+                if (!readPapers.includes(p.filename)) unreadInCurrentFolder++;
+                
                 let month = formatMonth(p.date);
                 if (!groups[month]) {
                     groups[month] = [];
@@ -307,7 +384,6 @@
                     
                     let meta = document.createElement('div');
                     meta.className = 'paper-meta';
-                    // Minimalist dot-separated meta
                     meta.textContent = p.source + ' · ' + p.date + ' · ' + p.authors;
                     
                     link.appendChild(titleRow);
@@ -320,8 +396,6 @@
                 container.appendChild(groupDiv);
             });
             
-            // 4. Toggle mark-all-read button visibility
-            let markBtn = document.getElementById('mark-all-read');
             if (markBtn) {
                 markBtn.style.display = unreadInCurrentFolder > 0 ? 'inline-block' : 'none';
             }
