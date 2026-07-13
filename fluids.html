@@ -70,15 +70,15 @@
                 </div>
                 
                 <div class="folder-group" style="margin-top: 24px;">
-                    <div class="folder-header">筛选：期刊</div>
+                    <div class="sidebar-tabs">
+                        <button class="sidebar-tab active" onclick="switchFilterTab('journal', this)">按期刊</button>
+                        <button class="sidebar-tab" onclick="switchFilterTab('month', this)">按月份</button>
+                    </div>
+                    
                     <ul class="folder-list" id="journal-filters">
                         <!-- Dynamically populated -->
                     </ul>
-                </div>
-                
-                <div class="folder-group" style="margin-top: 24px;">
-                    <div class="folder-header">筛选：月份</div>
-                    <ul class="folder-list" id="month-filters">
+                    <ul class="folder-list" id="month-filters" style="display: none;">
                         <!-- Dynamically populated -->
                     </ul>
                 </div>
@@ -182,6 +182,19 @@
             const titles = { 'starred': '收藏夹', 'archive': '所有文献', 'topic:stability': '水动力稳定性' };
             document.getElementById('view-title').textContent = titles[baseView] || '文献库';
             render();
+        }
+        
+        function switchFilterTab(tabType, element) {
+            document.querySelectorAll('.sidebar-tab').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            
+            if (tabType === 'journal') {
+                document.getElementById('journal-filters').style.display = 'block';
+                document.getElementById('month-filters').style.display = 'none';
+            } else {
+                document.getElementById('journal-filters').style.display = 'none';
+                document.getElementById('month-filters').style.display = 'block';
+            }
         }
         
         function toggleJournalFilter(j, element) {
