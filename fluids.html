@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <main class="main stagger fade-in" style="max-width: 1200px; padding-top: 40px;">
+    <main class="main stagger fade-in">
         <div class="fluids-layout">
             <!-- Left Sidebar (Folder Navigation) -->
             <aside class="fluids-sidebar">
@@ -44,19 +44,19 @@
                     <ul class="folder-list" id="main-folders">
                         <li>
                             <a href="#" class="folder-link active" onclick="switchFolder('inbox', this); return false;">
-                                <span>📥 收件箱</span>
+                                <span>收件箱</span>
                                 <span class="sidebar-count" id="count-inbox">0</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="folder-link" onclick="switchFolder('starred', this); return false;">
-                                <span>⭐ 收藏夹</span>
+                                <span>收藏夹</span>
                                 <span class="sidebar-count" id="count-starred">0</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="folder-link" onclick="switchFolder('archive', this); return false;">
-                                <span>📚 所有文献</span>
+                                <span>所有文献</span>
                                 <span class="sidebar-count" id="count-archive">0</span>
                             </a>
                         </li>
@@ -196,7 +196,7 @@
                     a.onclick = function(e) { e.preventDefault(); switchFolder('journal:' + j, this); };
                     
                     let spanName = document.createElement('span');
-                    spanName.textContent = '📄 ' + j;
+                    spanName.textContent = j;
                     let spanCount = document.createElement('span');
                     spanCount.className = 'sidebar-count';
                     spanCount.textContent = journalCounts[j];
