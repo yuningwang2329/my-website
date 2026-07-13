@@ -46,10 +46,14 @@
                         <button id="btn-date" class="active" onclick="switchMode('date')">日期</button>
                         <button id="btn-source" onclick="switchMode('source')">期刊</button>
                         <button id="btn-stars" onclick="switchMode('stars')">收藏</button>
+                        <button id="btn-read" onclick="switchMode('read')">已读</button>
                     </div>
                 </div>
                 <div class="fluids-search-wrap">
-                    <input type="text" id="fluids-local-search" class="fluids-search" placeholder="搜索标题或作者…" oninput="render()">
+                    <div class="fluids-search-inner">
+                        <svg class="fluids-search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        <input type="text" id="fluids-local-search" class="fluids-search" placeholder="搜索标题或作者…" oninput="render()">
+                    </div>
                 </div>
                 <div class="fluids-sidebar-links" id="fluids-sidebar-links"></div>
             </aside>
@@ -66,6 +70,8 @@
     <script>
         let allPapers = [];
         let currentMode = 'date';
+        var RECENT_DAYS = 30;
+        var showAll = false;
 
         function getReadPapers() {
             return JSON.parse(localStorage.getItem('fluids_read') || '[]');
@@ -97,15 +103,33 @@
 
         function switchMode(mode) {
             currentMode = mode;
-            document.getElementById('btn-date').className = mode === 'date' ? 'active' : '';
-            document.getElementById('btn-source').className = mode === 'source' ? 'active' : '';
-            document.getElementById('btn-stars').className = mode === 'stars' ? 'active' : '';
+            showAll = false;
+            document.querySelectorAll('.segment-control button').forEach(function(btn) {
+                btn.className = btn.id === 'btn-' + mode ? 'active' : '';
+            });
             render();
         }
 
         function formatDate(dateStr) {
             var parts = dateStr.split('-');
             return parts[0] + '年' + parseInt(parts[1]) + '月' + parseInt(parts[2]) + '日';
+        }
+
+        function formatMonth(dateStr) {
+            var parts = dateStr.split('-');
+            return parts[0] + '年' + parseInt(parts[1]) + '月';
+        }
+
+        function isWithinDays(dateStr, days) {
+            var now = new Date();
+            var d = new Date(dateStr);
+            var diff = (now - d) / (1000 * 60 * 60 * 24);
+            return diff <= days;
+        }
+
+        function loadMore() {
+            showAll = true;
+            render();
         }
 
         function render() {
@@ -125,6 +149,7 @@
 
             var papersToRender = allPapers.filter(function(item) {
                 if (currentMode === 'stars' && !starredPapers.includes(item.filename)) return false;
+                if (currentMode === 'read' && !readPapers.includes(item.filename)) return false;
                 if (searchQuery) {
                     var text = (item.title + ' ' + item.authors).toLowerCase();
                     if (!text.includes(searchQuery)) return false;
@@ -132,9 +157,29 @@
                 return true;
             });
 
+            // For date mode, apply recent filter unless showAll
+            var hasOlder = false;
+            if (currentMode === 'date' && !showAll && !searchQuery) {
+                var recentPapers = papersToRender.filter(function(item) {
+                    return isWithinDays(item.date, RECENT_DAYS);
+                });
+                if (recentPapers.length < papersToRender.length) {
+                    hasOlder = true;
+                }
+                if (recentPapers.length > 0) {
+                    papersToRender = recentPapers;
+                }
+                // If no recent papers, show all anyway
+            }
+
             if (papersToRender.length === 0) {
-                var msg = currentMode === 'stars' ? '还没有收藏任何论文。' : '没有找到匹配的论文。';
-                contentEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">' + msg + '</p>';
+                var msgs = {
+                    stars: '还没有收藏任何论文。',
+                    read: '还没有标记已读的论文。',
+                    date: '没有找到匹配的论文。',
+                    source: '没有找到匹配的论文。'
+                };
+                contentEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">' + (msgs[currentMode] || msgs.date) + '</p>';
                 return;
             }
 
@@ -147,8 +192,9 @@
                     displayGroup = item.source;
                     groupId = item.source.replace(/[^a-zA-Z0-9]/g, '_');
                 } else {
-                    displayGroup = formatDate(item.date);
-                    groupId = item.date;
+                    // Group by month for date/stars/read modes
+                    displayGroup = formatMonth(item.date);
+                    groupId = item.date.substring(0, 7); // 2026-07
                 }
                 if (!groups[groupId]) {
                     groups[groupId] = { display: displayGroup, items: [] };
@@ -160,10 +206,15 @@
             groupOrder.forEach(function(groupId) {
                 var groupData = groups[groupId];
 
-                // Sidebar link
+                // Sidebar link with count
                 var a = document.createElement('a');
                 a.href = '#g-' + groupId;
+                var countSpan = document.createElement('span');
+                countSpan.className = 'sidebar-count';
+                countSpan.textContent = groupData.items.length;
                 a.textContent = groupData.display;
+                a.appendChild(document.createTextNode(' '));
+                a.appendChild(countSpan);
                 sidebarEl.appendChild(a);
 
                 // Group container
@@ -174,6 +225,10 @@
                 var header = document.createElement('h2');
                 header.className = 'date-header';
                 header.textContent = groupData.display;
+                var headerCount = document.createElement('span');
+                headerCount.className = 'date-header-count';
+                headerCount.textContent = groupData.items.length + ' 篇';
+                header.appendChild(headerCount);
                 groupDiv.appendChild(header);
 
                 var ul = document.createElement('ul');
@@ -187,27 +242,50 @@
                     var linkClass = 'item-link' + (isRead ? ' read' : '');
 
                     var link = document.createElement('a');
-                    link.href = 'post.html?file=../fluids/' + item.filename;
+                    link.href = 'post.html?file=fluids/' + item.filename;
                     link.className = linkClass;
                     link.onclick = function() { markRead(item.filename); };
+
+                    var titleRow = document.createElement('div');
+                    titleRow.className = 'item-title-row';
 
                     var title = document.createElement('span');
                     title.className = 'item-title';
                     title.textContent = item.title;
 
-                    var meta = document.createElement('span');
-                    meta.className = 'item-meta';
-                    meta.textContent = item.source + ' · ' + item.authors;
-
                     var starBtn = document.createElement('button');
                     starBtn.className = 'star-btn' + (isStarred ? ' active' : '');
-                    starBtn.textContent = '★';
+                    starBtn.innerHTML = '★';
                     starBtn.title = isStarred ? '取消收藏' : '收藏';
                     starBtn.onclick = function(e) { toggleStar(e, item.filename); };
 
-                    link.appendChild(title);
+                    titleRow.appendChild(title);
+                    titleRow.appendChild(starBtn);
+
+                    var meta = document.createElement('span');
+                    meta.className = 'item-meta';
+
+                    var sourcePill = document.createElement('span');
+                    sourcePill.className = 'pill outline';
+                    sourcePill.textContent = item.source;
+
+                    var authorText = document.createElement('span');
+                    authorText.textContent = item.authors;
+
+                    // Show date in non-date modes
+                    if (currentMode === 'source' || currentMode === 'stars' || currentMode === 'read') {
+                        var datePill = document.createElement('span');
+                        datePill.className = 'pill';
+                        datePill.textContent = item.date;
+                        meta.appendChild(sourcePill);
+                        meta.appendChild(datePill);
+                    } else {
+                        meta.appendChild(sourcePill);
+                    }
+                    meta.appendChild(authorText);
+
+                    link.appendChild(titleRow);
                     link.appendChild(meta);
-                    link.appendChild(starBtn);
                     li.appendChild(link);
                     ul.appendChild(li);
                 });
@@ -215,6 +293,18 @@
                 groupDiv.appendChild(ul);
                 contentEl.appendChild(groupDiv);
             });
+
+            // "Load more" button for date mode
+            if (hasOlder && currentMode === 'date' && !showAll) {
+                var loadMoreDiv = document.createElement('div');
+                loadMoreDiv.className = 'load-more-wrap';
+                var btn = document.createElement('button');
+                btn.className = 'load-more-btn';
+                btn.textContent = '加载更早的论文';
+                btn.onclick = loadMore;
+                loadMoreDiv.appendChild(btn);
+                contentEl.appendChild(loadMoreDiv);
+            }
         }
 
         document.addEventListener('DOMContentLoaded', function() {

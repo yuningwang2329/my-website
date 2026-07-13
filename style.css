@@ -757,8 +757,8 @@ h3 {
 }
 
 .segment-control button {
-    padding: 5px 12px;
-    font-size: 0.75rem;
+    padding: 5px 10px;
+    font-size: 0.72rem;
     font-weight: 500;
     font-family: inherit;
     background: transparent;
@@ -791,29 +791,45 @@ h3 {
     }
 }
 
-/* Local search */
+/* Local search — with icon prefix */
 .fluids-search-wrap {
     padding-right: 16px;
     margin-bottom: 16px;
 }
 
-.fluids-search {
-    width: 100%;
-    padding: 7px 10px;
-    border-radius: 8px;
+.fluids-search-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
     border: 1px solid var(--border);
     background: var(--bg);
-    color: var(--text);
-    font-size: 0.8rem;
-    font-family: inherit;
-    box-sizing: border-box;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.fluids-search:focus {
-    outline: none;
+.fluids-search-inner:focus-within {
     border-color: var(--link);
     box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.12);
+}
+
+.fluids-search-icon {
+    width: 14px;
+    height: 14px;
+    fill: var(--text-secondary);
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.fluids-search {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.8rem;
+    font-family: inherit;
+    outline: none;
 }
 
 .fluids-search::placeholder {
@@ -821,9 +837,11 @@ h3 {
     opacity: 0.6;
 }
 
-/* Sidebar date links */
+/* Sidebar links with count badges */
 .fluids-sidebar-links a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: var(--text-secondary);
     text-decoration: none;
     padding: 7px 12px 7px 0;
@@ -835,6 +853,18 @@ h3 {
 
 .fluids-sidebar-links a:hover {
     color: var(--text);
+}
+
+.sidebar-count {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    background: var(--hover);
+    padding: 1px 6px;
+    border-radius: 9999px;
+    font-variant-numeric: tabular-nums;
+    margin-left: 6px;
+    flex-shrink: 0;
 }
 
 /* ---------- Content area ---------- */
@@ -863,6 +893,15 @@ h3 {
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     color: var(--text-secondary);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.date-header-count {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -871,38 +910,39 @@ h3 {
     }
 }
 
-/* Read status */
+/* Title row — inline star button */
+.item-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.item-title-row .item-title {
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Read status — subtle title color change only (no overlapping badge) */
 .item-link.read .item-title {
     color: var(--text-secondary);
 }
 
-.item-link.read::after {
-    content: "已读";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.7rem;
-    color: var(--text-secondary);
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-/* Star button */
+/* Star button — inline in title row */
 .star-btn {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
     background: transparent;
     border: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.2s, transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
     color: var(--text-secondary);
-    padding: 4px;
+    padding: 2px 4px;
     line-height: 1;
+    flex-shrink: 0;
+    margin-top: 1px;
 }
 
 .item-link:hover .star-btn {
@@ -911,7 +951,7 @@ h3 {
 
 .star-btn:hover {
     opacity: 0.7 !important;
-    transform: translateY(-50%) scale(1.15);
+    transform: scale(1.15);
 }
 
 .star-btn.active {
@@ -919,9 +959,39 @@ h3 {
     color: #f5a623;
 }
 
-/* Adjust item-link when it has star/read badge */
-.fluids-content .item-link {
-    padding-right: 52px;
+/* Source pill in meta */
+.fluids-content .item-meta .pill {
+    flex-shrink: 0;
+}
+
+/* Load more button */
+.load-more-wrap {
+    text-align: center;
+    padding: 24px 0 48px;
+}
+
+.load-more-btn {
+    padding: 10px 28px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    font-weight: 500;
+    background: var(--surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+    letter-spacing: -0.01em;
+}
+
+.load-more-btn:hover {
+    color: var(--text);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+}
+
+.load-more-btn:active {
+    transform: scale(0.97);
 }
 
 /* ---------- Responsive: collapse sidebar on small screens ---------- */
@@ -958,3 +1028,4 @@ h3 {
         padding-right: 0;
     }
 }
+

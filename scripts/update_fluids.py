@@ -4,6 +4,7 @@ import uuid
 import datetime
 import time
 import urllib.request
+import urllib.parse
 import feedparser
 import re
 from deep_translator import GoogleTranslator
@@ -18,16 +19,28 @@ LLM_MODEL = os.environ.get("LLM_MODEL", "Qwen/Qwen2.5-7B-Instruct") # Fast cheap
 
 def ai_paper_filter(title, abstract):
     fallback_keywords = [
-        'fluid', 'navier', 'euler', 'hydrodynamic', 'mhd', 'magnetohydrodynamic',
-        'boussinesq', 'water wave', 'boundary layer', 'compressible', 'incompressible',
-        'vortex', 'vorticity', 'plasma', 'boltzmann', 'viscous', 'inviscid',
-        'burgers', 'korteweg', 'stokes', 'capillary', 'convection', 'turbulence', 'shallow water',
-        'dispersive', 'blow-up', 'blow up', 'well-posedness', 'operator', 'kdv', 'vlasov',
-        'schrodinger', 'schrödinger', 'dongyi wei', 'camassa', 'fluid-structure'
+        'fluid', 'navier-stokes', 'navier stokes', 'euler equation',
+        'hydrodynamic', 'mhd', 'magnetohydrodynamic',
+        'boussinesq', 'water wave', 'boundary layer',
+        'compressible flow', 'incompressible',
+        'vortex', 'vorticity', 'viscous flow', 'inviscid flow',
+        'burgers equation', 'korteweg', 'stokes equation', 'stokes system',
+        'capillary', 'convection', 'turbulence', 'shallow water',
+        'couette', 'thin-film', 'thin film', 'hele-shaw',
+        'dongyi wei', 'camassa', 'fluid-structure',
+    ]
+    exclude_keywords = [
+        'quantum information', 'algebraic geometry', 'general relativity',
+        'number theory', 'riemannian', 'groupoid', 'k-theory',
+        'biofilm', 'ecology', 'epidem', 'sir model',
+        'machine learning', 'neural network', 'deep learning',
+        'stochastic gradient', 'tensor pca',
     ]
     text = (title + " " + abstract).lower()
     
     if not LLM_API_KEY:
+        if any(ex in text for ex in exclude_keywords):
+            return False
         return any(kw in text for kw in fallback_keywords)
         
     try:
@@ -36,7 +49,13 @@ def ai_paper_filter(title, abstract):
             "Content-Type": "application/json",
             "Authorization": f"Bearer {LLM_API_KEY}"
         }
-        system_prompt = "You are a strict expert in fluid dynamics and PDEs. Does this paper belong to fluid mechanics, or abstract mathematics explicitly motivated by fluid mechanics (e.g., Navier-Stokes, Euler, fluid-related dispersive/parabolic equations, or fluid-related operator theory like Dongyi Wei's work)? Note: General operator theory, pure geometry, relativity, or unrelated PDEs must be 'NO'. Answer ONLY 'YES' or 'NO'."
+        system_prompt = """You are a strict expert in fluid dynamics and PDEs. Classify whether this paper belongs to fluid mechanics or closely related mathematical analysis.
+
+ACCEPT: Navier-Stokes, Euler equations (fluid), Boltzmann (kinetic theory of gases), MHD, Boussinesq, water waves, KdV, Camassa-Holm, thin-film equations, boundary layers, vortex dynamics, compressible/incompressible flow, fluid-structure interaction, dispersive PDEs motivated by fluids, operator theory in hydrodynamic stability (e.g. Dongyi Wei's work).
+
+REJECT: algebraic geometry blow-ups, quantum information Schrödinger, general relativity (Einstein/FLRW), number theory, Riemannian geometry, biofilm/ecology/epidemiology models, elastic wave propagation, stochastic gradient descent, machine learning, Calabi-Yau, SIR models, K-theory, groupoid homology.
+
+Answer ONLY 'YES' or 'NO'."""
         user_prompt = f"Title: {title}\nAbstract: {abstract}"
         data = {
             "model": LLM_MODEL,
@@ -55,7 +74,19 @@ def ai_paper_filter(title, abstract):
         return "YES" in answer
     except Exception as e:
         print(f"AI Filter Error: {e}. Using fallback.")
+        if any(ex in text for ex in exclude_keywords):
+            return False
         return any(kw in text for kw in fallback_keywords)
+
+
+def clean_title(title):
+    """Strip MathML/HTML tags from titles and restore common math symbols."""
+    import html
+    title = html.unescape(title)
+    title = re.sub(r'<math[^>]*>.*?</math>', lambda m: re.sub(r'<[^>]+>', '', m.group(0)), title, flags=re.DOTALL|re.IGNORECASE)
+    title = re.sub(r'<[^>]+>', '', title)
+    title = re.sub(r'\s+', ' ', title).strip()
+    return title
 
 
 # --- 订阅配置池 (Feeds Config) ---
@@ -227,7 +258,7 @@ def fetch_feed(feed_config):
                     date_str = f"{date_parts[0]}-01-01"
                     
                 papers.append({
-                    'title': cr_title, 'authors': cr_authors, 'date': date_str,
+                    'title': clean_title(cr_title), 'authors': cr_authors, 'date': date_str,
                     'source': source_name, 'link': f"https://doi.org/{cr_doi}", 'abstract_en': cr_abs
                 })
         except Exception as e:
@@ -256,7 +287,7 @@ def fetch_feed(feed_config):
                     authors = ", ".join(author.name for author in entry.get('authors', []))
                     abstract_en = summary.replace('\n', ' ')
                     papers.append({
-                        'title': title, 'authors': authors, 'date': date_str,
+                        'title': clean_title(title), 'authors': authors, 'date': date_str,
                         'source': source_name, 'link': link, 'abstract_en': abstract_en
                     })
                 
@@ -272,40 +303,12 @@ def fetch_feed(feed_config):
                         else:
                             abstract_en = clean_summary[:1000]
                     papers.append({
-                        'title': cr_title if cr_title else title, 
+                        'title': clean_title(cr_title) if cr_title else clean_title(title), 
                         'authors': authors, 'date': date_str,
                         'source': source_name, 'link': link, 'abstract_en': abstract_en
                     })
 
-                elif f_type == "email_rss":
-                    # Email RSS
-                    content = ""
-                    if 'content' in entry:
-                        content = entry.content[0].value
-                    else:
-                        content = summary
-                    
-                    dois = extract_all_dois(content)[:10] # limit to 10 DOIs per email
-                    if dois:
-                        for doi in dois:
-                            cr_title, cr_auth, cr_abs = query_crossref_by_doi(doi)
-                            if cr_title:
-                                papers.append({
-                                    'title': cr_title,
-                                    'authors': cr_auth if cr_auth else "见原链接 (See link)",
-                                    'date': date_str,
-                                    'source': source_name,
-                                    'link': f"https://doi.org/{doi}",
-                                    'abstract_en': cr_abs if cr_abs else "摘要提取失败，请点击原文链接查看。"
-                                })
-                    else:
-                        if not title or "ToC Alert" in title or "Table of Contents" in title:
-                            continue
-                        clean_text = re.sub(r'<[^>]+>', ' ', content)
-                        papers.append({
-                            'title': title, 'authors': "Email Sender", 'date': date_str,
-                            'source': source_name, 'link': link, 'abstract_en': clean_text[:2000]
-                        })
+
         except Exception as e:
             print(f"Error fetching {source_name}: {e}")
             
@@ -346,10 +349,12 @@ def main():
             filename = create_markdown(p['title'], p['authors'], p['date'], p['source'], p['link'], p['abstract_en'], abstract_zh)
             
             new_papers_data.append({
-                'title': p['title'],
+                'title': clean_title(p['title']),
                 'authors': p['authors'],
                 'date': p['date'],
                 'source': p['source'],
+                'link': p.get('link', ''),
+                'abstract_en': p.get('abstract_en', ''),
                 'filename': filename
             })
             existing_titles.add(compare_title)

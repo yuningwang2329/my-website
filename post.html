@@ -61,7 +61,8 @@
         var contentDiv = document.getElementById('content');
 
         if (fileName) {
-            fetch('notes/' + fileName)
+            var fetchPath = fileName.includes('/') ? fileName : 'notes/' + fileName;
+            fetch(fetchPath)
                 .then(function(response) {
                     if (!response.ok) throw new Error('文件不存在或无法加载。如果是本地预览，请使用 preview.command 启动服务器。');
                     return response.text();
@@ -78,7 +79,7 @@
                     contentDiv.innerHTML = '<h1>加载失败</h1><p>' + error.message + '</p>';
                 });
         } else {
-            contentDiv.innerHTML = '<h1>未指定笔记</h1><p>请从<a href="notes.html">笔记列表</a>中选择一篇阅读。</p>';
+            contentDiv.innerHTML = '<h1>未指定文章</h1><p>请从<a href="notes.html">笔记列表</a>或<a href="fluids.html">流体论文</a>中选择一篇阅读。</p>';
         }
     </script>
 </body>

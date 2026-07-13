@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import time
 import urllib.request
 
@@ -9,6 +10,23 @@ MD_DIR = 'fluids'
 LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
 LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.siliconflow.cn/v1")
 LLM_MODEL = os.environ.get("LLM_MODEL", "Qwen/Qwen2.5-7B-Instruct")
+
+def extract_abstract_from_md(filename):
+    """Extract English abstract from a markdown file as fallback."""
+    filepath = os.path.join(MD_DIR, filename)
+    if not os.path.exists(filepath):
+        return ""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        match = re.search(r'## 英文摘要\s*\n+(.*)', content, re.DOTALL)
+        if match:
+            abstract = match.group(1).strip()
+            if abstract and '无摘要提供' not in abstract:
+                return abstract
+    except Exception:
+        pass
+    return ""
 
 def ai_paper_filter(title, abstract):
     if not LLM_API_KEY:
@@ -21,7 +39,13 @@ def ai_paper_filter(title, abstract):
             "Content-Type": "application/json",
             "Authorization": f"Bearer {LLM_API_KEY}"
         }
-        system_prompt = "You are a strict expert in fluid dynamics and PDEs. Does this paper belong to fluid mechanics, or abstract mathematics explicitly motivated by fluid mechanics (e.g., Navier-Stokes, Euler, fluid-related dispersive/parabolic equations, or fluid-related operator theory like Dongyi Wei's work)? Note: General operator theory, pure geometry, relativity, or unrelated PDEs must be 'NO'. Answer ONLY 'YES' or 'NO'."
+        system_prompt = """You are a strict expert in fluid dynamics and PDEs. Classify whether this paper belongs to fluid mechanics or closely related mathematical analysis.
+
+ACCEPT: Navier-Stokes, Euler equations (fluid), Boltzmann (kinetic theory of gases), MHD, Boussinesq, water waves, KdV, Camassa-Holm, thin-film equations, boundary layers, vortex dynamics, compressible/incompressible flow, fluid-structure interaction, dispersive PDEs motivated by fluids, operator theory in hydrodynamic stability (e.g. Dongyi Wei's work).
+
+REJECT: algebraic geometry blow-ups, quantum information Schrödinger, general relativity (Einstein/FLRW), number theory, Riemannian geometry, biofilm/ecology/epidemiology models, elastic wave propagation, stochastic gradient descent, machine learning, Calabi-Yau, SIR models, K-theory, groupoid homology.
+
+Answer ONLY 'YES' or 'NO'."""
         user_prompt = f"Title: {title}\nAbstract: {abstract}"
         data = {
             "model": LLM_MODEL,
@@ -60,7 +84,14 @@ def main():
 
     for i, p in enumerate(papers):
         title = p.get('title', '')
-        abstract = p.get('abstract_en', '')
+        abstract = p.get('abstract_en', '') or ''
+        
+        # Fallback: extract abstract from markdown file if not in JSON
+        if not abstract or '无摘要提供' in abstract:
+            filename = p.get('filename', '')
+            if filename:
+                abstract = extract_abstract_from_md(filename)
+        
         print(f"[{i+1}/{len(papers)}] Checking: {title[:60]}...")
         
         if ai_paper_filter(title, abstract):
