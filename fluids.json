@@ -8,27 +8,6 @@
     },
     {
         "source": "J. Differ. Equ.",
-        "title": "Universality of robust chaotic dynamics in a family of one-dimensional Lorenz maps",
-        "authors": "Alexey Kazakov, Vladislav Koryakin, Klim Safonov, Kirill Zaichikov",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-Universality-of-robust-chaotic-dynamics-115c9d.md"
-    },
-    {
-        "source": "J. Differ. Equ.",
-        "title": "Almost periodic response solutions for Klein-Gordon equations on multi-dimensional spheres",
-        "authors": "Mingjie Sun, Xiong Li",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-Almost-periodic-response-solutions-for-K-0c45ff.md"
-    },
-    {
-        "source": "J. Differ. Equ.",
-        "title": "On the degeneration of Kovalevskaya exponents of Laurent series solutions of quasi-homogeneous vector fields",
-        "authors": "Hayato Chiba",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-On-the-degeneration-of-Kovalevskaya-expo-11f697.md"
-    },
-    {
-        "source": "J. Differ. Equ.",
         "title": "On the well-posedness and stability of KdV-type solitary waves for the Zakharov-Ito system",
         "authors": "Fan Wu, Yaqing Liu, Boling Guo",
         "date": "2026-07-12",
@@ -43,13 +22,6 @@
     },
     {
         "source": "J. Funct. Anal.",
-        "title": "Second quantization and evolution operators in infinite dimension",
-        "authors": "Davide Addona, Paolo De Fazio",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-Second-quantization-and-evolution-operat-ed0400.md"
-    },
-    {
-        "source": "J. Funct. Anal.",
         "title": "Stable blowup for supercritical wave maps into perturbed spheres",
         "authors": "Roland Donninger, Birgit Schörkhuber, Alexander Wittenstein",
         "date": "2026-07-12",
@@ -61,13 +33,6 @@
         "authors": "Jingrui Cheng, Yulun Xu",
         "date": "2026-07-12",
         "filename": "2026-07-12-Viscosity-solution-to-complex-Hessian-qu-ff5023.md"
-    },
-    {
-        "source": "J. Funct. Anal.",
-        "title": "Groupoid homology and K-theory for algebraic actions from number theory",
-        "authors": "Chris Bruce, Yosuke Kubota, Takuya Takeishi",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-Groupoid-homology-and-K-theory-for-algeb-2b3344.md"
     },
     {
         "source": "SIAM J. Math. Anal.",
@@ -113,13 +78,6 @@
     },
     {
         "source": "J. Math. Pures Appl.",
-        "title": "On the rigidity of manifolds with respect to the Gagliardo-Nirenberg inequalities",
-        "authors": "Liang Cheng",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-On-the-rigidity-of-manifolds-with-respec-e5adb7.md"
-    },
-    {
-        "source": "J. Math. Pures Appl.",
         "title": "Global weak solutions of the Navier-Stokes-Korteweg equations in one dimension",
         "authors": "Paolo Antonelli, Didier Bresch, Stefano Spirito",
         "date": "2026-07-12",
@@ -131,13 +89,6 @@
         "authors": "Rong-Nian Wang, Jianhong Wu, Jia-Cheng Zhao",
         "date": "2026-07-12",
         "filename": "2026-07-12-Invariant-manifolds-of-the-phase-field-s-ea205f.md"
-    },
-    {
-        "source": "J. Math. Pures Appl.",
-        "title": "On the justification of Koiter's model for generalised membrane shells of the first kind confined in a half-space",
-        "authors": "Paolo Piersanti",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-On-the-justification-of-Koiter-s-model-f-d09a5b.md"
     },
     {
         "source": "Appl. Math. Lett.",
@@ -155,31 +106,10 @@
     },
     {
         "source": "Appl. Math. Lett.",
-        "title": "Global exponential convergence for almost periodic gene regulatory systems with negative feedback",
-        "authors": "Wenji Wu, Liu Yang, Hui Zhou",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-Global-exponential-convergence-for-almos-8641a4.md"
-    },
-    {
-        "source": "Appl. Math. Lett.",
         "title": "Sobolev well-posedness for inviscid Second-Grade fluid equations in a thin strip",
         "authors": "Tianyuan Yu",
         "date": "2026-07-12",
         "filename": "2026-07-12-Sobolev-well-posedness-for-inviscid-Seco-3a7f16.md"
-    },
-    {
-        "source": "Appl. Math. Lett.",
-        "title": "Positive g-quasi-homoclinic solutions to damped difference equations with mixed nonlinearities",
-        "authors": "Yuhua Long",
-        "date": "2026-07-12",
-        "filename": "2026-07-12-Positive-g-quasi-homoclinic-solutions-to-a69c2b.md"
-    },
-    {
-        "title": "On the Past Maximal Development of Near-FLRW Data for the Einstein Scalar-Field Vlasov System",
-        "authors": "David Fajman, Liam Urban",
-        "date": "2026-07-09",
-        "source": "Commun. Math. Phys.",
-        "filename": "2026-07-09-On-the-Past-Maximal-Development-of-Near-a9c164.md"
     },
     {
         "title": "Well-Posedness of the Stochastic Thin-Film Equation with an Interface Potential",
@@ -194,13 +124,6 @@
         "authors": "Kunyi, Ma",
         "date": "2026-07-09",
         "filename": "2026-07-09-A-Short-Proof-of-Optimal-Regul-e7ee41.md"
-    },
-    {
-        "source": "Arxiv (math.AP)",
-        "title": "Existence of two embedded minimal spheres in $S^3$ with an arbitrary metric",
-        "authors": "Zhichao Wang, Xin Zhou",
-        "date": "2026-07-09",
-        "filename": "2026-07-09-Existence-of-two-embedded-mini-2333c7.md"
     },
     {
         "source": "Arxiv (math.AP)",
@@ -225,31 +148,10 @@
     },
     {
         "source": "Commun. Pure Appl. Math.",
-        "title": "Fibrations by Lagrangian Tori for Maximal Calabi–Yau Degenerations and Beyond",
-        "authors": "Javier Fernández de Bobadilla, Tomasz Pełka",
-        "date": "2026-07-08",
-        "filename": "2026-07-08-Fibrations-by-Lagrangian-Tori-for-Maxima-4a4e46.md"
-    },
-    {
-        "source": "Commun. Pure Appl. Math.",
-        "title": "The SIR Model in a Moving Population: Propagation of Infection and Herd Immunity",
-        "authors": "Duncan Dauvergne, Allan Sly",
-        "date": "2026-07-08",
-        "filename": "2026-07-08-The-SIR-Model-in-a-Moving-Population--Pr-01a9fb.md"
-    },
-    {
-        "source": "Commun. Pure Appl. Math.",
         "title": "A Geometric Characterization of Steady Laminar Flow",
         "authors": "Theodore D. Drivas, Marc Nualart",
         "date": "2026-07-07",
         "filename": "2026-07-07-A-Geometric-Characterization-of-Steady-L-a5a426.md"
-    },
-    {
-        "source": "Commun. Pure Appl. Math.",
-        "title": "Compact Manifolds With Unbounded Nilpotent Fundamental Groups and Positive Ricci Curvature",
-        "authors": "Elia Bruè, Aaron Naber, Daniele Semola",
-        "date": "2026-07-06",
-        "filename": "2026-07-06-Compact-Manifolds-With-Unbounded-Nilpote-bad03d.md"
     },
     {
         "title": "Asymptotic Stability of the Three-Dimensional Couette Flow for the Stokes-Transport Equations",
@@ -271,12 +173,5 @@
         "date": "2026-07-01",
         "source": "Calc. Var. Partial Differ. Equ.",
         "filename": "2026-07-01-Asymptotic-stability-of-composite-waves-5837db.md"
-    },
-    {
-        "source": "Commun. Pure Appl. Math.",
-        "title": "Stochastic Gradient Descent in High Dimensions for Multi‐Spiked Tensor PCA",
-        "authors": "Gérard Ben Arous, Cédric Gerbelot, Vanessa Piccolo",
-        "date": "2026-06-24",
-        "filename": "2026-06-24-Stochastic-Gradient-Descent-in-High-Dime-2dc860.md"
     }
 ]
