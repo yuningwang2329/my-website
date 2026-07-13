@@ -2,7 +2,7 @@ name: Daily Fluid Papers Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天凌晨0点运行 (UTC时间)
+    - cron: '30 0 * * *' # 每天北京时间 8:30 运行 (避开 GitHub 凌晨 0 点拥堵高峰)
   workflow_dispatch: # 允许手动触发
 
 jobs:
