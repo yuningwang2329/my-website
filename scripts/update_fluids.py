@@ -266,8 +266,11 @@ def fetch_feed(feed_config):
                     authors = cr_auth if cr_auth else "见原链接 (See link)"
                     abstract_en = cr_abs if cr_abs else "无摘要提供，请点击原文链接查看。"
                     if not cr_abs:
-                        clean_summary = re.sub(r'<[^>]+>', ' ', summary)
-                        abstract_en = clean_summary[:1000]
+                        clean_summary = re.sub(r'<[^>]+>', ' ', summary).strip()
+                        if "Publication date:" in clean_summary or "Author(s):" in clean_summary:
+                            abstract_en = "无摘要提供，请点击原文链接查看。"
+                        else:
+                            abstract_en = clean_summary[:1000]
                     papers.append({
                         'title': cr_title if cr_title else title, 
                         'authors': authors, 'date': date_str,
