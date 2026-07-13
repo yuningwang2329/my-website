@@ -7,10 +7,10 @@
 
 ## 中文摘要
 
-出版日期：2026 年 11 月 资料来源：Applied Mathematics Letters，第 182 卷 作者：Xiaojing Wei、Yushan Ma、Liquan Mei
+无摘要提供，请点击原文链接查看。
 
 ---
 
 ## 英文摘要
 
- Publication date: November 2026   Source:  Applied Mathematics Letters, Volume 182  Author(s): Xiaojing Wei, Yuxiang Ma, Liquan Mei 
+无摘要提供，请点击原文链接查看。

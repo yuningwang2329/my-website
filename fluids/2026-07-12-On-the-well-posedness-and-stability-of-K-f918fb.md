@@ -7,10 +7,10 @@
 
 ## 中文摘要
 
-出版日期：2026 年 11 月 5 日 资料来源：Journal of Differential Equations，第 480 卷 作者：吴凡、刘亚庆、郭博灵
+无摘要提供，请点击原文链接查看。
 
 ---
 
 ## 英文摘要
 
- Publication date: 5 November 2026   Source:  Journal of Differential Equations, Volume 480  Author(s): Fan Wu, Yaqing Liu, Boling Guo 
+无摘要提供，请点击原文链接查看。

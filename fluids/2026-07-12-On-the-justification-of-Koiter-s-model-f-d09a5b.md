@@ -7,10 +7,10 @@
 
 ## 中文摘要
 
-出版日期：2026 年 10 月 资料来源：Journal of Pure and Applied Mathematics，第 214 卷 作者：Paolo Piersanti
+无摘要提供，请点击原文链接查看。
 
 ---
 
 ## 英文摘要
 
- Publication date: October 2026   Source:  Journal de Mathématiques Pures et Appliquées, Volume 214  Author(s): Paolo Piersanti 
+无摘要提供，请点击原文链接查看。

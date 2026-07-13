@@ -7,10 +7,10 @@
 
 ## 中文摘要
 
-出版日期：2026 年 11 月 来源：Journal of Pure and Applied Mathematics，第 215 卷 作者：Rong-Nian Wang、Jianhong Wu、Jia-Cheng Zhao
+无摘要提供，请点击原文链接查看。
 
 ---
 
 ## 英文摘要
 
- Publication date: November 2026   Source:  Journal de Mathématiques Pures et Appliquées, Volume 215  Author(s): Rong-Nian Wang, Jianhong Wu, Jia-Cheng Zhao 
+无摘要提供，请点击原文链接查看。

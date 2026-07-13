@@ -7,10 +7,10 @@
 
 ## 中文摘要
 
-出版日期：2026 年 11 月 15 日 资料来源：Journal of Function Analysis，第 291 卷，第 10 期 作者：Marcel Scherer
+无摘要提供，请点击原文链接查看。
 
 ---
 
 ## 英文摘要
 
- Publication date: 15 November 2026   Source:  Journal of Functional Analysis, Volume 291, Issue 10  Author(s): Marcel Scherer 
+无摘要提供，请点击原文链接查看。

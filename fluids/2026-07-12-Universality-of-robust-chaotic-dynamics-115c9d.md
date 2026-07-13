@@ -7,10 +7,10 @@
 
 ## 中文摘要
 
-出版日期：2026 年 11 月 5 日来源：微分方程杂志，第 480 卷 作者：Alexey Kazakov、Vladislav Koryakin、Klim Safonov、Kirill Zaichikov
+无摘要提供，请点击原文链接查看。
 
 ---
 
 ## 英文摘要
 
- Publication date: 5 November 2026   Source:  Journal of Differential Equations, Volume 480  Author(s): Alexey Kazakov, Vladislav Koryakin, Klim Safonov, Kirill Zaichikov 
+无摘要提供，请点击原文链接查看。
