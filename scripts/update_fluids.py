@@ -323,6 +323,10 @@ def fetch_feed(feed_config):
 def main():
     if not os.path.exists(MD_DIR):
         os.makedirs(MD_DIR)
+        
+    ARCHIVE_DIR = 'archive'
+    if not os.path.exists(ARCHIVE_DIR):
+        os.makedirs(ARCHIVE_DIR)
 
     existing_papers = []
     if os.path.exists(JSON_FILE):
@@ -333,6 +337,17 @@ def main():
             pass
 
     existing_titles = {p['title'].strip().lower() for p in existing_papers}
+    
+    # Load archived titles to prevent re-fetching old papers
+    for filename in os.listdir(ARCHIVE_DIR):
+        if filename.endswith('.json'):
+            try:
+                with open(os.path.join(ARCHIVE_DIR, filename), 'r', encoding='utf-8') as f:
+                    archived = json.load(f)
+                    for p in archived:
+                        existing_titles.add(p['title'].strip().lower())
+            except:
+                pass
     
     new_papers_data = []
     all_fetched = []
@@ -359,13 +374,54 @@ def main():
             })
             existing_titles.add(compare_title)
 
-    if new_papers_data:
+    if new_papers_data or existing_papers:
         all_papers = new_papers_data + existing_papers
         all_papers.sort(key=lambda x: x['date'], reverse=True)
         
+        # Archiving logic: Keep last 90 days in fluids.json, rest in archive_YYYY.json
+        hot_papers = []
+        cold_papers_by_year = {}
+        
+        cutoff_date = (datetime.datetime.now() - datetime.timedelta(days=90)).strftime("%Y-%m-%d")
+        
+        for p in all_papers:
+            if p['date'] >= cutoff_date:
+                hot_papers.append(p)
+            else:
+                year = p['date'][:4]
+                if year not in cold_papers_by_year:
+                    cold_papers_by_year[year] = []
+                cold_papers_by_year[year].append(p)
+                
+        # Write hot papers
         with open(JSON_FILE, 'w', encoding='utf-8') as f:
-            json.dump(all_papers, f, ensure_ascii=False, indent=4)
-        print(f"✅ 更新完成。新增了 {len(new_papers_data)} 篇论文。")
+            json.dump(hot_papers, f, ensure_ascii=False, indent=4)
+            
+        # Write cold papers
+        for year, papers in cold_papers_by_year.items():
+            archive_file = os.path.join(ARCHIVE_DIR, f"archive_{year}.json")
+            existing_archive = []
+            if os.path.exists(archive_file):
+                try:
+                    with open(archive_file, 'r', encoding='utf-8') as f:
+                        existing_archive = json.load(f)
+                except:
+                    pass
+            # Merge and deduplicate by title
+            archive_titles = {ap['title'].strip().lower() for ap in existing_archive}
+            for cp in papers:
+                if cp['title'].strip().lower() not in archive_titles:
+                    existing_archive.append(cp)
+                    archive_titles.add(cp['title'].strip().lower())
+            
+            existing_archive.sort(key=lambda x: x['date'], reverse=True)
+            with open(archive_file, 'w', encoding='utf-8') as f:
+                json.dump(existing_archive, f, ensure_ascii=False, indent=4)
+                
+        if new_papers_data:
+            print(f"✅ 更新完成。新增了 {len(new_papers_data)} 篇论文。")
+        else:
+            print("ℹ️ 归档整理完成。没有发现新论文。")
     else:
         print("ℹ️ 没有发现新论文。")
 

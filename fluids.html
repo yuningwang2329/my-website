@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="流体动力学与偏微分方程最新论文">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
-    <title>流体论文</title>
+    <title>流体论文库</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <a href="publications.html">出版物</a>
                 <a href="resume.html">简历</a>
                 <a href="notes.html">笔记</a>
-                <a href="fluids.html" class="active">流体论文</a>
+                <a href="fluids.html" class="active">文献库</a>
                 <button id="search-btn" class="search-btn" aria-label="搜索"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
             </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="search-box">
                 <div class="search-input-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    <input id="search-input" class="search-input" type="text" placeholder="搜索" autocomplete="off">
+                    <input id="search-input" class="search-input" type="text" placeholder="全局搜索" autocomplete="off">
                 </div>
                 <div id="search-label" class="search-results-label">快速链接</div>
                 <div id="search-results" class="search-results"></div>
@@ -35,30 +35,54 @@
         </div>
     </div>
 
-    <main class="main stagger">
-        <h1 class="page-title fade-in">流体论文</h1>
-        <p class="page-desc fade-in">每日自动更新 · 来源 Arxiv (math.AP) 及期刊订阅</p>
-
-        <div class="fluids-layout fade-in">
+    <main class="main stagger fade-in" style="max-width: 1200px; padding-top: 40px;">
+        <div class="fluids-layout">
+            <!-- Left Sidebar (Folder Navigation) -->
             <aside class="fluids-sidebar">
-                <div class="fluids-controls">
-                    <div class="segment-control">
-                        <button id="btn-date" class="active" onclick="switchMode('date')">日期</button>
-                        <button id="btn-source" onclick="switchMode('source')">期刊</button>
-                        <button id="btn-stars" onclick="switchMode('stars')">收藏</button>
-                        <button id="btn-read" onclick="switchMode('read')">已读</button>
-                    </div>
+                <div class="folder-group">
+                    <div class="folder-header">文献库</div>
+                    <ul class="folder-list" id="main-folders">
+                        <li>
+                            <a href="#" class="folder-link active" onclick="switchFolder('inbox', this); return false;">
+                                <span>📥 收件箱</span>
+                                <span class="sidebar-count" id="count-inbox">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="folder-link" onclick="switchFolder('starred', this); return false;">
+                                <span>⭐ 收藏夹</span>
+                                <span class="sidebar-count" id="count-starred">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="folder-link" onclick="switchFolder('archive', this); return false;">
+                                <span>📚 所有文献</span>
+                                <span class="sidebar-count" id="count-archive">0</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="fluids-search-wrap">
-                    <div class="fluids-search-inner">
-                        <svg class="fluids-search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                        <input type="text" id="fluids-local-search" class="fluids-search" placeholder="搜索标题或作者…" oninput="render()">
-                    </div>
+                
+                <div class="folder-group" style="margin-top: 24px;">
+                    <div class="folder-header">按期刊</div>
+                    <ul class="folder-list" id="journal-folders">
+                        <!-- Dynamically populated -->
+                    </ul>
                 </div>
-                <div class="fluids-sidebar-links" id="fluids-sidebar-links"></div>
             </aside>
-            <div class="fluids-content" id="fluids-content">
-                <p style="color: var(--text-secondary); padding: 20px 0;">正在加载论文数据…</p>
+            
+            <!-- Right Content Area (List View) -->
+            <div class="fluids-content">
+                <div class="content-header">
+                    <h1 class="page-title" id="view-title">收件箱</h1>
+                    <div class="content-actions">
+                        <button id="mark-all-read" class="action-btn" style="display: none;" onclick="markAllRead()">标为已读</button>
+                    </div>
+                </div>
+                
+                <div id="fluids-list-container">
+                    <p style="color: var(--text-secondary); padding: 20px 0;">正在加载文献数据…</p>
+                </div>
             </div>
         </div>
     </main>
@@ -69,17 +93,38 @@
 
     <script>
         let allPapers = [];
-        let currentMode = 'date';
-        var RECENT_DAYS = 30;
-        var showAll = false;
-
+        let currentFolder = 'inbox'; // inbox | starred | archive | journal:{name}
+        
         function getReadPapers() {
             return JSON.parse(localStorage.getItem('fluids_read') || '[]');
         }
         function getStarredPapers() {
             return JSON.parse(localStorage.getItem('fluids_stars') || '[]');
         }
-
+        
+        function markRead(filename) {
+            let read = getReadPapers();
+            if (!read.includes(filename)) {
+                read.push(filename);
+                localStorage.setItem('fluids_read', JSON.stringify(read));
+            }
+        }
+        
+        function markAllRead() {
+            let read = getReadPapers();
+            let added = false;
+            allPapers.forEach(p => {
+                if (!read.includes(p.filename)) {
+                    read.push(p.filename);
+                    added = true;
+                }
+            });
+            if (added) {
+                localStorage.setItem('fluids_read', JSON.stringify(read));
+                render();
+            }
+        }
+        
         function toggleStar(e, filename) {
             e.preventDefault();
             e.stopPropagation();
@@ -93,233 +138,177 @@
             render();
         }
 
-        function markRead(filename) {
-            let read = getReadPapers();
-            if (!read.includes(filename)) {
-                read.push(filename);
-                localStorage.setItem('fluids_read', JSON.stringify(read));
+        function switchFolder(folderId, element) {
+            currentFolder = folderId;
+            document.querySelectorAll('.folder-link').forEach(el => el.classList.remove('active'));
+            if (element) {
+                element.classList.add('active');
             }
-        }
-
-        function switchMode(mode) {
-            currentMode = mode;
-            showAll = false;
-            document.querySelectorAll('.segment-control button').forEach(function(btn) {
-                btn.className = btn.id === 'btn-' + mode ? 'active' : '';
-            });
+            
+            // Update title
+            const titles = {
+                'inbox': '收件箱',
+                'starred': '收藏夹',
+                'archive': '所有文献'
+            };
+            if (folderId.startsWith('journal:')) {
+                document.getElementById('view-title').textContent = folderId.replace('journal:', '');
+            } else {
+                document.getElementById('view-title').textContent = titles[folderId] || '';
+            }
+            
             render();
         }
-
-        function formatDate(dateStr) {
-            var parts = dateStr.split('-');
-            return parts[0] + '年' + parseInt(parts[1]) + '月' + parseInt(parts[2]) + '日';
-        }
-
+        
         function formatMonth(dateStr) {
             var parts = dateStr.split('-');
             return parts[0] + '年' + parseInt(parts[1]) + '月';
         }
 
-        function isWithinDays(dateStr, days) {
-            var now = new Date();
-            var d = new Date(dateStr);
-            var diff = (now - d) / (1000 * 60 * 60 * 24);
-            return diff <= days;
-        }
-
-        function loadMore() {
-            showAll = true;
-            render();
-        }
-
         function render() {
-            var contentEl = document.getElementById('fluids-content');
-            var sidebarEl = document.getElementById('fluids-sidebar-links');
-            contentEl.innerHTML = '';
-            sidebarEl.innerHTML = '';
-
-            if (allPapers.length === 0) {
-                contentEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">暂无论文。</p>';
-                return;
+            let readPapers = getReadPapers();
+            let starredPapers = getStarredPapers();
+            
+            // 1. Calculate and update sidebar counts
+            let inboxCount = 0;
+            let starredCount = starredPapers.length;
+            let archiveCount = allPapers.length;
+            let journalCounts = {};
+            
+            allPapers.forEach(p => {
+                if (!readPapers.includes(p.filename)) inboxCount++;
+                journalCounts[p.source] = (journalCounts[p.source] || 0) + 1;
+            });
+            
+            document.getElementById('count-inbox').textContent = inboxCount;
+            document.getElementById('count-starred').textContent = starredCount;
+            document.getElementById('count-archive').textContent = archiveCount;
+            
+            // Populate Journals if empty
+            let journalList = document.getElementById('journal-folders');
+            if (journalList.children.length === 0) {
+                let sortedJournals = Object.keys(journalCounts).sort();
+                sortedJournals.forEach(j => {
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.href = '#';
+                    a.className = 'folder-link';
+                    a.onclick = function(e) { e.preventDefault(); switchFolder('journal:' + j, this); };
+                    
+                    let spanName = document.createElement('span');
+                    spanName.textContent = '📄 ' + j;
+                    let spanCount = document.createElement('span');
+                    spanCount.className = 'sidebar-count';
+                    spanCount.textContent = journalCounts[j];
+                    
+                    a.appendChild(spanName);
+                    a.appendChild(spanCount);
+                    li.appendChild(a);
+                    journalList.appendChild(li);
+                });
             }
+            
+            // Show/hide mark all read button
+            document.getElementById('mark-all-read').style.display = (currentFolder === 'inbox' && inboxCount > 0) ? 'inline-block' : 'none';
 
-            var searchQuery = document.getElementById('fluids-local-search').value.toLowerCase();
-            var readPapers = getReadPapers();
-            var starredPapers = getStarredPapers();
-
-            var papersToRender = allPapers.filter(function(item) {
-                if (currentMode === 'stars' && !starredPapers.includes(item.filename)) return false;
-                if (currentMode === 'read' && !readPapers.includes(item.filename)) return false;
-                if (searchQuery) {
-                    var text = (item.title + ' ' + item.authors).toLowerCase();
-                    if (!text.includes(searchQuery)) return false;
+            // 2. Filter papers for the current view
+            let papersToRender = allPapers.filter(p => {
+                if (currentFolder === 'inbox') return !readPapers.includes(p.filename);
+                if (currentFolder === 'starred') return starredPapers.includes(p.filename);
+                if (currentFolder === 'archive') return true;
+                if (currentFolder.startsWith('journal:')) {
+                    return p.source === currentFolder.replace('journal:', '');
                 }
                 return true;
             });
 
-            // For date mode, apply recent filter unless showAll
-            var hasOlder = false;
-            if (currentMode === 'date' && !showAll && !searchQuery) {
-                var recentPapers = papersToRender.filter(function(item) {
-                    return isWithinDays(item.date, RECENT_DAYS);
-                });
-                if (recentPapers.length < papersToRender.length) {
-                    hasOlder = true;
-                }
-                if (recentPapers.length > 0) {
-                    papersToRender = recentPapers;
-                }
-                // If no recent papers, show all anyway
-            }
-
+            let container = document.getElementById('fluids-list-container');
+            container.innerHTML = '';
+            
             if (papersToRender.length === 0) {
-                var msgs = {
-                    stars: '还没有收藏任何论文。',
-                    read: '还没有标记已读的论文。',
-                    date: '没有找到匹配的论文。',
-                    source: '没有找到匹配的论文。'
-                };
-                contentEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">' + (msgs[currentMode] || msgs.date) + '</p>';
+                container.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">当前文件夹为空。</p>';
                 return;
             }
-
-            // Group
-            var groups = {};
-            var groupOrder = [];
-            papersToRender.forEach(function(item) {
-                var groupId, displayGroup;
-                if (currentMode === 'source') {
-                    displayGroup = item.source;
-                    groupId = item.source.replace(/[^a-zA-Z0-9]/g, '_');
-                } else {
-                    // Group by month for date/stars/read modes
-                    displayGroup = formatMonth(item.date);
-                    groupId = item.date.substring(0, 7); // 2026-07
+            
+            // 3. Render list grouped by month
+            let groups = {};
+            let groupOrder = [];
+            papersToRender.forEach(p => {
+                let month = formatMonth(p.date);
+                if (!groups[month]) {
+                    groups[month] = [];
+                    groupOrder.push(month);
                 }
-                if (!groups[groupId]) {
-                    groups[groupId] = { display: displayGroup, items: [] };
-                    groupOrder.push(groupId);
-                }
-                groups[groupId].items.push(item);
+                groups[month].push(p);
             });
-
-            groupOrder.forEach(function(groupId) {
-                var groupData = groups[groupId];
-
-                // Sidebar link with count
-                var a = document.createElement('a');
-                a.href = '#g-' + groupId;
-                var countSpan = document.createElement('span');
-                countSpan.className = 'sidebar-count';
-                countSpan.textContent = groupData.items.length;
-                a.textContent = groupData.display;
-                a.appendChild(document.createTextNode(' '));
-                a.appendChild(countSpan);
-                sidebarEl.appendChild(a);
-
-                // Group container
-                var groupDiv = document.createElement('div');
-                groupDiv.className = 'date-group';
-                groupDiv.id = 'g-' + groupId;
-
-                var header = document.createElement('h2');
-                header.className = 'date-header';
-                header.textContent = groupData.display;
-                var headerCount = document.createElement('span');
-                headerCount.className = 'date-header-count';
-                headerCount.textContent = groupData.items.length + ' 篇';
-                header.appendChild(headerCount);
+            
+            groupOrder.forEach(month => {
+                let groupDiv = document.createElement('div');
+                groupDiv.className = 'paper-group';
+                
+                let header = document.createElement('h2');
+                header.className = 'paper-group-header';
+                header.textContent = month;
                 groupDiv.appendChild(header);
-
-                var ul = document.createElement('ul');
-                ul.className = 'item-list';
-
-                groupData.items.forEach(function(item) {
-                    var li = document.createElement('li');
-
-                    var isRead = readPapers.includes(item.filename);
-                    var isStarred = starredPapers.includes(item.filename);
-                    var linkClass = 'item-link' + (isRead ? ' read' : '');
-
-                    var link = document.createElement('a');
-                    link.href = 'post.html?file=fluids/' + item.filename;
-                    link.className = linkClass;
-                    link.onclick = function() { markRead(item.filename); };
-
-                    var titleRow = document.createElement('div');
-                    titleRow.className = 'item-title-row';
-
-                    var title = document.createElement('span');
-                    title.className = 'item-title';
-                    title.textContent = item.title;
-
-                    var starBtn = document.createElement('button');
-                    starBtn.className = 'star-btn' + (isStarred ? ' active' : '');
+                
+                let ul = document.createElement('ul');
+                ul.className = 'paper-list';
+                
+                groups[month].forEach(p => {
+                    let li = document.createElement('li');
+                    
+                    let isRead = readPapers.includes(p.filename);
+                    let isStarred = starredPapers.includes(p.filename);
+                    
+                    let link = document.createElement('a');
+                    link.href = 'post.html?file=fluids/' + p.filename;
+                    link.className = 'paper-link' + (isRead ? ' read' : '');
+                    link.onclick = function() { markRead(p.filename); };
+                    
+                    let titleRow = document.createElement('div');
+                    titleRow.className = 'paper-title-row';
+                    
+                    let title = document.createElement('span');
+                    title.className = 'paper-title';
+                    title.textContent = p.title;
+                    
+                    let starBtn = document.createElement('button');
+                    starBtn.className = 'paper-star' + (isStarred ? ' active' : '');
                     starBtn.innerHTML = '★';
-                    starBtn.title = isStarred ? '取消收藏' : '收藏';
-                    starBtn.onclick = function(e) { toggleStar(e, item.filename); };
-
-                    titleRow.appendChild(title);
+                    starBtn.onclick = function(e) { toggleStar(e, p.filename); };
+                    
                     titleRow.appendChild(starBtn);
-
-                    var meta = document.createElement('span');
-                    meta.className = 'item-meta';
-
-                    var sourcePill = document.createElement('span');
-                    sourcePill.className = 'pill outline';
-                    sourcePill.textContent = item.source;
-
-                    var authorText = document.createElement('span');
-                    authorText.textContent = item.authors;
-
-                    // Show date in non-date modes
-                    if (currentMode === 'source' || currentMode === 'stars' || currentMode === 'read') {
-                        var datePill = document.createElement('span');
-                        datePill.className = 'pill';
-                        datePill.textContent = item.date;
-                        meta.appendChild(sourcePill);
-                        meta.appendChild(datePill);
-                    } else {
-                        meta.appendChild(sourcePill);
-                    }
-                    meta.appendChild(authorText);
-
+                    titleRow.appendChild(title);
+                    
+                    let meta = document.createElement('div');
+                    meta.className = 'paper-meta';
+                    // Minimalist dot-separated meta
+                    meta.textContent = p.source + ' · ' + p.date + ' · ' + p.authors;
+                    
                     link.appendChild(titleRow);
                     link.appendChild(meta);
                     li.appendChild(link);
                     ul.appendChild(li);
                 });
-
+                
                 groupDiv.appendChild(ul);
-                contentEl.appendChild(groupDiv);
+                container.appendChild(groupDiv);
             });
-
-            // "Load more" button for date mode
-            if (hasOlder && currentMode === 'date' && !showAll) {
-                var loadMoreDiv = document.createElement('div');
-                loadMoreDiv.className = 'load-more-wrap';
-                var btn = document.createElement('button');
-                btn.className = 'load-more-btn';
-                btn.textContent = '加载更早的论文';
-                btn.onclick = loadMore;
-                loadMoreDiv.appendChild(btn);
-                contentEl.appendChild(loadMoreDiv);
-            }
         }
 
         document.addEventListener('DOMContentLoaded', function() {
             fetch('fluids.json')
-                .then(function(response) {
+                .then(response => {
                     if (!response.ok) throw new Error('网络请求失败');
                     return response.json();
                 })
-                .then(function(data) {
+                .then(data => {
                     allPapers = data;
                     render();
                 })
-                .catch(function(error) {
-                    console.error('Error loading fluids.json:', error);
-                    document.getElementById('fluids-content').innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">加载失败，请确保在服务器环境下运行。</p>';
+                .catch(error => {
+                    console.error(error);
+                    document.getElementById('fluids-list-container').innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">加载失败。</p>';
                 });
         });
     </script>

@@ -112,6 +112,33 @@
         "filename": "2026-07-12-Sobolev-well-posedness-for-inviscid-Seco-3a7f16.md"
     },
     {
+        "title": "On rotated backwards self-similar solutions of the incompressible 3D Navier-Stokes equations",
+        "authors": "Ben Pineau, Vlad Vicol",
+        "date": "2026-07-10",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.09619v1",
+        "abstract_en": "We consider backwards globally self-similar solutions of the 3D incompressible Navier-Stokes equations which are invariant under the joint action of scaling (the natural parabolic scaling) and rotation about a given axis, at a constant angular speed $α$ in self-similar time.   For these so-called rotated self-similar solutions (RSS), we prove that if they satisfy a Type~I upper bound, and if the rotation parameter $α$ is either too small, or too large, then they must be trivial. This Liouville-type result extends the classical works of Nečas-Růžička-Šverák ('96) and Tsai ('98), which only consider $α=0$, to the case of similarity profiles which experience nontrivial rotation. Our results partially answer a question posed by Perelman.   For backwards globally self-similar solutions which are invariant under the discrete action of scaling and rotation, the so-called rotated discretely self-similar solutions (RDSS), we obtain similar Liouville-type results under a Type~I upper bound, assuming extreme values of the rotation parameter $α$, and if the scaling factor $λ$ is sufficiently close to $1$.   The proof of all these results rests on the introduction of a robust weighted-$L^2$ framework. In particular, our method is quantitative and is not sensitive to whether the Bernoulli head pressure satisfies a maximum principle, which was a key obstruction in previous works.",
+        "filename": "2026-07-10-On-rotated-backwards-self-similar-soluti-372247.md"
+    },
+    {
+        "title": "On Maximal Total Entropy Production Models for Steady Evaporation of a Calorically Perfect Polyatomic Gas",
+        "authors": "Niclas Bernhoff, Eddie Wadbro",
+        "date": "2026-07-10",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.09574v1",
+        "abstract_en": "This study investigates the boundary conditions for fluid-dynamic equations at the interface of a gas and its condensed phase during steady evaporation of a polyatomic gas. Evaporation curves illustrating the dependence of the temperature and pressure ratios on the Mach number are considered for a calorically perfect gas whose molecules behave like rigid rotors. At the condensed phase, complete absorption conditions are assumed. Also an extension to cases in which a part of the molecules is diffusely reflected at the condensed phase is also considered. We revisit the half-space evaporation problem for polyatomic gases based on previous results, applied to a slightly modified entropy functional. The structure of the (modified) maximal total entropy production curves is investigated, and simple functions that accurately fit the numerical results are proposed. Functions of the proposed form, with modified coefficients, also fit the evaporation curves previously obtained by different numerical methods surprisingly well. The approximation is performed for different numbers of internal degrees of freedom or ratios of specific heats. Simple functions that depend on the ratio of specific heats are found to fit the obtained evaporation curves for different ratios of specific heats very well.",
+        "filename": "2026-07-10-On-Maximal-Total-Entropy-Production-Mode-79bf2c.md"
+    },
+    {
+        "title": "Nonlinear stability of Einstein-de Sitter universes",
+        "authors": "Louie Bernhardt, David Fajman, Zoe Wyatt",
+        "date": "2026-07-10",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.09326v1",
+        "abstract_en": "The Einstein-de Sitter universe is the prevailing model used in cosmology to describe the cold dark matter-dominated epoch of the universe. This model is a spatially homogeneous and isotropic spacetime undergoing decelerated expansion, and is linearly unstable under the Einstein-Euler equations with a pressureless fluid equation of state. We show that every initial data set for the Einstein-Euler equations on $\\mathbb{T}^3$ with a near-flat metric and positive fluid energy density converges to a flat metric under the Einstein-Euler flow with a polytropic equation of state. This means the metric asymptotes to an Einstein-de Sitter spacetime. In particular, this settles the question of whether the Einstein-de Sitter model can be nonlinearly stable for an appropriate matter model.",
+        "filename": "2026-07-10-Nonlinear-stability-of-Einstein-de-Sitte-ef81b4.md"
+    },
+    {
         "title": "Well-Posedness of the Stochastic Thin-Film Equation with an Interface Potential",
         "authors": "Antonio Agresti, Max Sauerbrey",
         "date": "2026-07-09",
