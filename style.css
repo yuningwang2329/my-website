@@ -909,6 +909,7 @@ h3 {
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-secondary);
+    margin-top: 0;
     margin-bottom: 12px;
     position: sticky;
     top: 60px;
@@ -1029,3 +1030,31 @@ h3 {
 }
 
 
+
+/* ---------- Miscellaneous ---------- */
+.badge.construction {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    background: var(--nav-bg);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.site-disclaimer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.site-disclaimer strong {
+    color: var(--text);
+    font-weight: 600;
+}

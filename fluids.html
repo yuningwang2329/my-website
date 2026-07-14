@@ -95,12 +95,17 @@
                     </div>
                 </div>
                 
-                <div id="filter-tags-container" class="filter-tags">
-                    <!-- Active filter tags will appear here -->
-                </div>
+                <div id="filter-tags-container" class="filter-tags" style="display: none;"></div>
                 
                 <div id="fluids-list-container">
                     <p style="color: var(--text-secondary); padding: 20px 0;">正在加载文献数据…</p>
+                </div>
+                
+                <div class="site-disclaimer">
+                    <strong>关于本项目</strong><br>
+                    这是一个由 AI 自动驱动的流体力学与 PDE 文献追踪系统，每日自动收录、过滤并翻译各大核心期刊与 arXiv 的最新成果。<br>
+                    初衷是利用大语言模型解决科研文献爆炸、人工筛选成本高的问题，为同行提供高效、纯净的前沿追踪体验。<br>
+                    <em>声明：本页面仅作学术交流与个人知识管理用途。文献数据及版权归原出版方及作者所有，AI 翻译结果仅供参考。</em>
                 </div>
             </div>
         </div>
@@ -319,6 +324,7 @@
             
             let tagsContainer = document.getElementById('filter-tags-container');
             tagsContainer.innerHTML = '';
+            tagsContainer.style.display = 'none';
             if (filterJournal) {
                 let tag = document.createElement('div');
                 tag.className = 'filter-tag';
@@ -330,6 +336,11 @@
                 tag.className = 'filter-tag';
                 tag.innerHTML = `${filterMonth} <span class="filter-tag-close" onclick="clearMonthFilter()">✕</span>`;
                 tagsContainer.appendChild(tag);
+            }
+            
+            if (filterJournal || filterMonth) {
+                tagsContainer.style.display = 'flex';
+                tagsContainer.style.marginBottom = '24px';
             }
 
             let papersToRender = getPapersToRender();
