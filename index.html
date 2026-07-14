@@ -3,73 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="个人主页 — 出版物、简历与学习笔记">
+    <meta name="description" content="流体动力学与偏微分方程最新论文">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
-    <title>主页</title>
+    <title>流体论文库</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="search.js" defer></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.staticfile.net/mathjax/3.2.2/es5/tex-chtml.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-inner">
-            <a href="index.html" class="nav-logo">✦</a>
+            <a href="index.html" class="nav-logo">Fluid Papers Tracker</a>
             <div class="nav-links">
-                <a href="publications.html">出版物</a>
-                <a href="resume.html">简历</a>
-                <a href="notes.html">笔记</a>
-                <a href="fluids.html">流体论文</a>
-                <button id="search-btn" class="search-btn" aria-label="搜索"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+                <a href="https://github.com/yuningwang2329/my-website" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+                    <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    GitHub
+                </a>
             </div>
         </div>
     </nav>
 
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-panel">
-            <div class="search-box">
-                <div class="search-input-wrapper">
-                    <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    <input id="search-input" class="search-input" type="text" placeholder="搜索" autocomplete="off">
+    <main class="main stagger fade-in">
+        <div class="fluids-layout">
+            <!-- Left Sidebar (Folder Navigation) -->
+            <aside class="fluids-sidebar">
+                <div class="folder-group">
+                    <div class="folder-header">文献库</div>
+                    <ul class="folder-list" id="main-folders">
+                        <li>
+                            <a href="#" class="folder-link active" onclick="switchFolder('archive', this); return false;">
+                                <span>所有文献</span>
+                                <span class="sidebar-count" id="count-archive">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="folder-link" onclick="switchFolder('starred', this); return false;">
+                                <span>收藏夹</span>
+                                <span class="sidebar-count" id="count-starred">0</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="search-label" class="search-results-label">快速链接</div>
-                <div id="search-results" class="search-results"></div>
-            </div>
-        </div>
-    </div>
-
-    <main class="main stagger">
-        <h1 class="page-title fade-in" id="greeting">你好</h1>
-        <p class="page-desc fade-in" style="line-height: 1.6;">
-            本站目前主要作为<strong>流体力学与 PDE 文献追踪系统</strong>的专属前台运行。<br>
-            除“流体论文”板块外的其他个人展示页面仍在建设中，敬请期待。
-        </p>
-        
-        <div class="calendar-container fade-in">
-            <div class="calendar-header">
-                <button id="cal-prev" class="cal-nav-btn">←</button>
-                <h2 id="cal-month" class="cal-month-title">2026年7月</h2>
-                <button id="cal-next" class="cal-nav-btn">→</button>
-            </div>
-            <div class="calendar-grid">
-                <div class="cal-day-header">日</div>
-                <div class="cal-day-header">一</div>
-                <div class="cal-day-header">二</div>
-                <div class="cal-day-header">三</div>
-                <div class="cal-day-header">四</div>
-                <div class="cal-day-header">五</div>
-                <div class="cal-day-header">六</div>
-                <!-- Calendar cells will be generated by script.js -->
-            </div>
+                
+                <div class="folder-group" style="margin-top: 24px;">
+                    <div class="folder-header">专题 (Topics)</div>
+                    <ul class="folder-list" id="topic-folders">
+                        <li>
+                            <a href="#" class="folder-link" onclick="switchFolder('topic:stability', this); return false;">
+                                <span>水动力稳定性</span>
+                                <span class="sidebar-count" id="count-stability">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="folder-group" style="margin-top: 24px;">
+                    <div class="sidebar-tabs">
+                        <button class="sidebar-tab active" onclick="switchFilterTab('journal', this)">按期刊</button>
+                        <button class="sidebar-tab" onclick="switchFilterTab('month', this)">按月份</button>
+                    </div>
+                    
+                    <ul class="folder-list" id="journal-filters">
+                        <!-- Dynamically populated -->
+                    </ul>
+                    <ul class="folder-list" id="month-filters" style="display: none;">
+                        <!-- Dynamically populated -->
+                    </ul>
+                </div>
+            </aside>
             
-            <div id="activity-detail" class="activity-detail" style="display: none;">
-                <h3 id="activity-date" class="activity-date"></h3>
-                <div id="activity-content" class="activity-content"></div>
+            <!-- Right Content Area (List View) -->
+            <div class="fluids-content">
+                <div class="content-header" style="margin-bottom: 12px;">
+                    <h1 class="page-title" id="view-title">所有文献</h1>
+                    <div class="content-actions">
+                        <button id="mark-all-read" class="action-btn" style="display: none;" onclick="markAllRead()">标为已读</button>
+                    </div>
+                </div>
+                
+                <div id="filter-tags-container" class="filter-tags" style="display: none;"></div>
+                
+                <div id="fluids-list-container">
+                    <p style="color: var(--text-secondary); padding: 20px 0;">正在加载文献数据…</p>
+                </div>
             </div>
         </div>
     </main>
 
     <footer class="site-footer">
-        <span id="last-updated"></span>
+        <div class="footer-disclaimer">
+            本页面由 AI 自动从公开数据源追踪学术文献，仅供个人学习与交流使用，版权归原作者及出版方所有。<br>
+            AI 生成内容仅供参考。本站不提供未经授权的全文下载服务。
+        </div>
+        <div class="footer-meta">
+            <span id="last-updated"></span>
+        </div>
     </footer>
+
+    <script>
+        let allPapers = [];
+        let baseView = 'archive'; // archive | starred | topic:stability
+        let filterJournal = null;
+        let filterMonth = null;
+        
+        function getReadPapers() {
+            return JSON.parse(localStorage.getItem('fluids_read') || '[]');
+        }
+        function getStarredPapers() {
+            return JSON.parse(localStorage.getItem('fluids_stars') || '[]');
+        }
+        
+        function markRead(filename) {
+            let read = getReadPapers();
+            if (!read.includes(filename)) {
+                read.push(filename);
+                localStorage.setItem('fluids_read', JSON.stringify(read));
+            }
+        }
+        
+        function getPapersToRender() {
+            let readPapers = getReadPapers();
+            let starredPapers = getStarredPapers();
+            return allPapers.filter(p => {
+                if (baseView === 'starred' && !starredPapers.includes(p.filename)) return false;
+                if (baseView.startsWith('topic:') && !(p.tags || []).includes(baseView.replace('topic:', ''))) return false;
+                
+                if (filterJournal && p.source !== filterJournal) return false;
+                if (filterMonth && formatMonth(p.date) !== filterMonth) return false;
+                return true;
+            });
+        }
+        
+        function markAllRead() {
+            let read = getReadPapers();
+            let added = false;
+            let currentPapers = getPapersToRender();
+            
+            currentPapers.forEach(p => {
+                if (!read.includes(p.filename)) {
+                    read.push(p.filename);
+                    added = true;
+                }
+            });
+            if (added) {
+                localStorage.setItem('fluids_read', JSON.stringify(read));
+                render();
+            }
+        }
+        
+        function toggleStar(e, filename) {
+            e.preventDefault();
+            e.stopPropagation();
+            let stars = getStarredPapers();
+            if (stars.includes(filename)) {
+                stars = stars.filter(f => f !== filename);
+            } else {
+                stars.push(filename);
+            }
+            localStorage.setItem('fluids_stars', JSON.stringify(stars));
+            render();
+        }
+
+        function switchFolder(folderId, element) {
+            baseView = folderId;
+            document.querySelectorAll('#main-folders .folder-link, #topic-folders .folder-link').forEach(el => el.classList.remove('active'));
+            if (element) {
+                element.classList.add('active');
+            }
+            
+            const titles = { 'starred': '收藏夹', 'archive': '所有文献', 'topic:stability': '水动力稳定性' };
+            document.getElementById('view-title').textContent = titles[baseView] || '文献库';
+            render();
+        }
+        
+        function switchFilterTab(tabType, element) {
+            document.querySelectorAll('.sidebar-tab').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            
+            if (tabType === 'journal') {
+                document.getElementById('journal-filters').style.display = 'block';
+                document.getElementById('month-filters').style.display = 'none';
+            } else {
+                document.getElementById('journal-filters').style.display = 'none';
+                document.getElementById('month-filters').style.display = 'block';
+            }
+        }
+        
+        function toggleJournalFilter(j, element) {
+            if (filterJournal === j) {
+                filterJournal = null; 
+            } else {
+                filterJournal = j;
+            }
+            render();
+        }
+        
+        function clearJournalFilter() {
+            filterJournal = null;
+            render();
+        }
+        
+        function toggleMonthFilter(m, element) {
+            if (filterMonth === m) {
+                filterMonth = null; 
+            } else {
+                filterMonth = m;
+            }
+            render();
+        }
+        
+        function clearMonthFilter() {
+            filterMonth = null;
+            render();
+        }
+        
+        function formatMonth(dateStr) {
+            var parts = dateStr.split('-');
+            return parts[0] + '年' + parseInt(parts[1]) + '月';
+        }
+
+        function render() {
+            let readPapers = getReadPapers();
+            let starredPapers = getStarredPapers();
+            
+            let starredCount = starredPapers.length;
+            let archiveCount = allPapers.length;
+            let topicCounts = { 'stability': 0 };
+            let journalCounts = {};
+            let monthCounts = {};
+            
+            allPapers.forEach(p => {
+                journalCounts[p.source] = (journalCounts[p.source] || 0) + 1;
+                
+                let m = formatMonth(p.date);
+                monthCounts[m] = (monthCounts[m] || 0) + 1;
+                
+                let tags = p.tags || [];
+                tags.forEach(t => {
+                    if (topicCounts[t] !== undefined) topicCounts[t]++;
+                });
+            });
+            
+            document.getElementById('count-starred').textContent = starredCount;
+            document.getElementById('count-archive').textContent = archiveCount;
+            document.getElementById('count-stability').textContent = topicCounts['stability'];
+            
+            let journalList = document.getElementById('journal-filters');
+            if (journalList.children.length === 0) {
+                let sortedJournals = Object.keys(journalCounts).sort();
+                sortedJournals.forEach(j => {
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.href = '#';
+                    a.className = 'folder-link';
+                    a.onclick = function(e) { e.preventDefault(); toggleJournalFilter(j, this); };
+                    
+                    let spanName = document.createElement('span');
+                    spanName.textContent = j;
+                    let spanCount = document.createElement('span');
+                    spanCount.className = 'sidebar-count';
+                    spanCount.textContent = journalCounts[j];
+                    
+                    a.appendChild(spanName);
+                    a.appendChild(spanCount);
+                    li.appendChild(a);
+                    journalList.appendChild(li);
+                });
+            }
+            
+            let monthList = document.getElementById('month-filters');
+            if (monthList.children.length === 0) {
+                let sortedMonths = Object.keys(monthCounts).sort((a, b) => {
+                    let pa = a.match(/(\d+)年(\d+)月/);
+                    let pb = b.match(/(\d+)年(\d+)月/);
+                    if (!pa || !pb) return 0;
+                    if (pa[1] !== pb[1]) return parseInt(pb[1]) - parseInt(pa[1]);
+                    return parseInt(pb[2]) - parseInt(pa[2]);
+                });
+                sortedMonths.forEach(m => {
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.href = '#';
+                    a.className = 'folder-link';
+                    a.onclick = function(e) { e.preventDefault(); toggleMonthFilter(m, this); };
+                    
+                    let spanName = document.createElement('span');
+                    spanName.textContent = m;
+                    let spanCount = document.createElement('span');
+                    spanCount.className = 'sidebar-count';
+                    spanCount.textContent = monthCounts[m];
+                    
+                    a.appendChild(spanName);
+                    a.appendChild(spanCount);
+                    li.appendChild(a);
+                    monthList.appendChild(li);
+                });
+            }
+            
+            document.querySelectorAll('#journal-filters .folder-link').forEach(el => {
+                el.classList.toggle('active', el.querySelector('span').textContent === filterJournal);
+            });
+            document.querySelectorAll('#month-filters .folder-link').forEach(el => {
+                el.classList.toggle('active', el.querySelector('span').textContent === filterMonth);
+            });
+            
+            let tagsContainer = document.getElementById('filter-tags-container');
+            tagsContainer.innerHTML = '';
+            tagsContainer.style.display = 'none';
+            if (filterJournal) {
+                let tag = document.createElement('div');
+                tag.className = 'filter-tag';
+                tag.innerHTML = `${filterJournal} <span class="filter-tag-close" onclick="clearJournalFilter()">✕</span>`;
+                tagsContainer.appendChild(tag);
+            }
+            if (filterMonth) {
+                let tag = document.createElement('div');
+                tag.className = 'filter-tag';
+                tag.innerHTML = `${filterMonth} <span class="filter-tag-close" onclick="clearMonthFilter()">✕</span>`;
+                tagsContainer.appendChild(tag);
+            }
+            
+            if (filterJournal || filterMonth) {
+                tagsContainer.style.display = 'flex';
+                tagsContainer.style.marginBottom = '24px';
+            }
+
+            let papersToRender = getPapersToRender();
+
+            let container = document.getElementById('fluids-list-container');
+            container.innerHTML = '';
+            
+            let markBtn = document.getElementById('mark-all-read');
+            if (papersToRender.length === 0) {
+                container.innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">该筛选条件下无文献。</p>';
+                if (markBtn) markBtn.style.display = 'none';
+                return;
+            }
+            
+            let groups = {};
+            let groupOrder = [];
+            let unreadInCurrentFolder = 0;
+            
+            papersToRender.forEach(p => {
+                if (!readPapers.includes(p.filename)) unreadInCurrentFolder++;
+                
+                let month = formatMonth(p.date);
+                if (!groups[month]) {
+                    groups[month] = [];
+                    groupOrder.push(month);
+                }
+                groups[month].push(p);
+            });
+            
+            groupOrder.forEach(month => {
+                let groupDiv = document.createElement('div');
+                groupDiv.className = 'paper-group';
+                
+                let header = document.createElement('h2');
+                header.className = 'paper-group-header';
+                header.textContent = month;
+                groupDiv.appendChild(header);
+                
+                let ul = document.createElement('ul');
+                ul.className = 'paper-list';
+                
+                groups[month].forEach(p => {
+                    let li = document.createElement('li');
+                    
+                    let isRead = readPapers.includes(p.filename);
+                    let isStarred = starredPapers.includes(p.filename);
+                    
+                    let link = document.createElement('a');
+                    link.href = 'post.html?file=fluids/' + p.filename;
+                    link.className = 'paper-link' + (isRead ? ' read' : '');
+                    link.onclick = function() { markRead(p.filename); };
+                    
+                    let titleRow = document.createElement('div');
+                    titleRow.className = 'paper-title-row';
+                    
+                    let title = document.createElement('span');
+                    title.className = 'paper-title';
+                    title.textContent = p.title;
+                    
+                    let starBtn = document.createElement('button');
+                    starBtn.className = 'paper-star' + (isStarred ? ' active' : '');
+                    starBtn.innerHTML = '★';
+                    starBtn.onclick = function(e) { toggleStar(e, p.filename); };
+                    
+                    titleRow.appendChild(starBtn);
+                    titleRow.appendChild(title);
+                    
+                    let meta = document.createElement('div');
+                    meta.className = 'paper-meta';
+                    meta.textContent = p.source + ' · ' + p.date + ' · ' + p.authors;
+                    
+                    link.appendChild(titleRow);
+                    link.appendChild(meta);
+                    li.appendChild(link);
+                    ul.appendChild(li);
+                });
+                
+                groupDiv.appendChild(ul);
+                container.appendChild(groupDiv);
+            });
+            
+            if (markBtn) {
+                markBtn.style.display = unreadInCurrentFolder > 0 ? 'inline-block' : 'none';
+            }
+            if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
+                MathJax.typesetPromise([container]).catch(function(err) {
+                    console.error('MathJax error:', err);
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('fluids.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('网络请求失败');
+                    return response.json();
+                })
+                .then(data => {
+                    allPapers = data;
+                    render();
+                })
+                .catch(error => {
+                    console.error(error);
+                    document.getElementById('fluids-list-container').innerHTML = '<p style="color:var(--text-secondary);padding:20px 0;">加载失败。</p>';
+                });
+        });
+    </script>
 </body>
 </html>
