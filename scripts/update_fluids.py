@@ -198,8 +198,9 @@ def extract_all_dois(text):
 
 def query_crossref_by_doi(doi):
     try:
+        time.sleep(0.5) # Polite delay
         url = f"https://api.crossref.org/works/{doi}"
-        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:test@example.com'})
+        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:yuningwang2329@github.com'})
         res = urllib.request.urlopen(req, timeout=5)
         data = json.loads(res.read())['message']
         title = data.get('title', [''])[0]
@@ -213,9 +214,10 @@ def query_crossref_by_doi(doi):
 
 def query_crossref_by_title(title):
     try:
+        time.sleep(0.5) # Polite delay
         safe_title = urllib.parse.quote(title)
         url = f"https://api.crossref.org/works?query.title={safe_title}&select=DOI,title,author,abstract&rows=1"
-        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:test@example.com'})
+        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:yuningwang2329@github.com'})
         res = urllib.request.urlopen(req, timeout=5)
         data = json.loads(res.read())['message']['items']
         if not data:
@@ -236,10 +238,12 @@ def fetch_feed(feed_config):
     url = feed_config['url']
     
     print(f"Fetching {source_name}...")
+    time.sleep(1) # Delay between feeds
+    
     if f_type == "crossref_journal":
         try:
             cr_url = f"https://api.crossref.org/journals/{url}/works?sort=published&order=desc&rows=15"
-            cr_req = urllib.request.Request(cr_url, headers={'User-Agent': 'mailto:test@example.com'})
+            cr_req = urllib.request.Request(cr_url, headers={'User-Agent': 'mailto:yuningwang2329@github.com'})
             cr_res = urllib.request.urlopen(cr_req, timeout=15)
             data = json.loads(cr_res.read())['message']['items']
             for item in data:
