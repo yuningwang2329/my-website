@@ -7,6 +7,14 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
     <title>流体论文库</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.staticfile.net/mathjax/3.2.2/es5/tex-chtml.js"></script>
     <script src="script.js" defer></script>
     <script src="search.js" defer></script>
 </head>
@@ -423,6 +431,11 @@
             
             if (markBtn) {
                 markBtn.style.display = unreadInCurrentFolder > 0 ? 'inline-block' : 'none';
+            }
+            if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
+                MathJax.typesetPromise([container]).catch(function(err) {
+                    console.error('MathJax error:', err);
+                });
             }
         }
 
