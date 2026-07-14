@@ -211,9 +211,10 @@ h3 {
 .calendar-container {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 24px;
-    margin-top: 32px;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 32px auto 0;
+    max-width: 600px; /* Constrain max width so it doesn't look too huge on desktop */
     box-shadow: var(--shadow-sm);
 }
 
@@ -262,13 +263,13 @@ h3 {
 
 .cal-cell {
     aspect-ratio: 1;
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid var(--border);
     background: var(--bg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 6px;
+    padding: 4px;
     cursor: pointer;
     transition: all 0.2s;
     position: relative;
@@ -290,7 +291,7 @@ h3 {
 }
 
 .cal-date-num {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--text);
 }
@@ -307,10 +308,10 @@ h3 {
 }
 
 .act-badge {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
-    padding: 2px 6px;
-    border-radius: 999px;
+    padding: 1px 4px;
+    border-radius: 4px; /* Slightly squarish minimalist badge */
     background: var(--bg-secondary);
     color: var(--text);
 }
