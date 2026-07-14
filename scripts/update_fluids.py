@@ -93,7 +93,7 @@ def clean_title(title):
 FEEDS = [
     {
         "name": "Arxiv (math.AP)",
-        "url": "http://export.arxiv.org/api/query?search_query=cat:math.AP&sortBy=submittedDate&sortOrder=descending&max_results=5",
+        "url": "http://export.arxiv.org/api/query?search_query=cat:math.AP&sortBy=submittedDate&sortOrder=descending&max_results=50",
         "type": "arxiv"
     },
     {
@@ -238,7 +238,7 @@ def fetch_feed(feed_config):
     print(f"Fetching {source_name}...")
     if f_type == "crossref_journal":
         try:
-            cr_url = f"https://api.crossref.org/journals/{url}/works?sort=published&order=desc&rows=5"
+            cr_url = f"https://api.crossref.org/journals/{url}/works?sort=published&order=desc&rows=15"
             cr_req = urllib.request.Request(cr_url, headers={'User-Agent': 'mailto:test@example.com'})
             cr_res = urllib.request.urlopen(cr_req, timeout=15)
             data = json.loads(cr_res.read())['message']['items']
@@ -269,7 +269,7 @@ def fetch_feed(feed_config):
             res = urllib.request.urlopen(req, timeout=15)
             feed = feedparser.parse(res.read())
             
-            for entry in feed.entries[:5]: # Limit parsing to save time
+            for entry in feed.entries[:30]: # Increased to capture more
                 title = entry.get('title', '').replace('\n', ' ').strip()
                 link = entry.get('link', '')
                 summary = entry.get('summary', entry.get('description', ''))
@@ -308,17 +308,10 @@ def fetch_feed(feed_config):
                         'source': source_name, 'link': link, 'abstract_en': abstract_en
                     })
 
-
         except Exception as e:
             print(f"Error fetching {source_name}: {e}")
             
-    filtered_papers = []
-    for p in papers:
-        if ai_paper_filter(p['title'], p['abstract_en']):
-            filtered_papers.append(p)
-        else:
-            print(f"Skipped (AI/Keyword filter): {p['title'][:50]}...")
-    return filtered_papers
+    return papers
 
 def main():
     if not os.path.exists(MD_DIR):
@@ -338,9 +331,9 @@ def main():
 
     existing_titles = {p['title'].strip().lower() for p in existing_papers}
     
-    # Load archived titles to prevent re-fetching old papers
+    # Load archived titles
     for filename in os.listdir(ARCHIVE_DIR):
-        if filename.endswith('.json'):
+        if filename.endswith('.json') and filename != 'rejected.json':
             try:
                 with open(os.path.join(ARCHIVE_DIR, filename), 'r', encoding='utf-8') as f:
                     archived = json.load(f)
@@ -348,6 +341,16 @@ def main():
                         existing_titles.add(p['title'].strip().lower())
             except:
                 pass
+                
+    # Load rejected titles cache to save AI tokens
+    REJECTED_FILE = os.path.join(ARCHIVE_DIR, 'rejected.json')
+    rejected_titles = set()
+    if os.path.exists(REJECTED_FILE):
+        try:
+            with open(REJECTED_FILE, 'r', encoding='utf-8') as f:
+                rejected_titles = set(json.load(f))
+        except:
+            pass
     
     new_papers_data = []
     all_fetched = []
@@ -357,36 +360,51 @@ def main():
         
     for p in all_fetched:
         compare_title = p['title'].strip().lower()
-        if compare_title not in existing_titles:
-            print(f"-> 发现新论文: {p['title'][:50]}...")
-            abstract_zh = translate_to_zh(p['abstract_en'])
+        if compare_title in existing_titles or compare_title in rejected_titles:
+            continue
             
-            filename = create_markdown(p['title'], p['authors'], p['date'], p['source'], p['link'], p['abstract_en'], abstract_zh)
+        # Call AI filter only on completely new titles
+        if not ai_paper_filter(p['title'], p.get('abstract_en', '')):
+            print(f"Skipped (AI/Keyword filter): {p['title'][:50]}...")
+            rejected_titles.add(compare_title)
+            continue
             
-            # Tag topics
-            tags = []
-            stab_keywords = [
-                'hydrodynamic stability', 'couette', 'poiseuille', 'shear flow', 
-                'inviscid damping', 'enhanced dissipation', 'dongyi wei', 
-                'zhifei zhang', 'taylor-couette', 'kolmogorov flow', 
-                'boundary layer stability', 'resolvent estimate', 'transition to turbulence', 
-                'orr-sommerfeld', 'rayleigh equation', 'hydrodynamic instability'
-            ]
-            text_for_tagging = (p['title'] + ' ' + p.get('abstract_en', '')).lower()
-            if any(k in text_for_tagging for k in stab_keywords):
-                tags.append('stability')
-            
-            new_papers_data.append({
-                'title': clean_title(p['title']),
-                'authors': p['authors'],
-                'date': p['date'],
-                'source': p['source'],
-                'link': p.get('link', ''),
-                'abstract_en': p.get('abstract_en', ''),
-                'filename': filename,
-                'tags': tags
-            })
-            existing_titles.add(compare_title)
+        print(f"-> 发现新论文: {p['title'][:50]}...")
+        abstract_zh = translate_to_zh(p['abstract_en'])
+        
+        filename = create_markdown(p['title'], p['authors'], p['date'], p['source'], p['link'], p['abstract_en'], abstract_zh)
+        
+        # Tag topics
+        tags = []
+        stab_keywords = [
+            'hydrodynamic stability', 'couette', 'poiseuille', 'shear flow', 
+            'inviscid damping', 'enhanced dissipation', 'dongyi wei', 
+            'zhifei zhang', 'taylor-couette', 'kolmogorov flow', 
+            'boundary layer stability', 'resolvent estimate', 'transition to turbulence', 
+            'orr-sommerfeld', 'rayleigh equation', 'hydrodynamic instability'
+        ]
+        text_for_tagging = (p['title'] + ' ' + p.get('abstract_en', '')).lower()
+        if any(k in text_for_tagging for k in stab_keywords):
+            tags.append('stability')
+        
+        new_papers_data.append({
+            'title': clean_title(p['title']),
+            'authors': p['authors'],
+            'date': p['date'],
+            'source': p['source'],
+            'link': p.get('link', ''),
+            'abstract_en': p.get('abstract_en', ''),
+            'filename': filename,
+            'tags': tags
+        })
+        existing_titles.add(compare_title)
+
+    # Save rejected cache (limit to 2000 to prevent infinite growth)
+    try:
+        with open(REJECTED_FILE, 'w', encoding='utf-8') as f:
+            json.dump(list(rejected_titles)[:2000], f, ensure_ascii=False)
+    except:
+        pass
 
     if new_papers_data or existing_papers:
         all_papers = new_papers_data + existing_papers
