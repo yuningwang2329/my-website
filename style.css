@@ -1045,35 +1045,17 @@ h3 {
     font-weight: 500;
 }
 
-.site-disclaimer {
-    margin-top: 64px;
-    padding-top: 32px;
-    border-top: 1px solid var(--border);
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
-}
-
-.site-disclaimer p {
-    margin-bottom: 8px;
-}
-
-.site-disclaimer p:last-child {
-    margin-bottom: 0;
-}
-
-.site-disclaimer .disclaimer-title {
-    color: var(--text);
-    font-weight: 500;
-    margin-bottom: 12px;
-    font-size: 0.85rem;
-}
-
 .site-footer {
     text-align: center;
-    padding: 40px 0 24px;
+    padding: 64px 20px 32px;
     font-size: 0.75rem;
     color: var(--text-secondary);
-    opacity: 0.7;
+    opacity: 0.6;
     letter-spacing: 0.02em;
+}
+
+.footer-disclaimer {
+    max-width: 680px;
+    margin: 0 auto 12px;
+    line-height: 1.6;
 }
