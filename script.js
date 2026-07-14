@@ -12,14 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ---- 最后更新时间 ----
-    var updatedEl = document.getElementById('last-updated');
-    if (updatedEl) {
-        // 使用 GitHub Pages 的最后部署时间：每次 push 后自动更新
-        // 这里使用页面实际渲染时间作为近似值
-        var now = new Date();
-        var dateStr = now.getFullYear() + '-' +
-            String(now.getMonth() + 1).padStart(2, '0') + '-' +
-            String(now.getDate()).padStart(2, '0');
-        updatedEl.textContent = '最后更新 ' + dateStr;
+    const dateElement = document.getElementById('last-updated');
+    if (dateElement) {
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+        dateElement.textContent = `© ${yyyy} Yuning Wang · 最后更新 ${yyyy}-${mm}-${dd}`;
     }
 });
