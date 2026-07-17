@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+    <title>阅读文献</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.staticfile.net/marked/4.3.0/marked.min.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.staticfile.net/mathjax/3.2.2/es5/tex-chtml.js"></script>
+    <link rel="preconnect" href="https://cdn.staticfile.net">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" style="display: flex; align-items: center; gap: 8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                返回
+            </a>
+            <div class="nav-links">
+                <a href="https://github.com/yuningwang2329/my-website" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+                    <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main fade-in">
+        <article id="content" class="md-body fluids-content" style="max-width: 980px; margin: 0 auto; padding-top: 40px;">
+            <p style="color: var(--text-secondary);">正在加载文献…</p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-disclaimer">
+            本页面由 AI 自动从公开数据源追踪学术文献，仅供个人学习与交流使用，版权归原作者及出版方所有。<br>
+            AI 生成内容仅供参考。本站不提供未经授权的全文下载服务。
+        </div>
+    </footer>
+    
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var fileName = urlParams.get('file');
+        var contentDiv = document.getElementById('content');
+
+        if (fileName) {
+            fetch(fileName)
+                .then(function(response) {
+                    if (!response.ok) throw new Error('文献不存在或已被移除。');
+                    return response.text();
+                })
+                .then(function(text) {
+                    contentDiv.innerHTML = marked.parse(text);
+                    var firstH1 = contentDiv.querySelector('h1');
+                    if (firstH1) document.title = firstH1.innerText;
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
+                        MathJax.typesetPromise([contentDiv]).catch(function(err) {
+                            console.error('MathJax error:', err);
+                        });
+                    }
+                })
+                .catch(function(error) {
+                    contentDiv.innerHTML = '<h1>加载失败</h1><p>' + error.message + '</p>';
+                });
+        } else {
+            contentDiv.innerHTML = '<h1>未指定文献</h1><p>请返回<a href="index.html">首页</a>选择一篇文献阅读。</p>';
+        }
+    </script>
+</body>
+</html>
