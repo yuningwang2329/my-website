@@ -1,5 +1,225 @@
 [
     {
+        "title": "On the solvability of a self-consistent chemotaxis–Navier–Stokes system with complete zero dissipation",
+        "authors": "Yingping Peng",
+        "date": "2026-07-17",
+        "source": "Appl. Math. Lett.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0893965926001801?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-17-On-the-solvability-of-a-self-consistent-fb9bce.md",
+        "tags": []
+    },
+    {
+        "title": "Self-consistent bounds method for dissipative PDEs",
+        "authors": "Daniel Wilczak, Piotr Zgliczynski",
+        "date": "2026-07-17",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005504?dgcid=rss_sd_all",
+        "abstract_en": "We discuss the method of self-consistent bounds for dissipative PDEs with periodic boundary conditions. We prove convergence theorems of Galerkin projections for a class of dissipative PDEs, which constitute a theoretical basis of a general framework for construction of an algorithm that computes bounds for the solutions of the underlying PDE and its dependence on initial conditions.We also show, that the classical examples of parabolic PDEs including Kuramoto-Sivashinsky equation and the Navier-Stokes on the torus fit into this framework.",
+        "filename": "2026-07-17-Self-consistent-bounds-method-for-dissip-a98476.md",
+        "tags": []
+    },
+    {
+        "title": "Global solvability, boundedness and stabilization to a three-dimensional chemotaxis-Stokes system modeling coral fertilization",
+        "authors": "Jiashan Zheng, Jianing Xie",
+        "date": "2026-07-17",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005231?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-17-Global-solvability--boundedness-and-stab-9c15e7.md",
+        "tags": []
+    },
+    {
+        "title": "Polynomial mixing for the white-forced hyperviscous Burgers equation on the whole line",
+        "authors": "Peng Gao",
+        "date": "2026-07-17",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005243?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-17-Polynomial-mixing-for-the-white-forced-h-7e8c5c.md",
+        "tags": []
+    },
+    {
+        "title": "Non-uniqueness of (Stochastic) Lagrangian Trajectories for Euler Equations",
+        "authors": "Huaxiang Lü, Michael Röckner, Xiangchan Zhu",
+        "date": "2026-07-17",
+        "source": "J. Funct. Anal.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022123626002946?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-17-Non-uniqueness-of--Stochastic--Lagrangia-b6aaa3.md",
+        "tags": []
+    },
+    {
+        "title": "An Analysis of the Entire Functions Associated with the Operator of the KdV Equation",
+        "authors": "Roberto de Almeida Capistrano-Filho, Hugo Parada, Jandeilson Santos da Silva",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1743259?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2067-2110, June 2026.   Abstract. It is well known that the controllability property of partial differential equations (PDEs) is closely linked to the proof of an observability inequality for the adjoint system, which, sometimes, involves analyzing a spectral problem associated with the PDE under consideration. In this work, we study a series of spectral issues that ensure the controllability of the renowned Korteweg-de Vries equation on star-graph. This investigation reduces to determining when certain functions, associated with this spectral problem, are entire. The novelty here lies in presenting this detailed analysis in the context of a star graph structure.",
+        "filename": "2026-07-17-An-Analysis-of-the-Entire-Functions-Asso-41d41c.md",
+        "tags": []
+    },
+    {
+        "title": "The Bogoliubov–Bose–Hubbard Model: Existence of Minimizers and Absence of Quantum Phase Transition",
+        "authors": "Norbert Mokrzański, Marcin Napiórkowski",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1746914?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2138-2185, June 2026.   Abstract. We consider a variational approach to the Bose–Hubbard model based on Bogoliubov theory. We introduce the grand canonical and canonical free energy functionals for which we prove the existence of minimizers. By analyzing their structure we show the existence of a thermally driven phase transition by showing that the system is superfluid at sufficiently low temperatures and insulating at high temperatures. In particular, we show that this model does not exhibit a quantum phase transition.",
+        "filename": "2026-07-17-The-Bogoliubov-Bose-Hubbard-Model--Exist-01e15a.md",
+        "tags": []
+    },
+    {
+        "title": "Three-Dimensional Axisymmetric Subsonic Euler–Poisson Flows with Nonzero Vorticity in Divergent Nozzles",
+        "authors": "Chunpeng Wang, Zihao Zhang",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1781164?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2291-2322, June 2026.   Abstract. We investigate the structural stability of spherically symmetric subsonic flows to the steady Euler–Poisson system in a three-dimensional divergent nozzle under axisymmetric perturbations of suitable boundary conditions, and establish the existence and uniqueness of smooth axisymmetric subsonic Euler–Poisson flows with nonzero swirl velocity and vorticity. The solution shares the same regularity for the velocity, the pressure, the entropy, and the electrostatic potential. The main difficulty for the axisymmetric flows with swirls is the singularity near the symmetry axis. With the aid of the deformation-curl-Poisson decomposition, the steady axisymmetric Euler–Poisson system is transformed into a deformation-curl-Poisson system and several transport equations. One of the crucial ingredients of the analysis is to obtain the well-posedness of the boundary value problem for the associated lin",
+        "filename": "2026-07-17-Three-Dimensional-Axisymmetric-Subsonic-12ec24.md",
+        "tags": []
+    },
+    {
+        "title": "Mean-Field Limit of Nonexchangeable Interacting Diffusions with Singular Kernels",
+        "authors": "Zhenfu Wang, Xianliang Zhao, Rongchan Zhu",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/24M168129X?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2375-2418, June 2026.   Abstract. The mean-field limit of interacting diffusions without exchangeability, caused by weighted interactions and non-i.i.d. initial values, are investigated. The weights could be signed and unbounded. The result applies to a large class of singular kernels including the Biot–Savart law. We demonstrate a flexible type of mean-field convergence, in contrast to the typical convergence of [math]. More specifically, the sequence of signed empirical measure processes with arbitrary uniform [math]-weights, [math], weakly converges to a coupled PDE’s, such as the dynamics describing the passive scalar advected by the 2D Navier–Stokes equation. Our method is based on a tightness/compactness argument and makes use of the systems’ uniform Fisher information. The main difficulty is to determine how to propagate the regularity properties of the limits of empirical measures in the absence of the DeFinetti–He",
+        "filename": "2026-07-17-Mean-Field-Limit-of-Nonexchangeable-Inte-576cf1.md",
+        "tags": []
+    },
+    {
+        "title": "\\({C^1}\\) Type Regularization for Point Vortices on \\(\\mathbb S^2\\)",
+        "authors": "Takashi Sakajo, Changjun Zou",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/24M1719281?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2439-2474, June 2026.   Abstract. We construct a series of classic vorticity solutions for the incompressible Euler equation on [math], which constitute the [math] type regularization for a general traveling point vortex system. The construction is accomplished by applying a tangent mapping on [math] and the Lyapunov–Schmidt reduction argument. By introducing a normalized condition to deal with the rotation invariance on [math], we prove that the vortices will be located near a 1-dimensional degenerate normalized critical point of the Kirchhoff–Routh function. Moreover, in the tangent space at each vortex center, the scaled stream function is verified as a perturbation of the ground state for a generalized plasma problem. Some other qualitative and quantitative estimates for the regularization series are also obtained in this paper.",
+        "filename": "2026-07-17-C-1----Type-Regularization-for-Point-e4a695.md",
+        "tags": []
+    },
+    {
+        "title": "Weak Solutions and Singular Limits for a Compressible Fluid-Structure Interaction Problem with Slip Boundary Conditions",
+        "authors": "Yadong Liu, Sourav Mitra, Šárka Nečasová",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1736827?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2536-2577, June 2026.   Abstract. We study a system describing the compressible barotropic fluids interacting with (visco-) elastic solid shell/plate. In particular, the elastic structure is part of the moving boundary of the fluid, and the Navier-slip type boundary condition is taken into account. Depending on the reference geometry (flat or not), we show the existence of weak solutions to the coupled system provided the adiabatic exponent satisfies [math] without damping and [math] with structure damping, utilizing the domain extension and regularization approximation. Moreover, via a modified relative entropy method in time-dependent domains, we give a rigorous justification of the incompressible inviscid limit of the compressible fluid-structure interaction problem with a flat reference geometry, in the regime of low Mach number, high Reynolds number, and well-prepared initial data. As a byproduct, with a fixed Reynold",
+        "filename": "2026-07-17-Weak-Solutions-and-Singular-Limits-for-a-bc8d24.md",
+        "tags": []
+    },
+    {
+        "title": "Hall–MHD System as a Simplified One-Fluid Ion Model Derived from Two-Fluid Euler–Maxwell Equations",
+        "authors": "Yue-Jun Peng, Shuai Xi, Liang Zhao",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1733033?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2578-2612, June 2026.   Abstract. We derive the one-fluid ion model from the partial-compressible two-fluid Euler–Maxwell system with a collision mechanism in which the ions are considered compressible while electrons are not. Deriving such a model based solely on the zero-electron-mass limit or the quasi-neutral limit is quite open because of the singularities of the electric field and the strong coupling effects of the Lorentz forces. In this work, we apply the combined zero-electron-mass and quasi-neutral limit. We prove the global-in-time existence and the combined limit of smooth solutions. Furthermore, for well-prepared initial data, we establish the error estimates of the convergence between smooth solutions to one-fluid and two-fluid models. It is worth mentioning that the velocities of ions and electrons are different in this study.",
+        "filename": "2026-07-17-Hall-MHD-System-as-a-Simplified-One-Flui-1a4ab0.md",
+        "tags": []
+    },
+    {
+        "title": "Cost of Controllability of the Burgers Equation Linearized at a Steady Shock in the Vanishing Viscosity Limit",
+        "authors": "Vincent Laheurte",
+        "date": "2026-07-17",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1723311?af=R",
+        "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 3, Page 2702-2737, June 2026.   Abstract. We consider the one-dimensional Burgers equation linearized at a stationary shock and investigate its null-controllability cost with a control at the left endpoint. We give an upper and a lower bound on the control time required for this cost to remain bounded in the vanishing viscosity limit, and we construct an admissible control with an explicit limit behavior. We also provide an extension of the analysis to the case where the control acts on both endpoints. The proof relies on complex analysis and adapts methods previously used to tackle the same issue with a constant transport term.",
+        "filename": "2026-07-17-Cost-of-Controllability-of-the-Burgers-E-e0aa6c.md",
+        "tags": []
+    },
+    {
+        "title": "Low Mach number limit for the compressible Navier-Stokes equation with a stationary force",
+        "authors": "Naoto Deguchi",
+        "date": "2026-07-17",
+        "source": "J. Math. Pures Appl.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0021782426000978?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-17-Low-Mach-number-limit-for-the-compressib-638016.md",
+        "tags": []
+    },
+    {
+        "title": "Local well-posedness for a free boundary problem of the compressible Navier–Stokes equations in critical spaces",
+        "authors": "Takayoshi Ogawa, Senjo Shimizu",
+        "date": "2026-07-17",
+        "source": "J. Math. Pures Appl.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0021782426000905?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-17-Local-well-posedness-for-a-free-boundary-28471d.md",
+        "tags": []
+    },
+    {
+        "title": "Optimal decay rates to the contact wave for 1-D compressible Navier-Stokes equations",
+        "authors": "Lingjun Liu, Shu Wang, Lingda Xu",
+        "date": "2026-07-17",
+        "source": "J. Math. Pures Appl.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0021782426000942?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-17-Optimal-decay-rates-to-the-contact-wave-771e5c.md",
+        "tags": []
+    },
+    {
+        "title": "Analytic finite-rank corrections for singularly weighted estimates in a computer-assisted proof of 3D Euler singularity",
+        "authors": "Jiajie Chen, Thomas Y. Hou",
+        "date": "2026-07-16",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.15256v1",
+        "abstract_en": "Computer-assisted proofs of self-similar singularity formation for fluid equations often rely on numerically constructed approximate profiles. One effective approach to establishing stability of perturbations around a numerically constructed profile is to perform weighted energy estimates with singular weights near the singularity. However, the weighted norms require exact local vanishing conditions that are not automatically preserved by the equations nor the numerical construction. In this paper, we review an analytic low-rank correction method first developed in [ChenHou2023a,ChenHou2023b] to overcome this difficulty. The numerical step determines coefficients, rigorous bounds, and low-order defect modes in explicit global basis representations, while the required vanishing conditions are enforced analytically through low-rank corrections derived from Taylor expansions of the relevant quantities represented in a smooth basis. For completeness, we briefly review the singularly weighted estimates and a quantitative finite-rank perturbation method in the 2D Boussinesq / 3D Euler stability argument, where singular weights and the required vanishing order arise. Against this background, we formulate the local correction principle in a simplified setting, explain the correction of the residual error in numerical constructions of approximate space-time solutions and the stream function, and discuss its broader applicability to computer-assisted stability analysis for nonlocal PDEs.",
+        "filename": "2026-07-16-Analytic-finite-rank-corrections-for-sin-cfc11c.md",
+        "tags": []
+    },
+    {
+        "title": "Absence of blow-up in the 3D Navier-Stokes equations with transport noise",
+        "authors": "Antonio Agresti",
+        "date": "2026-07-16",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.15140v1",
+        "abstract_en": "Establishing the global-in-time smoothness of solutions to the 3D Navier-Stokes equations (NSEs) with large initial data remains a long-standing open problem. In this paper, we prove that the 3D NSEs driven by a suitably chosen transport noise -- a physically motivated stochastic perturbation -- admit global-in-time smooth solutions with high probability. This regularizing effect holds uniformly for initial data in arbitrarily large balls of subcritical function spaces with positive smoothness.",
+        "filename": "2026-07-16-Absence-of-blow-up-in-the-3D-Navier-Stok-ee52cf.md",
+        "tags": []
+    },
+    {
+        "title": "The $L^p$ Neumann problem for the Stokes system in nonsmooth domains",
+        "authors": "Qianyun Miao, Fa Peng",
+        "date": "2026-07-16",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.15042v1",
+        "abstract_en": "We study the $L^p$ Neumann problem for the Stokes system on bounded Lipschitz domains in $\\mathbb R^n$ with $n\\ge 2$. Our main contribution is to introduce a nonlinear gradient quantity -- namely, the linear gradient weighted by a suitable power of the pair $(\\nabla u,φ)$ -- in place of the standard linear gradient used in previous work by Geng and Shen (2025). This new approach allows us to establish a global second-order estimate, which in turn yields an improved reverse Hölder inequality and extends the known range of solvability for convex domains, particularly improving the upper bound for $n\\ge 3$.   \\medskip   \\noindent \\quad\\ Beyond the convex setting, our method also applies to semi-convex domains. Moreover, for more general Lipschitz domains, we prove solvability under a smallness condition on the second fundamental form of the boundary, assuming the boundary has second-order derivatives in the weak-type Lorentz spaces $W^2L^{n-1,\\infty}$ for $n\\ge 3$, or $W^2L^{1,\\infty}\\log L$ for $n=2$. In particular, our results cover all $W^{2,q}$ domains with $q>n-1$.",
+        "filename": "2026-07-16-The--L-p--Neumann-problem-for-the-Stokes-822cc9.md",
+        "tags": []
+    },
+    {
+        "title": "Correction to: Stationary Solutions to the Stochastic Burgers Equation on the Line",
+        "authors": "Alexander Dunlap, Cole Graham, Lenya Ryzhik",
+        "date": "2026-07-16",
+        "source": "Commun. Math. Phys.",
+        "link": "https://doi.org/10.1007/s00220-026-05599-0",
+        "abstract_en": "",
+        "filename": "2026-07-16-Correction-to--Stationary-Solutions-to-t-ae9300.md",
+        "tags": []
+    },
+    {
+        "title": "Singular Limits of the Shallow Water Equations on the Sphere",
+        "authors": "Bin Cheng, Steve Schochet",
+        "date": "2026-07-15",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.14257v1",
+        "abstract_en": "Solutions of the slightly compressible shallow water equations on a rapidly rotating sphere are shown to be bounded uniformly when ratio of the   Froude number to the Rossby number is bounded. Moreover, in the singular limit in which the ratio of those parameters remains fixed while they both   tend to zero, solutions with well-prepared initial data tend to corresponding solutions of limit equations. A convergence result is also obtained   for the three-scale singular limit in which the Froude number tends to zero faster than the Rossby number.",
+        "filename": "2026-07-15-Singular-Limits-of-the-Shallow-Water-Equ-9ff6ce.md",
+        "tags": []
+    },
+    {
+        "title": "The Benjamin–Ono Equation in the Zero‐Dispersion Limit for Rational Initial Data: Generation of Dispersive Shock Waves",
+        "authors": "Elliot Blackstone, Louise Gassot, Patrick Gérard, Peter D. Miller",
+        "date": "2026-07-13",
+        "source": "Commun. Pure Appl. Math.",
+        "link": "https://onlinelibrary.wiley.com/doi/10.1002/cpa.70044?af=R",
+        "abstract_en": "ABSTRACT\n                  The leading‐order asymptotic behavior of the solution of the Cauchy initial‐value problem for the Benjamin–Ono equation in  is obtained explicitly for generic rational initial data . An explicit asymptotic wave profile  is given, in terms of the branches of the multivalued solution of the inviscid Burgers equation with initial data , such that the solution  of the Benjamin–Ono equation with dispersion parameter  and initial data  satisfies  in the locally uniform sense as , provided a discriminant inequality holds implying that certain caustic curves in the ‐plane are avoided. In some cases, this convergence implies strong  convergence. The asymptotic profile  is consistent with the modulated multiphase wave solutions described by Dobrokhotov and Krichever.",
+        "filename": "2026-07-13-The-Benjamin-Ono-Equation-in-the-Zero-Di-c67d4a.md",
+        "tags": []
+    },
+    {
         "title": "$L^2(\\mathbb{R}^2)$ Well-Posedness and Logarithmic Lipschitz Regularity for the Density Patch Problem",
         "authors": "Alessandro Violini",
         "date": "2026-07-12",
@@ -208,6 +428,16 @@
         "tags": []
     },
     {
+        "title": "Rigidity Results for Finite Energy Solutions to the Stationary 2D Euler Equations",
+        "authors": "Fabio De Regibus, Francesco Esposito, David Ruiz",
+        "date": "2026-07-09",
+        "source": "Commun. Math. Phys.",
+        "link": "https://doi.org/10.1007/s00220-026-05660-y",
+        "abstract_en": "Abstract\n                  \n                    In this paper we prove rigidity results for classical solutions to the stationary 2D Euler equations in\n                    \n                      \n                        $$\\mathbb {R}^2$$\n                        \n                          \n                            \n                              R\n                            \n                            2\n                          \n                        \n                      \n                    \n                    . Assuming that the velocity field has finite energy and that the stagnation set is connected, we prove that the corresponding stream function solves an autonomous semilinear elliptic equation. Under some extra conditions on the vorticity near infinity we can also prove that the streamlines are concentric circles. The proofs include several energy estimates on the behavior of the stream function at infinity, as well as an adaptation of the continuous Steiner symmetrization to our setting.\n                  ",
+        "filename": "2026-07-09-Rigidity-Results-for-Finite-Energy-Solut-bab8c1.md",
+        "tags": []
+    },
+    {
         "title": "Well-Posedness of the Stochastic Thin-Film Equation with an Interface Potential",
         "authors": "Antonio Agresti, Max Sauerbrey",
         "date": "2026-07-09",
@@ -280,5 +510,27 @@
         "source": "Calc. Var. Partial Differ. Equ.",
         "filename": "2026-07-01-Asymptotic-stability-of-composite-waves-5837db.md",
         "tags": []
+    },
+    {
+        "title": "Rigidity and Functional Properties of $$\\textrm{BD}_{\\textrm{dev}}(\\Omega )$$",
+        "authors": "Marco Caroccia, Nicolas Van Goethem",
+        "date": "2026-06-21",
+        "source": "Arch. Ration. Mech. Anal.",
+        "link": "https://doi.org/10.1007/s00205-026-02210-7",
+        "abstract_en": "Abstract\n                  \n                    We provide a structural analysis of the space of functions of bounded deviatoric deformation,\n                    \n                      \n                        $$\\textrm{BD}_{\\textrm{dev}}$$\n                        \n                          \n                            BD\n                            dev\n                          \n                        \n                      \n                    \n                    , which arises in models of plasticity and fluid mechanics. The main result is the identification of the annihilator and a rigidity theorem for\n                    \n                      \n                        $$\\textrm{BD}_{\\textrm{dev}}$$\n                        \n                          \n                            BD\n                            dev\n                          \n                        \n                      \n                    \n                    -maps with constant polar vector in the wave cone characterizing the structure of singularities for such maps. This result, together with an explicit kernel projection operator, enables an iterative blow-up procedure for relaxation, homogenization, and integral representation problems, allowing for integrands with explicit dependence on\n                    u\n                    as well as\n                    \n                      \n                        $${{\\mathcal {E}}}_d u$$\n                        \n                          \n                            \n                              E\n                              d\n                            \n                            u\n                          \n                        \n                      \n                    \n                    . Our approach overcomes several difficulties as compared to the\n                    \n                      \n                        $$\\textrm{BD}$$\n                        \n                          BD\n                        \n                      \n                    \n                    case, in particular due to the lack of invariance of\n                    \n                      \n                        $${{\\mathcal {E}}}_d$$\n                        \n                          \n                            E\n                            d\n                          \n                        \n                      \n                    \n                    under orthogonalization of the polar directions.\n                  ",
+        "filename": "2026-06-21-Rigidity-and-Functional-Properties-of-32ab3a.md",
+        "tags": []
+    },
+    {
+        "title": "Stability of Viscous Three‐Dimensional Stratified Couette Flow via Dispersion and Mixing",
+        "authors": "Michele Coti Zelati, Augusto Del Zotto, Klaus Widmayer",
+        "date": "2026-04-24",
+        "source": "Commun. Pure Appl. Math.",
+        "link": "https://onlinelibrary.wiley.com/doi/10.1002/cpa.70048?af=R",
+        "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
+        "filename": "2026-04-24-Stability-of-Viscous-Three-Dimensional-S-138ea0.md",
+        "tags": [
+            "stability"
+        ]
     }
 ]
