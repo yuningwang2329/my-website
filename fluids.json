@@ -1,5 +1,75 @@
 [
     {
+        "title": "Piecewise smooth stationary Euler flows with support in a neighborhood of a helix",
+        "authors": "Daniel Peralta-Salas, Jie Wan",
+        "date": "2026-07-17",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.16141v1",
+        "abstract_en": "We construct stationary solutions of the three-dimensional incompressible Euler equations with helical symmetry and support in a neighborhood of a helix. The solutions are piecewise smooth and arise from a nonlinear overdetermined elliptic boundary value problem associated with a stream-function formulation. A distinguishing feature is that the vortex cross-sections are intrinsically anisotropic: after rescaling, the leading-order shape is elliptic rather than radial, and the boundary exhibits a nontrivial third Fourier mode reflecting helical effects absent in previous axisymmetric constructions. A key step in the proof is the analysis of a genuinely anisotropic overdetermined elliptic problem with prescribed Dirichlet and nonconstant Neumann conditions.",
+        "filename": "2026-07-17-Piecewise-smooth-stationary-Euler-flows-9c60b9.md",
+        "tags": []
+    },
+    {
+        "title": "Fluctuation dynamics in randomly advected Navier-Stokes equations below critical scaling",
+        "authors": "Arnaud Debussche, Martina Hofmanová",
+        "date": "2026-07-17",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.16132v1",
+        "abstract_en": "We study randomly advected incompressible Navier-Stokes equations, where the advecting field is a mean-zero, divergence-free, space-time stationary velocity field with smooth order-one correlations. We introduce a two-parameter family of models in which the advection is accelerated on a fast temporal scale $\\varepsilon^2$ and has spatial correlation length $δ$; the critical regime $\\varepsilon = δ$ corresponds to the natural parabolic scaling of the Navier-Stokes equation. In the full subcritical regime $\\varepsilon = o (δ)$, we prove a law of large numbers in dimensions $d = 2, 3$: the solutions converge to a deterministic Navier--Stokes system with an enhanced diffusion coefficient given by a Green-Kubo formula. In two space dimensions, under the slightly stronger assumption $\\varepsilon = o (δ^{1 + ι})$ for some $ι> 0$, we identify the leading-order fluctuations: after subtracting deterministic macroscopic corrections satisfying a nonlinear system of Navier-Stokes type, the rescaled fluctuations converge to a Gaussian field solving a linearized Navier-Stokes equation driven by multiplicative space-time white noise.",
+        "filename": "2026-07-17-Fluctuation-dynamics-in-randomly-advecte-64fa64.md",
+        "tags": []
+    },
+    {
+        "title": "Inertial motion of incompressible continua",
+        "authors": "Francesca Berlinghieri, Giulio G. Giusteri",
+        "date": "2026-07-17",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.16043v1",
+        "abstract_en": "We study the inertial motion of incompressible continua within a geometric and variational framework, extending the classical Arnold-Ebin-Marsden theory from the group of volume-preserving diffeomorphisms of a fixed domain to configuration spaces of deformations with variable image. In the latter case, the lack of a group structure requires proving some results that are instead immediate in the classical setting. We show that the orientation-preserving deformations with suitable regularity constitute a Hilbert manifold and that volume-preserving deformations form a submanifold with tangent vectors that are mapped onto divergence-free vector fields by the Lagrangian-to-Eulerian-picture correspondence. In so doing, we also present the geometric structure corresponding to compressible continua. The kinetic energy of the continuum gives rise to both a Lagrangian action, from which the equations of inertial motion are deduced, and a metric, with geodesics that are identified precisely by inertial motions. While the inertial motion can coincide with a physical one only for incompressible perfect fluids, it can be used to provide a natural parametrization of the configuration manifold for generic continua. We obtain a general result of local-in-time existence of solutions for the geodesic flow equation and we present explicit examples showing that, for the same initial data, the geodesic followed by the continuum in the compressible case can leave the manifold of admissible deformations in finite time, while the corresponding incompressible geodesic exists for all times.",
+        "filename": "2026-07-17-Inertial-motion-of-incompressible-contin-4b744f.md",
+        "tags": []
+    },
+    {
+        "title": "Modified compensating functions for the incompressible Euler--Vlasov--Fokker--Planck system: Global classical solutions and pointwise-in-space decay",
+        "authors": "Jinkai Ni",
+        "date": "2026-07-17",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.15878v1",
+        "abstract_en": "We consider the Cauchy problem for the incompressible Euler-Vlasov-Fokker-Planck (Euler-VFP) system in the whole space \\(\\mathbb R^3\\) near the global Maxwellian equilibrium. The Fokker-Planck operator and the particle-fluid drag dissipate the relative momentum but do not separately control the common particle-fluid momentum; in Fourier variables, this degeneracy occurs in the transverse momentum components. To recover the missing coercivity, we augment the classical four-moment compensator with a finite-rank skew-adjoint correction constructed from second-order Hermite modes. Combined with the cancellation between the kinetic and fluid drag terms and the incompressibility constraint, the resulting compensated Fourier energy yields a unique global classical solution for sufficiently small initial data $(u_0,f_0)\\in H^N\\times L_v^2(H^N)$, with $N\\geq 4$. The high-order energy argument involves only spatial derivatives of the kinetic perturbation and requires no mixed \\(x\\)-\\(v\\) derivative estimates. We further construct a positive-order Lyapunov functional and establish the decay rate \\((1+t)^{-1/2}\\) for all positive-order spatial derivatives in the \\(L^2\\)-norm and for the corresponding pointwise-in-space norms, without any additional \\(L^1\\) integrability or low-frequency assumption on the initial data. Although no uniform algebraic decay rate is asserted for the zero-order energy of \\((u,f)\\), the directly dissipative variables \\(u-J(f)\\) and \\(\\{\\mathbf I-\\mathbf P_0\\}f\\) decay in the \\(L^2\\)-norm at the same rate, where $ J(f)=\\int_{\\mathbb R^3}v\\sqrt M f\\,{\\rm d}v$ denotes the particle momentum and \\(\\mathbf P_0\\) is the orthogonal projection onto \\(\\operatorname{span}\\{\\sqrt M,v_1\\sqrt M,v_2\\sqrt M,v_3\\sqrt M\\}\\). To the best of our knowledge, these positive-order and zero-order decay estimates have not previously been established for the incompressible Euler-VFP system.",
+        "filename": "2026-07-17-Modified-compensating-functions-for-the-a0085b.md",
+        "tags": []
+    },
+    {
+        "title": "Flexibility of the isometric immersion system in arbitrary dimension and codimension and the energy scaling of prestrained thin films",
+        "authors": "Marta Lewicka, Hui Li",
+        "date": "2026-07-17",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.15838v1",
+        "abstract_en": "We prove that, for a given $C^{r,β}$-regular Riemann metric posed on a $d$-dimensional domain, every short immersion into the Euclidean space $\\mathbb{R}^{d+k}$, can be uniformly approximated by exact isometric immersions of regularity $C^{1,α}$ for any $α<α_0=\\min\\{\\frac{r+β}{2}, \\frac{1}{1+d(d+1)/k}\\}$. Our theorem recovers several previously known results as special cases. The novelty thereof lies in providing a unified flexibility statement for arbitrary dimensions $d$ and codimensions $k$, while also treating the so far uncharted range $k\\in (1, \\frac{d(d+1)}{2}-d+1)\\setminus \\{d\\}$, where no corresponding general result was previously available. Our threshold flexibility exponent $α_0$ agrees with that previously obtained for the closely related Monge-Ampère system. As an application, we prove a new estimate in the quantitative immersability of thin prestrained films, setting the scaling exponent of the infimum of non-Euclidean energies in presence of an arbitrary prestrain metric, and in the limit of the film's vanishing thickness, at $\\frac{4α_0}{α_0+1}$.",
+        "filename": "2026-07-17-Flexibility-of-the-isometric-immersion-s-f8a653.md",
+        "tags": []
+    },
+    {
+        "title": "Integer quadratic obstructions to the local controllability of the Burgers equation",
+        "authors": "Thomas Perrin",
+        "date": "2026-07-17",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.15735v1",
+        "abstract_en": "We consider the Burgers equation with a scalar control acting through a fixed spatial profile, in a regime where the linearized system is not controllable. We identify natural conditions on the control profile leading to quadratic obstructions to small-time local null-controllability, quantified by negative Sobolev norms of the control of arbitrary integer order. We show that these conditions are related to iterated Lie brackets. The proof relies on repeated integrations by parts in the quadratic expansion combined with nonlinear remainder estimates. Finally, we construct smooth spatial profiles that produce obstructions at every negative integer order.",
+        "filename": "2026-07-17-Integer-quadratic-obstructions-to-the-lo-738b17.md",
+        "tags": []
+    },
+    {
+        "title": "The structure of the solution to the generalized Stokes equations and a new method for solving them",
+        "authors": "Arian Novruzi",
+        "date": "2026-07-17",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.15685v1",
+        "abstract_en": "We show that the solution to the generalized Stokes equations with Dirichlet boundary conditions in dimension two or three has a particular structure. Namely, the velocity $u$ is the superposition of two velocity fields $ω$ and $θ$, $u=ω+θ$, each of them being divergence-free and solving vector Helmholtz-like equations. The right hand sides of these equations involve the rotational component of the Helmholtz decomposition of the external force, and a harmonic function $q$, called solid pressure. Similarly, the fluid pressure $p$ is the superposition of the potential $π$ of Helmholtz decomposition of the external force, and of the solid pressure $q$, $p=π+q$. It turns out that regardless the solid pressure $q$, $ω+θ$ satisfies the generalized Stokes equations, except the normal component of the Dirichlet boundary condition. The role of the solid pressure, which solves a linear boundary equation with a self-adjoint coercive operator, is to constrain $ω+θ$ to satisfy even the normal component of the Dirichlet boundary condition.   The method is attractive from the numerical viewpoint. It decouples the velocity from the pressure and does not solve the incompressibility constraint directly. It requires only the solution of Helmholtz-like vector equations coupled on the boundary, and of a boundary equation. In the last section we present two methods for solving numerically the generalized Stokes equations, and some results to demonstrate the efficiency of our approach.",
+        "filename": "2026-07-17-The-structure-of-the-solution-to-the-gen-491d7c.md",
+        "tags": []
+    },
+    {
         "title": "On the solvability of a self-consistent chemotaxis–Navier–Stokes system with complete zero dissipation",
         "authors": "Yingping Peng",
         "date": "2026-07-17",
