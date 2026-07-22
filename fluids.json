@@ -1,5 +1,65 @@
 [
     {
+        "title": "From zero solutions with partially bounded supports to solvability and Runge approximation for partial differential equations",
+        "authors": "Tomasz Ciás, Thomas Kalmes",
+        "date": "2026-07-21",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.19272v1",
+        "abstract_en": "The existence of non-trivial solutions of homogeneous partial differential equations with prescribed support properties plays a fundamental role in the theory of linear partial differential operators. In this article, we establish the existence of smooth zero solutions with partially bounded supports for a broad class of constant coefficient partial differential operators.   As applications, we obtain new geometric results concerning solvability and approximation for partial differential equations. In particular, we derive geometric characterizations of $P$-convexity for supports for a large class of non-elliptic operators, thereby extending classical geometric ideas of Hörmander. By a theorem of Malgrange, $P$-convexity for supports is equivalent to the surjectivity of the differential operator on spaces of smooth functions and, more generally, on local subspaces of distributions of finite order. As a further consequence, we prove that the kernel of every surjective semi-elliptic operator satisfies condition ($Ω$) implying parameter dependence results.   We also investigate Runge-type approximation phenomena. We obtain geometric characterizations of Runge pairs for smooth functions, distributions, and spaces of smooth Whitney jets. Finally, we develop a general framework for Runge approximation for square systems of constant coefficient partial differential equations. As applications, we recover by alternative methods known Runge approximation results for Beltrami fields and for the three-dimensional unsteady Stokes system, and we complement them by corresponding approximation theorems in spaces of smooth Whitney jets. In particular, this yields approximation up to the boundary for solutions on suitable domains with Hölder continuous boundary.",
+        "filename": "2026-07-21-From-zero-solutions-with-partially-bound-f8ffdd.md",
+        "tags": []
+    },
+    {
+        "title": "Vortex-sheet desingularization for three-dimensional ideal fluids",
+        "authors": "Alberto Enciso, Antonio J. Fernández, David Meyer",
+        "date": "2026-07-21",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.19233v1",
+        "abstract_en": "We prove a desingularization theorem for analytic vortex sheets of the 3D incompressible Euler equations. Starting from an analytic solution of the corresponding Birkhoff-Rott system, we construct, for every sufficiently small thickness parameter $\\varepsilon>0 $, an exact Euler vorticity supported on a tubular neighborhood of width $ O(\\varepsilon) $ around the sheet, and defined on a time interval that does not shrink to 0 as $\\varepsilon \\to 0$. We show that, as $\\varepsilon \\to 0$, these vorticities converge, in the sense of distributions, to the prescribed vortex sheet. In particular, we conclude that analytic 3D vortex sheet motions arise as limits of exact Euler flows with lifespan bounded from below independently of $ \\varepsilon $. The proof hinges on the study of vorticities defined in terms of a time-dependent foliation by almost parallel surfaces and of divergence-free vector fields tangent to these surfaces.",
+        "filename": "2026-07-21-Vortex-sheet-desingularization-for-three-973c84.md",
+        "tags": []
+    },
+    {
+        "title": "Stability for the Boussinesq Equations with Horizontal Dissipation near the Hydrostatic Balance on $\\mathbb{R}^2$",
+        "authors": "Jiahong Wu, Mengxin Yan, Ning Zhu",
+        "date": "2026-07-21",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.19071v1",
+        "abstract_en": "The hydrostatic balance is a fundamental equilibrium state in stratified fluids and plays a central role in geophysical fluid dynamics. Understanding its stability under incomplete dissipation is a longstanding challenge, since anisotropic diffusion alone is generally insufficient to control the nonlinear evolution and no robust stabilizing mechanism is known for the corresponding anisotropically dissipative Navier--Stokes equations. In this paper, we investigate the two-dimensional Boussinesq equations on $\\mathbb{R}^2$ with only horizontal dissipation near the hydrostatic equilibrium $(U,Θ)=(0,x_2)$. We show that the velocity--temperature coupling generates internal gravity waves whose dispersive decay, together with the horizontal dissipation, provides an effective stabilizing mechanism that compensates for the complete absence of vertical dissipation. This identifies a mechanism by which dispersive wave propagation restores stability in an incompletely dissipative fluid system. For sufficiently small initial perturbations in $H^k(\\mathbb{R}^2)\\cap W^{3,1}(\\mathbb{R}^2)$ with $k\\ge14$, we establish the global existence and uniqueness of classical solutions together with explicit anisotropic, componentwise large-time decay rates for the velocity and temperature, including faster decay of the vertical velocity.",
+        "filename": "2026-07-21-Stability-for-the-Boussinesq-Equations-w-bc7dec.md",
+        "tags": []
+    },
+    {
+        "title": "Incompressible Navier-Stokes limit of non-bilinear kinetic equations and application to the BGK, nonlinear Fokker-Planck and Boltzmann-Fermi-Dirac equations",
+        "authors": "Pierre Gervais",
+        "date": "2026-07-21",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.18939v1",
+        "abstract_en": "We consider collisional kinetic equations whose collision operator is not necessarily bilinear and prove quantitative convergence to the Navier-Stokes-Fourier system in weighted Sobolev spaces, together with a description of the initial layers. The aim of this paper is to conciliate the conditional convergence result of Bardos-Golse-Levermore for abstract kinetic equations conserving macroscopic quantities and dissipating entropy with the spectral strategy initiated by Bardos-Ukai for the Boltzmann equation. This work extends the abstract approach of Gervais-Lods which was restricted to bilinear collisions (Boltzmann, Landau or quadratic approximation of other models) to non-bilinear models such as the Boltzmann-Fermi-Dirac equation, the BGK equation and the nonlinear Fokker-Planck equation.",
+        "filename": "2026-07-21-Incompressible-Navier-Stokes-limit-of-no-f720f3.md",
+        "tags": []
+    },
+    {
+        "title": "A lecture on Navier-Stokes equations",
+        "authors": "Sylvie Monniaux",
+        "date": "2026-07-21",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.18841v1",
+        "abstract_en": "The content of the following pages was part of a special topics lecture given at the Australian National University during the first semester of 2026. That was a very nice expericence, I really enjoyed giving this 12 weeks (2 hours a week) lecture. It is meant to be self contained, starting with results on Fourier transform and Sobolev spaces. As a toy model, before treating the Navier-Stokes system, we focus on the non linear heat equation where the non linearity is polynomial. Ultimately, we prove existence and uniqueness of mild solutions of the Navier-Stokes equations in critical spaces. This script contains some exercises and the text of the mid-semester exam as well as the final exam.",
+        "filename": "2026-07-21-A-lecture-on-Navier-Stokes-equations-bee604.md",
+        "tags": []
+    },
+    {
+        "title": "Existence of semiglobal $W^{2,p}$-isometric immersions for negatively curved surface metrics with unbounded second fundamental form",
+        "authors": "Siran Li",
+        "date": "2026-07-21",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.18792v1",
+        "abstract_en": "This paper is concerned with the existence theory of isometric immersions of surfaces with negative Gaussian curvature into the 3-dimensional Euclidean space. We reformulate the Gauss--Codazzi equations, \\emph{i.e.}, the partial differential equations for isometric immersions, into hyperbolic conservation laws for the flows of Chaplygin gas with nonzero source terms. Then, by employing the theories of invariant regions and compensated compactness, we establish the existence of $W^{2,p}$-isometric immersions for several general families of metrics, with any finite index $p$ and over arbitrarily large rectangular domains. Such metrics include various classical minimal surfaces: helicoid, catenoid, pseudosphere, and Enneper surfaces, as well as metrics in isothermal coordinates or of the ``reciprocal-type''. In our fluid dynamical formulation of the isometric immersion problem, we specialise in the case that the two Riemann invariants for the associated hyperbolic conservation law remain bounded and of distinctive signs, and obtain $L^p$-solutions to the initial-boundary value problem via entropy analysis. The isometric immersions constructed in this paper may have unbounded but $L^p$-integrable second fundamental forms.",
+        "filename": "2026-07-21-Existence-of-semiglobal--W--2-p---isomet-7ccea9.md",
+        "tags": []
+    },
+    {
         "title": "Failure of the Least Action Admissibility Principle in the Context of the Compressible Euler Equations",
         "authors": "Simon Markfelder, Valentin Pellhammer",
         "date": "2026-07-21",
@@ -7,6 +67,16 @@
         "link": "https://epubs.siam.org/doi/abs/10.1137/25M173421X?af=R",
         "abstract_en": "Abstract.\n                  Finding a proper solution concept for the multidimensional barotropic compressible Euler equations and related systems is still an unsolved problem. As revealed by convex integration, the classical notion of admissible weak solutions (also known as weak entropy solutions) does not lead to uniqueness and allows for solutions which do not seem to be physical. For this reason, people have studied additional criteria in view of their ability to rule out the counterintuitive solutions generated by convex integration. Recently, in [H. Gimperlein, M. Grinfeld, R. J. Knops and M. Slemrod: The least action admissibility principle, Arch. Ration. Mech. Anal., 249 (2025), Paper No. 22, https://doi.org/10.1007/s00205-025-02094-z], it was suggested that the least action admissibility principle serves as the desired selection criterion. In this paper, however, we show that the least action admissibility principle rules out the solution which is intuitively the physically relevant one. Consequently, one either has to reconsider one’s intuition, or the least action admissibility principle must be discarded.",
         "filename": "2026-07-21-Failure-of-the-Least-Action-Admissibilit-09affb.md",
+        "tags": []
+    },
+    {
+        "title": "The Stefan problem for complete melting of finitely strained solids into viscoelastic fluids",
+        "authors": "Tomáš Roubíček",
+        "date": "2026-07-20",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.18547v1",
+        "abstract_en": "The compressible fluid-solid interaction (FSI) with a thermomechanical phase transition is formulated at large strains within the Eulerian frame. For the deviatoric part, the Jeffreys (also called anti-Zener) rheology with an additional viscosity is adopted. The core philosophy governing the mechanical solid-liquid transition is that the viscous (or viscoplastic) response is temperature-dependent and may fully degenerate to a viscoelastic fluid during thawing, so that there is no elastic response on the shear distortion. This behavior enables the free flow of the fluid, its subsequent freezing into a new configuration, and potential re-melting back into a fluid, allowing such cycles to repeat indefinitely. The classical Stefan problem, associated with the latent heat of the first-order (thawing-freezing) phase transition, is augmented by incorporating kinetic overheating and undercooling. The analysis by a time discretization with an appropriate truncation is applied to a higher-gradient modification of the original formulation, utilizing the concept of multipolar nonsimple continua.",
+        "filename": "2026-07-20-The-Stefan-problem-for-complete-melting-6f9356.md",
         "tags": []
     },
     {
