@@ -1,5 +1,55 @@
 [
     {
+        "title": "Well-posedness of a Hele-Shaw problem in general dimensions",
+        "authors": "Olga Turanova, Yuming Paul Zhang",
+        "date": "2026-07-22",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.20395v1",
+        "abstract_en": "We investigate a Hele-Shaw type free boundary problem in general spatial dimension. We establish a comparison principle and well-posedness for the problem using a notion of viscosity flows. An important feature of our work is that our hypotheses allow for the free boundary velocity to take negative values.",
+        "filename": "2026-07-22-Well-posedness-of-a-Hele-Shaw-problem-in-38cc8b.md",
+        "tags": []
+    },
+    {
+        "title": "Lifespan Bounds and Super-Classical Propagation for Weak Solutions of the Three-Dimensional Compressible Euler Equations",
+        "authors": "Thomas C. Sideris",
+        "date": "2026-07-22",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.20290v1",
+        "abstract_en": "We establish an upper bound on the lifespan of bounded weak solutions to the three-dimensional isentropic compressible Euler equations on $[0,T)\\times\\mathbb R^3$, under a localized positivity condition on the initial data and the assumption that the essential support of the disturbance propagates into an undisturbed background state no faster than predicted by classical local well-posedness. We further show that any entropy-admissible bounded weak solution with bounded inverse density that persists beyond this upper bound must propagate into the undisturbed region at a strictly super-classical speed and that this accelerated propagation is necessarily accompanied by a jump discontinuity in an associated one-sided $L^\\infty$-profile of the solution.",
+        "filename": "2026-07-22-Lifespan-Bounds-and-Super-Classical-Prop-0de234.md",
+        "tags": []
+    },
+    {
+        "title": "Regularity and Decay for Navier-Slip Fluid-Structure Interaction in Exterior Domains",
+        "authors": "Buma Jin Jin",
+        "date": "2026-07-22",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.19736v1",
+        "abstract_en": "We study the linearized motion of a spherical rigid body immersed in an incompressible viscous fluid occupying the whole space, under Navier slip boundary conditions with friction. While semigroup regularity and decay estimates are well understood for the no-slip case, such results have been limited to bounded domains in the slip setting. By exploiting the geometric regularity of the sphere, we establish strong $L^q$-regularity, bounded analyticity, and sharp $ L^q-L^r$ estimates for the corresponding fluid-structure operator. These results would provide a foundation for constructing strong $W^{2,1}_q$ solutions and Kato-type solutions to the corresponding nonlinear system.",
+        "filename": "2026-07-22-Regularity-and-Decay-for-Navier-Slip-Flu-381364.md",
+        "tags": []
+    },
+    {
+        "title": "Global uniform regularity and large time behavior of solutions to three dimensional compressible MHD equations with vanishing vertical magnetic resistivity in half space",
+        "authors": "Song Gao, Jiahong Wu, Feng Xie",
+        "date": "2026-07-22",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.19710v1",
+        "abstract_en": "This paper aims to establish the global regularity and large time behavior of solutions to the three-dimensional (3D) compressible magnetohydrodynamics (MHD) equations with vanishing vertical magnetic resistivity in the upper half-space with no-slip boundary condition on velocity and perfectly conducting boundary condition on magnetic field. By exploiting anisotropic Sobolev inequalities and elaborated estimates, we are able to achieve global-in-time uniform regularity estimates of solutions, which are independent of small vertical resistivity coefficient $\\varepsilon$. These uniform global regularity estimates allow us to pass to the limit as \\(\\varepsilon \\to 0\\) and obtain the convergence to the corresponding MHD system without vertical magnetic resistivity globally in time. Moreover, the $H^{1}\\left(\\mathbb{R}_{+}^{3}\\right)$ decay rates of solutions to the original system are also derived based on the detailed analysis on semigroup of the related linearized operator in half space and the uniform energy estimates achieved. In contrast to the decay estimates for the limit system obtained by Gao and Xie \\cite{JDE}, the present decay estimate exhibits a slower rate, attributable to the absence of higher-order normal derivative estimates, which results from the occurrence of boundary layers. Finally, we combine both sets of regularity and decay results to rigorously prove an explicit time-uniform $L^2$ convergence rate of order $\\varepsilon^{\\frac{1}{4}}$ for the vanishing vertical magnetic resistivity limit process.",
+        "filename": "2026-07-22-Global-uniform-regularity-and-large-time-43decc.md",
+        "tags": []
+    },
+    {
+        "title": "Self-Similar Solutions of the Two-Dimensional Incompressible Euler Equation from Large Initial Data",
+        "authors": "Hyungjun Choi",
+        "date": "2026-07-22",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.19700v1",
+        "abstract_en": "Let $\\frac{1}{3}<a<1$ and let $u_0$ be a $C^1$, divergence-free, $(-a)$-homogeneous vector field on $\\mathbb{R}^2\\setminus\\{0\\}$. We construct a forward-in-time self-similar solution of the two-dimensional incompressible Euler equations, \\[ u(t,x)=t^{-\\frac{a}{1+a}} U\\left(\\frac{x}{t^{{\\frac{1}{1+a}}}}\\right), \\] with initial datum $u_0$. No smallness or sign assumption is imposed on the initial datum. The construction is a vanishing-dissipation limit of the hypodissipative self-similar profiles. The key is a vorticity profile estimate, uniform in the dissipation parameter, in the critical Lorentz space $L^{\\frac{2}{1+a},\\infty}(\\mathbb{R}^2)$.   The resulting Euler solution $u$ has locally finite energy and $\\nabla u \\in L^\\infty_t L^{\\frac{2}{1+a},\\infty}_x$. Indeed, the velocity is continuous in $L^2_{\\text{loc}}$, and the vorticity converges weak-* in $L^{\\frac{2}{1+a},\\infty}$ at the initial time.",
+        "filename": "2026-07-22-Self-Similar-Solutions-of-the-Two-Dimens-08aca9.md",
+        "tags": []
+    },
+    {
         "title": "From zero solutions with partially bounded supports to solvability and Runge approximation for partial differential equations",
         "authors": "Tomasz Ciás, Thomas Kalmes",
         "date": "2026-07-21",
