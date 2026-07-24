@@ -1,5 +1,79 @@
 [
     {
+        "title": "Evolution of viscous vortex filaments and soliton-type propagation",
+        "authors": "Marco A. Fontelos, Mikel Ispizua, Luis Vega",
+        "date": "2026-07-23",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.21439v1",
+        "abstract_en": "We study the evolution of a viscous incompressible fluid whose initial vorticity is supported on a smooth open curve. We show that, for $νt\\ll 1$ and sufficiently small Reynolds number $Γ/ν$, the vorticity is described at leading order by a Lamb--Oseen type vortex concentrated around a curve evolving according to the binormal flow predicted by the localized induction approximation. The solution is written as an explicit leading-order profile plus a lower-order perturbation, which is controlled in a Morrey $\\mathcal{M}^{\\infty}$ norm.   Then, we apply this construction to the Hasimoto soliton. In this case, the estimates are uniform with respect to the torsion parameter, allowing us to consider a large-torsion regime in which the soliton undergoes a macroscopic displacement. We show that the corresponding Navier--Stokes solution contains a localized portion of the kinetic-energy distribution, associated with the binormal velocity, which remains concentrated inside a moving physical region and undergoes an order-one displacement during an admissible time interval.",
+        "filename": "2026-07-23-Evolution-of-viscous-vortex-filaments-an-baade2.md",
+        "tags": []
+    },
+    {
+        "title": "Magnetic relaxation for the MHD equations via the stable manifold method",
+        "authors": "Gennaro Ciampa, Renato Lucà",
+        "date": "2026-07-23",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.21328v1",
+        "abstract_en": "We prove that given any sufficiently small and regular solution $B$ of the stationary Euler equations there exists an infinite dimensional family of solutions $(u,b)$ of the non-resistive magnetohydrodynamics equations (MHD) that relax to $(0, B)$. More precisely, $(u,b) \\to (0, B)$ exponentially fast as $t \\to +\\infty$. This family may be viewed as lying in the stable manifold of the non-resistive MHD equations around the equilibrium state $(0, B)$. The problem whether it actually coincides with the stable manifold remains open. As a byproduct of our result, we provide a large class of global regular solutions of the non-resistive MHD equations. Another consequence is that any sufficiently small and regular solution of the stationary Euler equation is (non-trivially) topologically accessible via MHD from a large class of magnetic fields according to the definition of Moffatt and, in this scenario, the topology of the magnetic lines is (entirely) preserved in the limit $t \\to + \\infty$.",
+        "filename": "2026-07-23-Magnetic-relaxation-for-the-MHD-equation-724c06.md",
+        "tags": []
+    },
+    {
+        "title": "An $L^p$-theory for global weak solutions to the Navier-Stokes equations in exterior domains",
+        "authors": "Filippo Palma",
+        "date": "2026-07-23",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.21282v1",
+        "abstract_en": "In this paper, we consider the Navier-Stokes initial boundary value problem in exterior domains with initial data in the Lebesgue space $L^p$, $p\\in (2,3)$, and show the existence of a global weak solution. For the quoted solution, we also furnish a structure theorem. In particular, we see that the weak solution becomes regular after a certain instant of time and it is also regular a. e. in time. Although a general $L^p$-theory for local strong/mild solutions is well-established in the literature, a corresponding theory for global weak solutions in exterior domains seems to be new. Of course, our results hold in the particular cases of the Cauchy problem and the initial boundary value problem in a half-space.",
+        "filename": "2026-07-23-An--L-p--theory-for-global-weak-solution-3ae3d3.md",
+        "tags": []
+    },
+    {
+        "title": "Neutral curves and traveling waves in plane Poiseuille flow",
+        "authors": "Hui Li, Yuxi Wang, Zhifei Zhang",
+        "date": "2026-07-23",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.21265v1",
+        "abstract_en": "We study the spectrum of the Orr--Sommerfeld operator associated with the incompressible plane Poiseuille flow in the high-Reynolds-number regime. In the Tollmien--Schlichting eigenvalue region, we prove the existence and uniqueness of the lower and upper branches of the neutral curve. For each sufficiently small fixed wavenumber $α$, the viscosities corresponding to the lower and upper neutral branches satisfy $ν\\sim |α|^7$ and $ν\\sim |α|^{11}$, respectively. Equivalently, for each sufficiently small viscosity $ν$, the corresponding lower and upper neutral wavenumbers satisfy $α^2\\sim ν^{2/7}$ and $α^2\\sim ν^{2/11}$, respectively. We also establish the simplicity of the neutral eigenvalues and verify the transversal crossing condition on both neutral branches. The proof is based on a boundary-adapted version of the Rayleigh--Airy iteration scheme, together with precise expansions and refined estimates for the correction terms and their parameter derivatives. These spectral results verify the assumptions required in the classical Hopf bifurcation framework of Joseph--Sattinger \\cite{JS1972} and Iooss \\cite{Iooss1972}, and hence yield traveling-wave solutions bifurcating from the plane Poiseuille flow at the neutral points.",
+        "filename": "2026-07-23-Neutral-curves-and-traveling-waves-in-pl-526903.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Global bifurcation for steady viscous roll waves on an incline",
+        "authors": "Daniel Abraham, Miles H. Wheeler",
+        "date": "2026-07-23",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.21142v1",
+        "abstract_en": "We construct a branch of travelling periodic `roll wave' solutions to the free-boundary incompressible Navier--Stokes equations on an inclined plane in two dimensions. These solutions bifurcate from a parallel shear flow, under natural assumptions on the related Orr--Sommerfeld equation. Using techniques from analytic global bifurcation theory, we extend the local branch to a global curve of solutions. A key step of the proof is reformulating the problem, including the unknown free boundary, as an elliptic system in the sense of Agmon--Douglis--Nirenberg. Finally, we verify the hypotheses on the Orr--Sommerfeld equation for two regimes: small wavenumber and low Reynolds number.",
+        "filename": "2026-07-23-Global-bifurcation-for-steady-viscous-ro-1f0d77.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "An Eyring--Kramers Law for the Hypoelliptic Third-Order Langevin Diffusion",
+        "authors": "Yingli Wang, Lingjiong Zhu",
+        "date": "2026-07-23",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.20882v1",
+        "abstract_en": "We prove an Eyring--Kramers law for metastable transitions of the hypoelliptic third-order Langevin diffusion in the low-temperature limit. The model is motivated by the high-order Langevin diffusion of Mou et al. (2021, J. Mach. Learn. Res., 22(42), 1--41). The model has a Gibbs invariant measure, but the noise reaches the position variable only through a step-three chain. For a double-well potential with a unique index-one transition saddle, we determine both the Arrhenius exponential scale and the sharp prefactor of the mean transition time. The prefactor is governed by the unique positive unstable rate of the third-order deterministic linearization at the saddle. Our proof extends the underdamped Eyring--Kramers strategy of Lee--Ramil--Seo (2026, arXiv:2503.12610v2) to the step-three setting and combines the weak-capacity framework with a saddle-adapted boundary layer, an explicit Gaussian current calculation, committor localization, and intrawell flatness. Under matched kinetic normalizations, the resulting metastable prefactor is strictly smaller than its underdamped counterpart. A numerical experiment for a one-dimensional double well illustrates both the Arrhenius scaling and the predicted prefactor comparison.",
+        "filename": "2026-07-23-An-Eyring--Kramers-Law-for-the-Hypoellip-985216.md",
+        "tags": []
+    },
+    {
+        "title": "Pointwise mean-value formulas with quantitative remainder for higher-order Poisson equations",
+        "authors": "Fernando Charro, Sophia Hertrich, Catherine Lebiedzik",
+        "date": "2026-07-22",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.20776v1",
+        "abstract_en": "Higher-order Poisson equations involve an integer power of the Laplacian and a nonzero forcing term, and appear in areas of physics and engineering such as hydrodynamics, structural engineering, and image processing. We introduce a family of mean-value formulas for solutions to higher-order Poisson equations, given in terms of linear combinations of iterated means, with an exact remainder quantified by the oscillation of the forcing term. We also prove a regularity result and a strong converse to the mean-value property, in the sense that merely locally integrable functions satisfying our formulas are regular solutions of the higher-order Poisson equation. In contrast with the homogeneous case, where the mean-value property forces smoothness, the regularity attainable here is dictated by the regularity of the forcing term. Together, our results provide a mean-value characterization of solutions to higher-order Poisson equations.",
+        "filename": "2026-07-22-Pointwise-mean-value-formulas-with-quant-9439c5.md",
+        "tags": []
+    },
+    {
         "title": "Well-posedness of a Hele-Shaw problem in general dimensions",
         "authors": "Olga Turanova, Yuming Paul Zhang",
         "date": "2026-07-22",
@@ -782,17 +856,5 @@
         "abstract_en": "Abstract\n                  \n                    We provide a structural analysis of the space of functions of bounded deviatoric deformation,\n                    \n                      \n                        $$\\textrm{BD}_{\\textrm{dev}}$$\n                        \n                          \n                            BD\n                            dev\n                          \n                        \n                      \n                    \n                    , which arises in models of plasticity and fluid mechanics. The main result is the identification of the annihilator and a rigidity theorem for\n                    \n                      \n                        $$\\textrm{BD}_{\\textrm{dev}}$$\n                        \n                          \n                            BD\n                            dev\n                          \n                        \n                      \n                    \n                    -maps with constant polar vector in the wave cone characterizing the structure of singularities for such maps. This result, together with an explicit kernel projection operator, enables an iterative blow-up procedure for relaxation, homogenization, and integral representation problems, allowing for integrands with explicit dependence on\n                    u\n                    as well as\n                    \n                      \n                        $${{\\mathcal {E}}}_d u$$\n                        \n                          \n                            \n                              E\n                              d\n                            \n                            u\n                          \n                        \n                      \n                    \n                    . Our approach overcomes several difficulties as compared to the\n                    \n                      \n                        $$\\textrm{BD}$$\n                        \n                          BD\n                        \n                      \n                    \n                    case, in particular due to the lack of invariance of\n                    \n                      \n                        $${{\\mathcal {E}}}_d$$\n                        \n                          \n                            E\n                            d\n                          \n                        \n                      \n                    \n                    under orthogonalization of the polar directions.\n                  ",
         "filename": "2026-06-21-Rigidity-and-Functional-Properties-of-32ab3a.md",
         "tags": []
-    },
-    {
-        "title": "Stability of Viscous Three‐Dimensional Stratified Couette Flow via Dispersion and Mixing",
-        "authors": "Michele Coti Zelati, Augusto Del Zotto, Klaus Widmayer",
-        "date": "2026-04-24",
-        "source": "Commun. Pure Appl. Math.",
-        "link": "https://onlinelibrary.wiley.com/doi/10.1002/cpa.70048?af=R",
-        "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
-        "filename": "2026-04-24-Stability-of-Viscous-Three-Dimensional-S-138ea0.md",
-        "tags": [
-            "stability"
-        ]
     }
 ]

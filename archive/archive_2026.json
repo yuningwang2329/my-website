@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Stability of Viscous Three‐Dimensional Stratified Couette Flow via Dispersion and Mixing",
+        "authors": "Michele Coti Zelati, Augusto Del Zotto, Klaus Widmayer",
+        "date": "2026-04-24",
+        "source": "Commun. Pure Appl. Math.",
+        "link": "https://onlinelibrary.wiley.com/doi/10.1002/cpa.70048?af=R",
+        "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
+        "filename": "2026-04-24-Stability-of-Viscous-Three-Dimensional-S-138ea0.md",
+        "tags": [
+            "stability"
+        ]
+    }
+]
