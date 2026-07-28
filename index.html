@@ -23,8 +23,17 @@
 
     <main class="main stagger fade-in">
         <div class="fluids-layout">
+            <button
+                id="mobile-filter-toggle"
+                class="mobile-filter-toggle"
+                type="button"
+                aria-controls="mobile-filter-panel"
+                aria-expanded="false"
+                onclick="toggleMobileFilters(this)">
+                筛选文献
+            </button>
             <!-- Left Sidebar (Folder Navigation) -->
-            <aside class="fluids-sidebar">
+            <aside id="mobile-filter-panel" class="fluids-sidebar">
                 <div class="folder-group">
                     <div class="folder-header">文献库</div>
                     <ul class="folder-list" id="main-folders">
@@ -160,6 +169,14 @@
             }
             localStorage.setItem('fluids_stars', JSON.stringify(stars));
             render();
+        }
+
+        function toggleMobileFilters(button) {
+            const panel = document.getElementById('mobile-filter-panel');
+            const isOpen = panel.classList.toggle('mobile-filters-open');
+
+            button.setAttribute('aria-expanded', String(isOpen));
+            button.textContent = isOpen ? '收起筛选' : '筛选文献';
         }
 
         function switchFolder(folderId, element) {

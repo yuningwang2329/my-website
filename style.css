@@ -1157,12 +1157,32 @@ h3 {
         flex-direction: column;
         gap: 16px;
     }
+    .mobile-filter-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 14px;
+        color: var(--text);
+        font: inherit;
+        font-size: 0.9rem;
+        font-weight: 600;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        cursor: pointer;
+    }
     .fluids-sidebar {
+        display: none;
         flex: none;
         width: 100%;
         position: static;
         max-height: none;
         padding-bottom: 8px;
+    }
+    .fluids-sidebar.mobile-filters-open {
+        display: block;
     }
     .folder-group {
         margin-top: 16px !important;
@@ -1183,6 +1203,12 @@ h3 {
     .folder-list::-webkit-scrollbar-thumb {
         background: var(--border);
         border-radius: 4px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-filter-toggle {
+        display: none;
     }
 }
 
