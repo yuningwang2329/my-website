@@ -1,5 +1,35 @@
 [
     {
+        "title": "Positive-regularity norm inflation for the 3D hypodissipative Navier--Stokes equations",
+        "authors": "Guirong Tang, Shiyang Xiong",
+        "date": "2026-07-27",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.24635v1",
+        "abstract_en": "We prove same-space norm inflation for the three-dimensional hypodissipative Navier--Stokes equations with dissipation $(-Δ)^α$, $0<α<1$. Let $2\\le p<\\infty$ and \\[   0<s<1-2α+\\frac3p. \\] In the Besov case, let also $1\\le q\\le\\infty$. There exist divergence-free $C_c^\\infty(\\mathbb R^3)$ initial data that are arbitrarily small in $W^{s,p}$, respectively in $B^s_{p,q}$, while the corresponding unique local smooth solution becomes arbitrarily large in the same space in arbitrarily short time. The proof adapts the anisotropic vortex-ring mixing mechanism to fractional dissipation; the strict scaling-supercritical gap makes both the curvature error and the nonlocal dissipative error perturbative.",
+        "filename": "2026-07-27-Positive-regularity-norm-inflation-for-t-c8f825.md",
+        "tags": []
+    },
+    {
+        "title": "Stochastic phase separation driven by transport noise",
+        "authors": "Andrea Di Primio, Andrea Papini, Luca Scarpa",
+        "date": "2026-07-27",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.24326v1",
+        "abstract_en": "Phase separation phenomena occurring in complex fluids are known to be sensitive to hydrodynamic effects: when a binary fluid mixture undergoes spinodal decomposition, the emerging pattern of domains is no longer dictated by interfacial dynamics alone, but is reshaped by advection. In several applications of interest, advection effects may even cause the onset of turbulence, further affecting the segregation process on a wide range of spatial scales. Motivated by this, we propose a Cahn-Hilliard model driven by transport noise able to capture the intrinsic stochasticity of turbulence. The model is analyzed in its thermodynamically-relevant framework, namely employing a singular Flory-Huggins potential and a possibly degenerate mobility, and the noise is considered both in Ito and Stratonovich form. In this work, as a first-step investigation, we establish well-posedness of the system in two and three spatial dimensions and its thermodynamical consistency.",
+        "filename": "2026-07-27-Stochastic-phase-separation-driven-by-tr-75f676.md",
+        "tags": []
+    },
+    {
+        "title": "Exponential Decay of Solutions to a Fluid-Plate Model with Small Initial Data",
+        "authors": "Mario Bukal, Igor Kukavica, Linfeng Li, Boris Muha",
+        "date": "2026-07-26",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.23756v1",
+        "abstract_en": "We consider a three-dimensional fluid-structure interaction problem coupling the incompressible Navier-Stokes equations in a time-dependent domain with a square-root damped plate equation, which is posed on the moving upper boundary of the fluid. We prove, a priori, the exponential decay of strong solutions for initial data that are sufficiently small in a suitable Sobolev space. The proof combines higher-order energy estimates, Stokes-type regularity bounds, and a nonlinear bootstrap scheme that closes under the smallness assumption.",
+        "filename": "2026-07-26-Exponential-Decay-of-Solutions-to-a-Flui-ed2354.md",
+        "tags": []
+    },
+    {
         "title": "On the blowup rate of vorticity for the Euler equations in a bounded domain",
         "authors": "Benjamin Ingimarson, Igor Kukavica",
         "date": "2026-07-25",
