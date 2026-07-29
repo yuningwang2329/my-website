@@ -1,5 +1,57 @@
 [
     {
+        "title": "Keller--Segel--Navier--Stokes systems involving general sensitivities with Signal-Dependent Power-Law Decay",
+        "authors": "Sukjung Hwang, Jaewook Ahn",
+        "date": "2026-07-29",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005644?dgcid=rss_sd_all",
+        "abstract_en": "This paper investigates a two-dimensional Keller--Segel--Navier--Stokes system with a tensor-valued chemotactic sensitivity $S(x,n,c)$. Under a signal-dependent power-decay condition $|S(x,n,c)| \\le s_0 (s_1+c)^{-\\gamma}$, we establish the global existence and uniform-in-time boundedness of classical solutions for both fluid-coupled ($\\gamma &gt; 1/2$) and fluid-free ($\\gamma &gt; 0$) systems. The proof relies on a sequence of localized energy estimates, including the $L^{2}_{\\rm loc}$-smallness of the weighted gradient of the signal concentration, to overcome the mathematical difficulties arising from signal production and fluid transport. Furthermore, under specific structural assumptions on the sensitivity tensor, we prove that solutions of the fluid-free system converge exponentially to the spatially homogeneous steady state. To this end, we establish an interpolation inequality involving the H\\\"older norm, which is of independent interest and seems to have broad applications.​",
+        "filename": "2026-07-29-Keller--Segel--Navier--Stokes-systems-in-352ac6.md",
+        "tags": []
+    },
+    {
+        "title": "Long-wave instability of periodic shear flows with constant magnetic field for the 2D resistive MHD equations",
+        "authors": "Roberto Feola, Luca Franzoi, Riccardo Montalto, Claudia Peña",
+        "date": "2026-07-28",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.25836v1",
+        "abstract_en": "We investigate the long-wave linear stability and instability of the two-dimensional viscous, resistive Magnetohydrodynamic (MHD) equations, in vorticity-current formulation, on the periodic domain ${\\mathbb T}_α\\times {\\mathbb T} = \\Big( {\\mathbb R}/(\\frac{2 π}α {\\mathbb Z}) \\times {\\mathbb R}/(2 π{\\mathbb Z}) \\Big)$, around a periodic shear flow $(U(y),0)$ coupled with a constant background magnetic field ${\\bf b}=({\\rm b}_1,{\\rm b}_2)$. It is a non-trivial extension of a recent paper for the Navier-Stokes equations by Colombo, Dolce, Montalto & Ventura to the MHD setting in the spirit of the classical works of Kolmogorov, Meshalkin, Sinai and Yudovich. We establish explicit conditions on the shear flow profile $U(y)$ involving the viscosity $ν$, the resistivity $η$ and the components of the background magnetic field ${\\bf b}$ to obtain linear long-wave stability and instability in the regime $α\\ll 1$. The proof combines a non-perturbative normal form transformation decoupling the zero Fourier mode from the non-zero modes with sharp asymptotic expansions of the eigenvalues bifurcating from the zero unperturbed eigenvalue with respect to the parameter $α$. As a dynamical consequence, we obtain a splitting of the phase space into unstable and stable subspaces, on which solutions grow or decay exponentially in Sobolev norm.",
+        "filename": "2026-07-28-Long-wave-instability-of-periodic-shear-9a93b1.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Well-posed homogenized strain-gradient models for linear elastodynamics and elastostatics in arbitrary periodic media",
+        "authors": "Rémi Cornaggia, Marc Bonnet, Giuseppe Rosi, Saad El Ouafa, Nicolas Auffray",
+        "date": "2026-07-28",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.25602v1",
+        "abstract_en": "This work develops well-posed homogenized strain-gradient models for linear elastostatics and elastodynamics in periodic media, with a primary focus on elastic wave propagation. Using the classical two-scale asymptotic expansion method, we carry out second-order periodic homogenization for media in $\\mathbb{R}^d$ ($d = 2, 3$), with no restriction on the periodicity cell geometry or material distribution. Reciprocity identities applied to suitably chosen pairs of cell solutions provide alternative expressions for the effective stiffness and inertia tensors arising at the leading, first and second orders, substantially reducing the number of cell problems that must actually be solved. Since direct two-scale homogenization beyond leading order generically yields ill-posed effective operators, a Boussinesq-trick procedure is introduced, involving a tunable scalar weight, to recast the resulting fourth-order partial differential equation as a valid strain-gradient elasticity (SGE) model possessing the requisite symmetry, sign-definiteness and coercivity properties. These properties are then used, via the Hille-Yosida theorem, to establish the well-posedness of the corresponding transient initial-value and forced-response problems. Several practically relevant special cases are examined, including centrosymmetric cells, homogeneous mass density and homogeneous elasticity, each yielding simplified model structures. Numerical illustrations on three two-dimensional periodicity cells (square, hexagonal and a non-centrosymmetric chiral lattice) compare the resulting dispersion relations against reference Floquet-Bloch computations and assess transient wave propagation, demonstrating the model's capacity to capture anisotropic and dispersive effects beyond classical elasticity while preserving mathematical well-posedness.",
+        "filename": "2026-07-28-Well-posed-homogenized-strain-gradient-m-41fc41.md",
+        "tags": []
+    },
+    {
+        "title": "Inviscid Incompressible Limit for Degenerate Compressible Navier-Stokes Equations on Expanding Domains",
+        "authors": "Tong Tang, Emil Wiedemann, Lu Zhu",
+        "date": "2026-07-27",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.25028v1",
+        "abstract_en": "We simultaneously investigate the inviscid and Low Mach number limits on expanding domains for the $3D$ degenerate compressible Navier-Stokes equations, whose viscosity depends on density. Starting from ill-prepared data, we show the limit system is the incompressible Euler system.   Our result extends a previous result of Feireisl et al. concerning the constant viscosity Navier-Stokes equations, and is the first to establish the inviscid and incompressible limits at the same time for density-dependent viscosity.",
+        "filename": "2026-07-27-Inviscid-Incompressible-Limit-for-Degene-eb954b.md",
+        "tags": []
+    },
+    {
+        "title": "The Navier-Stokes equations with dual-scale hereditary viscosity: supercritical norm inflation and global well-posedness in critical spaces",
+        "authors": "Bruno de Andrade",
+        "date": "2026-07-27",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.25009v1",
+        "abstract_en": "This manuscript investigates the Cauchy problem for an incompressible fluid flow governed by a dual-scale hereditary memory, representing a viscoelastic variant of the classical Navier-Stokes equations that captures anomalous momentum transport. The non-local dissipation breaks exact global scale invariance, dictating a pseudo-differential analysis within the Hörmander class $S^{-2}_{1,0}$ where the spatial gradient induces a fractional temporal penalty. We rigorously establish $L^q-L^p$ decay estimates and identify the critical Lebesgue threshold $p_c = N (\\frac{1+α_\\infty}{1-α_\\infty})$. In the supercritical regime $1 < p < p_c$, we bypass the loss of spatial localization by mapping the frequency-modulated bilinear flow directly into Fourier space; by utilizing Bernstein's inequalities, we prove instantaneous norm inflation at the origin and confirm intrinsic ill-posedness. Conversely, in the topological limit $p \\to \\infty$, we demonstrate that the dual-scale memory structurally prevents the collapse traditionally observed for classical fluids within the maximal critical Besov space $\\dot{B}^{-1}_{\\infty, \\infty}$. By exploiting an asymmetric interpolation within Bony's para-differential calculus, we prove that the temporal smoothing overpowers the high-high convective resonant cascade. This delicate analytical balance confines ill-posedness to the non-separable high-frequency tail of the Besov topology, thereby establishing global-in-time Hadamard well-posedness for small initial data possessing high-frequency adherence within $\\dot{B}^{-κ}_{\\infty, \\infty}(\\mathbb{R}^N)$, a well-posedness regime strictly broader than the separable little Besov closure $\\dot{b}^{-κ}_{\\infty, \\infty}(\\mathbb{R}^N)$, where $κ= \\frac{1-α_\\infty}{1+α_\\infty}$.",
+        "filename": "2026-07-27-The-Navier-Stokes-equations-with-dual-sc-0223af.md",
+        "tags": []
+    },
+    {
         "title": "Positive-regularity norm inflation for the 3D hypodissipative Navier--Stokes equations",
         "authors": "Guirong Tang, Shiyang Xiong",
         "date": "2026-07-27",
