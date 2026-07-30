@@ -1,5 +1,75 @@
 [
     {
+        "title": "On existence of chemotaxis compressible Navier-Stokes equations modeling vascular network formation",
+        "authors": "Tao Huang, Bara Rababah, Amer Rawashdeh",
+        "date": "2026-07-30",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005620?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-07-30-On-existence-of-chemotaxis-compressible-6472d3.md",
+        "tags": []
+    },
+    {
+        "title": "Geometry of strong forces in continuum mechanics",
+        "authors": "Theodore D. Drivas, Daniil Glukhovskiy",
+        "date": "2026-07-29",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.27165v1",
+        "abstract_en": "Consider a material point in finite dimensions moving under the influence of a potential force according to Newton's laws. Suppose the potential energy function is a generalized well, strictly convex transverse to a smooth submanifold $M$ on which it is minimal. If the potential is steep, one expects the particle will oscillate rapidly about this submanifold and, if the initial displacement is not too great, should approximately move along $M$ as if it were ideally constrained (e.g. geodesic). This expectation is true if the initial conditions are very well prepared but may fail otherwise - additional potential forces determined by how the Hessian of the potential varies along $M$ may be present. The origin of this force is that the transversal motion acts as a simple harmonic oscillator with a slowly varying frequency, which approximately conserves action, not energy. In this work, we regard continuum mechanical systems such as the elastic thread or compressible fluid as material points moving in an infinite dimensional space according to Newton's laws for appropriate potential energy functionals. We show how to arrive at ideally constrained systems such as the inextensible thread and incompressible fluid as a limit of a strong potential force, computing also corrections to the naive predictions when the data is not very well prepared. For example, for the thread we find a resistance to bending emerge from a strong resistance to compression/expansion. For the fluid, the effective incompressible dynamics may be driven by a remnant acoustical wavefield. Both of these emergent features are nonlinear and non-local. Finally, we give examples of some limits for which the naive models robustly hold because the additional force is trivial. These include the homogeneous incompressible Euler, anelastic Euler, as well as the lake and great lake equations.",
+        "filename": "2026-07-29-Geometry-of-strong-forces-in-continuum-m-82b1ed.md",
+        "tags": []
+    },
+    {
+        "title": "The $L^2$ contraction of solutions with large perturbation in multiple space dimensions from the oscillatory dispersive planar shock",
+        "authors": "Geng Chen, Harish Ravichandar, Yannan Shen",
+        "date": "2026-07-29",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.27118v1",
+        "abstract_en": "In this paper, we show the $L^2$ contraction property of the planar oscillatory or monotone dispersive shock profiles of the dissipative Kadomtsev-Petviashvili (KP) equation modelling water waves and the multi-dimensional Korteweg-de Vries (KdV) Burgers equation under arbitrarily large perturbations in two space dimensions, up to Lipschitz time-dependent shifts. This stability result extends the results of two recent papers by Chen, Eun, Kang, and Shen on $L^2$ contraction for the KdV-Burgers equation.",
+        "filename": "2026-07-29-The--L-2--contraction-of-solutions-with-35fa42.md",
+        "tags": []
+    },
+    {
+        "title": "Instantaneous analytic smoothing of rough data for the modified and cubic gKdV equations",
+        "authors": "Argenis J. Mendez G, Marcelo Nogueira",
+        "date": "2026-07-29",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.27115v1",
+        "abstract_en": "We consider the $k$-generalized Korteweg-de Vries equation   \\begin{equation*}   \\partial_{t}v+\\partial_{x}^{3}v +\\partial_{x}(v^{k+1})=0,   \\qquad (t,x)\\in\\mathbb R\\times\\mathbb R,   \\qquad k\\in\\mathbb Z_{+},   \\end{equation*}   emphasizing the modified case $k=2$ and the cubic case $k=3$. We prove that   solutions from low-regularity, possibly singular, data $u_{0}$ become real analytic   in $(t,x)$ for all $t\\neq0$, whenever $u_0$ satisfies a Nelson-type condition   \\begin{equation*}   \\sum_{k=0}^{\\infty}\\frac{α^{k}}{k!}\\,\\big\\|(x\\partial_x)^{k}u_0\\big\\|_{X}<\\infty,   \\end{equation*}   for some $α>0$. For the cubic equation, this includes data such as   $u_0=x_{+}^λ$, singular at the origin; for mKdV even discontinuous   data yield analytic solutions \\emph{e.g} $u_{0}(x)=\\sgn(x)e^{-x^{2}}$.For mKdV we work in the sharp well-posedness space   $X=\\widehat H^{r}_{s}(\\mathbb R)$, $r\\in(1,2]$, $s\\geq\\frac12-\\frac1{2r}$,   with $r=2$ recovering analyticity on $H^s(\\mathbb R)$, $s\\geq\\frac14$, the   best mKdV space in the sense of Kato; for the cubic equation we work in   $X=H^{s}(\\mathbb R)$, $s>-\\frac16$, approaching the critical exponent   $s=-\\frac16$ from above. Analyticity thus holds on the largest known data class for which mKdV is well-posed, and on data approaching the corresponding threshold for the   cubic equation, extending a known smoothing   effect for KdV ($k=1$) to the modified and cubic nonlinearities and to a   broader class of singular profiles, avoiding pseudo-differential calculus   via Lorentz-space refinements replacing Bourgain-space localization. The   mechanism is dispersive: analyticity is generated by the flow,   symmetrically in time, and singular profiles become instantaneously   analytic for $t\\neq0$.",
+        "filename": "2026-07-29-Instantaneous-analytic-smoothing-of-roug-8f37d2.md",
+        "tags": []
+    },
+    {
+        "title": "Numerical approach to the London Equation of superconductivity",
+        "authors": "Nicolás Barnafi, Ignacio Labarca-Figueroa, Carlos Román",
+        "date": "2026-07-29",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.27103v1",
+        "abstract_en": "In this work, we propose a general discretization strategy for solving the London equation for type-II superconductors in the whole space $\\mathbb{R}^3$. To compute the magnetic field $H_0$, we reformulate the problem for the magnetic potential as a transmission problem and discretize it through a nonstandard FEM-BEM coupling. This formulation accounts for both the bounded interior domain and the unbounded exterior domain without introducing an artificial truncation.   We then compute the vector field $B_0$, which arises from the Helmholtz-Hodge decomposition of the magnetic potential in the superconducting sample. This field enters the isoflux problem, which identifies the curves along which vortex nucleation first becomes energetically favorable in the Ginzburg--Landau model of superconductivity. We recast the equations for $B_0$ using the mixed formulation of Kikuchi, in which the divergence-free constraint is imposed weakly, and discretize the resulting problem using a classical $H(\\operatorname{curl})$-conforming finite element discretization.   We validate our discretization strategy through convergence tests and conclude with an application to the isoflux problem. For a ball under a constant applied magnetic field, the unique maximizer is the diameter aligned with the field. For ellipsoids under a constant applied magnetic field aligned with their major axis, our computations provide numerical evidence of a different behavior in sufficiently elongated, cigar-shaped geometries: off-axis competitors reminiscent of U-shaped vortex configurations attain a larger isoflux ratio than the major axis. Since the major axis is therefore not a maximizer, any off-axis maximizer generates, by rotational symmetry, a continuous family of equivalent configurations, implying non-uniqueness and the presence of a degenerate rotational direction in the isoflux problem.",
+        "filename": "2026-07-29-Numerical-approach-to-the-London-Equatio-952da6.md",
+        "tags": []
+    },
+    {
+        "title": "Exact Lagrangian Realization and Robust Strain Sensing in Incompressible Flow",
+        "authors": "Hao Huang",
+        "date": "2026-07-29",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.26895v1",
+        "abstract_en": "We prove that the full group \\(\\SL(3,\\R)\\) occurs as the set of one-particle deformation gradients of periodic, unforced, single-shell solutions of both the three-dimensional Euler and Navier--Stokes equations. More precisely, given a particle label \\(p\\in\\T^3\\), a time \\(T>0\\), and \\(F_*\\in\\SL(3,\\R)\\), every sufficiently large odd integer \\(N\\) admits a real-analytic curl eigenfield \\(W_N\\) with \\(\\operatorname{curl}W_N=NW_N\\). With an explicit scalar amplitude, \\(W_N\\) yields a steady Euler solution; with an explicit exponentially decaying amplitude, it yields a Navier--Stokes solution for any positive viscosity, and in both cases \\(\\nabla_aX(p,T)=F_*\\). The lifted particle trajectory is an embedded analytic arc with nowhere-vanishing velocity. The construction combines global trace-free symmetric-matrix control on \\(\\SL(3,\\R)\\), a Beltrami Cauchy problem along the controlled arc, Runge approximation, inverse localization on the torus, and a finite-dimensional endpoint correction.   We also classify finite material-direction systems that determine every trace-free strain after arbitrary volume-preserving deformation. In dimension \\(n\\), this congruence-robust property holds exactly when the associated rank-one projectors span \\(\\Sym(n)\\); hence the sharp number of scalar channels is \\(n(n+1)/2\\). In dimension three, among minimal systems the undeformed outer-product lower bound is maximized exactly by the six axes of a regular icosahedron. The realization theorem shows that the full deformation-group quantifier in this sensing result is dynamically attained within the rigid class above.",
+        "filename": "2026-07-29-Exact-Lagrangian-Realization-and-Robust-2e2449.md",
+        "tags": []
+    },
+    {
+        "title": "On the decay estimates of a nonlocal convection-diffusion Hamer system",
+        "authors": "Timothée Crin-Barat, Belkacem Said-Houari",
+        "date": "2026-07-29",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.26668v1",
+        "abstract_en": "We consider the multi-dimensional Hamer model for radiating gases in its coupled hyperbolic--elliptic formulation. By means of energy estimates, we establish the global well-posedness for small initial data in hybrid Besov spaces with distinct regularity exponents at low and high frequencies. This framework enables us to relax the regularity assumptions required in \\cite{Duan_Klem_Zhu_2010,Duan_Ruan_Zhu_2012}. In addition, we establish optimal time-decay estimates for solutions with initial data in the critical Besov space $\\dot{B}_{2,\\infty}^{-d/2}(\\mathbb{R}^d)$, thus extending previous results obtained under the stronger assumption $L^1(\\mathbb{R}^d)$. We discuss the optimality of these decay rates and derive improved decay rates under a zero-mass cancellation condition, corresponding to initial data in the larger negative Besov space $\\dot B^{-d/2-1}_{2,\\infty}(\\mathbb R^d)$.",
+        "filename": "2026-07-29-On-the-decay-estimates-of-a-nonlocal-con-090198.md",
+        "tags": []
+    },
+    {
         "title": "Keller--Segel--Navier--Stokes systems involving general sensitivities with Signal-Dependent Power-Law Decay",
         "authors": "Sukjung Hwang, Jaewook Ahn",
         "date": "2026-07-29",
