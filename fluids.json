@@ -1,5 +1,35 @@
 [
     {
+        "title": "Shallow water models for the dynamics of oscillating water columns",
+        "authors": "Edoardo Bocchi",
+        "date": "2026-07-30",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.28515v1",
+        "abstract_en": "We investigate the dynamics of an oscillating water column, which is a wave energy converter where water waves interact with a fixed partially immersed structure and an air chamber. Considering the shallow water regime, the fluid motion is governed by either the one-dimensional nonlinear shallow water equations or the Boussinesq-Abbott equations, while the air pressure variation in the chamber acts as a spring force on the fluid. The presence of the structure and the air chamber introduces constraints into the fluid equations. Assuming conservation of the total fluid-elastic energy in the absence of structural damping, we reformulate the constrained equations as transmission problems between the open water and the chamber and show their local well-posedness. We also consider a different modeling approach in which the upper part of the fluid in the chamber is treated as a rigid layer (water column) free to move vertically above the lower fluid. For this configuration, we reformulate the dynamics as wave-spring-mass systems, where the motion of the water column is driven by the shallow water waves outside the chamber. We establish their local well-posedness and show that the effective buoyancy period of the water column motion is determined by the competition between the added mass and the stiffness of the spring force.",
+        "filename": "2026-07-30-Shallow-water-models-for-the-dynamics-of-008854.md",
+        "tags": []
+    },
+    {
+        "title": "Incompressible Navier-Stokes-Fourier limit from a nonlinear quantum Fokker-Planck equation",
+        "authors": "Young-Pil Choi, Byung-Hoon Hwang, Ju-Hwan Hyun",
+        "date": "2026-07-30",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.27583v1",
+        "abstract_en": "We derive the incompressible Navier-Stokes-Fourier limit from a nonlinear quantum Fokker-Planck equation with Bose-Einstein or Fermi-Dirac statistics. The model has a self-consistent collision structure, with the local density acting as the collision frequency and the bulk velocity and temperature determined by nonlinear quantum-weighted moments of the distribution. We work near a global quantum equilibrium under the diffusive scaling and keep the quantum parameter fixed. Uniform estimates with respect to the Knudsen number yield strong microscopic relaxation and identify the limiting infinitesimal quantum equilibrium. Using the local conservation laws, we prove the incompressibility condition, the Boussinesq relation, and strong compactness of the divergence-free velocity component and a quantum-adapted thermal mode, while the acoustic modes vanish locally by a dispersive estimate. The limiting viscous stress tensor and heat flux are identified by solving auxiliary equations for the linearized quantum Fokker-Planck operator and by expanding the local quantum equilibrium manifold. The resulting incompressible Navier-Stokes-Fourier system retains the effect of quantum statistics through its normalization constants and transport coefficients.",
+        "filename": "2026-07-30-Incompressible-Navier-Stokes-Fourier-lim-5df744.md",
+        "tags": []
+    },
+    {
+        "title": "On the upper bound for the vorticity growth of bi-rotational Euler flows without swirl",
+        "authors": "Khakim Egamberganov, Deokwoo Lim",
+        "date": "2026-07-30",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.27560v1",
+        "abstract_en": "For $d\\geq 4$, we consider incompressible Euler flows in $\\mathbb{R}^{d}$ with bi-rotational symmetry and without swirl. Our first result gives the local wellposedness of the Yudovich-type solution. The second result provides global wellposedness up to $d\\leq 6$. In particular, it shows that the rate of growth of the vorticity maximum coincides with the rate from axisymmetric flows without swirl, which was obtained in the paper by the second author and Jeong (Arch. Ration. Mech. Anal. 249(3):32, 2025) and Shao--Wei--Zhang (Acta Math. Sin. (Engl. Ser.), 42(3):663-679, 2026).",
+        "filename": "2026-07-30-On-the-upper-bound-for-the-vorticity-gro-4f62c8.md",
+        "tags": []
+    },
+    {
         "title": "On existence of chemotaxis compressible Navier-Stokes equations modeling vascular network formation",
         "authors": "Tao Huang, Bara Rababah, Amer Rawashdeh",
         "date": "2026-07-30",
@@ -7,6 +37,16 @@
         "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005620?dgcid=rss_sd_all",
         "abstract_en": "无摘要提供，请点击原文链接查看。",
         "filename": "2026-07-30-On-existence-of-chemotaxis-compressible-6472d3.md",
+        "tags": []
+    },
+    {
+        "title": "Rigorous justification of the hydrostatic-incompressible approximation for weakly stratified isothermal flow",
+        "authors": "Quyuan Lin, Xin Liu",
+        "date": "2026-07-29",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.27477v1",
+        "abstract_en": "We consider the limit of small Mach number and small vertical-to-horizontal aspect ratio for the isothermal compressible Navier-Stokes system. In addition, we consider the scale in which the stratification is weak. Owing to the anisotropic nature of the problem, the dynamics exhibit a three-wave separation phenomenon, consistent of a slow wave, a fast horizontal acoustic wave, and an even faster vertical acoustic wave. These three waves, unfortunately, are not mutually orthogonal, and the corresponding projections are parametrized by the small parameter, which significantly complicates the nonlinear analysis. Without any restriction on the size of the initial waves, we establish the uniform existence and uniqueness of solutions to the compressible Navier-Stokes system for any fixed small parameter, by carefully analyzing the evolutions of both the energy and the acoustic waves. Moreover, we prove that, as the small parameter tends to zero, the solutions converge to that of the incompressible primitive equations governing atmospheric and oceanic flows.",
+        "filename": "2026-07-29-Rigorous-justification-of-the-hydrostati-ea4c87.md",
         "tags": []
     },
     {
