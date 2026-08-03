@@ -30,6 +30,36 @@
         "tags": []
     },
     {
+        "title": "Local Well-Posedness for a Diffuse Interface Model for Two-Phase Flows from Mixture Theory",
+        "authors": "Helmut Abels, Harald Garcke, Julia Wittmann",
+        "date": "2026-07-31",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.29298v1",
+        "abstract_en": "Local-in-time well-posedness is established for a recently proposed diffuse interface model describing incompressible two-phase flows. The result constitutes the first analytical study of a model introduced by ten Eikelder et al. for the motion of a binary mixture of macroscopically immiscible, viscous, incompressible fluids with unmatched densities. In contrast to classic diffuse interface models based on a single mean velocity, this model is derived within the framework of mixture theory, assigning each phase its own momentum and mass balance, which results in a system of two coupled Navier--Stokes equations and two mass transport equations. The proof of the well-posedness result uses a fixed-point strategy, where the main difficulty lies in the analysis of the principal part of the associated linearized system.",
+        "filename": "2026-07-31-Local-Well-Posedness-for-a-Diffuse-Inter-71fb2d.md",
+        "tags": []
+    },
+    {
+        "title": "Why a mid-depth stress-free boundary condition is incorrect for Ekman flows",
+        "authors": "Christian Puntini, Luigi Roberti",
+        "date": "2026-07-31",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.29261v1",
+        "abstract_en": "We show that the assumption of a stress-free boundary condition at a finite intermediate depth, namely, at the bottom of the Ekman layer, in the analysis of wind-driven ocean flows necessarily leads to an unphysical current profile. Indeed, if the $z$-derivative of the fluid velocity vanishes at a given depth, then this depth necessarily corresponds to a minimum of the velocity profile, with the velocity increasing beneath it. Using a WKB ansatz based on the small variations of the ocean's water density at great depths, we also argue that a no-slip condition at the bottom of the ocean, if sufficiently deep, still effectively implies (up to a very small error) the orthogonality of the Ekman transport and the wind-stress.",
+        "filename": "2026-07-31-Why-a-mid-depth-stress-free-boundary-con-45d096.md",
+        "tags": []
+    },
+    {
+        "title": "Nonlinear Stability of Linearly Expanding Goldreich-Weber Solutions for the Navier-Stokes-Poisson System with Degenerate Viscosity Under Radial Perturbations",
+        "authors": "Han Cao",
+        "date": "2026-07-31",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2607.28960v1",
+        "abstract_en": "In this work, we study the nonlinear stability of linearly expanding Goldreich-Weber (GW) solutions for the gravitational Navier-Stokes-Poisson system with pressure law $p(ρ)=ρ^{\\frac{4}{3}}$ and degenerate viscosity. It is well-known that linearly expanding GW solutions are special solutions to the Euler-Poisson system with $γ=\\frac{4}{3}$. With bulk viscosity equal to 0, linearly expanding GW solutions are also solutions to the Navier-Stokes-Poisson equations. Choosing shear viscosity proportional to $ρ^α$ with $0<α\\le\\frac{2}{3}$ and zero bulk viscosity, we prove the nonlinear stability of linearly expanding GW solutions under radial perturbation.",
+        "filename": "2026-07-31-Nonlinear-Stability-of-Linearly-Expandin-6b50e8.md",
+        "tags": []
+    },
+    {
         "title": "Shallow water models for the dynamics of oscillating water columns",
         "authors": "Edoardo Bocchi",
         "date": "2026-07-30",
