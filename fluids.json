@@ -1,5 +1,85 @@
 [
     {
+        "title": "Ergodicity for stochastic 2D Boussinesq equations with a highly degenerate pure jump Lévy noise",
+        "authors": "Jianhua Huang, Xuhui Peng, Xue Wang, Jiangwei Zhang",
+        "date": "2026-08-04",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005826?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-08-04-Ergodicity-for-stochastic-2D-Boussinesq-6e2c50.md",
+        "tags": []
+    },
+    {
+        "title": "On countable subsets of solutions of nonlinear higher-order ODEs and elliptic PDEs with indefinite operators",
+        "authors": "Pablo Alvarez-Caudevilla, Jonathan D. Ev ans, Victor A. Galaktionov",
+        "date": "2026-08-03",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.02532v1",
+        "abstract_en": "Countable subsets of solutions of higher-order nonlinear ODEs and elliptic PDEs with indefinite non-coercive operators from the reaction-diffusion, thin film and dynamical system (DS) theories are obtained via a gluing/matching argument. In particular we study some classic and quasilinear degenerate ODEs in $\\mathbb{R}$, with boundary conditions at infinity $F(\\infty)=0$, with non-odd nonlinearities such as   $$ \\begin{matrix} F^{(4)} =-F+F^2,\\, \\,\\, F^{(4)}=-F+F^2{\\rm e}^{F-1}, \\, (|F''|F'')''=-F + F^2, \\\\ F^{(4)} =-|F|F+F^2, \\,\\,\\,F^{(4)} =-F^3+F^4, \\,\\,\\, F^{(6)}=F-F^2, \\end{matrix} $$ etc, as well as equations with odd and non-smooth nonlinearities like   $$F^{(4)}=-F+F^3, \\,F^{(4)}=-F-(|F|F-F)'', \\,\\, F^{(4)}=- \\frac F{\\sqrt{|F|}}-(F^3-F)'',\\,\\mbox{etc.}$$ Some of these ODEs are Hamiltonian and were studied in detail in the DS theory. On the basis of nonlinear operators, elliptic PDEs and variational theory, related polyharmonic elliptic equations in $\\mathbb{R}^N$, $F(\\infty)=0$, such as $$Δ^2 F=-F+F^2, \\quad Δ^2 F=-F -Δ(F^2-F), \\quad Δ^3 F=F-F^2, \\quad \\mbox{etc.};$$ are also shown to admit countable families of solutions. For such equations with non-odd functionals associated Lusternik--Schnirel'man (L--S) genus/category variational theory guaranteeing existence of a sequence of critical points does not apply. These ODEs and elliptic PDEs (e.g., in the radial setting) are shown to admit at least two basic countable families ${\\mathcal F}_{1,2}$ of positively dominant solutions connected with two periodic orbits $Γ_{\\rm max/min}$. Patterns obtained by gluing together via exponentially decaying tails of arbitrary finite samples from $Γ$'s form a countable subset of homoclinics in $\\mathbb{R}^4$ of an arbitrary complexity.",
+        "filename": "2026-08-03-On-countable-subsets-of-solutions-of-non-2800a8.md",
+        "tags": []
+    },
+    {
+        "title": "Admissibility criteria for convex integration fan solutions and contact discontinuities in the Euler equation",
+        "authors": "Heiko Gimperlein",
+        "date": "2026-08-03",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.02482v1",
+        "abstract_en": "For a general piecewise constant fan subsolution to the isentropic Euler equations, the explicit computation of the entropy and action rates of any associated convex integration solution, relative to a common reference solution, shows that these rates depend only upon the fan. Moreover, these explicit expressions may be decomposed into a kinetic-energy mismatch and an internal-energy mismatch from which we characterize agreement of Dafermos' entropy rate criterion with action rate criteria. We apply this to the solutions constructed by Krupa and Székelyhidi for Riemann data whose classical solution is a planar contact discontinuity. Certified exact-arithmetic computations show that, in pairwise comparison, both criteria prefer the convex integration solutions to the classical self-similar solution.",
+        "filename": "2026-08-03-Admissibility-criteria-for-convex-integr-3fb579.md",
+        "tags": []
+    },
+    {
+        "title": "Spectrum analysis and optimal time decay rates of a kinetic-fluid-Poisson system",
+        "authors": "Junhao Chen, Hailiang Li, Mingying Zhong",
+        "date": "2026-08-03",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.02377v1",
+        "abstract_en": "In this paper, we consider the Cauchy problem for the Vlasov-Poisson-Fokker-Planck/Navier-Stokes-Poisson (VPFP/NSP) system, which couples the VPFP system with the compressible NSP system through a friction force dependent on the relative velocity and a self-consistent Poisson equation. Motivated by the spectrum analysis for the Vlasov-Poisson-Boltzmann (VPB) system, we introduce a suitable norm to capture the effect of the forcing induced by the Poisson equation and give a detailed spectrum analysis of the linearized system around a global equilibrium. Our results show that the two coupling mechanisms lead to an essentially different spectrum structure of the coupled system from those of the individual VPFP and NSP systems. More precisely, the low-frequency spectrum contains a pair of acoustic branches with the propagation speed $\\sqrt{\\frac{γ+1}{2}}~(γ\\ge1)$ and two diffusive branches, thereby restoring the usual acoustic wave propagation of classical compressible fluids. Moreover, we establish the global existence of the solution to the nonlinear system and obtain the optimal time decay rate $(1+t)^{-\\frac34}$, with a faster rate $(1+t)^{-\\frac54}$ for the electric field and relative velocity. The present analysis also provides a useful framework for studying related kinetic-fluid models coupled through friction and self-consistent fields.",
+        "filename": "2026-08-03-Spectrum-analysis-and-optimal-time-decay-22bd3f.md",
+        "tags": []
+    },
+    {
+        "title": "Strong ill-posedness for the MHD system in the supercritical regime: inviscid and viscous",
+        "authors": "Zhenyu Wan, Weikui Ye, Zhaoyang Yin",
+        "date": "2026-08-03",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.02330v1",
+        "abstract_en": "This paper is concerned with the Cauchy problem for the 3D incompressible magnetohydrodynamic (MHD) equations in supercritical Sobolev spaces. It is well known that the system is locally well-posed in subcritical Sobolev spaces, whereas the supercritical regime remains largely open. In this work, we establish norm inflation for the incompressible MHD equations, both with and without Laplacian dissipation, in supercritical Sobolev spaces, thereby revealing strong ill-posedness of the system at this regularity level. A distinctive feature of our approach is the introduction of a novel geometric construction, termed the ``Magnetic-solo ansatz'', through which, for the ideal MHD system, norm inflation occurs exclusively in the magnetic field $b$ in $H^s$ with $0<s<\\frac{5}{2}$, while the $H^s$-norm of the velocity field $u$ remains uniformly bounded. This asymmetric behavior shows that supercritical ill-posedness can be driven exclusively by the magnetic field, highlighting its essential role in the breakdown of well-posedness. Our findings fill a significant gap in the supercritical regularity theory for incompressible MHD and shed light on the distinct mechanisms governing the fluid and magnetic dynamics.",
+        "filename": "2026-08-03-Strong-ill-posedness-for-the-MHD-system-b53ab1.md",
+        "tags": []
+    },
+    {
+        "title": "Unified theory for regularity persistence of vortex patch boundaries",
+        "authors": "Marc Magaña",
+        "date": "2026-08-03",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.02033v1",
+        "abstract_en": "We establish a unified local theory for the persistence of Sobolev regularity of vortex patch boundaries in a family of two-dimensional active scalar equations with radial convolution kernels $K(|x-y|)$. The class includes the 2D Euler equation, the generalized SQG equation in the locally integrable range $0<β<1$, and the quasi-geostrophic shallow water equation. Under natural assumptions on $K$ (smoothness, integrability near the origin, monotonicity, and polynomial growth), we prove that if the initial boundary belongs to $H^3(\\mathbb T)$ and satisfies the arc-chord condition, then the contour dynamics equation admits a unique local solution in $C([0,T];H^3(\\mathbb T))$. Under a stronger integrability condition on the kernel, we also obtain local existence of $H^2$ solutions. The proof combines Sobolev energy estimates for the contour equation with quantitative control of the arc-chord quantity.",
+        "filename": "2026-08-03-Unified-theory-for-regularity-persistenc-63d014.md",
+        "tags": []
+    },
+    {
+        "title": "Generalized solution and Weak-Strong uniqueness for a barotropic Euler-Riesz system",
+        "authors": "Nilasis Chaudhuri",
+        "date": "2026-08-03",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.01872v1",
+        "abstract_en": "We study the Euler--Riesz system on the torus $\\mathbb T^d$, $d=2,3$: the compressible Euler equations with barotropic pressure $p(\\varrho)=a\\varrho^γ$ ($γ>1$, $a>0$), coupled to a repulsive nonlocal force ($\\approx \\varrho \\nabla_x K \\ast \\varrho$) with Riesz kernel $K(x)\\propto|x|^{β-d}$ of order $β\\in(0,2)$. Since $K$ is the kernel of the inverse fractional Laplacian $(-Δ)^{-β/2}$, we recast the force through the Caffarelli--Silvestre extension as the trace of a local stress tensor, replacing the nonlocal interaction by a local identity in one extra variable. For a repulsive kernel the total energy is coercive, and we use this to introduce a notion of global-in-time \\emph{dissipative solution} for arbitrarily large finite-energy data. Our main result is weak (measure-valued)--strong uniqueness, for every order $β\\in(0,2)$ and every $γ>1$ independently: on any interval on which a strong solution exists, every dissipative solution with the same initial data coincides with it and all defects vanish. The proof rests on a suitable adaptation of relative energy.",
+        "filename": "2026-08-03-Generalized-solution-and-Weak-Strong-uni-3a0636.md",
+        "tags": []
+    },
+    {
+        "title": "Exponential mixing for Korteweg-de Vries equation with localized noise",
+        "authors": "Yuxuan Chen, Shengquan Xiang, Zhifei Zhang, Jia-Cheng Zhao",
+        "date": "2026-08-03",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.01863v1",
+        "abstract_en": "We establish exponential mixing for the randomly forced and weakly damped KdV equation in $L^2(\\mathbb{T})$. The noise is bounded, localized, and degenerate in high frequencies. Our proof relies on a general probabilistic framework in [11,33], nonlinear smoothing for KdV and its linearization via normal form transformation, and stabilization of the system by localized force. This paper continues a series of works connecting asymptotic compactness, control theory, and ergodicity and mixing for randomly forced dispersive PDEs.",
+        "filename": "2026-08-03-Exponential-mixing-for-Korteweg-de-Vries-8f71b9.md",
+        "tags": []
+    },
+    {
         "title": "Ionic KdV Structure in Weakly Collisional Plasmas",
         "authors": "Renjun Duan, Zongguang Li, Dongcheng Yang, Tong Yang",
         "date": "2026-08-01",
