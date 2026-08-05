@@ -1,5 +1,45 @@
 [
     {
+        "title": "Explicit formulas of strict BV relaxed energies for polyconvex functionals with linear growth",
+        "authors": "Domanico Mucci, Riccardo Scala",
+        "date": "2026-08-04",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.03821v1",
+        "abstract_en": "We consider polyconvex functionals defined on vector valued functions, the model case being the graph area functional, and we analyze the relaxed energy with respect to the strict convergence in $BV$. In several cases where the relaxed area is known, by exploiting a continuity result by Reshetnyak we are able to find an explicit formula for wide classes of integrands with linear growth in the minors of the gradient. We preliminarily extend to the $BV$ setting a continuity property observed by Acerbi--Dal Maso in the Sobolev case. Finally, partial results concerning the relaxation of the vortex map with respect to the $L^1$ convergence are obtained.",
+        "filename": "2026-08-04-Explicit-formulas-of-strict-BV-relaxed-e-9c931a.md",
+        "tags": []
+    },
+    {
+        "title": "Brinkman's term for the steady-state Navier-Stokes equations with prescribed flux rate or pressure drop in perforated pipes",
+        "authors": "Richard M. Höfer, Amina Mecherbet, Gianmarco Sperone",
+        "date": "2026-08-04",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.03672v1",
+        "abstract_en": "The steady motion of a viscous incompressible fluid in a distorted pipe, containing several small particles of diameter $\\eps^3$ and mutual distance $\\eps$, is modeled through the Navier-Stokes equations with mixed boundary conditions. Apart from inhomogeneous Dirichlet boundary conditions on the particles, these involve the Bernoulli pressure and the tangential velocity on the inlet and outlet of the tube, while either the transversal flux rate or the pressure drop is prescribed along the pipe. Applying the energy method in homogenization theory, we study the asymptotic behavior of the solutions to these systems as $\\eps \\to 0$, without any restriction on the magnitude of the data, and show that the effective equations display an additional Brinkman term. An important feature of the present work concerns the required uniform bounds, which are achieved (in the case of the prescribed flux problem) by a contradiction argument based on Bernoulli's law for solutions of the stationary Euler equations.",
+        "filename": "2026-08-04-Brinkman-s-term-for-the-steady-state-Nav-3394c9.md",
+        "tags": []
+    },
+    {
+        "title": "Uniformly Rotating Euler Configurations with Multiple Vorticity Holes",
+        "authors": "Vittorio Baroncini, Juan Carlos Cantero, Claudia García, Zineb Hassainia, Joan Mateu",
+        "date": "2026-08-04",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.03654v1",
+        "abstract_en": "We construct new families of uniformly rotating vortex-patch solutions of the two-dimensional incompressible Euler equations consisting of a simply connected outer patch and multiple interior interfaces, which can be interpreted geometrically as holes. More precisely, each solution consists of a single outer vortex patch enclosing $\\mathbf m\\geq2$ identical, highly concentrated inner components arranged at the vertices of a regular $\\mathbf m$-gon; the entire configuration rotates rigidly in the clockwise direction.   As the concentration parameter tends to zero, the inner components shrink and collapse simultaneously toward the origin, while the outer boundary converges to the unit circle. The corresponding vorticities converge, in the sense of measures, to a Rankine vortex supplemented by a point vortex of circulation $-\\mathbf m$ at its center.   The proof is based on a contour-dynamics formulation, a symmetry reduction to two nonlinear boundary equations, and a suitable singular rescaling. We then apply an implicit function theorem with a continuous parameter in symmetry-adapted Hölder spaces. To the best of our knowledge, this is the first analytical construction of a desingularization regime in which several concentrated inner components are contained in a common outer patch and collapse simultaneously toward its center.",
+        "filename": "2026-08-04-Uniformly-Rotating-Euler-Configurations-f33da7.md",
+        "tags": []
+    },
+    {
+        "title": "Analysis of Moment Closures Using $\\varphi$-Divergences for Rarefied Dynamics with Binary Collisions and Their Galerkin Discretizations",
+        "authors": "Michael R. A. Abdelmalik, Irene M. Gamba, Torsten Kessler, Sergej Rjasanow",
+        "date": "2026-08-04",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.03640v1",
+        "abstract_en": "This work introduces a robust deterministic framework for approximating solutions of the Boltzmann equation with binary collisions by discretizing their dependence on time, position, and velocity using Galerkin methods. By employing a family of parametric Galerkin closures based on $\\varphi$-divergences in velocity space, we derive rigorous hierarchies of moment equations that govern fluid dynamic variables. Addressing the limitation that these closures alone do not guarantee dissipation of a $\\varphi$-divergence entropy for the true binary collision operator, we restore this property by formulating a compatible approximate collision operator tailored to each closure. This constructed operator intrinsically retains fundamental physical properties essential for high-fidelity flow simulations, including Galilean invariance, exact conservation of mass, momentum, and energy, and strict dissipation of a $\\varphi$-divergence entropy. Furthermore, we show that the resulting closed moment systems are symmetric-dissipative, yielding Cauchy problems that are well-posed locally in time. To translate this mathematical foundation into an efficient computational tool, we discretize the position and time variables with an entropy-stable discontinuous Galerkin (DG) finite element method. The fully implicit, entropy-stable space-time approach enables time steps far beyond typical CFL-limited step sizes and the direct computation of steady states. The robustness and accuracy of the methodology are verified and validated through numerical simulations on the supersonic nozzle flow of argon, mass flow through a channel, and heat transfer between parallel walls, demonstrating agreement with analytical benchmarks, experimental measurements, and stochastic particle simulations.",
+        "filename": "2026-08-04-Analysis-of-Moment-Closures-Using---varp-d952fe.md",
+        "tags": []
+    },
+    {
         "title": "Ergodicity for stochastic 2D Boussinesq equations with a highly degenerate pure jump Lévy noise",
         "authors": "Jianhua Huang, Xuhui Peng, Xue Wang, Jiangwei Zhang",
         "date": "2026-08-04",
