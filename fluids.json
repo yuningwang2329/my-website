@@ -1,5 +1,95 @@
 [
     {
+        "title": "A new weighted regularity criterion for the 3D MHD equations",
+        "authors": "Xuanji Jia, Yong Zhou",
+        "date": "2026-08-08",
+        "source": "Appl. Math. Lett.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0893965926002351?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-08-08-A-new-weighted-regularity-criterion-for-ab4a06.md",
+        "tags": []
+    },
+    {
+        "title": "Vanishing viscosity limit to two interacting shocks from the same family for the compressible Navier-Stokes equations",
+        "authors": "Lin-An Li, Dehua Wang, Yi Wang",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.06173v1",
+        "abstract_en": "We investigate the vanishing viscosity limit for the one-dimensional compressible Navier-Stokes equations in the regime of two interacting shock waves from the same characteristic family of the underlying Euler equations. Unlike the interaction of two shocks from distinct families, which produces two outgoing shocks in their respective original families, the collision of two same-family shocks generates an outgoing shock in the same family together with a rarefaction wave in the other family. This configuration is more singular because the collision occurs on a larger time scale that depends inversely on the wave strength, making it challenging to justify the vanishing viscosity limit not only in the processes before and after the shock collision but, more crucially, at the collision point. Furthermore, the emergence of both shock and rarefaction waves after the collision introduces an additional difficulty. To overcome these obstacles, we first employ the anti-derivative method before the collision, which allows us to fix the locations of both viscous shocks precisely up to the collision point. However, uniform estimates with respect to the viscosity cannot be closed up to the collision time; we therefore introduce a carefully constructed approximate collision time to obtain the required higher-order energy bounds. After the collision, we apply a weighted relative entropy method, combined with time-dependent shifts, to handle the composite wave structure arising from the coexistence of shock and rarefaction waves. Our main result establishes that, for suitably small wave strengths and viscosity coefficients, there exists a family of global smooth solutions to the Navier-Stokes equations that converge to the entropy solution of the Euler equations with an explicit convergence rate. The techniques are expected to be applicable to other related problems in vanishing viscosity theory.",
+        "filename": "2026-08-06-Vanishing-viscosity-limit-to-two-interac-2f9fca.md",
+        "tags": []
+    },
+    {
+        "title": "New decay estimates and Liouville type theorems for the 3D axisymmetric stationary Navier-Stokes equations",
+        "authors": "Wendong Wang, Guoxu Yang",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.06040v1",
+        "abstract_en": "The Liouville problem for the three-dimensional stationary Navier--Stokes equations remains open, even for axisymmetric \\(D\\)-solutions. In this paper, we obtain two results based on decay in the cylindrical radial variable \\(r=|x'|\\).   (i). Using a new pointwise Calderón--Zygmund estimate adapted to cylindrical geometry, we improve the decay estimates of Carrillo--Pan--Zhang (2020, JFA) and prove   \\[   |\\nabla u_r|+|\\nabla u_z|   \\lesssim r^{-5/4}[\\log(\\mathrm e+r)]^{5/4},   \\quad   |ω_r|+|ω_z|   \\lesssim r^{-9/8}[\\log(\\mathrm e+r)]^{9/8}, \\quad r\\gg1.   \\]   (ii). We develop a new approach to Liouville theorems that improves the axisymmetric criteria of Wang (2019, JDE) and Zhao (2019, Nonlinear Anal.). Without any symmetry assumption, we show that a \\(D\\)-solution is trivial if one of the following holds:   \\[ (\\mathrm a).\\,\\sup_{|x'|=r,\\, z\\in\\mathbb R}   |u(x',z)|   \\leq   Cr^{-2/3}[\\log(\\mathrm e+r)]^{-γ}; \\quad (\\mathrm b).\\,   \\sup_{|x'|=r,\\, z\\in\\mathbb R}   |ω(x',z)|   \\leq   Cr^{-5/3}[\\log(\\mathrm e+r)]^{-γ},   \\]   for $r\\geq1$, where $γ>1/3$.",
+        "filename": "2026-08-06-New-decay-estimates-and-Liouville-type-t-01635a.md",
+        "tags": []
+    },
+    {
+        "title": "Prandtl--Batchelor and flux-expulsion selection for steady MHD flows in a disk",
+        "authors": "Chen Gao, Zhiwu Lin, Jianfeng Zhao",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.05994v1",
+        "abstract_en": "We study the simultaneous vanishing-viscosity and vanishing-resistivity limit of steady incompressible MHD flows in a disk. The boundary velocity is a small nonaxisymmetric perturbation of a rigid rotation with mean angular speed \\(α\\), while the prescribed tangential magnetic trace has mean \\(β\\). Assuming \\(α\\neq0\\) and the non-Alfvénic condition \\(|α|\\neq|β|\\), we construct solutions converging on compact interior subdisks to a rigidly rotating ideal MHD core with constant vorticity and out-of-plane current density. A new MHD--Wood law determines the two core rotations from the boundary data: the velocity core is selected by a coupled kinetic--magnetic balance, whereas the magnetic core is fixed by the imposed mean circulation. Consequently, zero circulation gives complete interior magnetic expulsion, while nonzero circulation leaves a uniform magnetic rotation after the nonaxisymmetric modes are confined to a thin boundary layer. This provides a fully coupled realization of Prandtl--Batchelor selection and flux expulsion; unlike classical kinematic models, the magnetic field actively changes the flow and need not be weak. The proof combines a non-Alfvénic coercive theory for a periodic MHD boundary layer, global matching of the two fields, and a coupled stability estimate adapted to the magnetic boundary condition. A separate conditional rigidity argument, using exact viscous identities and local convergence but no interior asymptotic expansion, explains the same core structure for a broader single-eddy family.",
+        "filename": "2026-08-06-Prandtl--Batchelor-and-flux-expulsion-se-481110.md",
+        "tags": []
+    },
+    {
+        "title": "Boundary layer analysis for the 2D chemotaxis-Navier-Stokes system with logarithmic sensitivity, Part I: Well-posedness",
+        "authors": "Hui Wang, Wendong Wang, Lingling Zhao",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.05940v1",
+        "abstract_en": "This is the first part of a two-part work concerning the boundary layer convergence for chemotaxis-Navier-Stokes system in a two-dimensional half-space. In this paper, we investigate the chemotacxis-Navier-Stokes system with the logarithmic singularity under Navier-slip boundary conditions. More precisely, we perform an exact asymptotic expansion for the chemotaxis Navier-Stokes system with viscous coefficient $\\varepsilon>0$, and obtain partial boundary layer profiles, establishing the well-posedness of the corresponding boundary layer profiles. Specially, we also establish the local well-posedness of solutions to the supercritical chemotaxis Euler equation (with $\\varepsilon=0$) by overcoming the difficulty from the disappearance of diffusion terms.",
+        "filename": "2026-08-06-Boundary-layer-analysis-for-the-2D-chemo-952ebc.md",
+        "tags": []
+    },
+    {
+        "title": "Vanishing capillary limit for compressible Navier-Stokes-Korteweg system in a bounded interval with large initial data",
+        "authors": "Jiaxin Ling, Huanyao Wen, Xinhua Zhao",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.05849v1",
+        "abstract_en": "In this paper, we study vanishing capillary limit for isentropic compressible Navier-Stokes-Korteweg system in a bounded interval. The main challenges focus on the capillary term and the boundary effect. A new uniform dissipative estimate in terms of the third-order derivative of density and some correctors are derived to handle such difficulties. It leads to the optimal convergence rate of the solutions in $L^\\infty$ norm globally in time with arbitrarily large initial data. This work provides a rigorous derivation of the isentropic compressible Navier-Stokes system in a bounded interval from the isentropic compressible Navier-Stokes-Korteweg system via vanishing capillary limit.",
+        "filename": "2026-08-06-Vanishing-capillary-limit-for-compressib-e735ab.md",
+        "tags": []
+    },
+    {
+        "title": "Local well-posedness of the boundary layer for a pseudo-plastic fluid by energy methods",
+        "authors": "Zhonger Wu, Zhong Tan",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.05693v1",
+        "abstract_en": "We study the well-posedness of the boundary layer for a pseudo-plastic fluid by energy methods under Oleinik's monotonicity assumption. We need to address two main difficulties: derivative loss and the difficulty caused by viscosity. For the first difficulty, we borrow the cancellation mechanism proposed by Masmoudi and Wong [CPAM, 2015]. For the second difficulty, we combine the monotonicity assumption and Faà di Bruno formula to obtain precise control over the high-order derivatives of viscosity, which is the main contribution of this paper.",
+        "filename": "2026-08-06-Local-well-posedness-of-the-boundary-lay-e95848.md",
+        "tags": []
+    },
+    {
+        "title": "Periodic Solutions to the Steady Viscous Burgers Equation: A Constructive Example",
+        "authors": "Quansen Jiu, Yuhan Cao",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.05677v1",
+        "abstract_en": "In this paper, we consider the periodic problem to steady viscous Burgers equation with an periodic and external force. Our main aim is to construct periodic solutions to this model which are uniformly bounded with respect to the viscosity via a direct Fourier series approach. Firstly, as an example, starting from a special solution of the non-viscous Burgers equation with a specific force, we solve the approximate solutions to the viscous Burgers equation in an explicit way. Secondly, we construct the solution to the periodic problem of the viscous Burgers equation with the external force by solving the initial value problem to a second ordinary differential equations, which is uniformly bounded with respect to the viscosity. Compared with Jauslin-Kreiss-Moser's result, our approach provides an explicit constructive procedure for the periodic solutions and yields a sharper convergence rate (up to higher order) when the viscosity vanishes.",
+        "filename": "2026-08-06-Periodic-Solutions-to-the-Steady-Viscous-21b45c.md",
+        "tags": []
+    },
+    {
+        "title": "On dynamic stability of energetically stable equilibria of the Navier-Stokes-Korteweg flows",
+        "authors": "Yoshikazu Giga, Naoto Kajiwara, Kazuyuki Tsuda",
+        "date": "2026-08-06",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.05654v1",
+        "abstract_en": "We consider the Navier-Stokes-Korteweg equations in a bounded domain or a periodic cell. The pressure considered in this paper may not be monotone with respect to the density so that there exist non-constant equilibria allowing two-phases. Using a simple Hilbert space framework, we prove that if an isolated equilibrium is energetically stable and non- degenerate, it is exponentially stable under the isothermal Navier-Stokes-Korteweg flows when the space dimension is less than or equal to three. For non-isolated case, we prove that a global-in-time solution near an energetically stable equilibrium converges to possibly another equilibrium exponentially fast. No smallness assumptions on equilibria are imposed. For the proof we apply a (generalized) stability principle due to J. Prüss, M. Wilke and G. Simonett (2013).",
+        "filename": "2026-08-06-On-dynamic-stability-of-energetically-st-4afdd8.md",
+        "tags": []
+    },
+    {
         "title": "On the inviscid limit of the 2D chemotaxis–Navier–Stokes system with logistic source",
         "authors": "Gengyao Zhao, Qian Zhang",
         "date": "2026-08-06",
