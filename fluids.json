@@ -10,6 +10,38 @@
         "tags": []
     },
     {
+        "title": "Stable determination of time-dependent coefficients in a reaction-diffusion-convection system",
+        "authors": "Rahul Bhardwaj, Parveen Kumar",
+        "date": "2026-08-07",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.07190v1",
+        "abstract_en": "In this manuscript, we investigate an inverse boundary value problem for a reaction-diffusion-convection system in a bounded domain of $\\mathbb{R}^{1+n}$, $n\\geq 2$. We aim to obtain a stability estimate for determining the time-dependent convection coefficient and matrix-valued potential from boundary measurements represented by the Dirichlet-to-Neumann map. We consider a partial data setting in which the measurements are available only on a subset of the lateral boundary that slightly exceeds one-half of the boundary. We first establish the well-posedness of the associated initial-boundary value problem. Subsequently, by combining Carleman estimates with suitable geometric optics solutions, we derive stability estimates for the unknown coefficients. More precisely, we prove a double logarithmic ($\\log$-$\\log$) stability estimate for the time-dependent convection coefficient from the knowledge of the partial Dirichlet-to-Neumann map. This stability result is then employed to recover the matrix-valued potential, yielding a triple logarithmic ($\\log$-$\\log$-$\\log$) stability estimate for the zeroth-order coefficient.",
+        "filename": "2026-08-07-Stable-determination-of-time-dependent-c-7cb52f.md",
+        "tags": []
+    },
+    {
+        "title": "Long-Wave Stability And Instability Of Periodic Shear Flows For The 2D Navier-Stokes Equations On The $β$-Plane",
+        "authors": "Robin Ming Chen, Tian Dai, Dehua Wang, Weiqiang Wang",
+        "date": "2026-08-07",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.06899v1",
+        "abstract_en": "We study the spectral stability of periodic shear flows for the two-dimensional Navier--Stokes equations on the $β$-plane in the long-wave regime. It is known that non-rotating periodic shear flows are generically unstable to sufficiently long-wave perturbations. We show that planetary rotation can suppress this instability: using a perturbative analysis based on Kato's reduction, we derive an asymptotic expansion for the principal eigenvalue of the linearized operator and obtain an explicit stability criterion in terms of the shear profile, the viscosity, and the Coriolis parameter. Under the critical scaling where the Coriolis effect and the long-wave perturbation are of comparable size, this criterion extends Yudovich's classical long-wave instability threshold to rotating flows and reveals a sharp transition between stability and instability governed by the ratio $K$. These results give a rigorous account of how viscosity, shear, and rotation compete to determine long-wave stability on the $β$-plane.",
+        "filename": "2026-08-07-Long-Wave-Stability-And-Instability-Of-P-672da4.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Low Regularity Norm Inflation of Axisymmetric Hall Magnetohydrodynamics in Sobolev Space",
+        "authors": "Haoming Zhu",
+        "date": "2026-08-07",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.06730v1",
+        "abstract_en": "In this paper, we study the axisymmetric Hall magnetohydrodynamics where $u = u^re_r+u^ze_z$ and $B = B^θe_θ$. If there is a smooth solution to the system, we proved that this solution must exhibit norm inflation in $H^{σ-1}(\\mathbb R^3) \\times H^σ(\\mathbb R^3)$ for $1<σ<7/2$. If the smooth solution to Hall magnetohydrodynamics is unique, then this also implies a norm inflation in Hall magnetohydrodynamics.",
+        "filename": "2026-08-07-Low-Regularity-Norm-Inflation-of-Axisymm-e1eaba.md",
+        "tags": []
+    },
+    {
         "title": "Vanishing viscosity limit to two interacting shocks from the same family for the compressible Navier-Stokes equations",
         "authors": "Lin-An Li, Dehua Wang, Yi Wang",
         "date": "2026-08-06",
