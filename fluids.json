@@ -1,5 +1,45 @@
 [
     {
+        "title": "Global well-posedness for the 3-D inhomogeneous anisotropic Navier–Stokes equations with large vertical viscosity",
+        "authors": "Wanyu Wu, Gang Xu",
+        "date": "2026-08-11",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626006066?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-08-11-Global-well-posedness-for-the-3-D-inhomo-2b9c71.md",
+        "tags": []
+    },
+    {
+        "title": "Energy consistent hyperbolic approximation for a class of fourth-order partial differential equations",
+        "authors": "Rahul Barthwal, Firas Dhaouadi, Christian Rohde",
+        "date": "2026-08-10",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.09478v1",
+        "abstract_en": "In this article, we propose a novel hyperbolic relaxation system for a general class of fourth-order nonlinear partial differential equations arising in the modelling of thin film flows or the phase separation of binary mixtures. The approximations are constructed to dissipate energies which recover the energy (Lyapunov) functional of the limit equation when the relaxation parameters vanish.   Using the relative energy framework, we prove the convergence of weak entropy solutions of the relaxation system to smooth solutions of the limit equation. We validate our analysis with a series of numerical examples for thin film equations and Cahn-Hilliard equations.",
+        "filename": "2026-08-10-Energy-consistent-hyperbolic-approximati-3e4500.md",
+        "tags": []
+    },
+    {
+        "title": "Low-regularity well-posedness for dispersive equations with derivative nonlinearity and quasi-periodic initial data",
+        "authors": "Robert Schippa",
+        "date": "2026-08-10",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.09470v1",
+        "abstract_en": "We show low-regularity well-posedness of the Korteweg-de Vries equation with spatially quasi-periodic initial data. To this end, we employ frequency-dependent time localization and a bilinear version of the Córdoba--Fefferman square function estimate to show a bilinear Strichartz estimate for quasi-periodic functions. The solutions are proved to preserve the Sobolev regularity of the initial data, which was not the case in earlier works. The argument extends to other dispersion relations and higher order nonlinearities.",
+        "filename": "2026-08-10-Low-regularity-well-posedness-for-disper-f3b1a8.md",
+        "tags": []
+    },
+    {
+        "title": "On the evolutionary Navier-Stokes equations in distorted pipes under dynamic and energy-stable outflow boundary conditions",
+        "authors": "Alessio Falocchi, Ana Leonor Silvestre, Gianmarco Sperone",
+        "date": "2026-08-09",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.08841v1",
+        "abstract_en": "We consider the evolution of a viscous incompressible fluid in three-dimensional distorted pipes, of finite length, modeled through the Navier-Stokes equations with mixed boundary conditions. Specifically, the inflow is given by an arbitrary datum, the outflow is subject to a dynamic condition including a directional do-nothing boundary condition; standard no-slip assumptions are imposed on the remaining walls of the domain. We introduce a new functional framework that accommodates the dynamic boundary condition and the incompressibility constraint. Within this framework, we establish the existence of weak solutions. Moreover, under a smallness assumption on the data, we prove the existence and uniqueness of global strong solutions. The newly introduced functional setting enables us to deal, at first, with the associated Stokes problem, and then with the full Navier-Stokes system, via the Galerkin method implemented with a basis of eigenfunctions of a suitably modified Stokes operator.",
+        "filename": "2026-08-09-On-the-evolutionary-Navier-Stokes-equati-d1e7e3.md",
+        "tags": []
+    },
+    {
         "title": "A new weighted regularity criterion for the 3D MHD equations",
         "authors": "Xuanji Jia, Yong Zhou",
         "date": "2026-08-08",
