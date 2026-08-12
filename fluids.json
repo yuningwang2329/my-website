@@ -1,5 +1,97 @@
 [
     {
+        "title": "HYDRODYNAMIC LIMIT OF THE VLASOV-POISSON-BOLTZMANN SYSTEM FOR GAS MIXTURE",
+        "authors": "Yeping Li, Gaofeng Wang, Tianfang Wu",
+        "date": "2026-08-12",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626006091?dgcid=rss_sd_all",
+        "abstract_en": "In this paper, we study the hydrodynamic limit of the Vlasov-Poisson-Boltzmann system for a gas mixture in the whole space (x ∈R3) with the potential range of γ ∈ (−3,1].Within the framework of the interplay established by Guo and Jang [15], we construct a new weight function to estimate the remainder term in four different cases regarding the potential γ. Here, the particle masses mA,mB &gt; 0 and their charges eA,eB can be given arbitrarily. ​",
+        "filename": "2026-08-12-HYDRODYNAMIC-LIMIT-OF-THE-VLASOV-POISSON-2569a3.md",
+        "tags": []
+    },
+    {
+        "title": "Couette-Taylor instabilities in the small gap regime: the very counter-rotating case",
+        "authors": "Dongfen Bian, Gérard Iooss",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10951v1",
+        "abstract_en": "In this paper, we study the Couette-Taylor instability of a viscous fluid between two rotating cylinders in the small-gap, slow rescaled rotation rate, high Reynolds number regime, focusing on the very counter-rotating case $μ< μ_c \\approx -0.8$ where the primary instability is non-axisymmetric. Starting from the Navier-Stokes equations, we derive a limit system that captures the leading-order dynamics and compute the critical Taylor number $T_c(μ)$ together with the critical axial and azimuthal wavenumbers. Near criticality, the weakly nonlinear behaviour is governed by a system of two coupled complex Ginzburg-Landau equations. All coefficients of this amplitude system including the cubic nonlinear terms are evaluated numerically from the linearised eigenfunctions and the associated adjoint problem. The reduced equations admit helicoidal waves (travelling in both the axial and azimuthal directions) and ribbon waves (standing axially, travelling azimuthally), and their existence and stability criteria are discussed. We also examine more exotic spatially modulated solutions that satisfy a third-order dynamical system, whose complete classification remains an open challenge.",
+        "filename": "2026-08-11-Couette-Taylor-instabilities-in-the-smal-e23765.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Morrey's Derivation of Hydrodynamics from Statistical Mechanics: A Modern Exposition",
+        "authors": "Yuyang Wang",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10612v1",
+        "abstract_en": "This paper is a modern review of C. B. Morrey's 1955 paper on the derivation of the equations of hydrodynamics from statistical mechanics. It has two main parts. First, assuming the existence of certain invariant N -particle phase distributions, Morrey derives formal balance laws for mass, momentum, and energy. Second, he attempts to construct a concrete sequence of such distributions by imposing cell-wise constraints that match the prescribed macroscopic fields (\\r{ho}, u, e). From this construction, he obtains a Gibbs-type limiting form and finally the Euler equations. Compared to classical results, this regime employs the scaling law of Nε^3 = O(1) and leads to a more flexible pressure Peq . Our goal is to explain what Morrey is trying to do, why it's natural and where its most delicate points lie. We will rewrite the argument in a more transparent way, distinguishing carefully between formal derivations, physical input, and statements that still need justification.",
+        "filename": "2026-08-11-Morrey-s-Derivation-of-Hydrodynamics-fro-7060f3.md",
+        "tags": []
+    },
+    {
+        "title": "Asymptotic stability of the degree-one vortex in the abelian Yang-Mills-Higgs model",
+        "authors": "Jonas Luhrmann, José M. Palacios, Fabio Pusateri, Wilhelm Schlag, Sohrab Shahshahani",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10610v1",
+        "abstract_en": "We prove asymptotic stability of the degree-one vortex in the $(1+2)$-dimensional abelian Yang-Mills-Higgs model at the self-dual coupling, for small equivariant perturbations in weighted Sobolev spaces. The abelian Yang-Mills-Higgs model is a classical relativistic field theory on $(1+2)$-dimensional Minkowski space, describing a complex-valued field coupled to an electromagnetic potential and admitting topological solitons known as vortices.   This paper is the final and main part of a three-paper series. Under the orthogonal gauge condition used here, perturbations of the vortex are governed by a system of nonlinear Klein-Gordon equations for the dynamical variables, coupled to an elliptic equation for the temporal component of the electromagnetic potential. The linearized operator has continuous spectrum $[1,\\infty)$ and a single positive gap eigenvalue (internal mode) of multiplicity two, whose spectral properties, associated distorted Fourier theory, and linear decay estimates are developed in the two companion papers.   The main difficulty is the long-time analysis of the coupled radiation--internal-mode dynamics. In two space dimensions the dispersive decay of the Klein-Gordon radiation is relatively weak, while the internal mode decays only on the long time scale dictated by nonlinear radiation damping. At the same time, the Klein-Gordon equations for the radiation contain non-spatially localized variable coefficient quadratic interactions, which cannot be treated perturbatively and require a normal form analysis. We prove decay of the radiation by combining a good-bad decomposition, a flat-sharp decomposition, and a space-time resonance analysis carried out relative to the flat Klein-Gordon flow. The passage between the flat analysis and the Klein-Gordon flow with potential is achieved through ILED and transference estimates derived from the distorted Fourier theory.",
+        "filename": "2026-08-11-Asymptotic-stability-of-the-degree-one-v-1b45e6.md",
+        "tags": []
+    },
+    {
+        "title": "Asymptotic stability of the degree-one vortex in the abelian Yang-Mills-Higgs model: Linear Theory",
+        "authors": "Jonas Luhrmann, José M. Palacios, Fabio Pusateri, Wilhelm Schlag, Sohrab Shahshahani",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10609v1",
+        "abstract_en": "We study the linearized dynamics near the degree-one vortex of the $(1+2)$-dimensional abelian Yang-Mills-Higgs model at the self-dual coupling, restricted to equivariant perturbations in the orthogonal gauge. The linearized operator is a selfadjoint matrix Schrödinger operator $\\mathbf{M}$ on radial $L^2_{\\mathrm{rad}}(\\mathbb{R}^2;\\mathbb{R}^4)$ with continuous spectrum $[1,\\infty)$ and a two-dimensional internal mode at a unique gap eigenvalue $λ^2 \\in (0,1)$, as established in Part I of our three-paper series on asymptotic stability of the ground state vortex. In this second part of the series, we prove linear estimates for $\\mathbf{M}$ for applications in Part III. Specifically, we prove dispersive and local-energy decay estimates, as well as a transference relation which allows us to implement the space-time resonance method with respect to the flat Klein-Gordon operator in the nonlinear analysis in Part III.   The engine for proving linear estimates for $\\mathbf{M}$ in our approach is the distorted Fourier transform associated with $\\mathbf{M}$. The construction of the distorted Fourier transform together with a detailed analysis of the underlying generalized eigenfunctions occupy the first half of this paper. For this we exploit the super-symmetric factorization of $\\mathbf{M}$, and the diagonal structure of the super-symmetric partner operator, to relate the problem to the Weyl-Titchmarsh theory of two strongly singular scalar half-line Schrödinger operators.",
+        "filename": "2026-08-11-Asymptotic-stability-of-the-degree-one-v-362dc0.md",
+        "tags": []
+    },
+    {
+        "title": "Asymptotic stability of the degree-one vortex in the abelian Yang-Mills-Higgs model: Spectral Theory and Numerics",
+        "authors": "Jonas Luhrmann, José M. Palacios, Fabio Pusateri, Wilhelm Schlag, Sohrab Shahshahani",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10608v1",
+        "abstract_en": "This is the first of three papers proving asymptotic stability of the degree-one vortex under equivariant perturbations in the $(1+2)$-dimensional abelian Yang-Mills-Higgs model at self-dual coupling. In the orthogonal gauge, the linearized dynamics are governed by a selfadjoint matrix Schrödinger operator $\\mathbf{M}$. The super-symmetric partner operator is a diagonal matrix whose diagonal entries are strongly singular radial Schrödinger operators on $\\mathbb{R}^2$. After a conjugation, this reduces the spectral problem to the analysis of two strongly singular scalar half-line operators. Combining analysis with rigorous interval arithmetic, we prove absence of threshold resonances and show that the discrete spectrum of $\\mathbf{M}$ consists of exactly one positive gap eigenvalue (internal mode) with a two-dimensional eigenspace. We also certify that the relevant nonlinear Fermi Golden Rule coefficients form a definite quadratic form, yielding effective nonlinear damping of the internal mode. These spectral inputs form the basis of the stability analysis in the subsequent papers.",
+        "filename": "2026-08-11-Asymptotic-stability-of-the-degree-one-v-8bce00.md",
+        "tags": []
+    },
+    {
+        "title": "Formation of Implosion Singularities in 3D Compressible Navier-Stokes-Korteweg Equation",
+        "authors": "Xiangdi Huang, Yongteng Gu",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10554v1",
+        "abstract_en": "Previous works of Gu-Huang-Meng-Zhou~\\cite{Gu-Huang-Meng-Zhou} and Huang-Lei-Zhou~\\cite{Huang-Lei-Zhou} established global strong solutions away from vacuum for arbitrarily large initial data when $α$ lies in a suitable range. In contrast, we show that, for a class of small positive exponents $α$ $(α<\\frac{1}{2}$), there exist smooth initial data with density uniformly separated from vacuum whose corresponding solutions develop finite-time implosion singularities.   Our construction is based on smooth self-similar imploding profiles of the compressible Euler equations. After reformulating the system in self-similar coordinates, the viscous and capillary effects appear as exponentially decaying perturbations. We control the resulting non-autonomous system through weighted high-order energy estimates, a stable-unstable decomposition of the linearized operator, and a finite-dimensional selection of the unstable components. The constructed solutions remain smooth before the singular time and converge, after rescaling, to the prescribed imploding profile. In particular, at the blowup time $T$, the density becomes infinite at the origin, while the effective velocity $u + d αρ^{α-2} \\nabla ρ$ is unbounded in every neighborhood of the origin. These results complement the aforementioned global existence theory and exhibit a distinct finite-time blowup mechanism for the small-$α$ regime, where the effective bulk-viscosity structure may no longer be positive.",
+        "filename": "2026-08-11-Formation-of-Implosion-Singularities-in-785267.md",
+        "tags": []
+    },
+    {
+        "title": "On the large-time behavior of strong solutions to the generalized compressible Navier-Stokes-Korteweg system in 2D and 3D for arbitrarily large initial data",
+        "authors": "Xiangdi Huang, Weili Meng",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10546v1",
+        "abstract_en": "In this paper, we establish the global existence and large-time behavior of strong solutions for the two- and three-dimensional periodic compressible Navier-Stokes-Korteweg system with arbitrarily large initial data $(ρ_0,u_0)\\in H^3\\times H^2$. The viscosity coefficients satisfy the BD relation $μ(ρ)=νρ^α$ and $λ(ρ)=2ν(α-1)ρ^α$, while the capillarity coefficient is given by $κ(ρ)=\\varepsilon^2α^2ρ^{2α-3}$. For the case $α<1$, we first enlarge the admissible parameter range for the global existence of strong solutions established in Gu-Huang-Meng-Zhou [arXiv:2603.11762 (2026)] by exploiting the doubly parabolic structure of the density-effective velocity system. We then develop a time-discretization strategy to establish uniform integrability estimates for the effective velocity, yielding a uniform upper bound for the density. Furthermore, we introduce a novel bootstrap argument to successively improve these integrability estimates, which leads to a uniform positive lower bound for the density. Finally, we derive global-in-time higher-order estimates and prove the large-time behavior   \\[   \\left\\|ρ(t)-\\frac{1}{|\\mathbb{T}^N|}\\int_{\\mathbb T^N}ρ_0 dx\\right\\|_{H^3}   +\\|\\nabla u(t)\\|_{H^1}   \\longrightarrow0,   \\qquad   t\\to\\infty,   \\]   without imposing any smallness assumption on the initial data.   For the critical case $α=1$, we improve the admissible parameter range established in Huang-Meng-Zhang [arXiv:2602.00455 (2026)] and establish a uniform upper bound for the density.",
+        "filename": "2026-08-11-On-the-large-time-behavior-of-strong-sol-201df0.md",
+        "tags": []
+    },
+    {
+        "title": "Generalised higher order vectorial $\\infty$-eigenvalue problems",
+        "authors": "William Chang, Nikos Katzourakis",
+        "date": "2026-08-11",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.10531v1",
+        "abstract_en": "We study the problem of minimising the $L^\\infty$ norm of a function of the $k$-th derivative over a class of maps, subject to a constraint involving the $L^\\infty$ norm of a function of the map and its lower-order derivatives, for any integer $k\\geq 2$. We impose boundary conditions corresponding to the $k$-th order analogues of the classical ``clamped'' and ``hinged'' cases. By employing the method of $L^p$ approximations, we establish the existence of a special $L^\\infty$ minimiser, which solves a divergence PDE system with measure coefficients as parameters. This system constitutes the counterpart of the Aronsson--Euler equations for the constrained variational problem under consideration. Furthermore, we establish a lower bound for the eigenvalue. The present work extends the second-order vectorial results of Clark and Katzourakis [Generalised second order vectorial $\\infty$-eigenvalue problems, PRSE A, 1-21, 2024] to the general higher-order setting.",
+        "filename": "2026-08-11-Generalised-higher-order-vectorial---inf-98a6dd.md",
+        "tags": []
+    },
+    {
         "title": "Global well-posedness for the 3-D inhomogeneous anisotropic Navier–Stokes equations with large vertical viscosity",
         "authors": "Wanyu Wu, Gang Xu",
         "date": "2026-08-11",
@@ -7,6 +99,26 @@
         "link": "https://www.sciencedirect.com/science/article/pii/S0022039626006066?dgcid=rss_sd_all",
         "abstract_en": "无摘要提供，请点击原文链接查看。",
         "filename": "2026-08-11-Global-well-posedness-for-the-3-D-inhomo-2b9c71.md",
+        "tags": []
+    },
+    {
+        "title": "Inevitable shock formation for 3-D compressible Euler flows",
+        "authors": "Sergiu Klainerman, Qian Wang, Shiwu Yang, Pin Yu",
+        "date": "2026-08-10",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.09843v1",
+        "abstract_en": "We prove that solutions arising from smooth, sufficiently small, compactly supported perturbations of non-vacuum constant states in three-dimensional irrotational compressible flow must blow up in finite time, without any symmetry assumptions or other restrictions on the initial data. Moreover, we prove that shock inevitably forms at the boundary of the maximal Cauchy development, and that its formation time agrees, in the small-data asymptotic regime, with the lifespan predicted by the radiation-field analysis.",
+        "filename": "2026-08-10-Inevitable-shock-formation-for-3-D-compr-372f4c.md",
+        "tags": []
+    },
+    {
+        "title": "Nonlinear stability of large amplitude viscous shock wave for compressible magnetohydrodynamics flows",
+        "authors": "Lilu Sahu, T Raja Sekhar",
+        "date": "2026-08-10",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.09817v1",
+        "abstract_en": "In this article, we establish the nonlinear time-asymptotic stability of viscous shock wave with arbitrary large amplitude to the Cauchy problem for the compressible magnetohydrodynamics system. In contrast to prior related work, which relied on various smallness assumptions on both the amplitude and the speed of the viscous shock wave, here we show that any viscous shock profile is time-asymptotically stable under small initial disturbance with zero mass condition without making any assumptions on the amplitude and speed of the viscous shock wave. Moreover, while most of the stability results are obtained for constant viscosity in the momentum equation, the present results hold even for the general bulk viscosity as a smooth function of specific volume. The key part of the proof is introducing a new variable which provides an effective diffusion in the specific volume.",
+        "filename": "2026-08-10-Nonlinear-stability-of-large-amplitude-v-8d8852.md",
         "tags": []
     },
     {
