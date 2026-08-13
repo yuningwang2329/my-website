@@ -1,5 +1,15 @@
 [
     {
+        "title": "Pure-swirl loss of boundedness under $L^1_tL^2_x$ forcing: exact mixed-norm ranges",
+        "authors": "Hugo Beirão da Veiga, Jiaqi Yang",
+        "date": "2026-08-12",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.11553v1",
+        "abstract_en": "We construct an explicit pure-swirl solution of the forced three-dimensional Navier--Stokes equations in a circular cylinder. For every $T>0$ and $1\\le p,q<\\infty$ with $1/p+1/q>1$, the force belongs to $L^q(0,T;L^p(D))$ and is smooth for $t<T$. Moreover, the same construction always yields the additional energy-class property $f\\in L^1(0,T;L^2(D))$. The solution is classical on $[0,T)$, extends strongly in $L^2(D)$ to the unique Leray--Hopf solution at time $T$, and satisfies the energy equality, while $\\|v(t)\\|_{L^\\infty(D)}\\to\\infty$ as $t\\uparrow T$. We determine the exact mixed-norm ranges of both the force and the velocity and obtain two-sided rates for the force, the velocity supremum norm and the enstrophy. The construction refines Zhang's profile by an annular cancellation that preserves smoothness at the symmetry axis. It is a direct, self-contained sharpening of the $k=1$ part of our previous weighted construction and supersedes its endpoint discussion. Since the convection term is absorbed by the pressure, the same example applies to the forced Stokes system.",
+        "filename": "2026-08-12-Pure-swirl-loss-of-boundedness-under--L-b4cae0.md",
+        "tags": []
+    },
+    {
         "title": "HYDRODYNAMIC LIMIT OF THE VLASOV-POISSON-BOLTZMANN SYSTEM FOR GAS MIXTURE",
         "authors": "Yeping Li, Gaofeng Wang, Tianfang Wu",
         "date": "2026-08-12",
