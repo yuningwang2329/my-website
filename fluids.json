@@ -1,5 +1,115 @@
 [
     {
+        "title": "Long Time Dynamics for Helical Vortex Filament in Euler Flows",
+        "authors": "Dengjun Guo, Lifeng Zhao",
+        "date": "2026-08-14",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1757381?af=R",
+        "abstract_en": "Abstract.\n                  We study the long time dynamics of a single helical vortex filament for the three-dimensional incompressible Euler equations under helical symmetry in the absence of vorticity stretching. The initial vorticity is assumed to be concentrated in an [Formula: see text]-neighborhood of a helix in the whole space [Formula: see text]. For any fixed time [Formula: see text] independent of [Formula: see text], the corresponding weak solution is shown to remain concentrated near a rotating helical filament throughout the interval [Formula: see text]. We further derive quantitative estimates for the filament motion and show that its angular velocity satisfies [Formula: see text]. The proof relies on asymptotic expansions for the helical Biot–Savart kernel in [Formula: see text] and on weighted energy–momentum functionals adapted to the helical symmetry, which allow us to control far-field effects and to propagate vorticity concentration on a fixed time interval.",
+        "filename": "2026-08-14-Long-Time-Dynamics-for-Helical-Vortex-Fi-dc33ec.md",
+        "tags": []
+    },
+    {
+        "title": "The One-Dimensional Compressible Navier–Stokes Equations in Critical Regularity Spaces",
+        "authors": "Raphaël Danchin",
+        "date": "2026-08-14",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1805394?af=R",
+        "abstract_en": "Abstract.\n                  We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some ordinary differential equation, after time and space rescaling.",
+        "filename": "2026-08-14-The-One-Dimensional-Compressible-Navier-49e60d.md",
+        "tags": []
+    },
+    {
+        "title": "Unconditional Global Stability of Solutions to High-Dimensional Parabolic-Elliptic Coupled System: Initial-Boundary Value Problem",
+        "authors": "Changjiang Zhu, Qiaolong Zhu",
+        "date": "2026-08-14",
+        "source": "SIAM J. Math. Anal.",
+        "link": "https://epubs.siam.org/doi/abs/10.1137/25M1827608?af=R",
+        "abstract_en": "Abstract.\n                  This paper demonstrates the unconditional global stability of solutions to the initial-boundary value problem for a parabolic-elliptic coupled system in the two-dimensional or three-dimensional half-space. It is shown that as time approaches infinity, the solution converges to a planar rarefaction wave at a specific decay rate. The concept of unconditional global stability means that these conclusions hold under arbitrarily large initial perturbation and wave strength. The proof relies on transforming the parabolic-elliptic coupled system into a nonlocal scalar equation in the half-space. By capitalizing on this transformation, the maximum principle is employed to deduce the boundedness and monotonicity of the solution, which are crucial for energy estimates under large perturbations and the construction of one-dimensional smooth rarefaction waves. The primary challenge lies in the higher-order energy estimates due to boundary layer. We first estimate the energy of tangential derivatives and then use iterative methods based on the governing equations to derive estimates of all derivatives.",
+        "filename": "2026-08-14-Unconditional-Global-Stability-of-Soluti-25ebd6.md",
+        "tags": []
+    },
+    {
+        "title": "Stochastic resistive Hall--MHD with current fluctuations: martingale weak solutions via a convergent structure-preserving finite element method",
+        "authors": "Agus L. Soenjaya",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13407v1",
+        "abstract_en": "We study the stochastic resistive Hall--magnetohydrodynamic (Hall--MHD) system on bounded convex polyhedral domains, subject to nonlinear perfectly conducting boundary conditions. The system is driven by multiplicative Gaussian forcing in the momentum equation together with structured curl-type noise in the induction equation arising from stochastic perturbations of the resistive and Hall parts in the generalised Ohm law. We develop a fully discrete, linearly implicit, structure-preserving mixed finite element method based on a compatible discrete de Rham complex, which preserves the magnetic Gauss law exactly. We prove subsequential convergence of the discrete solutions to a finite-energy weak martingale solution, thereby obtaining a constructive existence result for the stochastic Hall--MHD system with curl-type noise. Numerical experiments illustrate the stochastic dynamics, exact divergence preservation, and convergence of the method.",
+        "filename": "2026-08-13-Stochastic-resistive-Hall--MHD-with-curr-eed37a.md",
+        "tags": []
+    },
+    {
+        "title": "Dissipative measure-valued solutions and weak--strong uniqueness for a viscous Baer--Nunziato system with pressure relaxation",
+        "authors": "Nilasis Chaudhuri, Milan Pokorný, Ewelina Zatorska",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13348v1",
+        "abstract_en": "We study a viscous one-velocity Baer--Nunziato system for two barotropic compressible fluids in a bounded three-dimensional domain. In contrast with models in which the volume fraction is merely transported or determined by an algebraic equilibrium constraint, it satisfies a differential closure driven by the pressure gap between the phases. For arbitrary finite-energy initial data and adiabatic exponents $γ^\\pm>1$, we construct global-in-time dissipative measure-valued solutions and prove dissipative measure-valued--strong uniqueness relative to any sufficiently regular solution with the same initial data. The principal difficulties are the singular and non-continuous behavior of the pressure-relaxation source at vanishing volume fractions, the associated concentration defects, and the lack of direct coercivity of the standard thermodynamic relative energy with respect to the volume fraction. These are resolved by an endpoint cutoff argument and an augmented relative energy coupled to the renormalized volume-fraction equation.",
+        "filename": "2026-08-13-Dissipative-measure-valued-solutions-and-d429a9.md",
+        "tags": []
+    },
+    {
+        "title": "Global classical solutions to 3D irrotational compressible Euler equations of Chaplygin gases with weakly decaying initial data",
+        "authors": "Mu Gao, Huicheng Yin",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13166v1",
+        "abstract_en": "We are concerned with the global classical solution problem of 3D compressible isentropic Euler equations of Chaplygin gases \\[ \\begin{cases} \\partial_tρ+ \\mathrm{div}(ρv) = 0,\\\\ \\partial_t(ρv) + \\mathrm{div}(ρv \\otimes v) + \\nabla p = 0,\\\\ ρ(0,x) = \\barρ+ \\varepsilonρ_0(x),\\ v(0,x) = \\varepsilon v_0(x). \\end{cases} \\]   where $\\barρ>0$ is a constant, $\\varepsilon>0$ is small, the state equation is $p=p(ρ)=P_0-\\frac{D}ρ$ with $P_0$ and $D$ being some positive constants. For the 3D compressible Euler equations of Chaplygin gases, which are a prototype of multidimensional nonlinear symmetric hyperbolic systems with totally linearly degenerate eigenvalues, there is a basic conjecture imposed by A. Majda: it typically has a global classical solution $(ρ, v)$ with $(ρ-\\barρ, v)\\in C([0,\\infty), H^s(\\Bbb R^3)) \\cap C^1([0,\\infty), H^{s-1}(\\Bbb R^3))$ when $(ρ_0, v_0)\\in H^s(\\Bbb R^3)$ with $s>\\frac52$ unless $(ρ, v)$ itself blows up in finite time. In this paper, under the assumptions that for any fixed constant $μ$ with $0<μ<1/2$, integer $N\\geq 15$, $\\mathrm{rot}\\,v_0(x) \\equiv 0$ and   \\[   \\|(ρ_0, v_0)\\|_{H^{N}(\\mathbb{R}^3)}+\\sum_{|a|\\leq 13}   \\|\\langle x\\rangle^{1+μ}   \\nabla^a(ρ_0,v_0)\\|_{L^2(\\mathbb{R}^3)} \\leq 1,   \\] we show that the classical solution $(ρ, v)$ exists globally. Our main ingredients include: establishing a series of new decay estimates of energy bounds, weighted pointwise space-time $L^\\infty$-$L^2$ estimates and weighted Strichartz-type estimates for the 3D potential flow equation of Chaplygin gases.",
+        "filename": "2026-08-13-Global-classical-solutions-to-3D-irrotat-81e141.md",
+        "tags": []
+    },
+    {
+        "title": "Uniformly Rotating Vortex Patches with 90-Degree Corners",
+        "authors": "De Huang, Jiajun Tong, Xiaopeng Zheng",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13134v1",
+        "abstract_en": "For the 2-D incompressible Euler equation, we prove the existence of $m$-fold symmetric uniformly rotating vortex patches with 90-degree corners for all $m\\geq 12$. Properties of these patches and the induced stationary flows in the co-rotating frame are characterized. Our construction is based on a novel fixed-point method.",
+        "filename": "2026-08-13-Uniformly-Rotating-Vortex-Patches-with-9-b542e3.md",
+        "tags": []
+    },
+    {
+        "title": "On the Second-Order Positive Burgers' Equation: Integrability, Lax Pair, Darboux Transformations, and Lie Symmetry Reduction",
+        "authors": "Suman Pal, Prasanta chatterjee",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13075v1",
+        "abstract_en": "This paper derives the second-order positive Burgers' equation from the standard Burgers' hierarchy to explore its complete integrability and exact analytical solutions. We construct this higher-order nonlinear evolution equation by systematically applying the recursion operator to the classical Burgers' equation. Expanding on this structural framework, we then derive the explicit third-order equation and use Complete Bell Polynomials to generalize the $n$-th order hierarchy. Through the Cole-Hopf transformation, the second-order nonlinear equation rigorously maps to the linear third-order dispersion equation. We establish complete integrability by explicitly formulating the scalar Lax pair (zero-curvature representation), which allows us to directly derive the associated differential and algebraic Darboux transformations. To systematically classify explicit stationary, time-dependent traveling wave, and self-similar profiles, we apply several techniques to the linear domain: separation of variables, the Hirota perturbation method, traveling wave reduction via the Complete Discrimination System for Polynomial Method (CDSPM), and Lie similarity reduction. Crucially, our analysis demonstrates the exact finite truncation of the Hirota perturbation series. We conclude by outlining how this equation impacts the theoretical understanding of fluid dynamics, nonlinear transport phenomena, and higher-order wave propagation.",
+        "filename": "2026-08-13-On-the-Second-Order-Positive-Burgers--Eq-569db6.md",
+        "tags": []
+    },
+    {
+        "title": "A Two-Component Poro-viscoelastic System for Fibre-Reinforced Hydrogels: Analysis and Homogenization",
+        "authors": "Michael Eden, Hari Shankar Mahato",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13051v1",
+        "abstract_en": "We study the multiscale behavior of a coupled visco-poroelastic system arising in the modelling of fibre-reinforced hydrogels (FIHs) used in tissue engineering scaffolds. The composite material consists of a periodic fibre scaffold, which is governed by quasi-static linear elasticity, and a hydrogel phase saturating the interstitial space, which is modelled as a Biot linear poroelastic medium enhanced with Kelvin--Voigt structural damping. The two phases are coupled through continuity of displacement and traction across their shared interface. Both the fibre scaffold and the hydrogel phase are connected, so that mechanical forces can be transmitted through the composite and interstitial fluid can flow directly through the hydrogel network.   Starting from a microscopic ($\\varepsilon$-scale) model, we derive uniform a-priori estimates and establish well-posedness via a Rothe time-discretisation argument for both the case of standard Biot fluid content $η=0$ and the case of viscous fluid content $η=αδ>0$. We then perform a rigorous two-scale homogenization in the limit $\\varepsilon \\to 0$ using periodic unfolding. In addition to the usual effective elasticity, storage, coupling, and permeability coefficients, the homogenized constitutive laws contain nonlocal-in-time memory terms generated by the microscopic viscoelastic relaxation. All effective coefficients and memory kernels are explicitly characterized in terms of the microscale geometry and material parameters.",
+        "filename": "2026-08-13-A-Two-Component-Poro-viscoelastic-System-0708af.md",
+        "tags": []
+    },
+    {
+        "title": "Global-in-time existence of finite energy weak solutions to a relaxed Navier-Stokes-Korteweg model",
+        "authors": "Florian Oschmann, Florian Wendt",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.12969v1",
+        "abstract_en": "We consider a parabolic relaxation formulation of the compressible Navier-Stokes-Korteweg system and prove the global-in-time existence of finite energy weak solutions to the associated initial-boundary-value-problem. Our proof is based on a three-level approximation scheme, a weak compactness property of the effective viscous flux, and parabolic regularity estimates. Our result holds for a broad variety of non-monotone pressure functions and generalizes the corresponding results known for the compressible Navier-Stokes equations to the relaxation system.",
+        "filename": "2026-08-13-Global-in-time-existence-of-finite-energ-d90cbf.md",
+        "tags": []
+    },
+    {
+        "title": "A Lebeau--Robbiano approach to the controllability of the Boussinesq system with a reduced number of controls",
+        "authors": "Víctor Hernández-Santamaría",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.12815v1",
+        "abstract_en": "In this paper, we prove the local null controllability of the Boussinesq system in dimensions two and three with a reduced number of localized controls. More precisely, the controls act on the temperature equation and on only $N-2$ components of the velocity equation. Our proof is based on a spectral approach in the spirit of the Lebeau--Robbiano method.   The main difficulty comes from the coupled structure of the system. The velocity and temperature equations are governed by the Stokes operator and the Dirichlet Laplacian, respectively. Their natural spectral decompositions are different, and there is no common spectral localization naturally adapted to the coupled system. Therefore, the usual componentwise spectral argument cannot be applied directly. We show that the cascade structure of the linearized system makes it possible to overcome this difficulty. The main ingredient is a mixed observability estimate in which only the Stokes component is spectrally localized, while the heat component is treated without any frequency restriction. Combining this estimate with the dissipation of the high Stokes frequencies allows us to carry out a Lebeau--Robbiano iteration for the linearized system. The resulting linear controllability estimate is transferred to the nonlinear Boussinesq system through a time-iteration argument. As an important consequence, the controls have a small-time cost bounded by $C\\exp(C/T)$, which recovers the expected parabolic order while preserving the reduced number of controls.",
+        "filename": "2026-08-13-A-Lebeau--Robbiano-approach-to-the-contr-ca8ec8.md",
+        "tags": []
+    },
+    {
         "title": "Pure-swirl loss of boundedness under $L^1_tL^2_x$ forcing: exact mixed-norm ranges",
         "authors": "Hugo Beirão da Veiga, Jiaqi Yang",
         "date": "2026-08-12",
