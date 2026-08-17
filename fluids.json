@@ -1,5 +1,35 @@
 [
     {
+        "title": "Optimizing bounds for energy-constrained optimal cooling problems in two dimensions",
+        "authors": "Pedro Blöss Braga, Giovanni Fantuzzi",
+        "date": "2026-08-14",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.14334v1",
+        "abstract_en": "We study optimal control problems for incompressible fluids in two-dimensional domains with a cold boundary and internal heat sources and sinks. Given a kinetic energy budget, measured by the square of a nondimensional Péclet number $\\mathrm{Pe}$, the goal is to maximize a cooling efficiency inversely proportional to the mean square gradient of the fluid's temperature. Using Lagrange duality, we formulate a well-posed dual problem whose solution yields an upper bound on the maximum cooling efficiency $\\mathcal{E}(\\mathrm{Pe})$. We then numerically approximate the dual problem using a convergent hierarchy of semidefinite programs obtained via discretization. We illustrate this computational approach on optimal cooling problems in a square and in an annulus, explaining also how problem symmetries can be exploited to reduce computational complexity. Finally, we construct admissible points for the dual problem to obtain new analytical upper bounds on the optimal cooling efficiency $\\mathcal{E}(\\mathrm{Pe})$. Specifically, we prove that $\\mathcal{E}(\\mathrm{Pe}) \\lesssim \\mathrm{Pe}^{2}$ for arbitrary domains and heat distributions, and that $\\mathcal{E}(\\mathrm{Pe})\\lesssim \\mathrm{Pe}^{2}/ \\ln^2\\mathrm{Pe}$ for cooling flows in disks and annuli with heat source/sink distributions with a positive azimuthal average. These results generalize and improve known efficiency bounds for energy-constrained cooling flows in a disk.",
+        "filename": "2026-08-14-Optimizing-bounds-for-energy-constrained-72f0f8.md",
+        "tags": []
+    },
+    {
+        "title": "Global existence analysis for a class of compressible Navier-Stokes-Korteweg equations",
+        "authors": "Ansgar Jüngel, Flora Philipp",
+        "date": "2026-08-14",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.14044v1",
+        "abstract_en": "The existence of global weak solutions to a broad class of Navier-Stokes-Korteweg equations is established for large data in the three-dimensional torus, including the diffuse-interface and quantum Navier-Stokes systems as special cases. The model consists of the compressible Navier-Stokes equations with degenerate density-dependent viscosity and a general nonlinear third-order Korteweg term. The existence proof combines a priori estimates provided by the energy and Bresch-Desjardins (BD) entropy inequalities with a carefully designed approximation scheme. A crucial ingredient of the analysis is a new dissipation inequality associated with the Korteweg term, obtained via the systematic integration-by-parts method. To construct the solutions, artificial drag terms and a quantum Korteweg regularization are introduced, which are subsequently removed in the limit by establishing a renormalized formulation.",
+        "filename": "2026-08-14-Global-existence-analysis-for-a-class-of-05e96a.md",
+        "tags": []
+    },
+    {
+        "title": "$L^p$ Stability of Vortex Patches in Two Dimensional Domains",
+        "authors": "Zelin Dong",
+        "date": "2026-08-14",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13998v1",
+        "abstract_en": "In this paper, we investigate the orbital stability of vortex patches in the two-dimensional incompressible Euler equations, extending the penalized energy variational framework pioneered by Abe and Choi \\cite{abe2022stability} for Lamb dipoles. The recent work by Abe, Choi and Jeong \\cite{Abe2025StabilityOL} (which removes $L^1$ constraint) and Dong and Luo \\cite{Dong2026StabilityOV} (which treats domains lacking scaling or translation invariance) left open the challenge of a unified $L^p$ stability theory without any a priori $L^1$ or $L^p$ bounds on two-dimensional domains.   We establish a unified $L^p$ stability theory on three typical two-dimensional domains. These domains are: the half-plane, strips of any width, and domains satisfying a weak finite volume condition. For each domain, we prove that the penalized energy functional admits a minimizer for suitable $p$, and that every such minimizer satisfies the elliptic equation $ω^{p-1} = λ(ψ- W x_2)_+$. Furthermore, we demonstrate that the set of minimizers is orbitally stable under the Eulerian dynamics. The absence of spatial scaling and horizontal translation invariance necessitates novel strategies: on the strip, we refine a concentration-compactness argument to prove strict subadditivity; on weak finite volume domains, we bypass the need for subadditivity by exploiting the inherent decay rate $q$ of the domain to enforce compactness. This work synthesizes the approaches of \\cite{abe2022stability}, \\cite{Abe2025StabilityOL}, \\cite{abe2025existence}, and \\cite{Dong2026StabilityOV} into a comprehensive framework, significantly expanding the scope of provably stable vortex structures.",
+        "filename": "2026-08-14-L-p--Stability-of-Vortex-Patches-in-Two-5d786e.md",
+        "tags": []
+    },
+    {
         "title": "Long Time Dynamics for Helical Vortex Filament in Euler Flows",
         "authors": "Dengjun Guo, Lifeng Zhao",
         "date": "2026-08-14",
@@ -27,6 +57,16 @@
         "link": "https://epubs.siam.org/doi/abs/10.1137/25M1827608?af=R",
         "abstract_en": "Abstract.\n                  This paper demonstrates the unconditional global stability of solutions to the initial-boundary value problem for a parabolic-elliptic coupled system in the two-dimensional or three-dimensional half-space. It is shown that as time approaches infinity, the solution converges to a planar rarefaction wave at a specific decay rate. The concept of unconditional global stability means that these conclusions hold under arbitrarily large initial perturbation and wave strength. The proof relies on transforming the parabolic-elliptic coupled system into a nonlocal scalar equation in the half-space. By capitalizing on this transformation, the maximum principle is employed to deduce the boundedness and monotonicity of the solution, which are crucial for energy estimates under large perturbations and the construction of one-dimensional smooth rarefaction waves. The primary challenge lies in the higher-order energy estimates due to boundary layer. We first estimate the energy of tangential derivatives and then use iterative methods based on the governing equations to derive estimates of all derivatives.",
         "filename": "2026-08-14-Unconditional-Global-Stability-of-Soluti-25ebd6.md",
+        "tags": []
+    },
+    {
+        "title": "Finite-energy weak solutions and relaxation for a compressible kinetic--fluid system with locally averaged Brinkman force",
+        "authors": "Young-Pil Choi, Roman Shvydkoy",
+        "date": "2026-08-13",
+        "source": "Arxiv (math.AP)",
+        "link": "https://arxiv.org/abs/2608.13777v1",
+        "abstract_en": "We study a kinetic--fluid system in which a Vlasov or Vlasov--Fokker--Planck equation is coupled to the compressible Navier--Stokes equations with density-dependent viscosities through a locally averaged Brinkman force. The averaging is chosen in a conservative form so that the coupled system preserves the total momentum and satisfies a natural energy-dissipation balance, while avoiding the pointwise evaluation of a possibly rough fluid velocity. The first main result is a conditional exponential relaxation estimate for sufficiently regular solutions. The estimate is proved under positive and negative density moment bounds and a Muckenhoupt $\\calA_2$ condition on a power of the density, which replace uniform pointwise upper and lower bounds. The proof combines a modulated energy and hypocoercivity analysis with a compensating functional for the density fluctuation. A key ingredient is a weighted Calderón--Zygmund estimate for the associated elliptic corrector, which allows us to control the viscous contribution under the $\\calA_2$ condition. The second main result concerns global finite-energy Bresch--Desjardins entropy weak solutions in admissible low-dimensional regimes. Using the additional entropy structure associated with the density-dependent viscosities, we verify the density assumptions required by the conditional relaxation theorem and obtain exponential relaxation for the weak solutions. In the diffusionless case, the particle distribution aligns toward a mono-kinetic state, while in the diffusive case the relaxation is towards a Maxwellian equilibrium.",
+        "filename": "2026-08-13-Finite-energy-weak-solutions-and-relaxat-3269b8.md",
         "tags": []
     },
     {
