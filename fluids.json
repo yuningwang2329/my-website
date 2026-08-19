@@ -1,5 +1,25 @@
 [
     {
+        "title": "Global weak solutions in a three-dimensional chemotaxis-Navier-Stokes system with density-dependent motion",
+        "authors": "Hongwen Jiang, Zhongping Li",
+        "date": "2026-08-19",
+        "source": "J. Differ. Equ.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022039626006121?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-08-19-Global-weak-solutions-in-a-three-dimensi-631e49.md",
+        "tags": []
+    },
+    {
+        "title": "Global well-posedness of the inviscid resistive isentropic compressible MHD system",
+        "authors": "Jinkai Li, Liening Qiao",
+        "date": "2026-08-18",
+        "source": "Calc. Var. Partial Differ. Equ.",
+        "link": "https://doi.org/10.1007/s00526-026-03412-3",
+        "abstract_en": "",
+        "filename": "2026-08-18-Global-well-posedness-of-the-inviscid-re-94fdb6.md",
+        "tags": []
+    },
+    {
         "title": "A novel upwind skewed backward substitution method for singular perturbation problems with boundary layers",
         "authors": "Yuhui Zhang, Xiulian Li, Ji Lin, Chenfeng Zong",
         "date": "2026-08-18",
