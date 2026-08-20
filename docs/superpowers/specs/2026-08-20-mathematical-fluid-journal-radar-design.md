@@ -22,7 +22,7 @@
 
 ## 数据与更新设计
 
-每个 `FEEDS` 条目增加 `source_group`。更新器把它写入新论文的 `fluids.json` 和 Markdown 详情页数据；已有的 90 天记录在首页通过来源名称映射到相同分组，因此新旧记录的筛选行为一致。
+每个 `FEEDS` 条目增加 `source_group`。更新器把它写入新论文的 `fluids.json`；Markdown 详情页继续只保存并显示真实期刊来源。已有的 90 天记录在首页通过来源名称映射到相同分组，因此新旧记录的筛选行为一致。
 
 所有适合的数学期刊使用 Crossref 的期刊 works API，查询明确限定 `type:journal-article`，避免把 issue 或 future issue 元数据误写成论文。Advances in Mathematics 使用其官方 Elsevier RSS，因为其电子 ISSN 的 Crossref 记录为空。PLMS 和 JLMS 使用官方 Wiley RSS，其余经验证有正常 Crossref 期刊 works 返回的期刊使用 Crossref。
 
