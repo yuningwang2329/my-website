@@ -63,6 +63,13 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="folder-group" style="margin-top: 24px;">
+                    <div class="folder-header">期刊组</div>
+                    <ul class="folder-list" id="source-group-filters">
+                        <!-- Dynamically populated -->
+                    </ul>
+                </div>
                 
                 <div class="folder-group" style="margin-top: 24px;">
                     <div class="sidebar-tabs">
@@ -112,12 +119,34 @@
         let baseView = 'archive'; // archive | starred | topic:stability
         let filterJournal = null;
         let filterMonth = null;
+        const JOURNAL_GROUPS = [
+            { id: 'math-fluid-pde', label: '数学流体与非线性 PDE' },
+            { id: 'top-general-math', label: '顶级综合数学' },
+            { id: 'high-general-math', label: '综合数学高刊' },
+        ];
+        const LEGACY_SOURCE_GROUPS = {
+            'Arxiv (math.AP)': 'math-fluid-pde',
+            'Appl. Math. Lett.': 'math-fluid-pde',
+            'Arch. Ration. Mech. Anal.': 'math-fluid-pde',
+            'Commun. Math. Phys.': 'math-fluid-pde',
+            'Commun. Pure Appl. Math.': 'math-fluid-pde',
+            'Calc. Var. Partial Differ. Equ.': 'math-fluid-pde',
+            'J. Differ. Equ.': 'math-fluid-pde',
+            'J. Funct. Anal.': 'math-fluid-pde',
+            'SIAM J. Math. Anal.': 'math-fluid-pde',
+            'J. Math. Pures Appl.': 'math-fluid-pde',
+        };
+        let filterSourceGroup = null;
         
         function getReadPapers() {
             return JSON.parse(localStorage.getItem('fluids_read') || '[]');
         }
         function getStarredPapers() {
             return JSON.parse(localStorage.getItem('fluids_stars') || '[]');
+        }
+
+        function sourceGroupForPaper(paper) {
+            return paper.source_group || LEGACY_SOURCE_GROUPS[paper.source] || null;
         }
         
         function markRead(filename) {
@@ -135,6 +164,7 @@
                 if (baseView === 'starred' && !starredPapers.includes(p.filename)) return false;
                 if (baseView.startsWith('topic:') && !(p.tags || []).includes(baseView.replace('topic:', ''))) return false;
                 
+                if (filterSourceGroup && sourceGroupForPaper(p) !== filterSourceGroup) return false;
                 if (filterJournal && p.source !== filterJournal) return false;
                 if (filterMonth && formatMonth(p.date) !== filterMonth) return false;
                 return true;
@@ -203,6 +233,16 @@
                 document.getElementById('month-filters').style.display = 'block';
             }
         }
+
+        function toggleSourceGroupFilter(groupId) {
+            filterSourceGroup = filterSourceGroup === groupId ? null : groupId;
+            render();
+        }
+
+        function clearSourceGroupFilter() {
+            filterSourceGroup = null;
+            render();
+        }
         
         function toggleJournalFilter(j, element) {
             if (filterJournal === j) {
@@ -244,11 +284,21 @@
             let starredCount = starredPapers.length;
             let archiveCount = allPapers.length;
             let topicCounts = { 'stability': 0 };
+            let sourceGroupCounts = {};
             let journalCounts = {};
             let monthCounts = {};
+
+            JOURNAL_GROUPS.forEach(group => {
+                sourceGroupCounts[group.id] = 0;
+            });
             
             allPapers.forEach(p => {
                 journalCounts[p.source] = (journalCounts[p.source] || 0) + 1;
+
+                let sourceGroup = sourceGroupForPaper(p);
+                if (sourceGroup && sourceGroupCounts[sourceGroup] !== undefined) {
+                    sourceGroupCounts[sourceGroup]++;
+                }
                 
                 let m = formatMonth(p.date);
                 monthCounts[m] = (monthCounts[m] || 0) + 1;
@@ -262,6 +312,28 @@
             document.getElementById('count-starred').textContent = starredCount;
             document.getElementById('count-archive').textContent = archiveCount;
             document.getElementById('count-stability').textContent = topicCounts['stability'];
+
+            let sourceGroupList = document.getElementById('source-group-filters');
+            sourceGroupList.innerHTML = '';
+            JOURNAL_GROUPS.forEach(group => {
+                let li = document.createElement('li');
+                let a = document.createElement('a');
+                a.href = '#';
+                a.className = 'folder-link';
+                a.classList.toggle('active', filterSourceGroup === group.id);
+                a.onclick = function(e) { e.preventDefault(); toggleSourceGroupFilter(group.id); };
+
+                let spanName = document.createElement('span');
+                spanName.textContent = group.label;
+                let spanCount = document.createElement('span');
+                spanCount.className = 'sidebar-count';
+                spanCount.textContent = sourceGroupCounts[group.id];
+
+                a.appendChild(spanName);
+                a.appendChild(spanCount);
+                li.appendChild(a);
+                sourceGroupList.appendChild(li);
+            });
             
             let journalList = document.getElementById('journal-filters');
             if (journalList.children.length === 0) {
@@ -325,6 +397,15 @@
             let tagsContainer = document.getElementById('filter-tags-container');
             tagsContainer.innerHTML = '';
             tagsContainer.style.display = 'none';
+            if (filterSourceGroup) {
+                let group = JOURNAL_GROUPS.find(item => item.id === filterSourceGroup);
+                if (group) {
+                    let tag = document.createElement('div');
+                    tag.className = 'filter-tag';
+                    tag.innerHTML = `${group.label} <span class="filter-tag-close" onclick="clearSourceGroupFilter()">✕</span>`;
+                    tagsContainer.appendChild(tag);
+                }
+            }
             if (filterJournal) {
                 let tag = document.createElement('div');
                 tag.className = 'filter-tag';
@@ -338,7 +419,7 @@
                 tagsContainer.appendChild(tag);
             }
             
-            if (filterJournal || filterMonth) {
+            if (filterSourceGroup || filterJournal || filterMonth) {
                 tagsContainer.style.display = 'flex';
                 tagsContainer.style.marginBottom = '24px';
             }

@@ -8,6 +8,7 @@ import urllib.parse
 import feedparser
 import re
 from deep_translator import GoogleTranslator
+from source_catalog import FEEDS, build_crossref_works_url, matches_fluid_fallback
 
 # Constants
 JSON_FILE = 'fluids.json'
@@ -16,32 +17,11 @@ MD_DIR = 'fluids'
 LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
 LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.siliconflow.cn/v1") # Defaulting to SiliconFlow as an example
 LLM_MODEL = os.environ.get("LLM_MODEL", "Qwen/Qwen2.5-7B-Instruct") # Fast cheap model
+HTTP_USER_AGENT = "Fluid-Papers-Tracker/1.0"
 
 def ai_paper_filter(title, abstract):
-    fallback_keywords = [
-        'fluid', 'navier-stokes', 'navier stokes', 'euler equation',
-        'hydrodynamic', 'mhd', 'magnetohydrodynamic',
-        'boussinesq', 'water wave', 'boundary layer',
-        'compressible flow', 'incompressible',
-        'vortex', 'vorticity', 'viscous flow', 'inviscid flow',
-        'burgers equation', 'korteweg', 'stokes equation', 'stokes system',
-        'capillary', 'convection', 'turbulence', 'shallow water',
-        'couette', 'thin-film', 'thin film', 'hele-shaw',
-        'dongyi wei', 'camassa', 'fluid-structure',
-    ]
-    exclude_keywords = [
-        'quantum information', 'algebraic geometry', 'general relativity',
-        'number theory', 'riemannian', 'groupoid', 'k-theory',
-        'biofilm', 'ecology', 'epidem', 'sir model',
-        'machine learning', 'neural network', 'deep learning',
-        'stochastic gradient', 'tensor pca',
-    ]
-    text = (title + " " + abstract).lower()
-    
     if not LLM_API_KEY:
-        if any(ex in text for ex in exclude_keywords):
-            return False
-        return any(kw in text for kw in fallback_keywords)
+        return matches_fluid_fallback(title, abstract)
         
     try:
         url = f"{LLM_BASE_URL.rstrip('/')}/chat/completions"
@@ -51,7 +31,7 @@ def ai_paper_filter(title, abstract):
         }
         system_prompt = """You are a strict expert in fluid dynamics and PDEs. Classify whether this paper belongs to fluid mechanics or closely related mathematical analysis.
 
-ACCEPT: Navier-Stokes, Euler equations (fluid), Boltzmann (kinetic theory of gases), MHD, Boussinesq, water waves, KdV, Camassa-Holm, thin-film equations, boundary layers, vortex dynamics, compressible/incompressible flow, fluid-structure interaction, dispersive PDEs motivated by fluids, operator theory in hydrodynamic stability (e.g. Dongyi Wei's work).
+ACCEPT: Navier-Stokes, Euler equations (fluid), Boltzmann (kinetic theory of gases), MHD, Boussinesq, water waves, KdV, Camassa-Holm, thin-film equations, boundary layers, vortex dynamics, compressible/incompressible flow, non-Newtonian or viscoelastic flow, multiphase or porous-medium flow, fluid-structure interaction, dispersive PDEs motivated by fluids, operator theory in hydrodynamic stability (e.g. Dongyi Wei's work).
 
 REJECT: algebraic geometry blow-ups, quantum information Schrödinger, general relativity (Einstein/FLRW), number theory, Riemannian geometry, biofilm/ecology/epidemiology models, elastic wave propagation, stochastic gradient descent, machine learning, Calabi-Yau, SIR models, K-theory, groupoid homology.
 
@@ -74,9 +54,7 @@ Answer ONLY 'YES' or 'NO'."""
         return "YES" in answer
     except Exception as e:
         print(f"AI Filter Error: {e}. Using fallback.")
-        if any(ex in text for ex in exclude_keywords):
-            return False
-        return any(kw in text for kw in fallback_keywords)
+        return matches_fluid_fallback(title, abstract)
 
 
 def clean_title(title):
@@ -88,60 +66,6 @@ def clean_title(title):
     title = re.sub(r'\s+', ' ', title).strip()
     return title
 
-
-# --- 订阅配置池 (Feeds Config) ---
-FEEDS = [
-    {
-        "name": "Arxiv (math.AP)",
-        "url": "http://export.arxiv.org/api/query?search_query=cat:math.AP&sortBy=submittedDate&sortOrder=descending&max_results=50",
-        "type": "arxiv"
-    },
-    {
-        "name": "Appl. Math. Lett.",
-        "url": "https://rss.sciencedirect.com/publication/science/08939659",
-        "type": "standard_rss"
-    },
-    {
-        "name": "Arch. Ration. Mech. Anal.",
-        "url": "1432-0673",
-        "type": "crossref_journal"
-    },
-    {
-        "name": "Commun. Math. Phys.",
-        "url": "1432-0916",
-        "type": "crossref_journal"
-    },
-    {
-        "name": "Commun. Pure Appl. Math.",
-        "url": "https://onlinelibrary.wiley.com/action/showFeed?type=etoc&feed=rss&jc=10970312",
-        "type": "standard_rss"
-    },
-    {
-        "name": "Calc. Var. Partial Differ. Equ.",
-        "url": "1432-0835",
-        "type": "crossref_journal"
-    },
-    {
-        "name": "J. Differ. Equ.",
-        "url": "https://rss.sciencedirect.com/publication/science/00220396",
-        "type": "standard_rss"
-    },
-    {
-        "name": "J. Funct. Anal.",
-        "url": "https://rss.sciencedirect.com/publication/science/00221236",
-        "type": "standard_rss"
-    },
-    {
-        "name": "SIAM J. Math. Anal.",
-        "url": "https://epubs.siam.org/action/showFeed?type=etoc&feed=rss&jc=sjmaah",
-        "type": "standard_rss"
-    },
-    {
-        "name": "J. Math. Pures Appl.",
-        "url": "https://rss.sciencedirect.com/publication/science/00217824",
-        "type": "standard_rss"
-    }
-]
 
 def translate_to_zh(text):
     if not text or len(text.strip()) == 0:
@@ -200,7 +124,7 @@ def query_crossref_by_doi(doi):
     try:
         time.sleep(0.5) # Polite delay
         url = f"https://api.crossref.org/works/{doi}"
-        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:yuningwang2329@github.com'})
+        req = urllib.request.Request(url, headers={'User-Agent': HTTP_USER_AGENT})
         res = urllib.request.urlopen(req, timeout=5)
         data = json.loads(res.read())['message']
         title = data.get('title', [''])[0]
@@ -217,7 +141,7 @@ def query_crossref_by_title(title):
         time.sleep(0.5) # Polite delay
         safe_title = urllib.parse.quote(title)
         url = f"https://api.crossref.org/works?query.title={safe_title}&select=DOI,title,author,abstract&rows=1"
-        req = urllib.request.Request(url, headers={'User-Agent': 'mailto:yuningwang2329@github.com'})
+        req = urllib.request.Request(url, headers={'User-Agent': HTTP_USER_AGENT})
         res = urllib.request.urlopen(req, timeout=5)
         data = json.loads(res.read())['message']['items']
         if not data:
@@ -242,8 +166,8 @@ def fetch_feed(feed_config):
     
     if f_type == "crossref_journal":
         try:
-            cr_url = f"https://api.crossref.org/journals/{url}/works?sort=published&order=desc&rows=15"
-            cr_req = urllib.request.Request(cr_url, headers={'User-Agent': 'mailto:yuningwang2329@github.com'})
+            cr_url = build_crossref_works_url(url)
+            cr_req = urllib.request.Request(cr_url, headers={'User-Agent': HTTP_USER_AGENT})
             cr_res = urllib.request.urlopen(cr_req, timeout=15)
             data = json.loads(cr_res.read())['message']['items']
             for item in data:
@@ -315,6 +239,9 @@ def fetch_feed(feed_config):
         except Exception as e:
             print(f"Error fetching {source_name}: {e}")
             
+    for paper in papers:
+        paper['source_group'] = feed_config['source_group']
+
     return papers
 
 def main():
@@ -396,6 +323,7 @@ def main():
             'authors': p['authors'],
             'date': p['date'],
             'source': p['source'],
+            'source_group': p['source_group'],
             'link': p.get('link', ''),
             'abstract_en': p.get('abstract_en', ''),
             'filename': filename,
