@@ -386,7 +386,7 @@ git status --short --branch
 
 Verify: all 28 feed names are unique; the five top-general journals have the correct group; all three group IDs render; paper metadata still uses `p.source`; Crossref filtering is present; and workflow tests run before the updater.
 
-- [ ] **Step 4: Commit only after all checks pass**
+- [x] **Step 4: Commit only after all checks pass**
 
 ```bash
 git add scripts/source_catalog.py scripts/update_fluids.py index.html .github/workflows/update_fluids.yml tests/homepage-performance.test.mjs tests/test_source_catalog.py tests/test_update_fluids.py docs/superpowers/specs/2026-08-20-mathematical-fluid-journal-radar-design.md docs/superpowers/plans/2026-08-20-mathematical-fluid-journal-radar.md
