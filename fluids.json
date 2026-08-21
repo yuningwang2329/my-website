@@ -1,5 +1,51 @@
 [
     {
+        "title": "Linear stability of the 2D Boussinesq equations near Couette flow",
+        "authors": "Wanrong Yang, Jiajing Wang",
+        "date": "2026-08-21",
+        "source": "Appl. Math. Lett.",
+        "source_group": "math-fluid-pde",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0893965926002466?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-08-21-Linear-stability-of-the-2D-Boussinesq-eq-6c986d.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "The local regularity theory for the Stokes and Navier–Stokes equations near the curved boundary",
+        "authors": "见原链接 (See link)",
+        "date": "2026-08-21",
+        "source": "Adv. Math.",
+        "source_group": "high-general-math",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0001870826004135?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-08-21-The-local-regularity-theory-for-the-Stok-1746f7.md",
+        "tags": []
+    },
+    {
+        "title": "Inhomogeneous 2D Navier–Stokes Equations: Existence, Uniqueness, Stability, Continuity in Time and Energy Conservation of Weak Solutions",
+        "authors": "Stefan Škondrić",
+        "date": "2026-08-19",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01052-3",
+        "abstract_en": "Abstract\n                  We present a novel and direct proof of the existence and uniqueness of weak solutions of the inhomogeneous incompressible Navier–Stokes equations without vacuum. The analysis we employ to prove the strong convergence of the approximating sequence, which is based on the relative energy method, reveals how to conclude the stability and uniqueness of weak solutions. To the best of our knowledge, these global-in-time stability estimates are completely new. Furthermore, for the first time, we establish energy conservation for weak solutions.",
+        "filename": "2026-08-19-Inhomogeneous-2D-Navier-Stokes-Equations-ee4b2f.md",
+        "tags": []
+    },
+    {
+        "title": "Jet-density of finite-gap solutions for classes of BKM systems",
+        "authors": "Manuel Quaschner, Wijnand Steneker",
+        "date": "2026-08-19",
+        "source": "Nonlinearity",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1088/1361-6544/ae95d1",
+        "abstract_en": "Abstract\n                  \n                    We show that jets of initial data can be approximated up to arbitrary order by finite-gap solutions for classes of so-called BKM systems of PDEs introduced by Bolsinov–Konyaev–Matveev, which include classical PDEs such as Korteweg– de Vries (KdV), Kaup–Boussinesq (KB) and Camassa–Holm (CH). Finite-gap solutions are obtained via a finite-reduction map, defined algebraically, which sends solutions of a Stäckel system to solutions of the BKM PDE. For the classes containing KdV and KB we obtain full jet-surjectivity via a triangular structure, whereas for the class containing CH we establish jet-surjectivity on an open set of initial data over\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            R\n                          \n                        \n                      \n                    \n                    and a Zariski-open (dense) set over\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            C\n                          \n                        \n                      \n                    \n                    .\n                  ",
+        "filename": "2026-08-19-Jet-density-of-finite-gap-solutions-for-902353.md",
+        "tags": []
+    },
+    {
         "title": "Global weak solutions in a three-dimensional chemotaxis-Navier-Stokes system with density-dependent motion",
         "authors": "Hongwen Jiang, Zhongping Li",
         "date": "2026-08-19",
@@ -7,6 +53,28 @@
         "link": "https://www.sciencedirect.com/science/article/pii/S0022039626006121?dgcid=rss_sd_all",
         "abstract_en": "无摘要提供，请点击原文链接查看。",
         "filename": "2026-08-19-Global-weak-solutions-in-a-three-dimensi-631e49.md",
+        "tags": []
+    },
+    {
+        "title": "Two-layer sharply stratified Euler fluids in three dimensions: a Hamiltonian setting",
+        "authors": "R Camassa, G Falqui, G Ortenzi, M Pedroni, E Sforza",
+        "date": "2026-08-18",
+        "source": "Nonlinearity",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1088/1361-6544/ae9431",
+        "abstract_en": "Abstract\n                  \n                    Three-dimensional two-layer incompressible Euler fluids are studied from a Hamiltonian perspective. A natural Hamiltonian structure for the effective 2D model described by the interface-value of the field variables is obtained by means of a Hamiltonian reduction process from the 3D Poisson structure. The problem of expressing the fluid’s energy in terms of the reduced variables is considered, and it is shown that in the weakly nonlinear approximation our procedure gives rise to a so-called 2D Kaup–Broer–Kupershmidt Boussinesq (KBK-B) model with\n                    ‘critical’\n                    parameters. A model weakly dependent on one of the two horizontal directions is also discussed, whose unidirectionalization turns out to be the well-known Kadomtsev–Petviashvili (KP) equation. A Dirac-type reduction process of the Hamiltonian structure of the KBK-B model yields a natural Hamiltonian structure for KP\n                    qua\n                    2+1-dimensional model.\n                  ",
+        "filename": "2026-08-18-Two-layer-sharply-stratified-Euler-fluid-d5f77b.md",
+        "tags": []
+    },
+    {
+        "title": "Incompressible generalised Navier–Stokes equations with supercritical initial data: almost sure existence and optimal decay rates of global weak solutions",
+        "authors": "Y-X Lin, Y-G Wang",
+        "date": "2026-08-18",
+        "source": "Nonlinearity",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1088/1361-6544/ae8a06",
+        "abstract_en": "Abstract\n                  \n                    In this paper, we study the initial value problem of the incompressible generalised Navier–Stokes equations with fractional dissipation\n                    \n                      \n                        \n                      \n                      \n                        \n                          (\n                          −\n                          Δ\n                          \n                            )\n                            α\n                          \n                          u\n                        \n                      \n                    \n                    in\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            \n                              R\n                            \n                            d\n                          \n                        \n                      \n                    \n                    , where\n                    \n                      \n                        \n                      \n                      \n                        \n                          d\n                          ⩾\n                          2\n                        \n                      \n                    \n                    , and the initial data lies in the supercritical regime of negative order Sobolev spaces\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            \n                              \n                                H\n                                ˙\n                              \n                            \n                            s\n                          \n                          (\n                          \n                            \n                              R\n                            \n                            d\n                          \n                          )\n                        \n                      \n                    \n                    with\n                    \n                      \n                        \n                      \n                      \n                        \n                          s\n                          &lt;\n                          0\n                        \n                      \n                    \n                    . By employing a probabilistic approach of data randomisation, the almost sure existence of global weak solutions is obtained for the problem with dissipation exponents\n                    \n                      \n                        \n                      \n                      \n                        \n                          α\n                          ∈\n                          \n                            (\n                            \n                              1\n                              2\n                            \n                            ,\n                            \n                              \n                                d\n                                +\n                                2\n                              \n                              4\n                            \n                            ]\n                          \n                        \n                      \n                    \n                    and\n                    \n                      \n                        \n                      \n                      \n                        \n                          s\n                          ∈\n                          (\n                          −\n                          α\n                          +\n                          (\n                          1\n                          −\n                          α\n                          \n                            )\n                            +\n                          \n                          ,\n                          0\n                          )\n                        \n                      \n                    \n                    , in which it overcomes a technical difficulty as\n                    \n                      \n                        \n                      \n                      \n                        \n                          α\n                          \n                            ⩽\n                          \n                          \n                            2\n                            3\n                          \n                        \n                      \n                    \n                    that limited authors’ previous study in (2026\n                    J. Math. Anal. Appl.\n                    555\n                    130042) to the range\n                    \n                      \n                        \n                      \n                      \n                        \n                          α\n                          &gt;\n                          \n                            2\n                            3\n                          \n                        \n                      \n                    \n                    . The proof mainly relies on a refined analysis of the corresponding integral equation near\n                    \n                      \n                        \n                      \n                      \n                        \n                          t\n                          =\n                          0\n                        \n                      \n                    \n                    , incorporating novel functional frameworks and bilinear estimates. Furthermore, an optimal decay rate in time of the\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            L\n                            x\n                            2\n                          \n                        \n                      \n                    \n                    norm of the solution is derived by using the Fourier splitting method, it also provides a framework potentially applicable for studying the large time behaviour of other fluid models with low-regularity initial data. Additionally, we obtain the uniqueness of weak solutions to this problem when the critical dissipation exponent\n                    \n                      \n                        \n                      \n                      \n                        \n                          α\n                          =\n                          \n                            \n                              d\n                              +\n                              2\n                            \n                            4\n                          \n                        \n                      \n                    \n                    with\n                    \n                      \n                        \n                      \n                      \n                        \n                          d\n                          ⩾\n                          2\n                        \n                      \n                    \n                    , which extends the well-known result for the two-dimensional Navier–Stokes equations.\n                  ",
+        "filename": "2026-08-18-Incompressible-generalised-Navier-Stokes-46dbc7.md",
         "tags": []
     },
     {
@@ -180,6 +248,50 @@
         "tags": []
     },
     {
+        "title": "Burgers equation with a twist: a study on rotational-form equations",
+        "authors": "Adam Larios",
+        "date": "2026-08-12",
+        "source": "Nonlinearity",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1088/1361-6544/ae8eee",
+        "abstract_en": "Abstract\n                  A new three-dimensional (3D) equation is introduced, which is formed like Burgers’ equation by starting with the 3D incompressible Navier–Stokes equations (NSE) and eliminating the pressure and the divergence-free constraint, but instead the Bernoulli pressure is eliminated, leaving only the rotational form of the nonlinearity. This results in a globally well-posed 3D equation which has exactly the same energy balance as the 3D NSE. Moreover, we show in simulations that the system seems to exhibit chaotic dynamics. In the viscous case, we prove the global existence, uniqueness, and higher-order regularity of solutions to this equation with no restriction on the initial data other than smoothness. In the inviscid case, local existence holds, but we give an example of a class of solutions with smooth initial data that develop a singularity in finite time in both 2D and 3D. Moreover, a new numerical algorithm is presented in the 2D case, and simulations are included to illustrate the dynamics. Global well-posedness for the original 3D NSE remains a challenging open problem, but it is hoped that by focusing on the rotational term, new insight may be gained.",
+        "filename": "2026-08-12-Burgers-equation-with-a-twist--a-study-o-eeccff.md",
+        "tags": []
+    },
+    {
+        "title": "A unified duality framework for barotropic, quantum and Korteweg fluids",
+        "authors": "Dmitry Vorotnikov",
+        "date": "2026-08-12",
+        "source": "Nonlinearity",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1088/1361-6544/ae9430",
+        "abstract_en": "Abstract\n                  We investigate a dual variational formulation, in the spirit of Brenier, for several compressible fluid models: the compressible barotropic Euler system, the quantum Euler system, and the Euler–Korteweg system. We identify a unified abstract framework encompassing all three systems, which enables a simultaneous analysis. By introducing time-adaptive weights, we establish the consistency of the duality scheme on large time intervals. We prove the existence of variational dual solutions to the corresponding Cauchy problems for continuous, vacuum-free initial data in spaces of finite Radon measures, and establish the absence of a duality gap. As an application, we formulate and prove a ‘Dafermos principle’ for these models: no subsolution can dissipate the total entropy earlier or at a faster rate than the corresponding strong solution on its interval of existence. We also discuss connections between our abstract consistency result and Brenier’s shock-free substitutes for entropy solutions of Burgers’ equation.",
+        "filename": "2026-08-12-A-unified-duality-framework-for-barotrop-e2241b.md",
+        "tags": []
+    },
+    {
+        "title": "Superexponential dissipation enhancement on T d",
+        "authors": "Keefer Rowan",
+        "date": "2026-08-12",
+        "source": "Nonlinearity",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1088/1361-6544/ae8351",
+        "abstract_en": "Abstract\n                  \n                    We construct incompressible velocity fields that exhibit faster than exponential dissipation for particular solutions to the advection-diffusion equation on\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            \n                              T\n                            \n                            d\n                          \n                        \n                      \n                    \n                    . In 2D, we construct a velocity field in\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            L\n                            \n                              t\n                              ,\n                              x\n                            \n                            ∞\n                          \n                        \n                      \n                    \n                    and exhibit a solution that decays with double exponential rate\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            \n                              e\n                            \n                            \n                              −\n                              \n                                C\n                                \n                                  −\n                                  1\n                                \n                              \n                              \n                                \n                                  e\n                                \n                                \n                                  \n                                    C\n                                    \n                                      −\n                                      1\n                                    \n                                  \n                                  t\n                                \n                              \n                            \n                          \n                        \n                      \n                    \n                    . In 3D, we construct a velocity field in\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            L\n                            t\n                            ∞\n                          \n                          \n                            W\n                            x\n                            \n                              1\n                              ,\n                              ∞\n                            \n                          \n                        \n                      \n                    \n                    and exhibit a solution that decays with rate\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            \n                              e\n                            \n                            \n                              −\n                              \n                                C\n                                \n                                  −\n                                  1\n                                \n                              \n                              \n                                t\n                                2\n                              \n                            \n                          \n                        \n                      \n                    \n                    . In 4D, we construct a velocity field in\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            L\n                            t\n                            ∞\n                          \n                          \n                            C\n                            x\n                            ∞\n                          \n                        \n                      \n                    \n                    and exhibit a solution that decays with\n                    some\n                    superexponential rate.\n                  ",
+        "filename": "2026-08-12-Superexponential-dissipation-enhancement-b7f3f0.md",
+        "tags": []
+    },
+    {
+        "title": "KdV limit for the Vlasov–Poisson–Landau system",
+        "authors": "Renjun Duan, Dongcheng Yang, Hongjun Yu",
+        "date": "2026-08-12",
+        "source": "J. Lond. Math. Soc.",
+        "source_group": "high-general-math",
+        "link": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.70667?af=R",
+        "abstract_en": "Abstract\n                  \n                    We are concerned with the fluid limit to KdV equations for the one‐dimensional Vlasov–Poisson–Landau system that describes the dynamics of ions in plasma with the electron density determined by the self‐consistent electric potential through the so‐called Boltzmann relation. Formally, it is well known that as the Knudsen number  the Vlasov–Poisson–Landau system in the compressible scaling converges to the Euler–Poisson equations which further under the Gardner–Morikawa transformation\n                    \n                    converge to the KdV equations as the parameter . Our goal of this paper is to construct smooth solutions of the correspondingly rescaled Vlasov–Poisson–Landau system over an arbitrary finite time interval that can converge uniformly to smooth solutions of the KdV equations as  and  simultaneously under an extra condition . Moreover, the explicit rate of convergence in  is also obtained. The proof is established by an appropriately chosen scaling and an intricate weighted energy method through the macro–micro decomposition around local Maxwellians. We design a ‐‐dependent high‐order energy functional to capture the singularity of such fluid limit problem.\n                  ",
+        "filename": "2026-08-12-KdV-limit-for-the-Vlasov-Poisson-Landau-755362.md",
+        "tags": []
+    },
+    {
         "title": "Pure-swirl loss of boundedness under $L^1_tL^2_x$ forcing: exact mixed-norm ranges",
         "authors": "Hugo Beirão da Veiga, Jiaqi Yang",
         "date": "2026-08-12",
@@ -292,6 +404,17 @@
         "tags": []
     },
     {
+        "title": "Refined Liouville-Type Theorems for the 3D Stationary Navier–Stokes Equations via Head Pressure Estimates",
+        "authors": "Changzhi Liu, Wenke Tan",
+        "date": "2026-08-10",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01049-y",
+        "abstract_en": "",
+        "filename": "2026-08-10-Refined-Liouville-Type-Theorems-for-the-95474c.md",
+        "tags": []
+    },
+    {
         "title": "Inevitable shock formation for 3-D compressible Euler flows",
         "authors": "Sergiu Klainerman, Qian Wang, Shiwu Yang, Pin Yu",
         "date": "2026-08-10",
@@ -381,6 +504,17 @@
         "link": "https://arxiv.org/abs/2608.06730v1",
         "abstract_en": "In this paper, we study the axisymmetric Hall magnetohydrodynamics where $u = u^re_r+u^ze_z$ and $B = B^θe_θ$. If there is a smooth solution to the system, we proved that this solution must exhibit norm inflation in $H^{σ-1}(\\mathbb R^3) \\times H^σ(\\mathbb R^3)$ for $1<σ<7/2$. If the smooth solution to Hall magnetohydrodynamics is unique, then this also implies a norm inflation in Hall magnetohydrodynamics.",
         "filename": "2026-08-07-Low-Regularity-Norm-Inflation-of-Axisymm-e1eaba.md",
+        "tags": []
+    },
+    {
+        "title": "A sparse resolution of the DiPerna–Majda gap problem for 2D Euler equations",
+        "authors": "见原链接 (See link)",
+        "date": "2026-08-06",
+        "source": "Proc. Lond. Math. Soc.",
+        "source_group": "high-general-math",
+        "link": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/plms.70185?af=R",
+        "abstract_en": "Proceedings of the London Mathematical Society, Volume 133, Issue 2, August 2026.",
+        "filename": "2026-08-06-A-sparse-resolution-of-the-DiPerna-Majda-b286cd.md",
         "tags": []
     },
     {
@@ -524,6 +658,17 @@
         "tags": []
     },
     {
+        "title": "Stationary wave solutions to two dimensional viscous shallow water equations: Theory of small and large solutions",
+        "authors": "Noah Stevenson, Ian Tice",
+        "date": "2026-08-04",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/191",
+        "abstract_en": "We study a system of forced viscous shallow water equations with nontrivial bathymetry in two spatial dimensions. We develop a well-posedness theory for small but arbitrary forcing data, as well as a theory for strong forcing. In the latter case, large amplitude solutions may actually fail to exist, but in this case we prove that one of three physically meaningful breakdown scenarios occurs. Through the use of implicit function theorem techniques and a priori estimates, we construct both spatially periodic and solitary (nonperiodic but spatially localized) solutions. The solitary case is substantially more complicated, requiring a delicate analysis in weighted Sobolev spaces. To the best of our knowledge, these results constitute the first general construction of stationary wave solutions, large or otherwise, to the viscous shallow water equations and the first general analysis of large solitary wave solutions to any viscous free boundary fluid model.",
+        "filename": "2026-08-04-Stationary-wave-solutions-to-two-dimensi-eceb84.md",
+        "tags": []
+    },
+    {
         "title": "Full-Density Degenerate Stagnation Points for Water Waves with General Vorticity",
         "authors": "Lili Du, Chunlei Yang",
         "date": "2026-08-04",
@@ -581,6 +726,17 @@
         "link": "https://www.sciencedirect.com/science/article/pii/S0022039626005826?dgcid=rss_sd_all",
         "abstract_en": "无摘要提供，请点击原文链接查看。",
         "filename": "2026-08-04-Ergodicity-for-stochastic-2D-Boussinesq-6e2c50.md",
+        "tags": []
+    },
+    {
+        "title": "Global Decay of Perturbations of Equilibrium States for One-Dimensional Heat Conducting Compressible Fluids of Korteweg Type",
+        "authors": "Ramón G. Plaza, José M. Valdovinos",
+        "date": "2026-08-03",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01046-1",
+        "abstract_en": "Abstract\n                  This paper studies the one dimensional Navier-Stokes-Fourier-Korteweg system of equations describing the evolution of a heat-conducting compressible fluid that exhibits viscosity and capillarity. The main goal of the present analysis is to examine the dissipative structure of the system and to prove the global existence and the asymptotic decay of perturbations of equilibrium states. For that purpose, a novel nonlinear change of perturbed state variables, which takes into account that the conserved quantities contain density gradients, is introduced. These new perturbation variables satisfy a partially symmetric system whose linearization fulfills the generalized genuine coupling condition of Humpherys [41] for higher order systems. It is shown that the linearized system is symbol symmetrizable and an appropriate compensating matrix is constructed. This procedure allows to obtain linear decay rates which underlie a dissipative mechanism of regularity-gain type. This linear dissipative structure implies, in turn, the global decay of small perturbations to constant equilibrium states as solutions to the full nonlinear system.",
+        "filename": "2026-08-03-Global-Decay-of-Perturbations-of-Equilib-636007.md",
         "tags": []
     },
     {
@@ -906,6 +1062,17 @@
         "tags": []
     },
     {
+        "title": "Large Time Decay of the Oseen Flow in Exterior Domains Subject to the Navier Slip-with-Friction Boundary Condition",
+        "authors": "Toshiaki Hishida",
+        "date": "2026-07-25",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01039-0",
+        "abstract_en": "Abstract\n                  \n                    Consider the motion of a viscous incompressible fluid filling a 3D exterior domain\n                    \n                      \n                        $$\\Omega $$\n                        \n                          Ω\n                        \n                      \n                    \n                    subject to the Navier slip-with-friction boundary condition as well as outflow at infinity. For the Oseen system as the linearization, we discuss the resolvent set under a certain relationship among the geometry of the boundary\n                    \n                      \n                        $$\\partial \\Omega $$\n                        \n                          \n                            ∂\n                            Ω\n                          \n                        \n                      \n                    \n                    , friction coefficient\n                    \n                      \n                        $$\\alpha (x)$$\n                        \n                          \n                            α\n                            (\n                            x\n                            )\n                          \n                        \n                      \n                    \n                    and the outflow\n                    \n                      \n                        $$u_\\infty $$\n                        \n                          \n                            u\n                            ∞\n                          \n                        \n                      \n                    \n                    . We then study the regularity of the resolvent near the origin in the complex plane to develop\n                    \n                      \n                        $$L^q$$\n                        \n                          \n                            L\n                            q\n                          \n                        \n                      \n                    \n                    -\n                    \n                      \n                        $$L^r$$\n                        \n                          \n                            L\n                            r\n                          \n                        \n                      \n                    \n                    decay estimates of the Oseen semigroup provided that\n                    \n                      \n                        $$\\alpha (x)+u_\\infty \\cdot \\nu (x)/2\\ge 0$$\n                        \n                          \n                            α\n                            \n                              (\n                              x\n                              )\n                            \n                            +\n                            \n                              u\n                              ∞\n                            \n                            ·\n                            ν\n                            \n                              (\n                              x\n                              )\n                            \n                            /\n                            2\n                            ≥\n                            0\n                          \n                        \n                      \n                    \n                    for every\n                    \n                      \n                        $$x\\in \\partial \\Omega $$\n                        \n                          \n                            x\n                            ∈\n                            ∂\n                            Ω\n                          \n                        \n                      \n                    \n                    , where\n                    \n                      \n                        $$\\nu (x)$$\n                        \n                          \n                            ν\n                            (\n                            x\n                            )\n                          \n                        \n                      \n                    \n                    stands for the outward unit normal to the boundary\n                    \n                      \n                        $$\\partial \\Omega $$\n                        \n                          \n                            ∂\n                            Ω\n                          \n                        \n                      \n                    \n                    .\n                  ",
+        "filename": "2026-07-25-Large-Time-Decay-of-the-Oseen-Flow-in-Ex-e7ed6f.md",
+        "tags": []
+    },
+    {
         "title": "On the blowup rate of vorticity for the Euler equations in a bounded domain",
         "authors": "Benjamin Ingimarson, Igor Kukavica",
         "date": "2026-07-25",
@@ -913,6 +1080,17 @@
         "link": "https://www.sciencedirect.com/science/article/pii/S0893965926002211?dgcid=rss_sd_all",
         "abstract_en": "无摘要提供，请点击原文链接查看。",
         "filename": "2026-07-25-On-the-blowup-rate-of-vorticity-for-the-000845.md",
+        "tags": []
+    },
+    {
+        "title": "Damping‐diffusion‐noise interactions in the stochastic Camassa–Holm equation",
+        "authors": "Diego Alonso‐Orán, Peter H. C. Pang, Hao Tang",
+        "date": "2026-07-24",
+        "source": "J. Lond. Math. Soc.",
+        "source_group": "high-general-math",
+        "link": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.70634?af=R",
+        "abstract_en": "Abstract\n                  In this paper, we investigate the effects of the interaction between time‐inhomogeneous damping, non‐local diffusion and noise on classical solutions to the Camassa–Holm equation incorporating these features. First, a local‐in‐time theory is established, covering the existence, uniqueness and a blow‐up criterion under relatively general conditions for these interacting mechanisms. Subsequently, we identify different conditions on the interactions between damping, diffusion and noise that guarantee the global regularity and long‐time behaviour of classical solutions. Notably, we demonstrate the existence of an evolution system of measures, which generalises the concept of invariant measures to the time‐inhomogeneous setting.",
+        "filename": "2026-07-24-Damping-diffusion-noise-interactions-in-0a6df3.md",
         "tags": []
     },
     {
@@ -980,6 +1158,17 @@
         "tags": []
     },
     {
+        "title": "Continuous Data Assimilation For 2D Stochastic Navier–Stokes Equations",
+        "authors": "Hakima Bessaih, Benedetta Ferrario, Oussama Landoulsi, Margherita Zanella",
+        "date": "2026-07-22",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01043-4",
+        "abstract_en": "Abstract\n                  Continuous data assimilation methods, such as the nudging algorithm introduced by Azouani, Olson, and Titi (AOT) [2], are known to be highly effective in deterministic settings for asymptotically synchronizing approximate solutions with observed dynamics. In this work, we extend this framework to a stochastic regime by considering the two-dimensional incompressible Navier-Stokes equations subject to either additive or multiplicative noise. We establish sufficient conditions on the nudging parameter and the spatial observation scale that guarantee convergence of the nudged solution to the true stochastic flow. In the case of multiplicative noise, convergence holds in expectation, with exponential or polynomial rates depending on the growth of the noise covariance. For additive noise, we obtain the exponential convergence both in expectation and pathwise. These results yield a stochastic generalization of the AOT theory, demonstrating how the interplay between random forcing, viscous dissipation and feedback control governs synchronization in stochastic fluid systems.",
+        "filename": "2026-07-22-Continuous-Data-Assimilation-For-2D-Stoc-dbd833.md",
+        "tags": []
+    },
+    {
         "title": "Pointwise mean-value formulas with quantitative remainder for higher-order Poisson equations",
         "authors": "Fernando Charro, Sophia Hertrich, Catherine Lebiedzik",
         "date": "2026-07-22",
@@ -1037,6 +1226,17 @@
         "link": "https://arxiv.org/abs/2607.19700v1",
         "abstract_en": "Let $\\frac{1}{3}<a<1$ and let $u_0$ be a $C^1$, divergence-free, $(-a)$-homogeneous vector field on $\\mathbb{R}^2\\setminus\\{0\\}$. We construct a forward-in-time self-similar solution of the two-dimensional incompressible Euler equations, \\[ u(t,x)=t^{-\\frac{a}{1+a}} U\\left(\\frac{x}{t^{{\\frac{1}{1+a}}}}\\right), \\] with initial datum $u_0$. No smallness or sign assumption is imposed on the initial datum. The construction is a vanishing-dissipation limit of the hypodissipative self-similar profiles. The key is a vorticity profile estimate, uniform in the dissipation parameter, in the critical Lorentz space $L^{\\frac{2}{1+a},\\infty}(\\mathbb{R}^2)$.   The resulting Euler solution $u$ has locally finite energy and $\\nabla u \\in L^\\infty_t L^{\\frac{2}{1+a},\\infty}_x$. Indeed, the velocity is continuous in $L^2_{\\text{loc}}$, and the vorticity converges weak-* in $L^{\\frac{2}{1+a},\\infty}$ at the initial time.",
         "filename": "2026-07-22-Self-Similar-Solutions-of-the-Two-Dimens-08aca9.md",
+        "tags": []
+    },
+    {
+        "title": "Initial-Boundary Value Problems for the 2D MHD Equations with Partial Dissipation",
+        "authors": "Quansen Jiu, Xiaoxiao Suo",
+        "date": "2026-07-21",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01045-2",
+        "abstract_en": "",
+        "filename": "2026-07-21-Initial-Boundary-Value-Problems-for-the-5a8296.md",
         "tags": []
     },
     {
@@ -1452,6 +1652,17 @@
         "tags": []
     },
     {
+        "title": "On the Temporal Estimates for the Incompressible Navier-Stokes Equations and the Hall-magnetohydrodynamic Equations",
+        "authors": "Hantaek Bae, Jinwook Jung, Jaeyong Shin",
+        "date": "2026-07-15",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01044-3",
+        "abstract_en": "",
+        "filename": "2026-07-15-On-the-Temporal-Estimates-for-the-Incomp-d7baf1.md",
+        "tags": []
+    },
+    {
         "title": "Singular Limits of the Shallow Water Equations on the Sphere",
         "authors": "Bin Cheng, Steve Schochet",
         "date": "2026-07-15",
@@ -1460,6 +1671,19 @@
         "abstract_en": "Solutions of the slightly compressible shallow water equations on a rapidly rotating sphere are shown to be bounded uniformly when ratio of the   Froude number to the Rossby number is bounded. Moreover, in the singular limit in which the ratio of those parameters remains fixed while they both   tend to zero, solutions with well-prepared initial data tend to corresponding solutions of limit equations. A convergence result is also obtained   for the three-scale singular limit in which the Froude number tends to zero faster than the Rossby number.",
         "filename": "2026-07-15-Singular-Limits-of-the-Shallow-Water-Equ-9ff6ce.md",
         "tags": []
+    },
+    {
+        "title": "Local rigidity of the Couette flow for the stationary triple-deck equations",
+        "authors": "Sameer Iyer, Yasunori Maekawa",
+        "date": "2026-07-13",
+        "source": "Analysis & PDE",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.2140/apde.2026.19.1165",
+        "abstract_en": "",
+        "filename": "2026-07-13-Local-rigidity-of-the-Couette-flow-for-t-eaca18.md",
+        "tags": [
+            "stability"
+        ]
     },
     {
         "title": "The Benjamin–Ono Equation in the Zero‐Dispersion Limit for Rational Initial Data: Generation of Dispersive Shock Waves",
@@ -1738,6 +1962,17 @@
         "tags": []
     },
     {
+        "title": "A Priori Estimates of Plasma-Vacuum Interface Problem for 2D Incompressible Ideal MHD",
+        "authors": "Chengchun Hao",
+        "date": "2026-07-02",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01032-7",
+        "abstract_en": "",
+        "filename": "2026-07-02-A-Priori-Estimates-of-Plasma-Vacuum-Inte-5f0a94.md",
+        "tags": []
+    },
+    {
         "title": "Asymptotic Stability of the Three-Dimensional Couette Flow for the Stokes-Transport Equations",
         "authors": "Daniel Sinambela, Weiren Zhao, Ruizhao Zi",
         "date": "2026-07-02",
@@ -1756,11 +1991,88 @@
         "tags": []
     },
     {
+        "title": "A Lagrangian Interior Regularity Result for the Incompressible Free Boundary Magnetohydrodynamics Equations with Surface Tension",
+        "authors": "Zhi Chen, Weixun Feng, Dongdong Qin, Fan Wu",
+        "date": "2026-07-01",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01040-7",
+        "abstract_en": "",
+        "filename": "2026-07-01-A-Lagrangian-Interior-Regularity-Result-11c569.md",
+        "tags": []
+    },
+    {
+        "title": "The $L^3$-based strong Onsager theorem",
+        "authors": "Vikram Giri, Hyunju Kwon, Matthew Novack",
+        "date": "2026-07-01",
+        "source": "Ann. of Math.",
+        "source_group": "top-general-math",
+        "link": "https://doi.org/10.4007/annals.2026.204.1.4",
+        "abstract_en": "In this work, we prove the $L^3$-based strong Onsager conjecture for the three-dimensional Euler equations. Our main theorem states that there exist weak solutions which dissipate the total kinetic energy, satisfy the local energy inequality, and belong to $C^0_t (W^{\\frac{1}{3},-3} \\cap L^{\\infty-})$. More precisely, for every $\\beta\\lt \\frac{1}{3}$, we can construct such solutions in the space $C^0_t (B^\\beta_{3,\\infty} \\cap L^{\\frac{1}{1-3\\beta}})$.",
+        "filename": "2026-07-01-The--L-3--based-strong-Onsager-theorem-c9f328.md",
+        "tags": []
+    },
+    {
+        "title": "The class and dynamics of $\\alpha$-balanced Polish groups",
+        "authors": "Shaun Allison, Aristotelis Panagiotopoulos",
+        "date": "2026-07-01",
+        "source": "J. Eur. Math. Soc.",
+        "source_group": "high-general-math",
+        "link": "https://doi.org/10.4171/jems/1798",
+        "abstract_en": "\n                    For each ordinal\n                    \n                      \\alpha&lt;\\omega_{1}\n                    \n                    , we introduce the class of\n                    \n                      \\alpha\n                    \n                    -balanced Polish groups. These classes form a hierarchy which stratifies the space between the class of Polish groups admitting a two-side-invariant metric (TSI) and the class of Polish groups admitting a complete left-invariant metric (CLI). We establish various closure properties, provide connections to model theory, and develop a boundedness principle for CLI groups by showing that\n                    \n                      \\alpha\n                    \n                    -balancedness is an initial segment of a regular coanalytic rank. In the spirit of Hjorth’s turbulence theory we also introduce “generic\n                    \n                      \\alpha\n                    \n                    -unbalancedness”, a new dynamical condition for Polish\n                    \n                      G\n                    \n                    -spaces which serves as an obstruction to classification by actions of\n                    \n                      \\alpha\n                    \n                    -balanced Polish groups. We use this to provide, for each\n                    \n                      \\alpha&lt;\\omega_{1}\n                    \n                    , an action of an\n                    \n                      \\alpha\n                    \n                    -balanced Polish group whose orbit equivalence relation is strongly generically ergodic against actions of any\n                    \n                      \\beta\n                    \n                    -balanced Polish group with\n                    \n                      \\beta&lt;\\alpha\n                    \n                    .\n                  ",
+        "filename": "2026-07-01-The-class-and-dynamics-of---alpha--balan-14fa21.md",
+        "tags": []
+    },
+    {
         "title": "Asymptotic stability of composite waves of viscous shock and rarefaction for relaxed compressible Navier-Stokes equations",
         "authors": "Renyong Guan, Yuxi Hu",
         "date": "2026-07-01",
         "source": "Calc. Var. Partial Differ. Equ.",
         "filename": "2026-07-01-Asymptotic-stability-of-composite-waves-5837db.md",
+        "tags": []
+    },
+    {
+        "title": "A Sharp Global Boundedness Result for Keller–Segel–(Navier–)Stokes Systems with Rapid Diffusion and Saturated Sensitivities",
+        "authors": "Minh Le",
+        "date": "2026-06-30",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01041-6",
+        "abstract_en": "",
+        "filename": "2026-06-30-A-Sharp-Global-Boundedness-Result-for-Ke-e5d946.md",
+        "tags": []
+    },
+    {
+        "title": "Thermohaline Convections in the Horizontal Layer with Non-Uniform Heat Supply",
+        "authors": "Hiroshi Fujiwara, Chun-Hsiung Hsia, Takaaki Nishida",
+        "date": "2026-06-25",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01034-5",
+        "abstract_en": "",
+        "filename": "2026-06-25-Thermohaline-Convections-in-the-Horizont-bdffe6.md",
+        "tags": []
+    },
+    {
+        "title": "Increased lifespan for 3d compressible Euler flows with rotation",
+        "authors": "Haram Ko, Benoit Pausader, Ryo Takada, Klaus Widmayer",
+        "date": "2026-06-24",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/182",
+        "abstract_en": "We consider the compressible Euler equation with a Coriolis term and prove a lower bound on the time of existence of solutions in terms of the speed of rotation, sound speed, and size of the initial data. Along the way, we obtain precise dispersive decay estimates for the linearized equation. In the incompressible limit, this improves current bounds for the incompressible Euler–Coriolis system as well.",
+        "filename": "2026-06-24-Increased-lifespan-for-3d-compressible-E-ad31f1.md",
+        "tags": []
+    },
+    {
+        "title": "Asymptotic Behavior of the Hall Magnetohydrodynamic Model for Quantum Plasmas",
+        "authors": "Xiuli Xu, Xueke Pu",
+        "date": "2026-06-22",
+        "source": "J. Math. Fluid Mech.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00021-026-01038-1",
+        "abstract_en": "",
+        "filename": "2026-06-22-Asymptotic-Behavior-of-the-Hall-Magnetoh-a0c7bb.md",
         "tags": []
     },
     {
@@ -1771,6 +2083,30 @@
         "link": "https://doi.org/10.1007/s00205-026-02210-7",
         "abstract_en": "Abstract\n                  \n                    We provide a structural analysis of the space of functions of bounded deviatoric deformation,\n                    \n                      \n                        $$\\textrm{BD}_{\\textrm{dev}}$$\n                        \n                          \n                            BD\n                            dev\n                          \n                        \n                      \n                    \n                    , which arises in models of plasticity and fluid mechanics. The main result is the identification of the annihilator and a rigidity theorem for\n                    \n                      \n                        $$\\textrm{BD}_{\\textrm{dev}}$$\n                        \n                          \n                            BD\n                            dev\n                          \n                        \n                      \n                    \n                    -maps with constant polar vector in the wave cone characterizing the structure of singularities for such maps. This result, together with an explicit kernel projection operator, enables an iterative blow-up procedure for relaxation, homogenization, and integral representation problems, allowing for integrands with explicit dependence on\n                    u\n                    as well as\n                    \n                      \n                        $${{\\mathcal {E}}}_d u$$\n                        \n                          \n                            \n                              E\n                              d\n                            \n                            u\n                          \n                        \n                      \n                    \n                    . Our approach overcomes several difficulties as compared to the\n                    \n                      \n                        $$\\textrm{BD}$$\n                        \n                          BD\n                        \n                      \n                    \n                    case, in particular due to the lack of invariance of\n                    \n                      \n                        $${{\\mathcal {E}}}_d$$\n                        \n                          \n                            E\n                            d\n                          \n                        \n                      \n                    \n                    under orthogonalization of the polar directions.\n                  ",
         "filename": "2026-06-21-Rigidity-and-Functional-Properties-of-32ab3a.md",
+        "tags": []
+    },
+    {
+        "title": "Analysis on the steady Euler flows with stagnation points in an infinitely long nozzle",
+        "authors": "Congming Li, Yingshu Lü, Henrik Shahgholian, Chunjing Xie",
+        "date": "2026-06-19",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/188",
+        "abstract_en": "\n                    Flows with stagnation points, very challenging in analysis, are interesting and important phenomena in fluids. In this paper, we not only prove the uniqueness and existence of steady flows with a stagnation set, but also obtain the regularity of the boundary of the stagnation set, which is a class of obstacle-type free boundary. First, we prove a global uniqueness theorem for solutions of the two-dimensional steady Euler system, whose horizontal velocities tend to those of shear flows at the far field upstream. Due to the appearance of stagnation points, the nonlinearity of the semilinear equation for the stream function becomes non-Lipschitz. This creates a challenging analysis problem since many classical analysis methods do not apply directly. Second, the existence of steady incompressible Euler flows is established in an infinitely long nozzle via a variational approach. A very interesting phenomenon is that the boundary of a stagnation region can be regarded as an obstacle-type free boundary, which is proved to be globally\n                    \n                      C^{1}\n                    \n                    . Finally, the existence of a stagnation set is proved as long as the nozzle is wider than the width of the nozzle upstream, where the flows tend to Euler flows with stagnation points.\n                  ",
+        "filename": "2026-06-19-Analysis-on-the-steady-Euler-flows-with-433d78.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Justification of a two-phase averaged system for ideal gases without heat conduction",
+        "authors": "Didier Bresch, Cosmin Burtea, Pierre Gonin--Joubert, Frédéric Lagoutière",
+        "date": "2026-05-26",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/179",
+        "abstract_en": "\n                    This article concerns the mathematical justification of an averaged system of partial differential equations governing the evolution of a two-phase mixture of compressible ideal fluids, with viscosity and without conductivity, in space dimension\n                    \n                      1\n                    \n                    with periodic boundary conditions. The derivation is done by some homogenization procedure. The originality of the paper consists in the fact that\n                    both the density and temperature are allowed to oscillate (because of the absence of heat conduction), so that the limiting model is a six-equation, two-pressure, two-temperature model\n                    . The key point is to show the strong convergence of the stress tensor in\n                    \n                      L^{2}((0,T)\\times (0, 1))\n                    \n                    . The main difficulties are obtaining uniform estimates in spite of the presence of oscillating coefficients in the energy equation. It requires looking at solutions with low regularity for the density and the temperature.\n                  ",
+        "filename": "2026-05-26-Justification-of-a-two-phase-averaged-sy-9a6d54.md",
         "tags": []
     }
 ]

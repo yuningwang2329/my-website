@@ -1,5 +1,27 @@
 [
     {
+        "title": "A sharp stability criterion for Euler equations via sparseness",
+        "authors": "Óscar Domínguez, Mario Milman",
+        "date": "2026-05-17",
+        "source": "Analysis & PDE",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.2140/apde.2026.19.659",
+        "abstract_en": "",
+        "filename": "2026-05-17-A-sharp-stability-criterion-for-Euler-eq-2fc0bd.md",
+        "tags": []
+    },
+    {
+        "title": "Boundary regularity of uniformly rotating vortex patches and an unstable elliptic free boundary problem",
+        "authors": "Yuchen Wang, Guanghui Zhang, Maolin Zhou",
+        "date": "2026-05-11",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/183",
+        "abstract_en": "\n                    In this paper, we consider the sign-changing free boundary problem related to the uniformly rotating vortex patch solutions of the two-dimensional incompressible Euler equations. We prove that the boundary of the vortex patch locally forms a\n                    \n                      90^{\\circ}\n                    \n                    corner near singular boundary points, if the patch is Lipschitz.\n                  ",
+        "filename": "2026-05-11-Boundary-regularity-of-uniformly-rotatin-827f28.md",
+        "tags": []
+    },
+    {
         "title": "Stability of Viscous Three‐Dimensional Stratified Couette Flow via Dispersion and Mixing",
         "authors": "Michele Coti Zelati, Augusto Del Zotto, Klaus Widmayer",
         "date": "2026-04-24",
@@ -10,5 +32,49 @@
         "tags": [
             "stability"
         ]
+    },
+    {
+        "title": "Existence of bulk vortices in superconductors with strong magnetic fields",
+        "authors": "Michele Correggi, Ayman Kachmar",
+        "date": "2026-04-23",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/181",
+        "abstract_en": "We study the vortex formation in extreme type-II superconductors immersed in strong magnetic fields in the framework of the Ginzburg–Landau theory. We focus on the regime where superconductivity survives in the bulk of the material but the magnetic field penetrates the sample, i.e., for an applied field much larger than the first critical one, but below the transition to surface superconductivity. Through a two-scale vortex construction, we obtain precise estimates for the vortex distribution and prove the existence of isolated defects with non-trivial winding numbers. In this respect, our work provides the first rigorous mathematical proof of the existence of isolated vortices for fields comparable to the second critical one.",
+        "filename": "2026-04-23-Existence-of-bulk-vortices-in-supercondu-87cd11.md",
+        "tags": []
+    },
+    {
+        "title": "Anomalous dissipation via spontaneous stochasticity with a two-dimensional autonomous velocity field",
+        "authors": "Carl Johan Peter Johansson, Massimo Sorella",
+        "date": "2026-01-01",
+        "source": "Duke Math. J.",
+        "source_group": "high-general-math",
+        "link": "https://doi.org/10.1215/00127094-2025-0067",
+        "abstract_en": "We study anomalous dissipation in the context of passive scalars and we construct a two-dimensional autonomous divergence-free velocity field in Cα (with α∈(0,1) arbitrary but fixed) which exhibits anomalous dissipation. Our proof employs the fluctuation-dissipation formula, which links spontaneous stochasticity with anomalous dissipation. Therefore, we address the issue of anomalous dissipation by showing that the variance of stochastic trajectories, in the zero noise limit, remains positive. Based on this result, we answer Questions 2.2 and Question 2.3 in Bruè and De Lellis regarding anomalous dissipation for the forced three-dimensional Navier–Stokes equations.",
+        "filename": "2026-01-01-Anomalous-dissipation-via-spontaneous-st-532306.md",
+        "tags": []
+    },
+    {
+        "title": "Finite-time singularity formation for angle-crested water waves",
+        "authors": "Diego Córdoba, Alberto Enciso, Nastasia Grubic",
+        "date": "2026-01-01",
+        "source": "Duke Math. J.",
+        "source_group": "high-general-math",
+        "link": "https://doi.org/10.1215/00127094-2025-0063",
+        "abstract_en": "We show that the water waves system is locally well-posed in weighted Sobolev spaces which allow for interfaces with corners. No symmetry assumptions are required. These singular points are not rigid: If the initial interface exhibits a corner, it remains a corner but generically its angle changes. Using a characterization of the asymptotic behavior of the fluid near a corner that follows from our a priori energy estimates, we show the existence of initial data in these spaces for which the fluid becomes singular in finite time.",
+        "filename": "2026-01-01-Finite-time-singularity-formation-for-an-70c746.md",
+        "tags": []
+    },
+    {
+        "title": "Global inviscid limit of 2D, stationary Navier-Stokes and stability of Prandtl expansions",
+        "authors": "Sameer Iyer, Nader Masmoudi",
+        "date": "2026-01-01",
+        "source": "Forum Math. Pi",
+        "source_group": "high-general-math",
+        "link": "https://doi.org/10.1017/fmp.2026.10027",
+        "abstract_en": "Abstract\n                  \n                    In this work, we establish the convergence of 2D, stationary Navier-Stokes flows with viscosity\n                    \n                      \n                        \n                        $\\varepsilon&gt; 0$\n                      \n                    \n                    ,\n                    \n                      \n                        \n                        $(u^\\varepsilon , v^\\varepsilon )$\n                      \n                    \n                    to the classical Prandtl boundary layer,\n                    \n                      \n                        \n                        $(\\bar {u}_p, \\bar {v}_p)$\n                      \n                    \n                    , posed on the domain\n                    \n                      \n                        \n                        $(0, \\infty ) \\times (0, \\infty )$\n                      \n                    \n                    :\n                    \n                      \n                        \n                        $$ \\begin{align*} \\| u^\\varepsilon - \\bar{u}_p \\|_{L^\\infty_y} \\lesssim \\sqrt{\\varepsilon} \\langle x \\rangle^{- \\frac 1 4 + \\delta}, \\qquad \\| v^\\varepsilon - \\sqrt{\\varepsilon} \\bar{v}_p \\|_{L^\\infty_y} \\lesssim \\sqrt{\\varepsilon} \\langle x \\rangle^{- \\frac 1 2}. \\end{align*} $$\n                      \n                    \n                  \n                  \n                    This validates Prandtl’s boundary layer theory\n                    globally\n                    in the\n                    x\n                    -variable for a large class of boundary layers, including the entire one parameter family of the classical Blasius profiles, with sharp decay rates. The result demonstrates asymptotic stability in two senses simultaneously: (1) asymptotic as\n                    \n                      \n                        \n                        $\\varepsilon \\rightarrow 0$\n                      \n                    \n                    and (2) asymptotic as\n                    \n                      \n                        \n                        $x \\rightarrow \\infty $\n                      \n                    \n                    . In particular, our result provides the first rigorous confirmation for the Navier-Stokes equations that the boundary layer cannot “separate” in these stable regimes, which is very important for physical and engineering applications.\n                  ",
+        "filename": "2026-01-01-Global-inviscid-limit-of-2D--stationary-147ab5.md",
+        "tags": []
     }
 ]

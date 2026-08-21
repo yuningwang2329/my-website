@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Multisolitons for the cubic NLS in 1-d and their stability",
+        "authors": "Herbert Koch, Daniel Tataru",
+        "date": "2024-12-07",
+        "source": "Publ. Math. IHÉS",
+        "source_group": "top-general-math",
+        "link": "https://doi.org/10.1007/s10240-024-00148-8",
+        "abstract_en": "\n                    For both the cubic Nonlinear Schrödinger Equation (NLS) as well as the modified Korteweg-de Vries (mKdV) equation in one space dimension we consider the set\n                    \n                      \n                        𝐌\n                        N\n                      \n                    \n                    of pure\n                    \n                      N\n                    \n                    -soliton states, and their associated multisoliton solutions. We prove that (i) the set\n                    \n                      \n                        𝐌\n                        N\n                      \n                    \n                    is a uniformly smooth manifold, and (ii) the\n                    \n                      \n                        𝐌\n                        N\n                      \n                    \n                    states are uniformly stable in\n                    \n                      \n                        H\n                        s\n                      \n                    \n                    , for each\n                    \n                      \n                        s\n                        &gt;\n                        -\n                        \n                          1\n                          2\n                        \n                      \n                    \n                    .\n                  \n                  One main tool in our analysis is an iterated Bäcklund transform, which allows us to nonlinearly add a multisoliton to an existing soliton free state (the soliton addition map) or alternatively to remove a multisoliton from a multisoliton state (the soliton removal map). The properties and the regularity of these maps are extensively studied.",
+        "filename": "2024-12-07-Multisolitons-for-the-cubic-NLS-in-1-d-a-d66efd.md",
+        "tags": []
+    }
+]
