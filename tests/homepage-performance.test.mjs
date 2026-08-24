@@ -57,11 +57,52 @@ test('homepage group filter preserves the real journal as paper metadata', () =>
   assert.doesNotMatch(homepage, /meta\.textContent = sourceGroupForPaper\(p\)/);
 });
 
-test('homepage places every existing paper source in the math-fluid legacy group', () => {
-  const homepage = read('index.html');
-  const currentSources = new Set(JSON.parse(read('fluids.json')).map((paper) => paper.source));
+const JOURNAL_GROUP_IDS = new Set([
+  'math-fluid-pde',
+  'top-general-math',
+  'high-general-math',
+]);
 
-  for (const source of currentSources) {
+const LEGACY_MATH_FLUID_SOURCES = [
+  'Arxiv (math.AP)',
+  'Appl. Math. Lett.',
+  'Arch. Ration. Mech. Anal.',
+  'Commun. Math. Phys.',
+  'Commun. Pure Appl. Math.',
+  'Calc. Var. Partial Differ. Equ.',
+  'J. Differ. Equ.',
+  'J. Funct. Anal.',
+  'SIAM J. Math. Anal.',
+  'J. Math. Pures Appl.',
+];
+
+test('homepage classifies every current paper through its source group or a legacy fallback', () => {
+  const homepage = read('index.html');
+  const currentPapers = JSON.parse(read('fluids.json'));
+
+  assert.match(
+    homepage,
+    /return paper\.source_group \|\| LEGACY_SOURCE_GROUPS\[paper\.source\] \|\| null;/,
+  );
+
+  for (const paper of currentPapers) {
+    if (paper.source_group) {
+      assert.ok(
+        JOURNAL_GROUP_IDS.has(paper.source_group),
+        `unknown source group for ${paper.source}: ${paper.source_group}`,
+      );
+      continue;
+    }
+
+    const escaped = paper.source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    assert.match(homepage, new RegExp(`'${escaped}': 'math-fluid-pde'`));
+  }
+});
+
+test('homepage retains legacy math-fluid source fallbacks', () => {
+  const homepage = read('index.html');
+
+  for (const source of LEGACY_MATH_FLUID_SOURCES) {
     const escaped = source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     assert.match(homepage, new RegExp(`'${escaped}': 'math-fluid-pde'`));
   }
