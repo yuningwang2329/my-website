@@ -1,5 +1,29 @@
 [
     {
+        "title": "Exponential decay of the solution to the compressible magnetohydrodynamic equations on T2",
+        "authors": "见原链接 (See link)",
+        "date": "2026-08-24",
+        "source": "J. Differ. Equ.",
+        "source_group": "math-fluid-pde",
+        "link": "https://www.sciencedirect.com/science/article/pii/S002203962600608X?dgcid=rss_sd_all",
+        "abstract_en": "无摘要提供，请点击原文链接查看。",
+        "filename": "2026-08-24-Exponential-decay-of-the-solution-to-the-4a74af.md",
+        "tags": []
+    },
+    {
+        "title": "On the Sobolev stability threshold for 3D Navier-Stokes equations with rotation near the Couette flow",
+        "authors": "Wenting Huang, Ying Sun, Xiaojing Xu",
+        "date": "2026-08-22",
+        "source": "Calc. Var. Partial Differ. Equ.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00526-026-03417-y",
+        "abstract_en": "",
+        "filename": "2026-08-22-On-the-Sobolev-stability-threshold-for-3-13ec18.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
         "title": "Linear stability of the 2D Boussinesq equations near Couette flow",
         "authors": "Wanrong Yang, Jiajing Wang",
         "date": "2026-08-21",
@@ -21,6 +45,28 @@
         "link": "https://www.sciencedirect.com/science/article/pii/S0001870826004135?dgcid=rss_sd_all",
         "abstract_en": "无摘要提供，请点击原文链接查看。",
         "filename": "2026-08-21-The-local-regularity-theory-for-the-Stok-1746f7.md",
+        "tags": []
+    },
+    {
+        "title": "Boundary layers and vanishing diffusivity in run-and-tumble models",
+        "authors": "Dallas Albritton, Laurel Ohm, Timur Yastrzhembskiy",
+        "date": "2026-08-20",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.20249v1",
+        "abstract_en": "A notable feature of confined active matter systems is the tendency for motile particles to accumulate near solid boundaries. In various linear models with no-flux boundary conditions, this accumulation is realized through the development of sharp boundary layers at small particle diffusivity $κ$. In this paper, we present the first rigorous investigation of nonlinear boundary layers in the context of confined active matter. Specifically, we consider a family of 1D run-and-tumble models with nonlinear advection and tumbling on the half-line $\\mathbb{R}_+$. We rigorously prove the vanishing diffusivity limit with quantitative convergence rates. In the limiting system, the boundary mass enters as a new variable which solves a nonlinear ODE, coupled to the PDE through a dynamic boundary condition. Interestingly, the nonlinearity on the boundary at $κ= 0$ cannot be obtained without reference to the boundary layer analysis at $κ\\ll 1$. Numerically, these models exhibit rich behavior, including phase transition and hysteresis in the boundary layer.",
+        "filename": "2026-08-20-Boundary-layers-and-vanishing-diffusivit-17e8dd.md",
+        "tags": []
+    },
+    {
+        "title": "On the closed solution of a problem coupling fluid infiltration with a hydration reaction",
+        "authors": "Diego Guevara, Sabrina Roscani, Piotr Rybka, Vaughan Voller",
+        "date": "2026-08-20",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.20189v1",
+        "abstract_en": "We present a one-dimensional model for water infiltration coupled with a hydration reaction, relevant to coupled transport and chemical processes in the Earth's subsurface. In this model the sharp interface separating the saturated and dry regions evolves over time, leading to a moving free boundary problem. Consistent with recently presented numerical treatments in the literature, this solution indicates an interesting dynamic for the free boundary. At early time, for a given domain porosity, the infiltration front advances with a specific square-root-in-time behavior. At later time, depending on the consumption of the hydration reaction, the front advance can exhibit square-root, linear, or exponential forms. The presented closed solution provides an analytical tool that can be used to quantify important behavior in coupled transport and reaction systems.",
+        "filename": "2026-08-20-On-the-closed-solution-of-a-problem-coup-1d89df.md",
         "tags": []
     },
     {
