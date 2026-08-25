@@ -1,5 +1,16 @@
 [
     {
+        "title": "Justification of a two-phase averaged system for ideal gases without heat conduction",
+        "authors": "Didier Bresch, Cosmin Burtea, Pierre Gonin--Joubert, Frédéric Lagoutière",
+        "date": "2026-05-26",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/179",
+        "abstract_en": "\n                    This article concerns the mathematical justification of an averaged system of partial differential equations governing the evolution of a two-phase mixture of compressible ideal fluids, with viscosity and without conductivity, in space dimension\n                    \n                      1\n                    \n                    with periodic boundary conditions. The derivation is done by some homogenization procedure. The originality of the paper consists in the fact that\n                    both the density and temperature are allowed to oscillate (because of the absence of heat conduction), so that the limiting model is a six-equation, two-pressure, two-temperature model\n                    . The key point is to show the strong convergence of the stress tensor in\n                    \n                      L^{2}((0,T)\\times (0, 1))\n                    \n                    . The main difficulties are obtaining uniform estimates in spite of the presence of oscillating coefficients in the energy equation. It requires looking at solutions with low regularity for the density and the temperature.\n                  ",
+        "filename": "2026-05-26-Justification-of-a-two-phase-averaged-sy-9a6d54.md",
+        "tags": []
+    },
+    {
         "title": "A sharp stability criterion for Euler equations via sparseness",
         "authors": "Óscar Domínguez, Mario Milman",
         "date": "2026-05-17",
@@ -42,6 +53,17 @@
         "link": "https://doi.org/10.4171/aihpc/181",
         "abstract_en": "We study the vortex formation in extreme type-II superconductors immersed in strong magnetic fields in the framework of the Ginzburg–Landau theory. We focus on the regime where superconductivity survives in the bulk of the material but the magnetic field penetrates the sample, i.e., for an applied field much larger than the first critical one, but below the transition to surface superconductivity. Through a two-scale vortex construction, we obtain precise estimates for the vortex distribution and prove the existence of isolated defects with non-trivial winding numbers. In this respect, our work provides the first rigorous mathematical proof of the existence of isolated vortices for fields comparable to the second critical one.",
         "filename": "2026-04-23-Existence-of-bulk-vortices-in-supercondu-87cd11.md",
+        "tags": []
+    },
+    {
+        "title": "Entropy maximization in the two-dimensional Euler equations",
+        "authors": "Michele Coti Zelati, Matias G. Delgadino",
+        "date": "2026-03-11",
+        "source": "Analysis & PDE",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.2140/apde.2026.19.505",
+        "abstract_en": "",
+        "filename": "2026-03-11-Entropy-maximization-in-the-two-dimensio-d4e26e.md",
         "tags": []
     },
     {
