@@ -1,5 +1,27 @@
 [
     {
+        "title": "Nonlinear stability for the superposition of viscous contact wave and rarefaction waves to non-isentropic compressible Navier-Stokes system with general initial perturbations",
+        "authors": "Yi Peng, Xiaoding Shi, Yuhang Wu",
+        "date": "2026-08-25",
+        "source": "Calc. Var. Partial Differ. Equ.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00526-026-03425-y",
+        "abstract_en": "",
+        "filename": "2026-08-25-Nonlinear-stability-for-the-superpositio-679dec.md",
+        "tags": []
+    },
+    {
+        "title": "Two phase micropolar fluid flow with unmatched densities modeled by Navier–Stokes–Cahn–Hilliard systems: local strong well-posedness and consistency estimates",
+        "authors": "Kin Shing Chan, Kei Fong Lam",
+        "date": "2026-08-25",
+        "source": "Calc. Var. Partial Differ. Equ.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00526-026-03421-2",
+        "abstract_en": "Abstract\n                  We study a thermodynamically consistent phase field model for binary mixtures of micropolar fluids, i.e., fluids exhibiting internal rotations. Furnishing with classical no-slip, no-spin and no-flux boundary conditions, in a smooth and bounded three-dimensional domain, we establish the well-posedness of local-in-time strong solutions. Since the model studied is a generalization of the earlier model introduced by Abels, Garcke and Grün for binary Newtonian fluids with unmatched densities, we provide a consistency result between the corresponding strong solutions to both models in terms of a parameter associated to the micro-rotation viscosity.",
+        "filename": "2026-08-25-Two-phase-micropolar-fluid-flow-with-unm-740435.md",
+        "tags": []
+    },
+    {
         "title": "Analyticity of the data-to-solution map for a stationary Navier-Stokes fluid-structure interaction problem",
         "authors": "Iva Mikuš, Boris Muha",
         "date": "2026-08-24",
