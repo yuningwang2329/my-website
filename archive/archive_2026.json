@@ -109,5 +109,16 @@
         "abstract_en": "We prove that the 3-dimensional (3D) Euler and Navier–Stokes equations are strongly ill posed in supercritical Sobolev spaces. In the inviscid case, for any 0&lt;s&lt;5 2, we construct a Cc∞ initial velocity field with arbitrarily small Hs norm for which the unique local-in-time smooth solution of the 3D Euler equation develops large H˙s norm inflation almost instantaneously. In the viscous case, the same H˙s norm inflation occurs in the 3D Navier–Stokes equation for 0&lt;s&lt;1 2, where s=1 2 is scaling critical for this equation.",
         "filename": "2026-01-01-Illposedness-of-incompressible-fluids-in-15d9ed.md",
         "tags": []
+    },
+    {
+        "title": "Vorticity blowup in 2D compressible Euler equations",
+        "authors": "Jiajie Chen, Giorgio Cialdea, Steve Shkoller, Vlad Vicol",
+        "date": "2026-01-01",
+        "source": "Duke Math. J.",
+        "source_group": "high-general-math",
+        "link": "https://doi.org/10.1215/00127094-2025-0061",
+        "abstract_en": "We prove finite-time vorticity blowup for smooth solutions of the 2D compressible Euler equations with smooth, localized, and nonvacuous initial data. The vorticity blowup occurs at the time of the first singularity, and is accompanied by an axisymmetric implosion in which the swirl velocity enjoys full stability, as opposed to finite codimension stability.",
+        "filename": "2026-01-01-Vorticity-blowup-in-2D-compressible-Eule-b39ca3.md",
+        "tags": []
     }
 ]

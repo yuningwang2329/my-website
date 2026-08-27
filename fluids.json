@@ -1,5 +1,108 @@
 [
     {
+        "title": "Flexibility and rigidity of steady states of the two-dimensional Euler equations in an infinite channel",
+        "authors": "Yupei Huang, Chunjing Xie, Chilin Zhang",
+        "date": "2026-08-26",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25859v1",
+        "abstract_en": "We study steady solutions to the two-dimensional incompressible Euler equations in an infinite channel, whose far-field limits are uniformly non-stagnant shear flows. In the smooth category,for a broad class of prescribed far-field shear profiles, non-shear steady states exist via the construction of two-dimensional solutions of the semilinear elliptic equations of stream function by the min--max method. In the analytic category, we establish a comparison principle for the analytic steady states and we show for a dense family of analytic uniformly non-stagnant shear profiles, every analytic steady state with the prescribed far field must itself be a shear flow. In particular, there are far-field shear profiles which exhibit flexibility in the smooth category but rigidity in the analytic category. Furthermore, the dense rigidity is sharp in the sense that there exists analytic shear profile which admits flexibility in the analytic category.",
+        "filename": "2026-08-26-Flexibility-and-rigidity-of-steady-state-9305b1.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Vortex filament dynamics and vortex ring motion revisited",
+        "authors": "Andrew D Gilbert",
+        "date": "2026-08-26",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25827v1",
+        "abstract_en": "The motion of a slender vortex in ideal incompressible fluid is a classic problem in hydrodynamics. Formulae for the velocity of a vortex ring go back to work of Kelvin, Helmholtz, Hicks and Dyson in the nineteenth century, while more recently a number of models have been created for simulating the motion of slender tubes of vorticity of general shape. For a vortex tube or filament localised near to a curve C(t), the relevant small parameter to measure slenderness is the tube radius divided by the radius of curvature of C. The present paper revisits this range of classic problems by introducing a coordinate system closely linked to the geometry of vortex surfaces in a slender vortex. The motion of fluid elements in this coordinate system has an action--angle form, and with this the vorticity equation simplifies radically. At the same time, however, most aspects of the shape or evolution of a vortex are thrown into the description of the coordinates, and in particular the corresponding metric and volume form.   As the coordinate system is non-orthogonal and time-dependent, tools of differential geometry are most easily used to describe the structure of both vorticity and coordinate system, and a general mathematical framework is set out. This resulting system of equations is taken as far as possible with only the assumption of vortex slenderness in place, but allowing arbitrary motions and distortions of the vortex core and of the curve C(t). The modelling is applied to calculate the motion of a slender vortex ring with arbitrary axial flow, solving directly for the shape of perturbed vorticity surfaces and giving results in agreement with earlier studies. The general framework set up in this paper is suitable for the development of simplified equations for vortex motion and interaction in future studies.",
+        "filename": "2026-08-26-Vortex-filament-dynamics-and-vortex-ring-7cf626.md",
+        "tags": []
+    },
+    {
+        "title": "Global Quasi-strong Solutions to the Voigt Regularization of a Diffuse Interface Model for Incompressible Two-phase Flows with Bulk-surface Interaction",
+        "authors": "Patrik Knopf, Maoyin Lv, Hao Wu",
+        "date": "2026-08-26",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25578v1",
+        "abstract_en": "We analyze a thermodynamically consistent diffuse interface model for incompressible two-phase viscous flows with unmatched densities in a smooth bounded domain $Ω\\subset\\mathbb{R}^d$ $(d=2,3)$. This model consists of the Navier-Stokes-Voigt equations for the velocity field and a convective Cahn-Hilliard equation with a singular potential for the phase-field variable. The resulting hydrodynamic system is subject to a generalized Navier slip boundary condition for the velocity field and Cahn-Hilliard-type dynamic boundary conditions for the phase-field variable and the chemical potential. With the aid of the Voigt regularization, we establish the existence of global quasi-strong solutions that satisfy an energy equality. This is achieved through a combination of delicate approximation schemes and a semi-Galerkin method.",
+        "filename": "2026-08-26-Global-Quasi-strong-Solutions-to-the-Voi-ee1257.md",
+        "tags": []
+    },
+    {
+        "title": "Forced self-similar solutions to the stationary Navier--Stokes equations in a half-space",
+        "authors": "Yun Wang, Chunjing Xie, Shaoheng Zhang",
+        "date": "2026-08-26",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25432v1",
+        "abstract_en": "We study axisymmetric self-similar solutions to the stationary Navier--Stokes equations in the half-space with the no-slip boundary condition, driven by an axisymmetric (-3)-homogeneous external force. If the tangential curl of the force on the unit sphere is sufficiently small, we prove the existence of a unique small solution; when the force is swirl-free, the solution is automatically swirl-free and unique. For a swirl-free external force $\\boldsymbol{F}$, we introduce a scaling parameter $λ$ and consider the system with force $λ\\boldsymbol{F}$; we prove that solutions exist precisely for $λ$ in an open interval containing zero. The same approach extends to solid cones with the no-slip boundary condition, where narrower opening angles allow the existence of solutions under larger external forces.",
+        "filename": "2026-08-26-Forced-self-similar-solutions-to-the-sta-6e495b.md",
+        "tags": []
+    },
+    {
+        "title": "Expanding solutions to the compressible Navier-Stokes equations with degenerate viscosities in spherical symmetry: global existence and inviscid limit",
+        "authors": "Shuying Hu, Zhouping Xin, Yuan Yuan",
+        "date": "2026-08-26",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25394v1",
+        "abstract_en": "This paper is devoted to studying the strong solutions to the vacuum free boundary problem for the isentropic compressible Navier-Stokes equations with density-dependent viscosities under spherical symmetry, which models the motions of isentropic compressible viscous flows surrounded by vacuum. We construct a class of expanding global solutions when the initial data is a small perturbation of the expanding affine solutions for the adiabatic exponent $γ>1$ and the viscosity coefficients proportional to $ρ^γ$, with $ρ$ being the fluid density. In addition, when the viscosity coefficients tend to zero, the perturbed solutions are proved to converge to the solutions to the compressible Euler equations with an explicit converging rate of viscosity coefficients.",
+        "filename": "2026-08-26-Expanding-solutions-to-the-compressible-19d2f9.md",
+        "tags": []
+    },
+    {
+        "title": "Geometric refinements of Liouville-type theorems for the stationary Navier--Stokes equations in $\\mathbb{R}^3$",
+        "authors": "Juhyeong Lee",
+        "date": "2026-08-26",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25342v1",
+        "abstract_en": "We prove Liouville-type theorems for smooth solutions $(u,p)$ of the stationary Navier--Stokes equations in $\\mathbb R^3$ satisfying the finite Dirichlet energy condition and the uniform decay condition. Our results give geometric refinements of two recent Osgood-type criteria, namely the relative decay criterion and the weighted integrability criterion formulated in terms of the head pressure $Q=\\frac{1}{2}|u|^2+p$. The proof exploits several properties of the head pressure and the scalar triple-product structure of $(u\\timesω)\\cdot\\nabla Q$. Combined with an Osgood-type representation of the total vorticity energy, this geometric structure yields Liouville-type criteria involving only the tangential interaction of $u$ and $ω$ over the superlevel sets of $|Q|$. In the relative decay setting, they lead to Osgood-scale smallness conditions that allow subcritical growth beyond the corresponding uniform bounds. In the weighted integrability setting, the previous conditions involving the full velocity and velocity gradient are refined to involve only the tangential components of $u$ and $ω$ along the level surfaces of $Q$, together with an angular factor measuring their relative orientation.",
+        "filename": "2026-08-26-Geometric-refinements-of-Liouville-type-478152.md",
+        "tags": []
+    },
+    {
+        "title": "Global well-posedness of strong solutions to the initial-boundary value problem for a two-dimensional stress-diffusive Oldroyd-B model in the creeping flow regime",
+        "authors": "Yinghui Wang, Shihao Zhang, Zhuo Zhang",
+        "date": "2026-08-26",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25333v1",
+        "abstract_en": "This paper investigates the global well-posedness of strong solutions to a stress-diffusive Oldroyd-B system in two-dimensional smooth bounded domains in the zero Reynolds number (creeping flow) regime. The stress-diffusion term is kept explicit throughout the paper and is understood as the usual center-of-mass diffusion regularization of the Oldroyd-B constitutive equation. In the corresponding non-diffusive creeping-flow setting, the strongest available result is a Beale-Kato-Majda type breakdown criterion for the three-dimensional Cauchy problem due to Kupferman, Mangoubi and Titi [Commun. Math. Sci. 6 (2008)], and global well-posedness remains open even in two dimensions. We prove the global existence and uniqueness of strong solutions for arbitrarily large H1 initial polymeric stresses satisfying the natural non-negativity condition on the conformation tensor. The result covers the initial-boundary value problem on general smooth bounded domains and shows how the Stokes elliptic structure, the preservation of the non-negativity of the conformation tensor, and the stress diffusion combine to close large-data estimates at the H1 level. We also point out a regularity feature specific to the zero Reynolds number regime: the velocity field gains higher spatial regularity from the elliptic Stokes equation than the polymeric stress tensor.",
+        "filename": "2026-08-26-Global-well-posedness-of-strong-solution-2d4146.md",
+        "tags": []
+    },
+    {
+        "title": "Optimal Polynomial Stabilization of the Linearized Periodic Whitham--Boussinesq System",
+        "authors": "Roberto de A. Capistrano Filho, William Artiles Roqueta",
+        "date": "2026-08-25",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25226v1",
+        "abstract_en": "We study the stabilization of the linearized periodic Whitham--Boussinesq system on the one-dimensional torus. We establish the well-posedness of the conservative and damped dynamics in the natural energy space and describe the spectral structure of the conservative generator, whose frequencies exhibit sublinear growth of order $|k|^{1/2}$ at high frequency. We then prove strong stability of the damped semigroup and obtain a high-frequency resolvent estimate with linear growth in the spectral parameter. Under genuinely localized damping, a family of high-frequency quasimodes provides the matching lower bound and shows that this resolvent growth is optimal. By the Borichev--Tomilov theorem [5], we deduce a $t^{-1}$ decay rate for the semigroup on the domain of the generator, corresponding to a $t^{-2}$ decay rate for the energy. Under the same localization assumption, these polynomial decay rates are optimal.",
+        "filename": "2026-08-25-Optimal-Polynomial-Stabilization-of-the-bca951.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Entropy-stable moving-wall boundary conditions for the ALE formulation of the compressible Navier-Stokes equations",
+        "authors": "Luca Galimberti, Roberto Nuca, Lisandro Dalcin, Alberto Guardone, Matteo Parsani",
+        "date": "2026-08-25",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.25146v1",
+        "abstract_en": "We present a high-order entropy-stable framework for the compressible Euler and Navier-Stokes equations on moving domains. The space-time mapping describing the domain motion is recast in an arbitrary Lagrangian Eulerian (ALE) formulation, in which the physical inviscid fluxes and the contributions induced by mesh motion are treated in a unified manner. At the continuous level, we prove that the proposed moving-wall boundary conditions are entropy conservative for the Euler equations and entropy stable for the Navier-Stokes equations. The no-slip condition is formulated in terms of the velocity relative to the moving wall, yielding a bounded inviscid contribution to the entropy balance, while the viscous terms contribute only entropy dissipation. Using diagonal norm summation-by-parts (SBP) operators together with appropriate numerical fluxes, these properties are extended to the semi-discrete formulation, resulting in nonlinear stability in the $L^2$ sense. The accuracy, robustness, and scalability of the proposed method are demonstrated in practice through an extensive set of numerical experiments, ranging from canonical two-dimensional verification cases to large-scale turbulent and supersonic simulations involving moving boundaries and fluid-structure interaction. The results confirm the suitability of high-order entropy-stable schemes for complex moving-domain problems across a broad range of flow regimes and multiphysics applications. Because the analysis relies on the SBP property rather than on a particular discretization, the framework naturally extends to a broad class of methods based on diagonal-norm SBP operators, including finite volume, finite element, and flux reconstruction schemes.",
+        "filename": "2026-08-25-Entropy-stable-moving-wall-boundary-cond-d120c5.md",
+        "tags": []
+    },
+    {
         "title": "Nonlinear stability for the superposition of viscous contact wave and rarefaction waves to non-isentropic compressible Navier-Stokes system with general initial perturbations",
         "authors": "Yi Peng, Xiaoding Shi, Yuhang Wu",
         "date": "2026-08-25",
