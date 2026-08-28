@@ -1,5 +1,62 @@
 [
     {
+        "title": "Alexandrov-Fenchel inequalities for convex anisotropic capillary hypersurfaces in the half-space",
+        "authors": "Jinyu Gao, Guanghan Li",
+        "date": "2026-08-28",
+        "source": "Calc. Var. Partial Differ. Equ.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.1007/s00526-026-03416-z",
+        "abstract_en": "",
+        "filename": "2026-08-28-Alexandrov-Fenchel-inequalities-for-conv-2f566e.md",
+        "tags": []
+    },
+    {
+        "title": "Global well-posedness for the 2D stochastic hypoviscous Navier-Stokes equations",
+        "authors": "Daniel Goodair, Floris Roodenburg",
+        "date": "2026-08-27",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.27054v1",
+        "abstract_en": "We study stochastic hypoviscous Navier--Stokes equations on the torus with dissipation $(-Δ)^γ$ for $γ\\in (\\frac{1}{2},1]$ and multiplicative noise. Relying on stochastic maximal regularity results for the linear equation, we establish local well-posedness for this problem in arbitrary dimensions with initial data in a range of scaling-critical Besov spaces. With the aid of $L^q$-energy estimates for the vorticity equation, we also prove global well-posedness of the stochastic hypoviscous Navier--Stokes equation in 2D with linear multiplicative noise.",
+        "filename": "2026-08-27-Global-well-posedness-for-the-2D-stochas-2d162d.md",
+        "tags": []
+    },
+    {
+        "title": "Linear Stability and Inviscid Damping of Monotone Shear Flows for 2D Compressible Euler Equations",
+        "authors": "Zhile Li, Junyan Zhang, Lifeng Zhao",
+        "date": "2026-08-27",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.27018v1",
+        "abstract_en": "We study 2D compressible Euler equations linearized around monotone shear flows $(U(y),0)$ on $\\mathbb{T} \\times \\mathbb{R}$. The shear rate $U'$ is strictly positive, not necessarily close to any constant, and varies sufficiently slowly. In the subsonic shear regime $MU'_{\\sup} \\le 1$, we prove that the density and the irrotational velocity obey algebraic growth bounds, whereas the solenoidal velocity undergoes componentwise inviscid damping. Although the non-uniform shear precludes the mode-by-mode Fourier reduction available in the Couette case, the Couette temporal exponents obtained in our paper still persist without loss. The proof hinges on two new ingredients: a time-dependent pseudodifferential energy that restores a coercive structure for the variable-coefficient shear dynamics, and terminal-time-dependent higher- and lower-order weighted energies that capture the long-time effects of shear mixing.",
+        "filename": "2026-08-27-Linear-Stability-and-Inviscid-Damping-of-c4e9fb.md",
+        "tags": [
+            "stability"
+        ]
+    },
+    {
+        "title": "Convergence of a vector-valued Allen-Cahn system to Brakke's multiphase mean curvature flow",
+        "authors": "Tim Laux, Keisuke Takasao",
+        "date": "2026-08-27",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.26842v1",
+        "abstract_en": "Since Ilmanen's pioneering work [J. Differential Geom. 38, 417-461, (1993)] it has been a major open problem to understand the sharp-interface limit of systems of coupled Allen-Cahn equations. We prove - for the first time - a global, unconditional convergence result for such a coupled system and show that the limit is a multiphase mean curvature flow in the sense of Brakke.",
+        "filename": "2026-08-27-Convergence-of-a-vector-valued-Allen-Cah-6e2c83.md",
+        "tags": []
+    },
+    {
+        "title": "A wall-law approximation for Jeffery-Hamel flows in rough wedges",
+        "authors": "Zijin Li, Xinghong Pan",
+        "date": "2026-08-27",
+        "source": "Arxiv (math.AP)",
+        "source_group": "math-fluid-pde",
+        "link": "https://arxiv.org/abs/2608.26736v1",
+        "abstract_en": "We study the two-dimensional stationary Navier-Stokes equations in an unbounded wedge with small rough perturbations of its angular boundaries. The Jeffery-Hamel flow in the corresponding straight wedge is taken as the effective background flow. Under a suitable small-flux condition, we prove the existence of weak solutions and establish an $H^1$-type energy error estimate of order $O(ε^2)$. For sufficiently small wedge angles, we further derive weighted estimates and improve the squared $L^2$-error to $O(ε^3)$.",
+        "filename": "2026-08-27-A-wall-law-approximation-for-Jeffery-Ham-01872a.md",
+        "tags": []
+    },
+    {
         "title": "Flexibility and rigidity of steady states of the two-dimensional Euler equations in an infinite channel",
         "authors": "Yupei Huang, Chunjing Xie, Chilin Zhang",
         "date": "2026-08-26",
