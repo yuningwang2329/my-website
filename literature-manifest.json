@@ -1,24 +1,26 @@
 {
   "schema_version": 1,
-  "generation_id": "c87df37b87affc95",
-  "generated_at": "2026-08-30T08:33:21Z",
+  "generation_id": "54341ab13de5f727",
+  "generated_at": "2026-08-30T08:44:44Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
     "current": 108,
     "archived": 42,
-    "review": 925
+    "review": 926
   },
   "sources": {
     "total": 29,
-    "succeeded": 29,
-    "failed_ids": []
+    "succeeded": 28,
+    "failed_ids": [
+      "siam-journal-mathematical-analysis"
+    ]
   },
   "current": {
     "path": "fluids.json",
     "count": 108,
-    "sha256": "a9d8bbaa1a504ed9ebbf7638999694356b73d7a07c08e29c4c76ac74fff184dc",
-    "bytes": 190499
+    "sha256": "b994841195420aa2ab7b6c23dcc53f245f1c54f8cfcb3a1d3f53e18e0143d1ef",
+    "bytes": 190495
   },
   "archives": [
     {

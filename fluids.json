@@ -44,9 +44,9 @@
     "title": "Existence of a Periodic Attractor for the 3D Navier-Stokes Equations on T 3",
     "authors": "Terry Moschandreou",
     "date": "2026-08-30",
-    "source": "J. Math. Pures Appl.",
+    "source": "J. Differ. Equ.",
     "source_group": "math-fluid-pde",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001078?dgcid=rss_sd_all",
+    "link": "https://www.sciencedirect.com/science/article/pii/S002203962600608X?dgcid=rss_sd_all",
     "doi": "",
     "arxiv_url": "",
     "abstract_en": "无摘要提供，请点击原文链接查看。",
@@ -55,8 +55,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-math-pures-appliquees",
-    "enrichment_hash": "485e76b97f2d755902cf46d742fa94445863d87359ce5f6189a4af9aa43551c5"
+    "source_id": "journal-differential-equations",
+    "enrichment_hash": "1d4e2d5e4afbade180beb076beec9ba7f33b2394601eb62a440a3d989c2a29eb"
   },
   {
     "id": "title:ad0a53440baf02ec8217ac69",
