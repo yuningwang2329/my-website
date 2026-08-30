@@ -26,10 +26,13 @@ def _paper(identifier, *, date="2026-08-20"):
         "source": "J. Math. Fluid Mech.",
         "source_group": "math-fluid-pde",
         "link": f"https://doi.org/10.1000/{identifier}",
+        "doi": f"10.1000/{identifier}",
+        "arxiv_url": "",
         "filename": f"{identifier.replace(':', '-').replace('/', '-')}.md",
         "abstract_en": "A long English abstract that must not be in the home index.",
         "summary_zh": "首页索引不应携带这段中文摘要。",
         "topic": "流体方程",
+        "topic_tags": ["navier-stokes"],
         "tags": ["navier-stokes"],
         "relevance": "core",
     }
@@ -55,6 +58,7 @@ class CanonicalMirrorTests(unittest.TestCase):
                 "path": "fluids.json",
                 "count": 2,
                 "sha256": _sha256(active_payload),
+                "bytes": len(active_payload),
             },
             "archives": [
                 {
@@ -62,6 +66,7 @@ class CanonicalMirrorTests(unittest.TestCase):
                     "path": "archive/archive_2025.json",
                     "count": 1,
                     "sha256": _sha256(archive_payload),
+                    "bytes": len(archive_payload),
                 }
             ],
         }
@@ -122,6 +127,39 @@ class CanonicalMirrorTests(unittest.TestCase):
             )
             manifest = self._manifest(active_payload + b"tampered", archive_payload)
             manifest["current"]["count"] = 1
+            self._write_json(canonical_root / "literature-manifest.json", manifest)
+
+            with self.assertRaises(CanonicalSyncError):
+                sync_canonical_artifacts(
+                    canonical_root,
+                    target_root,
+                    now=datetime(2026, 8, 30, 3, 0, tzinfo=timezone.utc),
+                )
+
+            self.assertEqual((target_root / "fluids.json").read_bytes(), old_data)
+
+    def test_sync_rejects_incomplete_records_or_wrong_byte_sizes_without_overwriting(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            canonical_root = root / "canonical"
+            target_root = root / "website"
+            old_data = b'[{"id":"old-site-paper"}]'
+            target_root.mkdir()
+            (target_root / "fluids.json").write_bytes(old_data)
+
+            current_paper = _paper("doi:10.1000/current-a")
+            current_paper.pop("doi")
+            active_payload = self._write_json(
+                canonical_root / "fluids.json", [current_paper]
+            )
+            archive_payload = self._write_json(
+                canonical_root / "archive" / "archive_2025.json",
+                [_paper("doi:10.1000/archive-a", date="2025-03-01")],
+            )
+            manifest = self._manifest(active_payload, archive_payload)
+            manifest["counts"] = {"current": 1, "archived": 1, "review": 0}
+            manifest["current"]["count"] = 1
+            manifest["current"]["bytes"] = len(active_payload) + 1
             self._write_json(canonical_root / "literature-manifest.json", manifest)
 
             with self.assertRaises(CanonicalSyncError):

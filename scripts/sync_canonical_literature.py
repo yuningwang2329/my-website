@@ -36,9 +36,12 @@ REQUIRED_RECORD_FIELDS = (
     "source",
     "source_group",
     "link",
+    "doi",
+    "arxiv_url",
     "abstract_en",
     "summary_zh",
     "topic",
+    "topic_tags",
     "tags",
     "relevance",
 )
@@ -116,10 +119,13 @@ def _read_artifact(source_root: Path, descriptor: Any, *, label: str, year: int 
     path = _relative_json_path(descriptor.get("path"), label=label)
     expected_count = descriptor.get("count")
     expected_hash = descriptor.get("sha256")
+    expected_bytes = descriptor.get("bytes")
     if not isinstance(expected_count, int) or expected_count < 0:
         raise CanonicalSyncError(f"{label}.count must be a non-negative integer")
     if not isinstance(expected_hash, str) or len(expected_hash) != 64:
         raise CanonicalSyncError(f"{label}.sha256 must be a SHA-256 digest")
+    if not isinstance(expected_bytes, int) or expected_bytes < 0:
+        raise CanonicalSyncError(f"{label}.bytes must be a non-negative integer")
 
     artifact_file = source_root / path
     try:
@@ -128,6 +134,8 @@ def _read_artifact(source_root: Path, descriptor: Any, *, label: str, year: int 
         raise CanonicalSyncError(f"cannot read {label} artifact: {path}") from error
     if len(payload) > MAX_ARTIFACT_BYTES:
         raise CanonicalSyncError(f"{label} artifact exceeds the {MAX_ARTIFACT_BYTES} byte limit")
+    if len(payload) != expected_bytes:
+        raise CanonicalSyncError(f"{label} artifact byte size does not match manifest")
     if _sha256(payload) != expected_hash.lower():
         raise CanonicalSyncError(f"{label} artifact hash does not match manifest")
     try:
