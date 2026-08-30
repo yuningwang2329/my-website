@@ -96,6 +96,12 @@ FEEDS = [
         "source_group": "math-fluid-pde",
     },
     {
+        "name": "Discrete Contin. Dyn. Syst.",
+        "url": "1553-5231",
+        "type": "crossref_journal",
+        "source_group": "math-fluid-pde",
+    },
+    {
         "name": "Ann. of Math.",
         "url": "0003-486X",
         "type": "crossref_journal",

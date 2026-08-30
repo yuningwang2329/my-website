@@ -22,7 +22,7 @@ class SourceCatalogTests(unittest.TestCase):
             GROUP_IDS,
             ("math-fluid-pde", "top-general-math", "high-general-math"),
         )
-        self.assertEqual(len(FEEDS), 28)
+        self.assertEqual(len(FEEDS), 29)
         self.assertTrue(all(feed["source_group"] in GROUP_IDS for feed in FEEDS))
 
     def test_top_general_math_group_contains_the_four_journals_and_pmihes(self):
@@ -52,6 +52,17 @@ class SourceCatalogTests(unittest.TestCase):
 
     def test_known_legacy_source_is_in_the_math_fluid_group(self):
         self.assertEqual(source_group_for_source("SIAM J. Math. Anal."), "math-fluid-pde")
+
+    def test_dcds_uses_the_flagship_journal_source(self):
+        self.assertIn(
+            {
+                "name": "Discrete Contin. Dyn. Syst.",
+                "url": "1553-5231",
+                "type": "crossref_journal",
+                "source_group": "math-fluid-pde",
+            },
+            FEEDS,
+        )
 
     def test_fallback_accepts_complex_fluid_terms(self):
         self.assertTrue(matches_fluid_fallback("Viscoelastic non-Newtonian flow", ""))
