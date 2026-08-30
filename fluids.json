@@ -44,9 +44,9 @@
     "title": "Existence of a Periodic Attractor for the 3D Navier-Stokes Equations on T 3",
     "authors": "Terry Moschandreou",
     "date": "2026-08-30",
-    "source": "J. Differ. Equ.",
+    "source": "J. Math. Pures Appl.",
     "source_group": "math-fluid-pde",
-    "link": "https://www.sciencedirect.com/science/article/pii/S002203962600608X?dgcid=rss_sd_all",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001078?dgcid=rss_sd_all",
     "doi": "",
     "arxiv_url": "",
     "abstract_en": "无摘要提供，请点击原文链接查看。",
@@ -55,8 +55,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-differential-equations",
-    "enrichment_hash": "1d4e2d5e4afbade180beb076beec9ba7f33b2394601eb62a440a3d989c2a29eb"
+    "source_id": "journal-math-pures-appliquees",
+    "enrichment_hash": "485e76b97f2d755902cf46d742fa94445863d87359ce5f6189a4af9aa43551c5"
   },
   {
     "id": "title:ad0a53440baf02ec8217ac69",
@@ -85,7 +85,7 @@
   {
     "id": "title:90ea63fb4f639d7e0575f934",
     "title": "Global-in-time well-posedness for the two-dimensional incompressible Navier-Stokes equations with freely transported viscosity coefficient",
-    "authors": "Xian Liao, Rebekka Zimmermann",
+    "authors": "见原链接 (See link)",
     "date": "2026-08-30",
     "source": "J. Math. Pures Appl.",
     "source_group": "math-fluid-pde",
@@ -879,23 +879,21 @@
   {
     "id": "doi:10.1112/plms.70185",
     "title": "A sparse resolution of the DiPerna–Majda gap problem for 2D Euler equations",
-    "authors": "Oscar Domínguez, Daniel Spector",
+    "authors": "见原链接 (See link)",
     "date": "2026-08-06",
     "source": "Proc. Lond. Math. Soc.",
     "source_group": "high-general-math",
     "link": "https://doi.org/10.1112/plms.70185",
     "doi": "10.1112/plms.70185",
     "arxiv_url": "",
-    "abstract_en": "Abstract\n                  \n                    A central question that originates in the celebrated work in the 1980's of DiPerna and Majda asks what is the optimal decay  such that uniform rates  of the vorticity maximal functions guarantee strong convergence without concentrations of approximate solutions to energy‐conserving weak solutions of the 2D Euler equations with vortex sheet initial data. A famous result of Majda (1993) shows , , as the optimal decay for\n                    distinguished\n                    sign vortex sheets. In the general setting of\n                    mixed\n                    sign vortex sheets, DiPerna and Majda (1987) established  with  as a sufficient condition for the lack of concentrations, while the expected gap  remains as an open question. In this paper, we resolve the DiPerna–Majda 2D gap problem: In striking contrast to the well‐known case of distinguished sign vortex sheets, we identify  as the optimal regularity for mixed sign vortex sheets that rules out concentrations. For the proof, we propose a novel method to construct explicitly solutions with mixed sign to the 2D Euler equations in such a way that wild behavior creates within the relevant geometry of\n                    sparse\n                    cubes (i.e., these cubes are not necessarily pairwise disjoint, but their possible overlappings can be controlled in a sharp fashion). Such a strategy is inspired by the recent work of the first author and Milman where strong connections between energy conservation and sparseness are established.",
+    "abstract_en": "Proceedings of the London Mathematical Society, Volume 133, Issue 2, August 2026.",
     "summary_zh": "摘要 起源于 1980 年代 DiPerna 和 Majda 的著名著作的一个核心问题是，什么是最佳衰减，使得涡度最大函数的均匀速率保证强收敛，而不集中近似解到带有涡片初始数据的 2D 欧拉方程的能量守恒弱解。 Majda (1993) 的一个著名结果表明 , , 作为最佳衰减 杰出的 签署涡流表。在一般设置下 混合的 DiPerna 和 Majda (1987) 建立了符号涡旋片作为缺乏浓度的充分条件，而预期的差距仍然是一个悬而未决的问题。在本文中，我们解决了 DiPer…",
     "topic": "Euler, Vorticity & Inviscid Flow",
-    "topic_tags": [
-      "decay"
-    ],
+    "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "proceedings-london-mathematical-society",
-    "enrichment_hash": "9c396a3831a6cf10503265eb20bb0cdade0e3d49a59f737f0e582273fb788f40"
+    "enrichment_hash": "f26d2dd3c7de326a37cf74cd4b89485f6fd418ac5925bc4da8d02dff468b7eb8"
   },
   {
     "id": "doi:10.4171/aihpc/191",
