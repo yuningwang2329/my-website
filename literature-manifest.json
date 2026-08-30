@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "generation_id": "fe669f9a9b05981f",
+  "generated_at": "2026-08-30T08:12:12Z",
+  "policy_version": "4",
+  "window_days": 90,
+  "counts": {
+    "current": 108,
+    "archived": 42,
+    "review": 925
+  },
+  "sources": {
+    "total": 29,
+    "succeeded": 29,
+    "failed_ids": []
+  },
+  "current": {
+    "path": "fluids.json",
+    "count": 108,
+    "sha256": "a9d8bbaa1a504ed9ebbf7638999694356b73d7a07c08e29c4c76ac74fff184dc",
+    "bytes": 190499
+  },
+  "archives": [
+    {
+      "year": 2026,
+      "path": "archive/archive_2026.json",
+      "count": 33,
+      "sha256": "6df5d445f04c19999228ff87adcc848a313c5fdf934b0e1a05892bc109405ac5",
+      "bytes": 51183
+    },
+    {
+      "year": 2025,
+      "path": "archive/archive_2025.json",
+      "count": 9,
+      "sha256": "a67d428a5da7bfbea47b5767882121e250f167e2544495e567a444db655ef7da",
+      "bytes": 18710
+    }
+  ],
+  "review": {
+    "path": "archive/review-v4.json",
+    "count": 925,
+    "sha256": "cea6f4e9f8e8d68009201b07ae0695c322bd84aef0df31b548cd47e6e2169e3c",
+    "bytes": 1452161
+  }
+}
