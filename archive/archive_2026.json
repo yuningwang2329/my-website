@@ -1,5 +1,16 @@
 [
     {
+        "title": "Justification of a two-phase averaged system for ideal gases without heat conduction",
+        "authors": "Didier Bresch, Cosmin Burtea, Pierre Gonin--Joubert, Frédéric Lagoutière",
+        "date": "2026-05-26",
+        "source": "Ann. Inst. H. Poincaré C Anal. Non Linéaire",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.4171/aihpc/179",
+        "abstract_en": "\n                    This article concerns the mathematical justification of an averaged system of partial differential equations governing the evolution of a two-phase mixture of compressible ideal fluids, with viscosity and without conductivity, in space dimension\n                    \n                      1\n                    \n                    with periodic boundary conditions. The derivation is done by some homogenization procedure. The originality of the paper consists in the fact that\n                    both the density and temperature are allowed to oscillate (because of the absence of heat conduction), so that the limiting model is a six-equation, two-pressure, two-temperature model\n                    . The key point is to show the strong convergence of the stress tensor in\n                    \n                      L^{2}((0,T)\\times (0, 1))\n                    \n                    . The main difficulties are obtaining uniform estimates in spite of the presence of oscillating coefficients in the energy equation. It requires looking at solutions with low regularity for the density and the temperature.\n                  ",
+        "filename": "2026-05-26-Justification-of-a-two-phase-averaged-sy-9a6d54.md",
+        "tags": []
+    },
+    {
         "title": "A sharp stability criterion for Euler equations via sparseness",
         "authors": "Óscar Domínguez, Mario Milman",
         "date": "2026-05-17",
@@ -45,6 +56,17 @@
         "tags": []
     },
     {
+        "title": "Entropy maximization in the two-dimensional Euler equations",
+        "authors": "Michele Coti Zelati, Matias G. Delgadino",
+        "date": "2026-03-11",
+        "source": "Analysis & PDE",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.2140/apde.2026.19.505",
+        "abstract_en": "",
+        "filename": "2026-03-11-Entropy-maximization-in-the-two-dimensio-d4e26e.md",
+        "tags": []
+    },
+    {
         "title": "Anomalous dissipation via spontaneous stochasticity with a two-dimensional autonomous velocity field",
         "authors": "Carl Johan Peter Johansson, Massimo Sorella",
         "date": "2026-01-01",
@@ -75,6 +97,28 @@
         "link": "https://doi.org/10.1017/fmp.2026.10027",
         "abstract_en": "Abstract\n                  \n                    In this work, we establish the convergence of 2D, stationary Navier-Stokes flows with viscosity\n                    \n                      \n                        \n                        $\\varepsilon&gt; 0$\n                      \n                    \n                    ,\n                    \n                      \n                        \n                        $(u^\\varepsilon , v^\\varepsilon )$\n                      \n                    \n                    to the classical Prandtl boundary layer,\n                    \n                      \n                        \n                        $(\\bar {u}_p, \\bar {v}_p)$\n                      \n                    \n                    , posed on the domain\n                    \n                      \n                        \n                        $(0, \\infty ) \\times (0, \\infty )$\n                      \n                    \n                    :\n                    \n                      \n                        \n                        $$ \\begin{align*} \\| u^\\varepsilon - \\bar{u}_p \\|_{L^\\infty_y} \\lesssim \\sqrt{\\varepsilon} \\langle x \\rangle^{- \\frac 1 4 + \\delta}, \\qquad \\| v^\\varepsilon - \\sqrt{\\varepsilon} \\bar{v}_p \\|_{L^\\infty_y} \\lesssim \\sqrt{\\varepsilon} \\langle x \\rangle^{- \\frac 1 2}. \\end{align*} $$\n                      \n                    \n                  \n                  \n                    This validates Prandtl’s boundary layer theory\n                    globally\n                    in the\n                    x\n                    -variable for a large class of boundary layers, including the entire one parameter family of the classical Blasius profiles, with sharp decay rates. The result demonstrates asymptotic stability in two senses simultaneously: (1) asymptotic as\n                    \n                      \n                        \n                        $\\varepsilon \\rightarrow 0$\n                      \n                    \n                    and (2) asymptotic as\n                    \n                      \n                        \n                        $x \\rightarrow \\infty $\n                      \n                    \n                    . In particular, our result provides the first rigorous confirmation for the Navier-Stokes equations that the boundary layer cannot “separate” in these stable regimes, which is very important for physical and engineering applications.\n                  ",
         "filename": "2026-01-01-Global-inviscid-limit-of-2D--stationary-147ab5.md",
+        "tags": []
+    },
+    {
+        "title": "Illposedness of incompressible fluids in supercritical Sobolev spaces",
+        "authors": "Xiaoyutao Luo",
+        "date": "2026-01-01",
+        "source": "Duke Math. J.",
+        "source_group": "high-general-math",
+        "link": "https://doi.org/10.1215/00127094-2025-0074",
+        "abstract_en": "We prove that the 3-dimensional (3D) Euler and Navier–Stokes equations are strongly ill posed in supercritical Sobolev spaces. In the inviscid case, for any 0&lt;s&lt;5 2, we construct a Cc∞ initial velocity field with arbitrarily small Hs norm for which the unique local-in-time smooth solution of the 3D Euler equation develops large H˙s norm inflation almost instantaneously. In the viscous case, the same H˙s norm inflation occurs in the 3D Navier–Stokes equation for 0&lt;s&lt;1 2, where s=1 2 is scaling critical for this equation.",
+        "filename": "2026-01-01-Illposedness-of-incompressible-fluids-in-15d9ed.md",
+        "tags": []
+    },
+    {
+        "title": "Vorticity blowup in 2D compressible Euler equations",
+        "authors": "Jiajie Chen, Giorgio Cialdea, Steve Shkoller, Vlad Vicol",
+        "date": "2026-01-01",
+        "source": "Duke Math. J.",
+        "source_group": "high-general-math",
+        "link": "https://doi.org/10.1215/00127094-2025-0061",
+        "abstract_en": "We prove finite-time vorticity blowup for smooth solutions of the 2D compressible Euler equations with smooth, localized, and nonvacuous initial data. The vorticity blowup occurs at the time of the first singularity, and is accompanied by an axisymmetric implosion in which the swirl velocity enjoys full stability, as opposed to finite codimension stability.",
+        "filename": "2026-01-01-Vorticity-blowup-in-2D-compressible-Eule-b39ca3.md",
         "tags": []
     }
 ]
