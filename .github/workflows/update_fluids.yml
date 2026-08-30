@@ -26,15 +26,6 @@ jobs:
       - name: Checkout website
         uses: actions/checkout@v5
 
-      - name: Checkout MySecondBrain canonical artifacts
-        uses: actions/checkout@v5
-        with:
-          repository: yuningwang2329/MySecondBrain
-          ref: main
-          path: canonical
-          # A fine-grained read-only token is needed only when the source repo is private.
-          token: ${{ secrets.LITERATURE_SOURCE_TOKEN || github.token }}
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
@@ -46,7 +37,7 @@ jobs:
           node --test tests/homepage-performance.test.mjs
 
       - name: Validate and mirror canonical artifacts
-        run: python scripts/sync_canonical_literature.py --canonical-root canonical --website-root .
+        run: python scripts/sync_canonical_literature.py --canonical-base-url https://my-second-brain-eta.vercel.app --website-root .
 
       - name: Check generated artifacts
         run: |

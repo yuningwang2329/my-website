@@ -17,14 +17,19 @@ import shutil
 import tempfile
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any
+from urllib.error import HTTPError, URLError
+from urllib.parse import unquote, urljoin, urlsplit, urlunsplit
+from urllib.request import Request, urlopen
 
 
 SCHEMA_VERSION = 1
 WINDOW_DAYS = 90
 MAX_ARTIFACT_BYTES = 25 * 1024 * 1024
+MAX_MANIFEST_BYTES = 1 * 1024 * 1024
 MAX_GENERATION_AGE = timedelta(days=8)
+REMOTE_TIMEOUT_SECONDS = 20
 MANIFEST_FILE = "literature-manifest.json"
 INDEX_FILE = "fluids-index.json"
 
@@ -107,10 +112,149 @@ def _parse_timestamp(value: Any) -> datetime:
 def _relative_json_path(value: Any, *, label: str) -> Path:
     if not isinstance(value, str) or not value:
         raise CanonicalSyncError(f"{label}.path must be a non-empty relative path")
-    path = Path(value)
-    if path.is_absolute() or ".." in path.parts or path.suffix != ".json":
+    parsed = urlsplit(value)
+    decoded = unquote(value)
+    path = PurePosixPath(decoded)
+    if (
+        parsed.scheme
+        or parsed.netloc
+        or parsed.query
+        or parsed.fragment
+        or "\\" in value
+        or path.is_absolute()
+        or ".." in path.parts
+        or path.suffix != ".json"
+    ):
         raise CanonicalSyncError(f"{label}.path is not a safe JSON relative path")
-    return path
+    return Path(*path.parts)
+
+
+def _canonical_base_url(value: str) -> str:
+    if not isinstance(value, str) or not value.strip():
+        raise CanonicalSyncError("canonical base URL must be a non-empty HTTP(S) URL")
+    parsed = urlsplit(value.strip())
+    decoded_path = unquote(parsed.path or "/")
+    path_parts = PurePosixPath(decoded_path).parts
+    if (
+        parsed.scheme not in {"http", "https"}
+        or not parsed.netloc
+        or parsed.username
+        or parsed.password
+        or parsed.query
+        or parsed.fragment
+        or ".." in path_parts
+    ):
+        raise CanonicalSyncError("canonical base URL must be a safe HTTP(S) origin or directory")
+    path = parsed.path or "/"
+    if not path.endswith("/"):
+        path = f"{path}/"
+    return urlunsplit((parsed.scheme, parsed.netloc, path, "", ""))
+
+
+def _assert_url_within_base(url: str, *, base_url: str) -> None:
+    candidate = urlsplit(url)
+    base = urlsplit(base_url)
+    if (
+        candidate.scheme.lower() != base.scheme.lower()
+        or candidate.netloc.lower() != base.netloc.lower()
+        or candidate.query
+        or candidate.fragment
+        or not unquote(candidate.path).startswith(unquote(base.path))
+    ):
+        raise CanonicalSyncError("canonical artifact URL escaped the declared canonical base URL")
+
+
+def _artifact_url(base_url: str, relative_path: Path) -> str:
+    artifact_url = urljoin(base_url, relative_path.as_posix())
+    _assert_url_within_base(artifact_url, base_url=base_url)
+    return artifact_url
+
+
+def _download_payload(url: str, *, base_url: str, max_bytes: int) -> bytes:
+    request = Request(url, headers={"Accept": "application/json", "User-Agent": "YuningsSpaceCanonicalMirror/1"})
+    try:
+        with urlopen(request, timeout=REMOTE_TIMEOUT_SECONDS) as response:  # nosec B310: constrained public canonical URL
+            status = response.getcode()
+            if not 200 <= status < 300:
+                raise CanonicalSyncError(f"canonical download returned HTTP {status}")
+            _assert_url_within_base(response.geturl(), base_url=base_url)
+            content_length = response.headers.get("Content-Length")
+            if content_length is not None:
+                try:
+                    declared_size = int(content_length)
+                except ValueError as error:
+                    raise CanonicalSyncError("canonical download has an invalid Content-Length") from error
+                if declared_size < 0 or declared_size > max_bytes:
+                    raise CanonicalSyncError(f"canonical download exceeds the {max_bytes} byte limit")
+            payload = response.read(max_bytes + 1)
+    except HTTPError as error:
+        raise CanonicalSyncError(f"canonical download returned HTTP {error.code}") from error
+    except URLError as error:
+        raise CanonicalSyncError(f"cannot download canonical artifact: {error.reason}") from error
+    except OSError as error:
+        raise CanonicalSyncError("cannot download canonical artifact") from error
+    if len(payload) > max_bytes:
+        raise CanonicalSyncError(f"canonical download exceeds the {max_bytes} byte limit")
+    return payload
+
+
+def _remote_descriptors(manifest: dict[str, Any]) -> list[tuple[str, Path]]:
+    descriptors: list[tuple[str, Path]] = []
+    current = manifest.get("current")
+    if not isinstance(current, dict):
+        raise CanonicalSyncError("manifest current must be an object")
+    descriptors.append(("current", _relative_json_path(current.get("path"), label="current")))
+
+    archives = manifest.get("archives")
+    if not isinstance(archives, list):
+        raise CanonicalSyncError("manifest archives must be an array")
+    seen_paths = {descriptors[0][1]}
+    seen_years: set[int] = set()
+    for descriptor in archives:
+        if not isinstance(descriptor, dict) or not isinstance(descriptor.get("year"), int):
+            raise CanonicalSyncError("each archive descriptor must include an integer year")
+        year = descriptor["year"]
+        if year in seen_years:
+            raise CanonicalSyncError(f"manifest has duplicate archive year {year}")
+        path = _relative_json_path(descriptor.get("path"), label=f"archive {year}")
+        if path in seen_paths:
+            raise CanonicalSyncError(f"manifest reuses artifact path {path}")
+        seen_years.add(year)
+        seen_paths.add(path)
+        descriptors.append((f"archive {year}", path))
+    return descriptors
+
+
+def _download_canonical_tree(
+    canonical_base_url: str,
+    staging_root: Path,
+    *,
+    now: datetime,
+    max_generation_age: timedelta,
+) -> None:
+    base_url = _canonical_base_url(canonical_base_url)
+    manifest_payload = _download_payload(
+        _artifact_url(base_url, Path(MANIFEST_FILE)),
+        base_url=base_url,
+        max_bytes=MAX_MANIFEST_BYTES,
+    )
+    try:
+        manifest = json.loads(manifest_payload)
+    except json.JSONDecodeError as error:
+        raise CanonicalSyncError(f"{MANIFEST_FILE} is not valid JSON") from error
+    manifest = _validate_manifest(manifest, now=now, max_generation_age=max_generation_age)
+    descriptors = _remote_descriptors(manifest)
+
+    (staging_root / MANIFEST_FILE).write_bytes(manifest_payload)
+    for _label, path in descriptors:
+        payload = _download_payload(
+            _artifact_url(base_url, path),
+            base_url=base_url,
+            max_bytes=MAX_ARTIFACT_BYTES,
+        )
+        destination = staging_root / path
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(payload)
 
 
 def _read_artifact(source_root: Path, descriptor: Any, *, label: str, year: int | None = None) -> Artifact:
@@ -336,12 +480,48 @@ def sync_canonical_artifacts(
     )
 
 
+def sync_canonical_artifacts_from_url(
+    canonical_base_url: str,
+    target_root: Path | str,
+    *,
+    now: datetime | None = None,
+    max_generation_age: timedelta = MAX_GENERATION_AGE,
+) -> SyncResult:
+    """Download, validate, and transactionally mirror one public canonical snapshot.
+
+    The website target is deliberately not touched while a remote manifest or one
+    of its declared artifacts is being fetched.  A partially published or failed
+    remote response therefore leaves the last known-good website snapshot intact.
+    """
+    snapshot_now = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    with tempfile.TemporaryDirectory(prefix="canonical-download-") as temp_dir:
+        staging_root = Path(temp_dir)
+        _download_canonical_tree(
+            canonical_base_url,
+            staging_root,
+            now=snapshot_now,
+            max_generation_age=max_generation_age,
+        )
+        return sync_canonical_artifacts(
+            staging_root,
+            target_root,
+            now=snapshot_now,
+            max_generation_age=max_generation_age,
+        )
+
+
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Mirror validated canonical literature artifacts into this website.")
-    parser.add_argument(
+    source = parser.add_mutually_exclusive_group()
+    source.add_argument(
         "--canonical-root",
-        default=os.environ.get("CANONICAL_LITERATURE_ROOT", "canonical"),
+        default=None,
         help="checked-out MySecondBrain canonical artifact root",
+    )
+    source.add_argument(
+        "--canonical-base-url",
+        default=None,
+        help="public MySecondBrain canonical base URL containing literature-manifest.json",
     )
     parser.add_argument(
         "--website-root",
@@ -362,11 +542,19 @@ def main() -> int:
     if args.max_generation_age_hours <= 0:
         raise SystemExit("--max-generation-age-hours must be positive")
     try:
-        result = sync_canonical_artifacts(
-            args.canonical_root,
-            args.website_root,
-            max_generation_age=timedelta(hours=args.max_generation_age_hours),
-        )
+        max_generation_age = timedelta(hours=args.max_generation_age_hours)
+        if args.canonical_base_url:
+            result = sync_canonical_artifacts_from_url(
+                args.canonical_base_url,
+                args.website_root,
+                max_generation_age=max_generation_age,
+            )
+        else:
+            result = sync_canonical_artifacts(
+                args.canonical_root or os.environ.get("CANONICAL_LITERATURE_ROOT", "canonical"),
+                args.website_root,
+                max_generation_age=max_generation_age,
+            )
     except CanonicalSyncError as error:
         print(f"Canonical literature sync refused: {error}")
         return 1
