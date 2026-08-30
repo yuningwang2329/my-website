@@ -10,9 +10,11 @@ only canonical snapshot, publicly served from `https://my-second-brain-eta.verce
 
 `scripts/sync_canonical_literature.py` first validates schema version, snapshot
 time, source health, every declared SHA-256, each declared count, stable IDs,
-and the current/archive split. Only then does it replace the website artifacts
-and create the current-only `fluids-index.json`. A failed validation exits
-without changing website data.
+and the current/archive 90-day split. The public manifest may report the
+number of producer-side review items, but it must not expose a review artifact
+or path; such a manifest is rejected without changing website data. Only then
+does it replace the website artifacts and create the current-only
+`fluids-index.json`. A failed validation exits without changing website data.
 
 For a local dry integration run from this repository, keep using a checked-out
 artifact tree:

@@ -318,6 +318,45 @@ def _validate_papers(papers: list[Any], *, label: str) -> None:
             raise CanonicalSyncError(f"{label}[{index}].date must be YYYY-MM-DD") from error
 
 
+def _paper_publication_date(paper: dict[str, Any], *, label: str) -> datetime:
+    try:
+        return datetime.strptime(paper["date"], "%Y-%m-%d")
+    except (KeyError, TypeError, ValueError) as error:
+        raise CanonicalSyncError(f"{label}.date must be YYYY-MM-DD") from error
+
+
+def _validate_snapshot_window(snapshot: CanonicalSnapshot) -> None:
+    generated_date = _parse_timestamp(snapshot.manifest["generated_at"]).date()
+    current_cutoff = generated_date - timedelta(days=WINDOW_DAYS)
+
+    for index, paper in enumerate(snapshot.current.papers):
+        publication_date = _paper_publication_date(
+            paper,
+            label=f"current[{index}]",
+        ).date()
+        if publication_date > generated_date:
+            raise CanonicalSyncError("current contains a publication date in the future")
+        if publication_date < current_cutoff:
+            raise CanonicalSyncError(
+                "current contains a paper outside the current 90-day window"
+            )
+
+    for archive in snapshot.archives:
+        for index, paper in enumerate(archive.papers):
+            publication_date = _paper_publication_date(
+                paper,
+                label=f"archive {archive.year}[{index}]",
+            ).date()
+            if publication_date > generated_date:
+                raise CanonicalSyncError(
+                    f"archive {archive.year} contains a publication date in the future"
+                )
+            if publication_date >= current_cutoff:
+                raise CanonicalSyncError(
+                    f"archive {archive.year} contains a paper inside the current 90-day window"
+                )
+
+
 def _validate_manifest(manifest: Any, *, now: datetime, max_generation_age: timedelta) -> dict[str, Any]:
     if not isinstance(manifest, dict):
         raise CanonicalSyncError("manifest must be a JSON object")
@@ -339,6 +378,10 @@ def _validate_manifest(manifest: Any, *, now: datetime, max_generation_age: time
     counts = manifest.get("counts")
     if not isinstance(counts, dict) or any(not isinstance(counts.get(key), int) or counts[key] < 0 for key in ("current", "archived", "review")):
         raise CanonicalSyncError("manifest counts must contain non-negative current, archived, and review integers")
+    if "review" in manifest:
+        raise CanonicalSyncError(
+            "public manifest must not expose a review artifact"
+        )
     sources = manifest.get("sources")
     if not isinstance(sources, dict):
         raise CanonicalSyncError("manifest sources must be an object")
@@ -404,12 +447,14 @@ def load_canonical_snapshot(
         raise CanonicalSyncError("manifest current count does not match current artifact")
     if manifest["counts"]["archived"] != sum(archive.count for archive in archives):
         raise CanonicalSyncError("manifest archived count does not match archive artifacts")
-    return CanonicalSnapshot(
+    snapshot = CanonicalSnapshot(
         manifest=manifest,
         manifest_payload=manifest_payload,
         current=current,
         archives=tuple(sorted(archives, key=lambda artifact: artifact.year or 0, reverse=True)),
     )
+    _validate_snapshot_window(snapshot)
+    return snapshot
 
 
 def build_lightweight_index(snapshot: CanonicalSnapshot) -> bytes:

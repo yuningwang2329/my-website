@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "fe669f9a9b05981f",
-  "generated_at": "2026-08-30T08:12:12Z",
+  "generation_id": "c87df37b87affc95",
+  "generated_at": "2026-08-30T08:33:21Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -35,11 +35,5 @@
       "sha256": "a67d428a5da7bfbea47b5767882121e250f167e2544495e567a444db655ef7da",
       "bytes": 18710
     }
-  ],
-  "review": {
-    "path": "archive/review-v4.json",
-    "count": 925,
-    "sha256": "cea6f4e9f8e8d68009201b07ae0695c322bd84aef0df31b548cd47e6e2169e3c",
-    "bytes": 1452161
-  }
+  ]
 }

@@ -167,6 +167,49 @@ class CanonicalMirrorTests(unittest.TestCase):
 
             self.assertEqual((target_root / "fluids.json").read_bytes(), old_data)
 
+    def test_sync_rejects_a_public_review_descriptor_without_overwriting_site_data(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            canonical_root = root / "canonical"
+            target_root = root / "website"
+            old_data = b'[{"id":"old-site-paper"}]'
+            target_root.mkdir()
+            (target_root / "fluids.json").write_bytes(old_data)
+
+            active_payload = self._write_json(
+                canonical_root / "fluids.json",
+                [_paper("doi:10.1000/current-a")],
+            )
+            archive_payload = self._write_json(
+                canonical_root / "archive" / "archive_2025.json",
+                [_paper("doi:10.1000/archive-a", date="2025-03-01")],
+            )
+            manifest = self._manifest(active_payload, archive_payload)
+            manifest["counts"]["current"] = 1
+            manifest["current"]["count"] = 1
+            manifest["review"] = {
+                "path": "internal/review-v4.json",
+                "count": 1,
+                "sha256": "a" * 64,
+                "bytes": 1,
+            }
+            self._write_json(
+                canonical_root / "literature-manifest.json",
+                manifest,
+            )
+
+            with self.assertRaisesRegex(
+                CanonicalSyncError,
+                "must not expose a review artifact",
+            ):
+                sync_canonical_artifacts(
+                    canonical_root,
+                    target_root,
+                    now=datetime(2026, 8, 30, 3, 0, tzinfo=timezone.utc),
+                )
+
+            self.assertEqual((target_root / "fluids.json").read_bytes(), old_data)
+
     def test_sync_rejects_incomplete_records_or_wrong_byte_sizes_without_overwriting(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
@@ -192,6 +235,77 @@ class CanonicalMirrorTests(unittest.TestCase):
             self._write_json(canonical_root / "literature-manifest.json", manifest)
 
             with self.assertRaises(CanonicalSyncError):
+                sync_canonical_artifacts(
+                    canonical_root,
+                    target_root,
+                    now=datetime(2026, 8, 30, 3, 0, tzinfo=timezone.utc),
+                )
+
+            self.assertEqual((target_root / "fluids.json").read_bytes(), old_data)
+
+    def test_sync_rejects_records_in_the_wrong_current_or_archive_window(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            canonical_root = root / "canonical"
+            target_root = root / "website"
+            old_data = b'[{"id":"old-site-paper"}]'
+            target_root.mkdir()
+            (target_root / "fluids.json").write_bytes(old_data)
+
+            stale_current_payload = self._write_json(
+                canonical_root / "fluids.json",
+                [_paper("doi:10.1000/current-a", date="2026-05-01")],
+            )
+            archive_payload = self._write_json(
+                canonical_root / "archive" / "archive_2025.json",
+                [_paper("doi:10.1000/archive-a", date="2025-03-01")],
+            )
+            manifest = self._manifest(stale_current_payload, archive_payload)
+            manifest["counts"]["current"] = 1
+            manifest["current"]["count"] = 1
+            self._write_json(
+                canonical_root / "literature-manifest.json",
+                manifest,
+            )
+
+            with self.assertRaisesRegex(CanonicalSyncError, "outside the current 90-day window"):
+                sync_canonical_artifacts(
+                    canonical_root,
+                    target_root,
+                    now=datetime(2026, 8, 30, 3, 0, tzinfo=timezone.utc),
+                )
+
+            self.assertEqual((target_root / "fluids.json").read_bytes(), old_data)
+
+    def test_sync_rejects_an_archive_record_still_inside_the_current_window(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            canonical_root = root / "canonical"
+            target_root = root / "website"
+            old_data = b'[{"id":"old-site-paper"}]'
+            target_root.mkdir()
+            (target_root / "fluids.json").write_bytes(old_data)
+
+            current_payload = self._write_json(
+                canonical_root / "fluids.json",
+                [_paper("doi:10.1000/current-a", date="2026-08-20")],
+            )
+            recent_archive_payload = self._write_json(
+                canonical_root / "archive" / "archive_2025.json",
+                [_paper("doi:10.1000/archive-a", date="2026-08-10")],
+            )
+            manifest = self._manifest(current_payload, recent_archive_payload)
+            manifest["counts"]["current"] = 1
+            manifest["current"]["count"] = 1
+            self._write_json(
+                canonical_root / "literature-manifest.json",
+                manifest,
+            )
+
+            with self.assertRaisesRegex(
+                CanonicalSyncError,
+                "inside the current 90-day window",
+            ):
                 sync_canonical_artifacts(
                     canonical_root,
                     target_root,
