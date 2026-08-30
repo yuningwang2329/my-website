@@ -177,6 +177,9 @@ class WebsiteMirrorWorkflowTests(unittest.TestCase):
             "python scripts/sync_canonical_literature.py --canonical-root canonical --website-root .",
             workflow,
         )
+        self.assertIn("python -m unittest tests.test_canonical_sync -v", workflow)
+        self.assertNotIn("pip install feedparser", workflow)
+        self.assertNotIn("unittest discover -s tests", workflow)
         self.assertIn("git diff --cached --quiet", workflow)
         self.assertNotIn("python scripts/update_fluids.py", workflow)
         self.assertNotIn("git add -A", workflow)
