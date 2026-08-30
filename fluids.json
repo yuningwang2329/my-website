@@ -1,5 +1,27 @@
 [
     {
+        "title": "Finite time blow-up and global solutions for the viscoelastic wave equation with combined power-type nonlinearities",
+        "authors": "Haiyang Lin, Jinqi Yan, Bo You, Marcelo M. Cavalcanti",
+        "date": "2027-01-01",
+        "source": "Discrete Contin. Dyn. Syst.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.3934/dcds.2026152",
+        "abstract_en": "",
+        "filename": "2027-01-01-Finite-time-blow-up-and-global-solutions-ca3308.md",
+        "tags": []
+    },
+    {
+        "title": "Stability of magnetohydrodynamic zonal flows on a sphere",
+        "authors": "Adrian Constantin, Zhiwu Lin, Hao Zhu",
+        "date": "2027-01-01",
+        "source": "Discrete Contin. Dyn. Syst.",
+        "source_group": "math-fluid-pde",
+        "link": "https://doi.org/10.3934/dcds.2026143",
+        "abstract_en": "",
+        "filename": "2027-01-01-Stability-of-magnetohydrodynamic-zonal-f-da116d.md",
+        "tags": []
+    },
+    {
         "title": "Alexandrov-Fenchel inequalities for convex anisotropic capillary hypersurfaces in the half-space",
         "authors": "Jinyu Gao, Guanghan Li",
         "date": "2026-08-28",
