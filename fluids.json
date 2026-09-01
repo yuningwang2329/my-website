@@ -40,6 +40,25 @@
     "enrichment_hash": "485e76b97f2d755902cf46d742fa94445863d87359ce5f6189a4af9aa43551c5"
   },
   {
+    "id": "title:d27433a7aa93acfa552d5154",
+    "title": "Exponential mixing for stochastic non-autonomous Boussinesq systems with degenerate noise and quasi-periodic forcing",
+    "authors": "Zhiming Liu, Jianhua Huang",
+    "date": "2026-09-01",
+    "source": "Appl. Math. Lett.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0893965926002545?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "无摘要提供，请点击原文链接查看。",
+    "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "applied-mathematics-letters",
+    "enrichment_hash": "83991676f00b143f758bb39e82235175d0540cd9d6eb35580a691905ed6afe34"
+  },
+  {
     "id": "title:ad0a53440baf02ec8217ac69",
     "title": "Linear stability of the 2D Boussinesq equations near Couette flow",
     "authors": "Wanrong Yang, Jiajing Wang",
@@ -146,7 +165,7 @@
   {
     "id": "title:188b3d57149399a8bc3470f0",
     "title": "Global weak solutions in a three-dimensional chemotaxis-Navier-Stokes system with density-dependent motion",
-    "authors": "见原链接 (See link)",
+    "authors": "Hongwen Jiang, Zhongping Li",
     "date": "2026-09-01",
     "source": "J. Differ. Equ.",
     "source_group": "math-fluid-pde",
