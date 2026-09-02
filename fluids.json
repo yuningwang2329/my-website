@@ -61,7 +61,7 @@
   {
     "id": "title:ad0a53440baf02ec8217ac69",
     "title": "Linear stability of the 2D Boussinesq equations near Couette flow",
-    "authors": "Wanrong Yang, Jiajing Wang",
+    "authors": "见原链接 (See link)",
     "date": "2026-09-02",
     "source": "Appl. Math. Lett.",
     "source_group": "math-fluid-pde",
@@ -127,7 +127,7 @@
   {
     "id": "title:7a8369e4788e38c8e51ab4a7",
     "title": "A new weighted regularity criterion for the 3D MHD equations",
-    "authors": "Xuanji Jia, Yong Zhou",
+    "authors": "见原链接 (See link)",
     "date": "2026-09-02",
     "source": "Appl. Math. Lett.",
     "source_group": "math-fluid-pde",
@@ -222,6 +222,90 @@
     "source_id": "journal-math-fluid-mechanics",
     "issue_date": "2026-11-01",
     "enrichment_hash": "f4ce4e1a4c246d36b2685597619b5c1b58b9e9dbae30bce7032d3eadbdb9450f"
+  },
+  {
+    "id": "arxiv:2609.01589",
+    "title": "Uniform stability of expanding simple waves for Euler--Poisson--Boltzmann: a singular compensation approach",
+    "authors": "Louis Shuo Wang, Jiguang Yu",
+    "date": "2026-09-01",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2609.01589",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2609.01589",
+    "abstract_en": "We rigorously justify the quasineutral limit for the warm-ion Euler--Poisson system with Maxwell--Boltzmann electrons on the cylinder $\\R\\times\\T$. The reference dynamics are governed by a globally smooth expanding planar simple wave of the effective Euler system, connecting distinct neutral far-field states. For every finite order $M$, we construct an even Debye expansion with residual $O(\\eps^{2M+2})$ and establish uniform nonlinear stability on any fixed time interval $[t_0,T]$, with a lifespan and energy estimates entirely independent of the Debye length $0<\\eps\\le\\eps_0$. The central analytical contribution is a singular compensation mechanism: by integrating the fluid transport by parts and coupling the warm-ion symmetrizer directly to the time-differentiated nonlinear Poisson constraint, we extract an $\\eps$-uniform relative energy topology. This bounds the potential in $H^s$ and its gradient in the scaled norm $\\eps H^s$, bypassing the fatal $\\eps^{-1}$ penalty in the momentum equation. Consequently, the framework accommodates genuinely two-dimensional transverse perturbations, including the transport of specific vorticity. This yields a quantitative, arbitrary-order quasineutral expansion for well-prepared data, strictly isolating the stability of the smooth expansion wave from the geometric singularities of the centered Riemann fan.",
+    "summary_zh": "我们严格证明了圆柱$\\R\\times\\T$上具有麦克斯韦-玻尔兹曼电子的热离子欧拉-泊松系统的准中性极限。参考动力学由有效欧拉系统的全局平滑扩展平面简单波控制，连接不同的中性远场状态。对于每个有限阶 $M$，我们构造一个具有残差 $O(\\eps^{2M+2})$ 的均匀德拜展开式，并在任何固定时间间隔 $[t_0,T]$ 上建立一致的非线性稳定性，其寿命和能量估计完全独立于德拜长度 $0<\\eps\\le\\eps_0$。核心分析贡献是奇异补偿机制：通过对部件的流体传输进行积分…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "b4a31b7ee3ea33bbca253cbd191e118d1105a815646c6fae2c36710809e06cda"
+  },
+  {
+    "id": "arxiv:2609.01488",
+    "title": "Stabilization by a background magnetic field: global well-posedness of the full compressible viscous non-resistive MHD system without heat-conductivity",
+    "authors": "Liening Qiao, Juntao Sun, Jiahong Wu, Fuyi Xu",
+    "date": "2026-09-01",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2609.01488",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2609.01488",
+    "abstract_en": "We consider the three-dimensional full compressible magnetohydrodynamic(MHD) system on the periodic torus $\\mathbb T^3$ in the regime where the only dissipative mechanism acting on the system is the viscosity of the fluid: the magnetic field is non-resistive and the flow is non-heat-conducting. We prove that this system admits a unique global smooth solution, together with explicit algebraic decay rates, provided that the perturbation $(\\mathbf u_0,\\,P_0-\\bar P,\\,\\mathbf H_0-\\mathbf n)$ of the equilibrium state $(\\mathbf 0,\\bar P,\\mathbf n)$ is sufficiently small in a high-order Sobolev space and the background magnetic field $\\mathbf n\\in\\mathbb R^3$ satisfies a Diophantine condition. No smallness whatsoever is imposed on the initial density: it is only required to be bounded away from vacuum and from infinity, and may exhibit arbitrarily large variations. The proof uncovers a hidden dissipation mechanism. Although neither the density, nor the pressure, nor the magnetic field is endowed with any diffusion or damping of its own, the coupling of these quantities with the velocity through the background field $\\mathbf n$, combined with a Poincaré-type inequality of Diophantine origin, generates effective dissipation for both the pressure and the magnetic field perturbations. The large variations of the density are handled by a two-tier energy argument, in which weighted time-decay estimates for the intermediate-order energy compensate exactly for the linear-in-time growth of the highest-order norm of the density.",
+    "summary_zh": "我们考虑周期性环面 $\\mathbb T^3$ 上的三维全可压缩磁流体动力学 (MHD) 系统，其中作用于系统的唯一耗散机制是流体的粘度：磁场是非电阻性的，流动是非导热的。我们证明该系统具有唯一的全局平滑解以及显式代数衰减率，前提是平衡状态 $(\\mathbf 0,\\bar P,\\mathbf n)$ 的扰动 $(\\mathbf u_0,\\,P_0-\\bar P,\\,\\mathbf H_0-\\mathbf n)$ 在高阶 Sobolev 空间和背景磁场中足够小$\\mathb…",
+    "topic": "MHD & Plasma",
+    "topic_tags": [
+      "well-posedness",
+      "decay"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "0293827b0d021ec60a2bf58a50b6bd76164c0e07d039b2e2c3f7b48a76ea4205"
+  },
+  {
+    "id": "arxiv:2609.01436",
+    "title": "Bose--Einstein Condensation without an Initial Low-Energy Concentration Assumption",
+    "authors": "Siwei Luo, Jian-Guo Liu",
+    "date": "2026-09-01",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2609.01436",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2609.01436",
+    "abstract_en": "We prove that semi-strong convergence to a Bose--Einstein equilibrium below the critical temperature implies finite-time Bose--Einstein condensation (BEC) for conservative isotropic measure solutions of the spatially homogeneous quantum Boltzmann equation with low-momentum scattering degeneracy exponent $0\\leqη<1$. For every admissible initial measure with $\\overline T/\\overline T_c<1$, there exists a conservative solution that has a positive zero-energy atom after a finite time without any assumption of initial concentration near zero energy. We also show that it persists and converges to the equilibrium condensate mass, while the full solution converges strongly. The proof introduces a method to obtain condensation from relaxation estimate to Bose--Einstein equilibrium. The relaxation estimate first gives a fixed amount of mass below a small energy level. We then use collision estimates at smaller and smaller energy scales and add their effects in a weighted sum functional with a fixed upper bound. If no atom forms at zero energy, enough mass remains in the positive-energy shells to force this sum to exceed its upper bound in finite time, which leads to condensation in finite time.",
+    "summary_zh": "我们证明，在临界温度以下半强收敛到玻色-爱因斯坦平衡意味着有限时间玻色-爱因斯坦凝聚（BEC），用于具有低动量散射简并指数 $0\\leqη<1$ 的空间齐次量子玻尔兹曼方程的保守各向同性测度解。对于 $\\overline T/\\overline T_c<1$ 的每个可接受的初始测量，存在一个保守解，该解在有限时间后具有正零能量原子，而无需任何初始浓度接近零能量的假设。我们还表明，它持续存在并收敛到平衡凝结质量，而完整解强烈收敛。证明引入了一种从弛豫估计到玻色-爱因斯坦平衡的…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "a4f461a98ad9dd3bbea6e2345535c6357df13fbccf8ebfcd9ca68222d8a56717"
+  },
+  {
+    "id": "arxiv:2609.01250",
+    "title": "Global regularity for 2D gravity water waves with two retreating point vortices",
+    "authors": "Lei Su, Qingtang Su, Siwei Wang",
+    "date": "2026-09-01",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2609.01250",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2609.01250",
+    "abstract_en": "We prove global well-posedness for the two-dimensional infinite-depth gravity water wave system coupled to a pair of point vortices of opposite strengths. The vortex dipole is initially placed deep below the free surface and oriented so that its leading motion is away from the interface. We show that the vortices retreat almost linearly, and that the velocity induced on the free boundary is therefore integrable in time. Combining this decay with Wu's cubic formulation, together with a transition-of-derivatives and localization argument, we obtain global bounds for small localized perturbations of the flat surface.",
+    "summary_zh": "我们证明了与一对强度相反的点涡耦合的二维无限深度重力水波系统的全局适定性。涡旋偶极子最初放置在自由表面下方深处并定向，使其主导运动远离界面。我们表明，涡流几乎呈线性后退，因此自由边界上引起的速度可及时积分。将此衰减与吴的三次公式相结合，以及导数转换和局部化论证，我们获得了平坦表面的小局部扰动的全局界限。",
+    "topic": "Free Boundary, Water Waves & Multiphase",
+    "topic_tags": [
+      "well-posedness",
+      "decay"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "92b097083a68aedf4175d18c991ee9d06fbf2d1248ebc1f54e139c1036727e9c"
   },
   {
     "id": "arxiv:2609.01093",
