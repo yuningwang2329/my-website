@@ -1,18 +1,21 @@
 {
   "schema_version": 1,
-  "generation_id": "d2557fc7969e6d19",
-  "generated_at": "2026-09-03T05:53:27Z",
+  "generation_id": "74332f5d569262a4",
+  "generated_at": "2026-09-03T23:15:47Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
     "current": 133,
     "archived": 42,
-    "review": 1082
+    "review": 1083
   },
   "sources": {
     "total": 29,
-    "succeeded": 28,
+    "succeeded": 25,
     "failed_ids": [
+      "communications-pure-applied-mathematics",
+      "journal-london-mathematical-society",
+      "proceedings-london-mathematical-society",
       "siam-journal-mathematical-analysis"
     ]
   },
