@@ -21,7 +21,7 @@
   {
     "id": "title:d27433a7aa93acfa552d5154",
     "title": "Exponential mixing for stochastic non-autonomous Boussinesq systems with degenerate noise and quasi-periodic forcing",
-    "authors": "见原链接 (See link)",
+    "authors": "Zhiming Liu, Jianhua Huang",
     "date": "2026-09-03",
     "source": "Appl. Math. Lett.",
     "source_group": "math-fluid-pde",
@@ -64,7 +64,7 @@
   {
     "id": "title:90ea63fb4f639d7e0575f934",
     "title": "Global-in-time well-posedness for the two-dimensional incompressible Navier-Stokes equations with freely transported viscosity coefficient",
-    "authors": "见原链接 (See link)",
+    "authors": "Xian Liao, Rebekka Zimmermann",
     "date": "2026-09-03",
     "source": "J. Math. Pures Appl.",
     "source_group": "math-fluid-pde",
@@ -81,6 +81,27 @@
     "relevance": "unknown",
     "source_id": "journal-math-pures-appliquees",
     "enrichment_hash": "1759bfd36232f684de3e4e2363377334dd8380522f5fa76c973026d135a9ffcb"
+  },
+  {
+    "id": "title:7dd840919d1f3c08cda7d470",
+    "title": "Formal Stability of Tetrahedral Non-Zonal Flows on the Sphere",
+    "authors": "Yuri Cacchiò",
+    "date": "2026-09-03",
+    "source": "J. Differ. Equ.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022039626006406?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "We investigate the formal stability of finite-amplitude non-zonal flows bifurcating from the trivial state in the unforced 2D Euler equations on the sphere. To bypass the degeneracy of the spherical Laplacian and filter out the low-frequency Fj{\\o}rtoft instabilities, we restrict the functional space to the invariant subspace of the tetrahedral symmetry group. Using Arnold&amp;apos;s Energy-Casimir method, we prove that the linearized elliptic operator derived via Liapunov-Schmidt reduction acts as the Hessian of the conserved functional. By tracking the critical eigenvalue along the bifurcating branches via the Crandall-Rabinowitz theorem, we establish a relation between the bifurcation topology and formal stability. We apply this framework to four distinct geophysical profile functions. This classification identifies the specific nonlinear interactions required for the persistence of large-scale coherent waves in planetary atmospheres.",
+    "summary_zh": "我们研究了球体上非受迫二维欧拉方程中从平凡状态分叉的有限振幅非分区流的形式稳定性。为了绕过球拉普拉斯算子的简并性并滤除低频 Fj{\\o}rtoft 不稳定性，我们将函数空间限制为四面体对称群的不变子空间。使用Arnold的能量-卡西米尔方法，我们证明通过Liapunov-Schmidt约简导出的线性化椭圆算子充当守恒泛函的Hessian算子。通过 Crandall-Rabinowitz 定理跟踪分叉分支的临界特征值，我们建立了分叉拓扑和形式稳定性之间的关系。我们将该框架应用…",
+    "topic": "Other",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-differential-equations",
+    "enrichment_hash": "1455322bea429ec12717f8854dfffc75502fba2c858c1daec270ddf2ffe9265a"
   },
   {
     "id": "title:7a8369e4788e38c8e51ab4a7",
