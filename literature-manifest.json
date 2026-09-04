@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generation_id": "73adbe27e4550ad9",
-  "generated_at": "2026-09-04T01:23:46Z",
+  "generation_id": "cb3b8ed4805dcf1b",
+  "generated_at": "2026-09-04T04:46:01Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 142,
-    "archived": 42,
-    "review": 1136
+    "current": 185,
+    "archived": 0,
+    "review": 1141
   },
   "sources": {
     "total": 29,
@@ -18,24 +18,9 @@
   },
   "current": {
     "path": "fluids.json",
-    "count": 142,
-    "sha256": "0c1b85dcfc62898df1bfdc7b59f3b384a5acb7024fc976c5e94ec45f5f88ed87",
-    "bytes": 263337
+    "count": 185,
+    "sha256": "13dffe09897f5500a0437bce681aaf2d9903169cdf8d097118418256499cd5b1",
+    "bytes": 355544
   },
-  "archives": [
-    {
-      "year": 2026,
-      "path": "archive/archive_2026.json",
-      "count": 33,
-      "sha256": "1bb023131516d2a69cee7704c983273a00c2b49c3a6fa2ad4ac6d6f85d6a5a14",
-      "bytes": 50615
-    },
-    {
-      "year": 2025,
-      "path": "archive/archive_2025.json",
-      "count": 9,
-      "sha256": "a67d428a5da7bfbea47b5767882121e250f167e2544495e567a444db655ef7da",
-      "bytes": 18710
-    }
-  ]
+  "archives": []
 }
