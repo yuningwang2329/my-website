@@ -1,26 +1,28 @@
 {
   "schema_version": 1,
-  "generation_id": "df437f626ca97494",
-  "generated_at": "2026-09-05T01:26:26Z",
+  "generation_id": "18d63fad4d2c25a8",
+  "generated_at": "2026-09-05T04:41:02Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 185,
+    "current": 184,
     "archived": 0,
-    "review": 1145
+    "review": 1147
   },
   "sources": {
     "total": 29,
-    "succeeded": 28,
+    "succeeded": 26,
     "failed_ids": [
+      "arxiv-math-ap",
+      "journal-math-pures-appliquees",
       "siam-journal-mathematical-analysis"
     ]
   },
   "current": {
     "path": "fluids.json",
-    "count": 185,
-    "sha256": "13dffe09897f5500a0437bce681aaf2d9903169cdf8d097118418256499cd5b1",
-    "bytes": 355544
+    "count": 184,
+    "sha256": "37d6f8398046b9b77d848c38448abdc63dc85389304099b132562385a6504652",
+    "bytes": 352956
   },
   "archives": []
 }
