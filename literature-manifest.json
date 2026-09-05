@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "18d63fad4d2c25a8",
-  "generated_at": "2026-09-05T04:41:02Z",
+  "generation_id": "452607ad7cf9fc9a",
+  "generated_at": "2026-09-05T05:50:09Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,10 +11,8 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 26,
+    "succeeded": 28,
     "failed_ids": [
-      "arxiv-math-ap",
-      "journal-math-pures-appliquees",
       "siam-journal-mathematical-analysis"
     ]
   },
