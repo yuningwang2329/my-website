@@ -38,7 +38,8 @@ test('homepage starts from the lightweight current index and offers historical a
   assert.match(homepage, /历史归档/);
   assert.match(homepage, /id="archive-year-filters"/);
   assert.match(browser, /function loadArchiveYear\(year\)/);
-  assert.match(browser, /encodeURIComponent\(p\.id\)/);
+  assert.match(browser, /encodeURIComponent\(paper\.id\)/);
+  assert.doesNotMatch(browser, /encodeURIComponent\(p\.id\)/);
 });
 
 test('homepage shows canonical generation and source-health metadata', () => {

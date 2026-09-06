@@ -445,7 +445,7 @@ function renderPaperList(papers, readPapers, starredPapers) {
                     const archiveQuery = currentScope === 'archive' && activeArchiveYear
                         ? `&year=${encodeURIComponent(activeArchiveYear)}`
                         : '';
-                    link.href = 'post.html?id=' + encodeURIComponent(p.id) + archiveQuery;
+                    link.href = 'post.html?id=' + encodeURIComponent(paper.id) + archiveQuery;
                     link.className = `paper-link${isRead ? ' read' : ''}`;
                     link.onclick = () => markRead(identifier);
 
