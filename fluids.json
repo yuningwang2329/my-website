@@ -48,6 +48,31 @@
     "enrichment_hash": "4c1737b212e7f962a171c40724eedc8520cf1424955a90f6f91e0ee2f171e253"
   },
   {
+    "id": "arxiv:2609.11707",
+    "title": "Limiting Pointwise Decay for the compressible isentropic Navier-Stokes equations",
+    "authors": "Rui Li, Xu Song, Guanghui Wang, Lingda Xu",
+    "date": "2026-09-11",
+    "discovered_at": "2026-09-11",
+    "submitted_at": "2026-09-10",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2609.11707",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2609.11707",
+    "abstract_en": "We study the long-time pointwise behavior of small localized perturbations of a constant state for the one-dimensional compressible isentropic Navier-Stokes equations. After subtracting the two Burgers diffusion waves, the convergent sum of all higher-order diffusion waves, and the cross-family viscous corrections, we prove a cone-preserving pointwise estimate for the exact physical remainder and, in particular, \\[   |R_i(x,t)|\\leq C E_N\\log(2+t)Ψ_i(x,t),   \\qquad   \\sup_{x\\in\\mathbb R}Ψ_i(x,t)\\leq C(1+t)^{-1}. \\] Here \\(E_N\\) measures the size of the initial data and \\(Ψ_i\\) is the cone-resolved weight; both are defined precisely in the main theorem below. Thus $\\|R_i(t)\\|_{L^\\infty}\\leq C E_N(1+t)^{-1}\\log(2+t)$. The key new idea is to apply a familywise Cole--Hopf transformation to the spatial antiderivative of the remainder, which exactly eliminates the critical same-family first-order feedback. We further construct an approximate Green function adapted to the two characteristic families and combine it with Gaussian-mode extraction and a Kawashima-type energy argument. This yields a cone-preserving estimate at the limiting decay rate, up to a logarithmic loss.",
+    "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    "topic": "Other",
+    "topic_tags": [
+      "decay"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "8c3f30b556986ae6340c3e958a56eab7432d90e22fcb6647ac3bfe36c1fd2dad"
+  },
+  {
     "id": "arxiv:2609.11488",
     "title": "An Anisotropic Onsager Criterion for the Two-Dimensional Navier--Stokes Equations with Horizontal Viscosity",
     "authors": "Siyu Liang",
