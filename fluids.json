@@ -1,5 +1,28 @@
 [
   {
+    "id": "title:16b403fc3ad9c107c62a4047",
+    "title": "A second-order decoupled splitting scheme with energy-optimized auxiliary variable correction for the incompressible thermosolutal convection magnetohydrodynamic system",
+    "authors": "Youlei Liang, Lunji Song",
+    "date": "2026-09-14",
+    "discovered_at": "2026-09-14",
+    "submitted_at": "",
+    "published_online_at": "",
+    "issue_date": "2027-02",
+    "source": "Appl. Math. Lett.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0893965926002703?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "MHD & Plasma",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "applied-mathematics-letters",
+    "enrichment_hash": "8da9eaf7997ac4d7e98dc720fc1570568a9a139f2fdc0986506524af514b73c2"
+  },
+  {
     "id": "title:e2ed61d47b9f97369c3cecd8",
     "title": "Blow-up criterion for a three-dimensional compressible non-Newtonian fluid",
     "authors": "Jae-Myoung Kim",
