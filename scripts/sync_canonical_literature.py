@@ -32,6 +32,7 @@ MAX_GENERATION_AGE = timedelta(days=8)
 REMOTE_TIMEOUT_SECONDS = 20
 MANIFEST_FILE = "literature-manifest.json"
 INDEX_FILE = "fluids-index.json"
+CANONICAL_CALENDAR_TIMEZONE = timezone(timedelta(hours=8))
 
 REQUIRED_RECORD_FIELDS = (
     "id",
@@ -326,7 +327,11 @@ def _paper_publication_date(paper: dict[str, Any], *, label: str) -> datetime:
 
 
 def _validate_snapshot_window(snapshot: CanonicalSnapshot) -> None:
-    generated_date = _parse_timestamp(snapshot.manifest["generated_at"]).date()
+    generated_date = (
+        _parse_timestamp(snapshot.manifest["generated_at"])
+        .astimezone(CANONICAL_CALENDAR_TIMEZONE)
+        .date()
+    )
     current_cutoff = generated_date - timedelta(days=WINDOW_DAYS)
 
     for index, paper in enumerate(snapshot.current.papers):

@@ -277,6 +277,63 @@ class CanonicalMirrorTests(unittest.TestCase):
 
             self.assertEqual((target_root / "fluids.json").read_bytes(), old_data)
 
+    def test_sync_accepts_the_canonical_calendar_date_before_utc_midnight(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            canonical_root = root / "canonical"
+            target_root = root / "website"
+            active_payload = self._write_json(
+                canonical_root / "fluids.json",
+                [_paper("doi:10.1000/current-a", date="2026-09-13")],
+            )
+            archive_payload = self._write_json(
+                canonical_root / "archive" / "archive_2025.json",
+                [_paper("doi:10.1000/archive-a", date="2025-03-01")],
+            )
+            manifest = self._manifest(active_payload, archive_payload)
+            manifest["generated_at"] = "2026-09-12T23:15:00Z"
+            manifest["counts"]["current"] = 1
+            manifest["current"]["count"] = 1
+            self._write_json(canonical_root / "literature-manifest.json", manifest)
+
+            result = sync_canonical_artifacts(
+                canonical_root,
+                target_root,
+                now=datetime(2026, 9, 12, 23, 20, tzinfo=timezone.utc),
+            )
+
+            self.assertEqual(result.active_count, 1)
+            self.assertEqual(
+                json.loads((target_root / "fluids.json").read_text(encoding="utf-8"))[0]["date"],
+                "2026-09-13",
+            )
+
+    def test_sync_still_rejects_a_date_after_the_canonical_calendar_date(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            canonical_root = root / "canonical"
+            target_root = root / "website"
+            active_payload = self._write_json(
+                canonical_root / "fluids.json",
+                [_paper("doi:10.1000/current-a", date="2026-09-14")],
+            )
+            archive_payload = self._write_json(
+                canonical_root / "archive" / "archive_2025.json",
+                [_paper("doi:10.1000/archive-a", date="2025-03-01")],
+            )
+            manifest = self._manifest(active_payload, archive_payload)
+            manifest["generated_at"] = "2026-09-12T23:15:00Z"
+            manifest["counts"]["current"] = 1
+            manifest["current"]["count"] = 1
+            self._write_json(canonical_root / "literature-manifest.json", manifest)
+
+            with self.assertRaisesRegex(CanonicalSyncError, "publication date in the future"):
+                sync_canonical_artifacts(
+                    canonical_root,
+                    target_root,
+                    now=datetime(2026, 9, 12, 23, 20, tzinfo=timezone.utc),
+                )
+
     def test_sync_rejects_an_archive_record_still_inside_the_current_window(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
