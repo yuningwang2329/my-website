@@ -1,5 +1,28 @@
 [
   {
+    "id": "doi:10.1137/25m1724778",
+    "title": "Long-Time Behavior of an Anisotropic Rigid Body Interacting with a Poiseuille Flow in an Unbounded 2-Dimensional Channel",
+    "authors": "Denis Bonheure, Matthieu Hillairet, Clara Patriarca, Gianmarco Sperone",
+    "date": "2026-09-19",
+    "discovered_at": "2026-09-19",
+    "submitted_at": "",
+    "published_online_at": "2026-09-17",
+    "issue_date": "2026-10-31",
+    "source": "SIAM J. Math. Anal.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1137/25m1724778",
+    "doi": "10.1137/25m1724778",
+    "arxiv_url": "",
+    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
+    "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "siam-journal-mathematical-analysis",
+    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
+  },
+  {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
     "title": "Well-posedness of Navier-Stokes/Cahn-Hilliard equations modeling the dynamics of contact line in a channel",
     "authors": "Shijin Ding, Yinghua Li, Zhilin Lin, Yuanxiang Yan",
