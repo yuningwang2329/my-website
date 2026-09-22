@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generation_id": "2de9ebfb34f88fd8",
-  "generated_at": "2026-09-22T01:54:45Z",
+  "generation_id": "d4604763e36af8ec",
+  "generated_at": "2026-09-22T05:10:18Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
     "current": 457,
     "archived": 0,
-    "review": 2000
+    "review": 1999
   },
   "sources": {
     "total": 29,
