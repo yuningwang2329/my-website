@@ -1,5 +1,30 @@
 [
   {
+    "id": "doi:10.1112/jlms.70713",
+    "title": "Existence of strong transonic shock solutions of steady Euler flow past a wedge",
+    "authors": "Myoungjean Bae, Jing Liao",
+    "date": "2026-09-24",
+    "discovered_at": "2026-09-24",
+    "submitted_at": "",
+    "published_online_at": "2026-09-22",
+    "issue_date": "2026-09",
+    "source": "J. Lond. Math. Soc.",
+    "source_group": "high-general-math",
+    "link": "https://doi.org/10.1112/jlms.70713",
+    "doi": "10.1112/jlms.70713",
+    "arxiv_url": "",
+    "abstract_en": "Abstract\n                  We investigate the structural stability of strong transonic shock solutions of two‐dimensional steady Euler flows past a wedge under small perturbations of the supersonic upstream flow and the wedge boundary. First, we rewrite the system using the Helmholtz decomposition in Eulerian coordinates. Then, appropriate iteration sets and an iteration scheme are designed in the truncation regions, and delicate elliptic estimates are conducted for the linearized problem. In particular, for the linearized problem concerning the vorticity part of the velocity, the smallness of the inclination parameter of the background shock ensures that the iteration mapping maps the iteration set into itself. To our knowledge, this is the first work to construct a transonic shock solution as a small perturbation of an oblique shock solution via the Helmholtz decomposition.",
+    "summary_zh": "Abstract We investigate the structural stability of strong transonic shock solutions of two‐dimensional steady Euler flows past a wedge under small perturbations of the supersonic upstream flow and the wedge boundary. First, we rewrite the…",
+    "topic": "Euler, Vorticity & Inviscid Flow",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-london-mathematical-society",
+    "enrichment_hash": "f7e547d7e273da2175c5bc8258685726524b9c96a439654a28ed67f51acb60e4"
+  },
+  {
     "id": "doi:10.1088/1361-6544/aea1b8",
     "title": "On the topology of the magnetic lines of large solutions to the Magnetohydrodynamic equations in R 3",
     "authors": "R Lucà, C Peña",
