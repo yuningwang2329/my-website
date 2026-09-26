@@ -1,5 +1,28 @@
 [
   {
+    "id": "doi:10.1007/s00021-026-01057-y",
+    "title": "Multilayered Fluid–Structure Interactions: Existence of Weak Solutions For Time-Periodic and Initial-Value Problems",
+    "authors": "Claudiu Mîndrilă, Arnab Roy",
+    "date": "2026-09-27",
+    "discovered_at": "2026-09-27",
+    "submitted_at": "",
+    "published_online_at": "2026-09-26",
+    "issue_date": "2026-11",
+    "source": "J. Math. Fluid Mech.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1007/s00021-026-01057-y",
+    "doi": "10.1007/s00021-026-01057-y",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-math-fluid-mechanics",
+    "enrichment_hash": "dfac10e2866e2c8cd2ede03132a57b41e9dfbea8163fbedb32e482df88273097"
+  },
+  {
     "id": "title:a11084021c2d354c2f8b779c",
     "title": "Large-time behaviour of the spherically symmetric solution to an outflow problem for an isentropic model of compressible viscous fluid",
     "authors": "Yucong Huang, Shinya Nishibata",
