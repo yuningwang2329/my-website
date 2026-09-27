@@ -1,5 +1,31 @@
 [
   {
+    "id": "doi:10.1007/s00205-026-02246-9",
+    "title": "On the Uniqueness and Structural Stability of Couette-Poiseuille Flow in a Channel for Arbitrary Values of the Flux",
+    "authors": "Giovanni P. Galdi, Filippo Gazzola, Mikhail Korobkov, Xiao Ren, Gianmarco Sperone",
+    "date": "2026-09-28",
+    "discovered_at": "2026-09-28",
+    "submitted_at": "",
+    "published_online_at": "2026-09-27",
+    "issue_date": "2026-10",
+    "source": "Arch. Ration. Mech. Anal.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1007/s00205-026-02246-9",
+    "doi": "10.1007/s00205-026-02246-9",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "stability",
+      "Couette flow"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "archive-rational-mechanics-analysis",
+    "enrichment_hash": "eb5fee4cb70a3d123b828a53d21e68d2ad77ee00b61073c67e7f285f9efe66f4"
+  },
+  {
     "id": "doi:10.1007/s00021-026-01057-y",
     "title": "Multilayered Fluid–Structure Interactions: Existence of Weak Solutions For Time-Periodic and Initial-Value Problems",
     "authors": "Claudiu Mîndrilă, Arnab Roy",
@@ -59,14 +85,14 @@
     "link": "https://doi.org/10.1137/25m1786106",
     "doi": "10.1137/25m1786106",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [ Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [ J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5331-5360, October 2026.   Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [math]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
     "summary_zh": "Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "7f7cd48c88514f72fea05ef1503f0ffe939eb61d662094e9b954cc47a132c4fc"
+    "enrichment_hash": "f2b41ec2bb965374e187c113b4b916f541125959133af76d351cd0db0da246b2"
   },
   {
     "id": "doi:10.1007/s00021-026-01061-2",
@@ -105,14 +131,14 @@
     "link": "https://doi.org/10.1137/25m1810258",
     "doi": "10.1137/25m1810258",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations with a free upper boundary that evolves according to the motion of the structure, coupled via the velocity- and stress-matching conditions. Under the natural energy bounds and additional regularity assumptions on the weak solutions, we prove a non-contact property with a uniform separation of the plate from the rigid boundary. The result does not require damping in the plate equation.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5258-5273, October 2026.   Abstract. We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations with a free upper boundary that evolves according to the motion of the structure, coupled via the velocity- and stress-matching conditions. Under the natural energy bounds and additional regularity assumptions on the weak solutions, we prove a non-contact property with a uniform separation of the plate from the rigid boundary. The result does not require damping in the plate equation.",
     "summary_zh": "Abstract. We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations wi…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "d207ec474f41d35c67b678e69e26d132f3bf80f58ea5a0c092d8d235b13e5c72"
+    "enrichment_hash": "d58b9550b7a1e96256f9e558c08adecace609b04094dc6f8f016fdae698540d2"
   },
   {
     "id": "doi:10.1112/jlms.70712",
@@ -5834,14 +5860,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
+    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
@@ -6408,14 +6434,14 @@
     "link": "https://doi.org/10.1137/25m1805291",
     "doi": "10.1137/25m1805291",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4990-5011, October 2026.   Abstract. The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "663b58dd885f391bf66f747a6954f3fbdf282c244bc043c52fdc534996c10f18"
+    "enrichment_hash": "3c74c412ca473d2ab317473dc2f7e16ce0465a9a8973f2431aa362baa308a34e"
   },
   {
     "id": "doi:10.1137/24m1695592",
@@ -6527,14 +6553,14 @@
     "link": "https://doi.org/10.1112/plms.70215",
     "doi": "10.1112/plms.70215",
     "arxiv_url": "",
-    "abstract_en": "Abstract\n                  For any nontrivial divergence‐free initial data in , we prove the existence of infinitely many dissipative solutions to both the 3D Navier–Stokes and MHD equations, whose energy profiles are continuous and decreasing on . If the initial data is only , our construction yields infinitely many solutions with continuous energy, but not necessarily decreasing. Our theorem does not hold in the case of zero viscosity as this would violate the weak‐strong uniqueness principle due to Lions. This was achieved by designing a convex integration scheme that takes advantage of the dissipative term.",
+    "abstract_en": "Proceedings of the London Mathematical Society, Volume 133, Issue 3, September 2026.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "MHD & Plasma",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "proceedings-london-mathematical-society",
-    "enrichment_hash": "90d2e7dfe817c7079050cafd123e641c184c0b7773ea2f6bca69d5b356f2ab1b"
+    "enrichment_hash": "e42b21a603b373a0649ecc760f03e851afdd0bd89b334bbd3dba890d98f7dd57"
   },
   {
     "id": "doi:10.1137/25m1772769",
@@ -7014,17 +7040,14 @@
     "link": "https://doi.org/10.1112/plms.70194",
     "doi": "10.1112/plms.70194",
     "arxiv_url": "",
-    "abstract_en": "Abstract\n                  In this paper, we study the transition threshold for Couette flow in the three‐dimensional incompressible Navier–Stokes–Coriolis system in the high‐Reynolds‐number regime (). By combining the stabilizing effects of rotation‐induced dispersion and mixing, we obtain an improved stability threshold in . More precisely, we prove global stability for perturbations of size  in  when the fluid domain  and , and in  when  and . The corresponding solution exists globally and remains asymptotically close to the Couette flow. The main difficulty lies in the anisotropic nature of the estimates for the zero modes and in their interaction with the nonzero modes. To overcome this difficulty, we introduce anisotropic Sobolev spaces tailored to the zero modes, identify a new dispersive structure for these modes, and establish suitable Strichartz‐type estimates. These ingredients allow us to exploit both the nonlinear structure and the improved dispersion of certain favorable zero‐mode components.",
+    "abstract_en": "Proceedings of the London Mathematical Society, Volume 133, Issue 3, September 2026.",
     "summary_zh": "摘要 在本文中，我们研究了高雷诺数状态下三维不可压缩纳维-斯托克斯-科里奥利系统中库埃特流的转变阈值 ()。通过结合旋转引起的分散和混合的稳定效果，我们获得了改进的稳定性阈值。更准确地说，我们证明了当流体域 和 、以及当 和 时尺寸扰动的全局稳定性。相应的解全局存在并且保持渐近接近库埃特流。主要困难在于零模估计的各向异性及其与非零模的相互作用。为了克服这个困难，我们引入了针对零模态的各向异性 Sobolev 空间，为这些模态确定了一种新的色散结构，并建立了合适的 Stric…",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [
-      "stability",
-      "Couette flow"
-    ],
+    "topic": "Other",
+    "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "proceedings-london-mathematical-society",
-    "enrichment_hash": "34dd04608d7f848f23cd3caeeb30ba2d69d94a6d1850c9a8d3b823895088e38d"
+    "enrichment_hash": "b5578030c7d296ab31ff2c2d3b5290a9faaca1e685997eb6d0bfc7522267b319"
   },
   {
     "id": "doi:10.1088/1361-6544/ae9ddc",
@@ -9088,14 +9111,14 @@
     "link": "https://doi.org/10.1137/25m1822642",
     "doi": "10.1137/25m1822642",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As a second contribution, we prove the global-in-time existence of weak entropy solutions to the kinetic equations, ensuring consistency with the hydrodynamic limit framework.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 4466-4517, August 2026.   Abstract. We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "a4f30cc85a9e3b1e5fae112a3304f64fd1e54c589064570acfedd10d713ad199"
+    "enrichment_hash": "e49fe850d4925d3cfe982e27d81e04f171197bc67cdcad89ea74a3b2c0c89893"
   },
   {
     "id": "doi:10.1137/25m1805394",
@@ -9111,7 +9134,7 @@
     "link": "https://doi.org/10.1137/25m1805394",
     "doi": "10.1137/25m1805394",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some ordinary differential equation, after time and space rescaling.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3998-4023, August 2026.   Abstract. We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some or",
     "summary_zh": "抽象的。 我们关注实线上的正压可压缩纳维-斯托克斯方程。我们的主要目标是在初始数据是稳定恒定状态的小扰动的情况下，在关键规律性框架中建立全局适定性。令人惊讶的是，尽管多维情况的结果现在已经是经典的，但据我们所知，一维情况尚未得到阐明。这是因为在临界框架中，速度的规律性非常负，以至于一些非线性项失去了控制。在这里，我们通过考虑质量拉格朗日坐标系中的方程来克服这个困难。授予全局适定性声明，然后我们建立最佳时间衰减估计并研究高粘度极限，指出在时间和空间重新缩放后特定体积收敛于某些…",
     "topic": "Other",
     "topic_tags": [
@@ -9121,7 +9144,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "b61742ae213b0e55448cb9c8667d0979fa9bccc49ed8bf46867f953c2cfa665c"
+    "enrichment_hash": "6fc4ca05da453c714432ad89df50b7f75963a28197788cb60f7986dcf649ca20"
   },
   {
     "id": "doi:10.1137/25m1757381",
@@ -9137,14 +9160,14 @@
     "link": "https://doi.org/10.1137/25m1757381",
     "doi": "10.1137/25m1757381",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long time dynamics of a single helical vortex filament for the three-dimensional incompressible Euler equations under helical symmetry in the absence of vorticity stretching. The initial vorticity is assumed to be concentrated in an [Formula: see text]-neighborhood of a helix in the whole space [Formula: see text]. For any fixed time [Formula: see text] independent of [Formula: see text], the corresponding weak solution is shown to remain concentrated near a rotating helical filament throughout the interval [Formula: see text]. We further derive quantitative estimates for the filament motion and show that its angular velocity satisfies [Formula: see text]. The proof relies on asymptotic expansions for the helical Biot–Savart kernel in [Formula: see text] and on weighted energy–momentum functionals adapted to the helical symmetry, which allow us to control far-field effects and to propagate vorticity concentration on a fixed time interval.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3832-3865, August 2026.   Abstract. We study the long time dynamics of a single helical vortex filament for the three-dimensional incompressible Euler equations under helical symmetry in the absence of vorticity stretching. The initial vorticity is assumed to be concentrated in an [math]-neighborhood of a helix in the whole space [math]. For any fixed time [math] independent of [math], the corresponding weak solution is shown to remain concentrated near a rotating helical filament throughout the interval [math]. We further derive quantitative estimates for the filament motion and show that its angular velocity satisfies [math]. The proof relies on asymptotic expansions for the helical Biot–Savart kernel in [math] and on weighted energy–momentum functionals adapted to the helical symmetry, which allow us to control far-field effects and to propagate vorticity concentration on a fixed time interval.",
     "summary_zh": "抽象的。 我们研究了在没有涡旋拉伸的情况下螺旋对称下三维不可压缩欧拉方程的单个螺旋涡丝的长期动力学。 假设初始涡量集中在整个空间中螺旋的[公式：见正文]邻域[公式：见正文]。对于任何独立于[公式：见文本]的固定时间[公式：见文本]，相应的弱溶液在整个时间间隔[公式：见文本]中保持集中在旋转的螺旋细丝附近。我们进一步得出了灯丝运动的定量估计，并表明其角速度满足[公式：见正文]。 证明依赖于[公式：见文本]中螺旋Biot-Savart核的渐近展开式以及适应螺旋对称性的加权能量动…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "e0c7780581ba5509e54daf7f34ceebe32208769b06ccfe421daa7ccd957c651d"
+    "enrichment_hash": "db95d95e0e4ac1dc43f6fb6461aa9cf789b7747d305e3c3a8cae679d24698591"
   },
   {
     "id": "doi:10.1112/plms.70185",
@@ -11021,14 +11044,14 @@
     "link": "https://doi.org/10.1137/25m173421x",
     "doi": "10.1137/25m173421x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Finding a proper solution concept for the multidimensional barotropic compressible Euler equations and related systems is still an unsolved problem. As revealed by convex integration, the classical notion of admissible weak solutions (also known as weak entropy solutions) does not lead to uniqueness and allows for solutions which do not seem to be physical. For this reason, people have studied additional criteria in view of their ability to rule out the counterintuitive solutions generated by convex integration. Recently, in [H. Gimperlein, M. Grinfeld, R. J. Knops and M. Slemrod: The least action admissibility principle, Arch. Ration. Mech. Anal., 249 (2025), Paper No. 22, https://doi.org/10.1007/s00205-025-02094-z], it was suggested that the least action admissibility principle serves as the desired selection criterion. In this paper, however, we show that the least action admissibility principle rules out the solution which is intuitively the physically relevant one. Consequently, one either has to reconsider one’s intuition, or the least action admissibility principle must be discarded.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3585-3598, August 2026.   Abstract. Finding a proper solution concept for the multidimensional barotropic compressible Euler equations and related systems is still an unsolved problem. As revealed by convex integration, the classical notion of admissible weak solutions (also known as weak entropy solutions) does not lead to uniqueness and allows for solutions which do not seem to be physical. For this reason, people have studied additional criteria in view of their ability to rule out the counterintuitive solutions generated by convex integration. Recently, in [H. Gimperlein, M. Grinfeld, R. J. Knops and M. Slemrod: The least action admissibility principle, Arch. Ration. Mech. Anal., 249 (2025), Paper No. 22, https://doi.org/10.1007/s00205-025-02094-z], it was suggested that the least action admissibility principle serves as the desired selection criterion. In this paper, however, we show that the least action admissibilit",
     "summary_zh": "抽象的。 为多维正压可压缩欧拉方程及相关系统寻找合适的解概念仍然是一个未解决的问题。正如凸积分所揭示的，可接受的弱解（也称为弱熵解）的经典概念不会导致唯一性，并且允许看似不物理的解。为此，人们研究了额外的标准，以排除凸积分产生的反直觉解的能力。最近，在[H. Gimperlein、M. Grinfeld、R. J. Knops 和 M. Slemrod：最小作用允许原则，Arch。配给。机甲。 Anal., 249 (2025), Paper No. 22, https:/…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "f0b49569030bc14232a36c628f730779af64556f9d6de7d3576c98ef7ec32167"
+    "enrichment_hash": "de93a9b4e233b8bf536a02076242677ac0b462bb80e4b5c051e367c0c0e27af8"
   },
   {
     "id": "arxiv:2607.17844",
@@ -11218,7 +11241,7 @@
     "link": "https://doi.org/10.1002/cpa.70048",
     "doi": "10.1002/cpa.70048",
     "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
+    "abstract_en": "Communications on Pure and Applied Mathematics, EarlyView.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -11230,7 +11253,7 @@
     ],
     "relevance": "unknown",
     "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "ce918c4f4ee48e7eac74c878bef3b8c59adec03eddfbd5c998d1d2dbb094c4f9"
+    "enrichment_hash": "2aa217e0296a1288c4a8b91a3e570b0c62fdd7c0ea1de7411200e453ec95c9e5"
   },
   {
     "id": "arxiv:2607.15256",
@@ -11806,29 +11829,6 @@
     "relevance": "unknown",
     "source_id": "archive-rational-mechanics-analysis",
     "enrichment_hash": "d81af48dd7292daf56f354ce55f46491e988fe88d164053df09097a980d123c6"
-  },
-  {
-    "id": "doi:10.1002/cpa.70055",
-    "title": "A Geometric Characterization of Steady Laminar Flow",
-    "authors": "Theodore D. Drivas, Marc Nualart",
-    "date": "2026-07-14",
-    "discovered_at": "2026-07-14",
-    "submitted_at": "",
-    "published_online_at": "2026-07-07",
-    "issue_date": "2026-07-07",
-    "source": "Commun. Pure Appl. Math.",
-    "source_group": "math-fluid-pde",
-    "link": "https://doi.org/10.1002/cpa.70055",
-    "doi": "10.1002/cpa.70055",
-    "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either parallel or circular flows. We also show that a large subset of these shear flows are isolated from non‐shear stationary states. For Poiseuille flow, , our result shows that all stationary solutions in a sufficiently small  neighbourhood are shear flows. We then show that if  with , then in any  neighbourhood, there exist smooth non‐shear steady states, traveling waves, and quasiperiodic solutions of any number of non‐commensurate frequencies. This proves the rigidity near Poiseuille is sharp. Finally, we prove that on general compact doubly connected domains, laminar steady Euler flows with constant velocity on the boundary must also be either parallel or circular, and the domain a periodic channel or an annulus. This shows that laminar free boundary Euler solutions must have Euclidean symmetry.",
-    "summary_zh": "摘要 我们研究周期性通道或环面上的欧拉方程的稳态。我们证明，如果这些流动是层流（由形成域的封闭的不可收缩流线分层），那么它们必须是平行流或循环流。我们还表明，这些剪切流的很大一部分与非剪切静止状态是隔离的。对于泊肃叶流 ，我们的结果表明，足够小的邻域中的所有平稳解都是剪切流。然后我们证明，如果 ，则在任何邻域中，都存在平滑非剪切稳态、行波和任意数量的非相称频率的准周期解。这证明泊肃叶附近的刚度是尖锐的。最后，我们证明在一般紧致双连通域上，边界上的等速层流稳态欧拉流也必须是平…",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "e569c81675a2a476ce880d6ffcac9e80329ee000a7e8fe523257d655071f5502"
   },
   {
     "id": "arxiv:2607.10676",
