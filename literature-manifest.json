@@ -1,27 +1,26 @@
 {
   "schema_version": 1,
-  "generation_id": "d143e03c5ad94eeb",
-  "generated_at": "2026-09-27T23:47:29Z",
+  "generation_id": "176f822da8b5499c",
+  "generated_at": "2026-09-28T02:00:16Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 493,
+    "current": 494,
     "archived": 0,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 27,
+    "succeeded": 28,
     "failed_ids": [
-      "annales-henri-poincare-c",
       "arxiv-math-ap"
     ]
   },
   "current": {
     "path": "fluids.json",
-    "count": 493,
-    "sha256": "b8b475f54bde2bcb385a04e514ebb353ba36c1bc42acfea780971d1347e01053",
-    "bytes": 996173
+    "count": 494,
+    "sha256": "be85876b87a454b87aff118060899d7774f85494951994dc602482fe10863209",
+    "bytes": 1000438
   },
   "archives": []
 }
