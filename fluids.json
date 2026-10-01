@@ -1,5 +1,30 @@
 [
   {
+    "id": "title:640b9f8bb2e056f71a5e3a5c",
+    "title": "Time-asymptotic stability of viscous shocks for the outflow problem of one-dimensional compressible fluids of Korteweg type",
+    "authors": "Sungho Han, Jeongho Kim, HyeonSeop Oh",
+    "date": "2026-10-01",
+    "discovered_at": "2026-10-01",
+    "submitted_at": "",
+    "published_online_at": "",
+    "issue_date": "2027-01",
+    "source": "J. Differ. Equ.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022039626007187?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Other",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-differential-equations",
+    "enrichment_hash": "7da8047e8ac43fe9d62d6334bab03a28b2dcdfbd77f71fa05b08c59e7da71b5e"
+  },
+  {
     "id": "doi:10.1002/cpa.70055",
     "title": "A Geometric Characterization of Steady Laminar Flow",
     "authors": "Theodore D. Drivas, Marc Nualart",
