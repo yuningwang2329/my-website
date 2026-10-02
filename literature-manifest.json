@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "9ecc2453cfb7a5b7",
-  "generated_at": "2026-10-02T02:35:43Z",
+  "generation_id": "d41582993ba920fd",
+  "generated_at": "2026-10-02T05:53:57Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,27 +11,14 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 17,
-    "failed_ids": [
-      "acta-mathematica",
-      "analysis-pde",
-      "annales-henri-poincare-c",
-      "annals-math",
-      "dcds",
-      "duke-mathematical-journal",
-      "inventiones-mathematicae",
-      "jams",
-      "journal-math-fluid-mechanics",
-      "nonlinearity",
-      "publications-math-ihes",
-      "selecta-mathematica"
-    ]
+    "succeeded": 29,
+    "failed_ids": []
   },
   "current": {
     "path": "fluids.json",
     "count": 562,
-    "sha256": "38caa1793b6c75db5c320fcb43e9f270c2e0e13679468d4256c79cf90b6aca8a",
-    "bytes": 1146123
+    "sha256": "b34527fdb0cdcb858da59fb3227713132ce5e2d29415568326aea88ffb7fe4c9",
+    "bytes": 1147325
   },
   "archives": []
 }
