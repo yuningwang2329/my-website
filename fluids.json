@@ -683,29 +683,6 @@
     "enrichment_hash": "056b47b3d31c37a4ce228a6cc9b5a3415cac3532fda647f046cee34a4e6cc5fe"
   },
   {
-    "id": "doi:10.1002/cpa.70055",
-    "title": "A Geometric Characterization of Steady Laminar Flow",
-    "authors": "Theodore D. Drivas, Marc Nualart",
-    "date": "2026-09-30",
-    "discovered_at": "2026-09-30",
-    "submitted_at": "",
-    "published_online_at": "2026-07-07",
-    "issue_date": "2026-07-07",
-    "source": "Commun. Pure Appl. Math.",
-    "source_group": "math-fluid-pde",
-    "link": "https://doi.org/10.1002/cpa.70055",
-    "doi": "10.1002/cpa.70055",
-    "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either parallel or circular flows. We also show that a large subset of these shear flows are isolated from non‐shear stationary states. For Poiseuille flow, , our result shows that all stationary solutions in a sufficiently small  neighbourhood are shear flows. We then show that if  with , then in any  neighbourhood, there exist smooth non‐shear steady states, traveling waves, and quasiperiodic solutions of any number of non‐commensurate frequencies. This proves the rigidity near Poiseuille is sharp. Finally, we prove that on general compact doubly connected domains, laminar steady Euler flows with constant velocity on the boundary must also be either parallel or circular, and the domain a periodic channel or an annulus. This shows that laminar free boundary Euler solutions must have Euclidean symmetry.",
-    "summary_zh": "ABSTRACT We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either para…",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "e569c81675a2a476ce880d6ffcac9e80329ee000a7e8fe523257d655071f5502"
-  },
-  {
     "id": "arxiv:2609.38061",
     "title": "Kruskal-style algorithm for Boltzmann equation molecule reduction",
     "authors": "Yvain Bruned, Valentin Clarisse",
@@ -2070,14 +2047,14 @@
     "link": "https://doi.org/10.1137/25m1810258",
     "doi": "10.1137/25m1810258",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations with a free upper boundary that evolves according to the motion of the structure, coupled via the velocity- and stress-matching conditions. Under the natural energy bounds and additional regularity assumptions on the weak solutions, we prove a non-contact property with a uniform separation of the plate from the rigid boundary. The result does not require damping in the plate equation.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5258-5273, October 2026.   Abstract. We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations with a free upper boundary that evolves according to the motion of the structure, coupled via the velocity- and stress-matching conditions. Under the natural energy bounds and additional regularity assumptions on the weak solutions, we prove a non-contact property with a uniform separation of the plate from the rigid boundary. The result does not require damping in the plate equation.",
     "summary_zh": "Abstract. We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations wi…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "d207ec474f41d35c67b678e69e26d132f3bf80f58ea5a0c092d8d235b13e5c72"
+    "enrichment_hash": "d58b9550b7a1e96256f9e558c08adecace609b04094dc6f8f016fdae698540d2"
   },
   {
     "id": "doi:10.1112/jlms.70712",
@@ -7799,14 +7776,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
+    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
@@ -13183,7 +13160,7 @@
     "link": "https://doi.org/10.1002/cpa.70048",
     "doi": "10.1002/cpa.70048",
     "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
+    "abstract_en": "Communications on Pure and Applied Mathematics, EarlyView.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -13195,7 +13172,7 @@
     ],
     "relevance": "unknown",
     "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "ce918c4f4ee48e7eac74c878bef3b8c59adec03eddfbd5c998d1d2dbb094c4f9"
+    "enrichment_hash": "2aa217e0296a1288c4a8b91a3e570b0c62fdd7c0ea1de7411200e453ec95c9e5"
   },
   {
     "id": "arxiv:2607.15256",
