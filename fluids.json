@@ -1,5 +1,76 @@
 [
   {
+    "id": "doi:10.1002/cpa.70055",
+    "title": "A Geometric Characterization of Steady Laminar Flow",
+    "authors": "Theodore D. Drivas, Marc Nualart",
+    "date": "2026-10-06",
+    "discovered_at": "2026-10-06",
+    "submitted_at": "",
+    "published_online_at": "2026-07-07",
+    "issue_date": "2026-07-07",
+    "source": "Commun. Pure Appl. Math.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1002/cpa.70055",
+    "doi": "10.1002/cpa.70055",
+    "arxiv_url": "",
+    "abstract_en": "ABSTRACT\n                  We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either parallel or circular flows. We also show that a large subset of these shear flows are isolated from non‐shear stationary states. For Poiseuille flow, , our result shows that all stationary solutions in a sufficiently small  neighbourhood are shear flows. We then show that if  with , then in any  neighbourhood, there exist smooth non‐shear steady states, traveling waves, and quasiperiodic solutions of any number of non‐commensurate frequencies. This proves the rigidity near Poiseuille is sharp. Finally, we prove that on general compact doubly connected domains, laminar steady Euler flows with constant velocity on the boundary must also be either parallel or circular, and the domain a periodic channel or an annulus. This shows that laminar free boundary Euler solutions must have Euclidean symmetry.",
+    "summary_zh": "ABSTRACT We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either para…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "communications-pure-applied-mathematics",
+    "enrichment_hash": "e569c81675a2a476ce880d6ffcac9e80329ee000a7e8fe523257d655071f5502"
+  },
+  {
+    "id": "arxiv:2610.04257",
+    "title": "Existence and stability of shock profiles for a one-dimensional full compressible Navier--Stokes--Poisson equations",
+    "authors": "Yeping Li, Yuan Yuan",
+    "date": "2026-10-06",
+    "discovered_at": "2026-10-06",
+    "submitted_at": "2026-10-03",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.04257",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.04257",
+    "abstract_en": "This paper studies the existence and asymptotic stability of traveling shock waves for the one-dimensional full compressible Navier--Stokes--Poisson equations, which model viscous heat-conducting ions in a self-consistent electrostatic field. We first prove the existence and uniqueness of a smooth shock profile of small amplitude by the center manifold theorem, and then establish its large-time asymptotic stability under suitably small smooth perturbations. The proof is based on an energy estimate for a specially constructed integrated system derived from the full compressible Navier--Stokes--Poisson equations. To carry out this estimate, we introduce suitable anti-derivative variables that incorporate the effects of the self-consistent electrostatic potential and heat conduction, thereby reformulating the original system as a dissipative integrated one. The subsequent energy estimates are completed by carefully handling the induced couplings.",
+    "summary_zh": "This paper studies the existence and asymptotic stability of traveling shock waves for the one-dimensional full compressible Navier--Stokes--Poisson equations, which model viscous heat-conducting ions in a self-consistent electrostatic fie…",
+    "topic": "Other",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "9bfebddd71f76b83c549303cf1697fb94df77345d4d28baf958da610b0430eb4"
+  },
+  {
+    "id": "arxiv:2610.03926",
+    "title": "Distance Geometry and a Hydrodynamical Hopf-Rinow Criterion",
+    "authors": "Theodore D. Drivas, Patrick Heslin, Gerard Misiołek",
+    "date": "2026-10-06",
+    "discovered_at": "2026-10-06",
+    "submitted_at": "2026-10-02",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.03926",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.03926",
+    "abstract_en": "The hydrodynamical Hopf-Rinow problem asks whether a given reconfiguration of an ideal fluid can be attained by an Euler flow. On the flat two-dimensional torus, we give an equivalent criterion for the strong version of this problem (which requires that the fluid motion minimizes the total kinetic energy required) in terms of metric betweenness. Toward this, we prove that sufficiently small normal neighborhoods in the volume-preserving diffeomorphism group of the flat $n$-dimensional torus, $n \\geq 2$, equipped with the kinetic energy metric, are geodesically convex; resolving the strong problem locally in the $H^s$ topology. We further establish local bi-Lipschitz equivalence of the intrinsic geodesic distance and the extrinsic $L^2$ distance. Finally, we prove that the squared geodesic distance from the identity admits a $C^{1,1}$ extension from a sufficiently small normal neighborhood to the ambient $L^2$ space.",
+    "summary_zh": "The hydrodynamical Hopf-Rinow problem asks whether a given reconfiguration of an ideal fluid can be attained by an Euler flow. On the flat two-dimensional torus, we give an equivalent criterion for the strong version of this problem (which…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "ce3c0f8732a9e3ce8794170d30c751928fc0311f2cda843ccbbba378024452bb"
+  },
+  {
     "id": "arxiv:2610.03386",
     "title": "Mathematical study of a new Navier-Stokes-alpha model with nonlinear filter equation - Regularity theory and refined time asymptotics",
     "authors": "Manuel Fernando Cortez, Oscar Jarrín",
@@ -7776,14 +7847,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
+    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
+    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
@@ -8350,14 +8421,14 @@
     "link": "https://doi.org/10.1137/25m1805291",
     "doi": "10.1137/25m1805291",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4990-5011, October 2026.   Abstract. The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "663b58dd885f391bf66f747a6954f3fbdf282c244bc043c52fdc534996c10f18"
+    "enrichment_hash": "3c74c412ca473d2ab317473dc2f7e16ce0465a9a8973f2431aa362baa308a34e"
   },
   {
     "id": "doi:10.1137/24m1695592",
@@ -13160,7 +13231,7 @@
     "link": "https://doi.org/10.1002/cpa.70048",
     "doi": "10.1002/cpa.70048",
     "arxiv_url": "",
-    "abstract_en": "Communications on Pure and Applied Mathematics, EarlyView.",
+    "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -13172,7 +13243,7 @@
     ],
     "relevance": "unknown",
     "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "2aa217e0296a1288c4a8b91a3e570b0c62fdd7c0ea1de7411200e453ec95c9e5"
+    "enrichment_hash": "ce918c4f4ee48e7eac74c878bef3b8c59adec03eddfbd5c998d1d2dbb094c4f9"
   },
   {
     "id": "arxiv:2607.15256",
