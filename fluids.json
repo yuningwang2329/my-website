@@ -1,28 +1,5 @@
 [
   {
-    "id": "doi:10.1002/cpa.70055",
-    "title": "A Geometric Characterization of Steady Laminar Flow",
-    "authors": "Theodore D. Drivas, Marc Nualart",
-    "date": "2026-10-06",
-    "discovered_at": "2026-10-06",
-    "submitted_at": "",
-    "published_online_at": "2026-07-07",
-    "issue_date": "2026-07-07",
-    "source": "Commun. Pure Appl. Math.",
-    "source_group": "math-fluid-pde",
-    "link": "https://doi.org/10.1002/cpa.70055",
-    "doi": "10.1002/cpa.70055",
-    "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either parallel or circular flows. We also show that a large subset of these shear flows are isolated from non‐shear stationary states. For Poiseuille flow, , our result shows that all stationary solutions in a sufficiently small  neighbourhood are shear flows. We then show that if  with , then in any  neighbourhood, there exist smooth non‐shear steady states, traveling waves, and quasiperiodic solutions of any number of non‐commensurate frequencies. This proves the rigidity near Poiseuille is sharp. Finally, we prove that on general compact doubly connected domains, laminar steady Euler flows with constant velocity on the boundary must also be either parallel or circular, and the domain a periodic channel or an annulus. This shows that laminar free boundary Euler solutions must have Euclidean symmetry.",
-    "summary_zh": "ABSTRACT We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either para…",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "e569c81675a2a476ce880d6ffcac9e80329ee000a7e8fe523257d655071f5502"
-  },
-  {
     "id": "arxiv:2610.06567",
     "title": "Low Mach number limit of the full Navier-Stokes equations with no-slip boundary conditions and large temperature variations",
     "authors": "Xiaoyu Gu, Song Jiang, Qiangchang Ju, Yaobin Ou",
@@ -11439,7 +11416,7 @@
     "link": "https://doi.org/10.1137/25m1805394",
     "doi": "10.1137/25m1805394",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3998-4023, August 2026.   Abstract. We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some or",
+    "abstract_en": "Abstract.\n                  We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some ordinary differential equation, after time and space rescaling.",
     "summary_zh": "抽象的。 我们关注实线上的正压可压缩纳维-斯托克斯方程。我们的主要目标是在初始数据是稳定恒定状态的小扰动的情况下，在关键规律性框架中建立全局适定性。令人惊讶的是，尽管多维情况的结果现在已经是经典的，但据我们所知，一维情况尚未得到阐明。这是因为在临界框架中，速度的规律性非常负，以至于一些非线性项失去了控制。在这里，我们通过考虑质量拉格朗日坐标系中的方程来克服这个困难。授予全局适定性声明，然后我们建立最佳时间衰减估计并研究高粘度极限，指出在时间和空间重新缩放后特定体积收敛于某些…",
     "topic": "Other",
     "topic_tags": [
@@ -11449,7 +11426,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "6fc4ca05da453c714432ad89df50b7f75963a28197788cb60f7986dcf649ca20"
+    "enrichment_hash": "b61742ae213b0e55448cb9c8667d0979fa9bccc49ed8bf46867f953c2cfa665c"
   },
   {
     "id": "doi:10.1137/25m1757381",
