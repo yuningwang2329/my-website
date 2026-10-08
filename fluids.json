@@ -11920,14 +11920,14 @@
     "link": "https://doi.org/10.1137/25m1822642",
     "doi": "10.1137/25m1822642",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As a second contribution, we prove the global-in-time existence of weak entropy solutions to the kinetic equations, ensuring consistency with the hydrodynamic limit framework.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 4466-4517, August 2026.   Abstract. We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "a4f30cc85a9e3b1e5fae112a3304f64fd1e54c589064570acfedd10d713ad199"
+    "enrichment_hash": "e49fe850d4925d3cfe982e27d81e04f171197bc67cdcad89ea74a3b2c0c89893"
   },
   {
     "id": "doi:10.1137/25m1805394",
@@ -11943,7 +11943,7 @@
     "link": "https://doi.org/10.1137/25m1805394",
     "doi": "10.1137/25m1805394",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some ordinary differential equation, after time and space rescaling.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3998-4023, August 2026.   Abstract. We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some or",
     "summary_zh": "抽象的。 我们关注实线上的正压可压缩纳维-斯托克斯方程。我们的主要目标是在初始数据是稳定恒定状态的小扰动的情况下，在关键规律性框架中建立全局适定性。令人惊讶的是，尽管多维情况的结果现在已经是经典的，但据我们所知，一维情况尚未得到阐明。这是因为在临界框架中，速度的规律性非常负，以至于一些非线性项失去了控制。在这里，我们通过考虑质量拉格朗日坐标系中的方程来克服这个困难。授予全局适定性声明，然后我们建立最佳时间衰减估计并研究高粘度极限，指出在时间和空间重新缩放后特定体积收敛于某些…",
     "topic": "Other",
     "topic_tags": [
@@ -11953,7 +11953,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "b61742ae213b0e55448cb9c8667d0979fa9bccc49ed8bf46867f953c2cfa665c"
+    "enrichment_hash": "6fc4ca05da453c714432ad89df50b7f75963a28197788cb60f7986dcf649ca20"
   },
   {
     "id": "doi:10.1137/25m1757381",
@@ -11969,14 +11969,14 @@
     "link": "https://doi.org/10.1137/25m1757381",
     "doi": "10.1137/25m1757381",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long time dynamics of a single helical vortex filament for the three-dimensional incompressible Euler equations under helical symmetry in the absence of vorticity stretching. The initial vorticity is assumed to be concentrated in an [Formula: see text]-neighborhood of a helix in the whole space [Formula: see text]. For any fixed time [Formula: see text] independent of [Formula: see text], the corresponding weak solution is shown to remain concentrated near a rotating helical filament throughout the interval [Formula: see text]. We further derive quantitative estimates for the filament motion and show that its angular velocity satisfies [Formula: see text]. The proof relies on asymptotic expansions for the helical Biot–Savart kernel in [Formula: see text] and on weighted energy–momentum functionals adapted to the helical symmetry, which allow us to control far-field effects and to propagate vorticity concentration on a fixed time interval.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3832-3865, August 2026.   Abstract. We study the long time dynamics of a single helical vortex filament for the three-dimensional incompressible Euler equations under helical symmetry in the absence of vorticity stretching. The initial vorticity is assumed to be concentrated in an [math]-neighborhood of a helix in the whole space [math]. For any fixed time [math] independent of [math], the corresponding weak solution is shown to remain concentrated near a rotating helical filament throughout the interval [math]. We further derive quantitative estimates for the filament motion and show that its angular velocity satisfies [math]. The proof relies on asymptotic expansions for the helical Biot–Savart kernel in [math] and on weighted energy–momentum functionals adapted to the helical symmetry, which allow us to control far-field effects and to propagate vorticity concentration on a fixed time interval.",
     "summary_zh": "抽象的。 我们研究了在没有涡旋拉伸的情况下螺旋对称下三维不可压缩欧拉方程的单个螺旋涡丝的长期动力学。 假设初始涡量集中在整个空间中螺旋的[公式：见正文]邻域[公式：见正文]。对于任何独立于[公式：见文本]的固定时间[公式：见文本]，相应的弱溶液在整个时间间隔[公式：见文本]中保持集中在旋转的螺旋细丝附近。我们进一步得出了灯丝运动的定量估计，并表明其角速度满足[公式：见正文]。 证明依赖于[公式：见文本]中螺旋Biot-Savart核的渐近展开式以及适应螺旋对称性的加权能量动…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "e0c7780581ba5509e54daf7f34ceebe32208769b06ccfe421daa7ccd957c651d"
+    "enrichment_hash": "db95d95e0e4ac1dc43f6fb6461aa9cf789b7747d305e3c3a8cae679d24698591"
   },
   {
     "id": "doi:10.1112/plms.70185",
@@ -13853,14 +13853,14 @@
     "link": "https://doi.org/10.1137/25m173421x",
     "doi": "10.1137/25m173421x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Finding a proper solution concept for the multidimensional barotropic compressible Euler equations and related systems is still an unsolved problem. As revealed by convex integration, the classical notion of admissible weak solutions (also known as weak entropy solutions) does not lead to uniqueness and allows for solutions which do not seem to be physical. For this reason, people have studied additional criteria in view of their ability to rule out the counterintuitive solutions generated by convex integration. Recently, in [H. Gimperlein, M. Grinfeld, R. J. Knops and M. Slemrod: The least action admissibility principle, Arch. Ration. Mech. Anal., 249 (2025), Paper No. 22, https://doi.org/10.1007/s00205-025-02094-z], it was suggested that the least action admissibility principle serves as the desired selection criterion. In this paper, however, we show that the least action admissibility principle rules out the solution which is intuitively the physically relevant one. Consequently, one either has to reconsider one’s intuition, or the least action admissibility principle must be discarded.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3585-3598, August 2026.   Abstract. Finding a proper solution concept for the multidimensional barotropic compressible Euler equations and related systems is still an unsolved problem. As revealed by convex integration, the classical notion of admissible weak solutions (also known as weak entropy solutions) does not lead to uniqueness and allows for solutions which do not seem to be physical. For this reason, people have studied additional criteria in view of their ability to rule out the counterintuitive solutions generated by convex integration. Recently, in [H. Gimperlein, M. Grinfeld, R. J. Knops and M. Slemrod: The least action admissibility principle, Arch. Ration. Mech. Anal., 249 (2025), Paper No. 22, https://doi.org/10.1007/s00205-025-02094-z], it was suggested that the least action admissibility principle serves as the desired selection criterion. In this paper, however, we show that the least action admissibilit",
     "summary_zh": "抽象的。 为多维正压可压缩欧拉方程及相关系统寻找合适的解概念仍然是一个未解决的问题。正如凸积分所揭示的，可接受的弱解（也称为弱熵解）的经典概念不会导致唯一性，并且允许看似不物理的解。为此，人们研究了额外的标准，以排除凸积分产生的反直觉解的能力。最近，在[H. Gimperlein、M. Grinfeld、R. J. Knops 和 M. Slemrod：最小作用允许原则，Arch。配给。机甲。 Anal., 249 (2025), Paper No. 22, https:/…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "f0b49569030bc14232a36c628f730779af64556f9d6de7d3576c98ef7ec32167"
+    "enrichment_hash": "de93a9b4e233b8bf536a02076242677ac0b462bb80e4b5c051e367c0c0e27af8"
   },
   {
     "id": "arxiv:2607.17844",
@@ -14524,9 +14524,9 @@
     "submitted_at": "",
     "published_online_at": "",
     "issue_date": "2026",
-    "source": "J. Math. Pures Appl.",
+    "source": "J. Funct. Anal.",
     "source_group": "math-fluid-pde",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001388?dgcid=rss_sd_all",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022123626003538?dgcid=rss_sd_all",
     "doi": "",
     "arxiv_url": "",
     "abstract_en": "无摘要提供，请点击原文链接查看。",
@@ -14535,8 +14535,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-math-pures-appliquees",
-    "enrichment_hash": "485e76b97f2d755902cf46d742fa94445863d87359ce5f6189a4af9aa43551c5"
+    "source_id": "journal-functional-analysis",
+    "enrichment_hash": "a7fbaa9a69e127488d89c1a3918c36c8ef36fa509a2e22e070dc03b205373251"
   },
   {
     "id": "title:90ea63fb4f639d7e0575f934",
