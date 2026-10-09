@@ -12184,14 +12184,14 @@
     "link": "https://doi.org/10.1137/25m1822642",
     "doi": "10.1137/25m1822642",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 4466-4517, August 2026.   Abstract. We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As",
+    "abstract_en": "Abstract.\n                  We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As a second contribution, we prove the global-in-time existence of weak entropy solutions to the kinetic equations, ensuring consistency with the hydrodynamic limit framework.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "e49fe850d4925d3cfe982e27d81e04f171197bc67cdcad89ea74a3b2c0c89893"
+    "enrichment_hash": "a4f30cc85a9e3b1e5fae112a3304f64fd1e54c589064570acfedd10d713ad199"
   },
   {
     "id": "doi:10.1137/25m1805394",
@@ -12207,7 +12207,7 @@
     "link": "https://doi.org/10.1137/25m1805394",
     "doi": "10.1137/25m1805394",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3998-4023, August 2026.   Abstract. We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some or",
+    "abstract_en": "Abstract.\n                  We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some ordinary differential equation, after time and space rescaling.",
     "summary_zh": "抽象的。 我们关注实线上的正压可压缩纳维-斯托克斯方程。我们的主要目标是在初始数据是稳定恒定状态的小扰动的情况下，在关键规律性框架中建立全局适定性。令人惊讶的是，尽管多维情况的结果现在已经是经典的，但据我们所知，一维情况尚未得到阐明。这是因为在临界框架中，速度的规律性非常负，以至于一些非线性项失去了控制。在这里，我们通过考虑质量拉格朗日坐标系中的方程来克服这个困难。授予全局适定性声明，然后我们建立最佳时间衰减估计并研究高粘度极限，指出在时间和空间重新缩放后特定体积收敛于某些…",
     "topic": "Other",
     "topic_tags": [
@@ -12217,7 +12217,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "6fc4ca05da453c714432ad89df50b7f75963a28197788cb60f7986dcf649ca20"
+    "enrichment_hash": "b61742ae213b0e55448cb9c8667d0979fa9bccc49ed8bf46867f953c2cfa665c"
   },
   {
     "id": "doi:10.1137/25m1757381",
@@ -14788,9 +14788,9 @@
     "submitted_at": "",
     "published_online_at": "",
     "issue_date": "2026",
-    "source": "J. Funct. Anal.",
+    "source": "J. Math. Pures Appl.",
     "source_group": "math-fluid-pde",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0022123626003538?dgcid=rss_sd_all",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001388?dgcid=rss_sd_all",
     "doi": "",
     "arxiv_url": "",
     "abstract_en": "无摘要提供，请点击原文链接查看。",
@@ -14799,8 +14799,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-functional-analysis",
-    "enrichment_hash": "a7fbaa9a69e127488d89c1a3918c36c8ef36fa509a2e22e070dc03b205373251"
+    "source_id": "journal-math-pures-appliquees",
+    "enrichment_hash": "485e76b97f2d755902cf46d742fa94445863d87359ce5f6189a4af9aa43551c5"
   },
   {
     "id": "title:90ea63fb4f639d7e0575f934",
