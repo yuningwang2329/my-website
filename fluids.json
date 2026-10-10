@@ -3177,14 +3177,14 @@
     "link": "https://doi.org/10.1137/25m1786106",
     "doi": "10.1137/25m1786106",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5331-5360, October 2026.   Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [math]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
+    "abstract_en": "Abstract.\n                  We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [ Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [ J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
     "summary_zh": "Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "f2b41ec2bb965374e187c113b4b916f541125959133af76d351cd0db0da246b2"
+    "enrichment_hash": "7f7cd48c88514f72fea05ef1503f0ffe939eb61d662094e9b954cc47a132c4fc"
   },
   {
     "id": "doi:10.1007/s00021-026-01061-2",
@@ -9669,7 +9669,7 @@
     "link": "https://doi.org/10.1137/25m1772769",
     "doi": "10.1137/25m1772769",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4723-4771, October 2026.   Abstract. Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicat",
+    "abstract_en": "Abstract.\n                  Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicate cancelation of several highly non-linear terms, making it challenging to ensure similar cancelations for approximating systems. Our first main result is to prove the existence of global weak solutions for our ferrofluid system based on a carefully constructed sequence of approximation steps. Additionally, we also study the relaxation towards the quasi-equilibrium, in which case the magnetization equation degenerates to a linear relation between the magnetic field and the magnetization. As our second main result, we prove the rigorous convergence to this limiting system.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Free Boundary, Water Waves & Multiphase",
     "topic_tags": [
@@ -9678,7 +9678,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "6cfe33b4f2557f68f0ed5ced0440116663f23d5cf43eb89d8251903b5fca2c2e"
+    "enrichment_hash": "24f927fb5685b18b36e6510eefdd443de402ac6f5b70bafbcb467570b42670f0"
   },
   {
     "id": "doi:10.1088/1361-6544/ae9dd9",
@@ -12230,7 +12230,7 @@
     "link": "https://doi.org/10.1137/25m1805394",
     "doi": "10.1137/25m1805394",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some ordinary differential equation, after time and space rescaling.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3998-4023, August 2026.   Abstract. We are concerned with the barotropic compressible Navier–Stokes equations on the real line. Our primary goal is to establish the global well-posedness in a critical regularity framework in the case where the initial data are small perturbations of a stable constant state. Surprisingly, even though the result in the multidimensional case is by now classical, the one-dimensional case has not been elucidated yet as far as we know. This is due to the fact that in the critical framework, the regularity of the velocity is so negative that some nonlinear terms are out of control. Here, we overcome the difficulty by considering the equations in the mass Lagrangian coordinates system. Granted with a global well-posedness statement, we then establish optimal time decay estimates and investigate the high viscosity limit, pointing out the convergence of the specific volume to the solution of some or",
     "summary_zh": "抽象的。 我们关注实线上的正压可压缩纳维-斯托克斯方程。我们的主要目标是在初始数据是稳定恒定状态的小扰动的情况下，在关键规律性框架中建立全局适定性。令人惊讶的是，尽管多维情况的结果现在已经是经典的，但据我们所知，一维情况尚未得到阐明。这是因为在临界框架中，速度的规律性非常负，以至于一些非线性项失去了控制。在这里，我们通过考虑质量拉格朗日坐标系中的方程来克服这个困难。授予全局适定性声明，然后我们建立最佳时间衰减估计并研究高粘度极限，指出在时间和空间重新缩放后特定体积收敛于某些…",
     "topic": "Other",
     "topic_tags": [
@@ -12240,7 +12240,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "b61742ae213b0e55448cb9c8667d0979fa9bccc49ed8bf46867f953c2cfa665c"
+    "enrichment_hash": "6fc4ca05da453c714432ad89df50b7f75963a28197788cb60f7986dcf649ca20"
   },
   {
     "id": "doi:10.1137/25m1757381",
@@ -12256,14 +12256,14 @@
     "link": "https://doi.org/10.1137/25m1757381",
     "doi": "10.1137/25m1757381",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long time dynamics of a single helical vortex filament for the three-dimensional incompressible Euler equations under helical symmetry in the absence of vorticity stretching. The initial vorticity is assumed to be concentrated in an [Formula: see text]-neighborhood of a helix in the whole space [Formula: see text]. For any fixed time [Formula: see text] independent of [Formula: see text], the corresponding weak solution is shown to remain concentrated near a rotating helical filament throughout the interval [Formula: see text]. We further derive quantitative estimates for the filament motion and show that its angular velocity satisfies [Formula: see text]. The proof relies on asymptotic expansions for the helical Biot–Savart kernel in [Formula: see text] and on weighted energy–momentum functionals adapted to the helical symmetry, which allow us to control far-field effects and to propagate vorticity concentration on a fixed time interval.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3832-3865, August 2026.   Abstract. We study the long time dynamics of a single helical vortex filament for the three-dimensional incompressible Euler equations under helical symmetry in the absence of vorticity stretching. The initial vorticity is assumed to be concentrated in an [math]-neighborhood of a helix in the whole space [math]. For any fixed time [math] independent of [math], the corresponding weak solution is shown to remain concentrated near a rotating helical filament throughout the interval [math]. We further derive quantitative estimates for the filament motion and show that its angular velocity satisfies [math]. The proof relies on asymptotic expansions for the helical Biot–Savart kernel in [math] and on weighted energy–momentum functionals adapted to the helical symmetry, which allow us to control far-field effects and to propagate vorticity concentration on a fixed time interval.",
     "summary_zh": "抽象的。 我们研究了在没有涡旋拉伸的情况下螺旋对称下三维不可压缩欧拉方程的单个螺旋涡丝的长期动力学。 假设初始涡量集中在整个空间中螺旋的[公式：见正文]邻域[公式：见正文]。对于任何独立于[公式：见文本]的固定时间[公式：见文本]，相应的弱溶液在整个时间间隔[公式：见文本]中保持集中在旋转的螺旋细丝附近。我们进一步得出了灯丝运动的定量估计，并表明其角速度满足[公式：见正文]。 证明依赖于[公式：见文本]中螺旋Biot-Savart核的渐近展开式以及适应螺旋对称性的加权能量动…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "e0c7780581ba5509e54daf7f34ceebe32208769b06ccfe421daa7ccd957c651d"
+    "enrichment_hash": "db95d95e0e4ac1dc43f6fb6461aa9cf789b7747d305e3c3a8cae679d24698591"
   },
   {
     "id": "doi:10.1112/plms.70185",
