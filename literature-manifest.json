@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "276a35c37bfe723c",
-  "generated_at": "2026-10-10T07:14:58Z",
+  "generation_id": "692bde5f94196f47",
+  "generated_at": "2026-10-11T00:13:38Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,14 +11,16 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 29,
-    "failed_ids": []
+    "succeeded": 28,
+    "failed_ids": [
+      "journal-math-fluid-mechanics"
+    ]
   },
   "current": {
     "path": "fluids.json",
     "count": 621,
-    "sha256": "891acdb211844f2dbe21f0bba85cd00602ecbb95173ce0a0427528d9697b18f8",
-    "bytes": 1273767
+    "sha256": "f4bd608cac25e8e0c4db2d87462339d83c164f6b0ac91d7658b888af89136a10",
+    "bytes": 1272803
   },
   "archives": []
 }

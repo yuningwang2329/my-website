@@ -3177,14 +3177,14 @@
     "link": "https://doi.org/10.1137/25m1786106",
     "doi": "10.1137/25m1786106",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [ Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [ J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5331-5360, October 2026.   Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [math]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
     "summary_zh": "Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "7f7cd48c88514f72fea05ef1503f0ffe939eb61d662094e9b954cc47a132c4fc"
+    "enrichment_hash": "f2b41ec2bb965374e187c113b4b916f541125959133af76d351cd0db0da246b2"
   },
   {
     "id": "doi:10.1007/s00021-026-01061-2",
@@ -8953,14 +8953,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
+    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
@@ -9169,14 +9169,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
+    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
   },
   {
     "id": "arxiv:2609.17362",
@@ -9669,7 +9669,7 @@
     "link": "https://doi.org/10.1137/25m1772769",
     "doi": "10.1137/25m1772769",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicate cancelation of several highly non-linear terms, making it challenging to ensure similar cancelations for approximating systems. Our first main result is to prove the existence of global weak solutions for our ferrofluid system based on a carefully constructed sequence of approximation steps. Additionally, we also study the relaxation towards the quasi-equilibrium, in which case the magnetization equation degenerates to a linear relation between the magnetic field and the magnetization. As our second main result, we prove the rigorous convergence to this limiting system.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4723-4771, October 2026.   Abstract. Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicat",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Free Boundary, Water Waves & Multiphase",
     "topic_tags": [
@@ -9678,7 +9678,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "24f927fb5685b18b36e6510eefdd443de402ac6f5b70bafbcb467570b42670f0"
+    "enrichment_hash": "6cfe33b4f2557f68f0ed5ced0440116663f23d5cf43eb89d8251903b5fca2c2e"
   },
   {
     "id": "doi:10.1088/1361-6544/ae9dd9",
@@ -12207,14 +12207,14 @@
     "link": "https://doi.org/10.1137/25m1822642",
     "doi": "10.1137/25m1822642",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As a second contribution, we prove the global-in-time existence of weak entropy solutions to the kinetic equations, ensuring consistency with the hydrodynamic limit framework.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 4466-4517, August 2026.   Abstract. We study the derivation of ion dynamics, namely, the ionic Euler–Poisson system, from kinetic descriptions. The kinetic framework consists of the ionic Vlasov–Poisson equation coupled with either a nonlinear Fokker–Planck operator or a local alignment term. In both kinetic and fluid models, the massless electrons are assumed to be in thermodynamic equilibrium, leading to an electric potential governed by the Poisson–Boltzmann equation. The exponential nonlinearity in this semilinear elliptic problem creates significant mathematical difficulties, which we overcome by exploiting the physical structure of the system, in particular, the role of the electron velocity field hidden in the limiting equation. Our first main result establishes the hydrodynamic limit from the kinetic model to the ionic Euler–Poisson system, providing quantitative error estimates via the modulated energy method. As",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "a4f30cc85a9e3b1e5fae112a3304f64fd1e54c589064570acfedd10d713ad199"
+    "enrichment_hash": "e49fe850d4925d3cfe982e27d81e04f171197bc67cdcad89ea74a3b2c0c89893"
   },
   {
     "id": "doi:10.1137/25m1805394",
@@ -14140,14 +14140,14 @@
     "link": "https://doi.org/10.1137/25m173421x",
     "doi": "10.1137/25m173421x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Finding a proper solution concept for the multidimensional barotropic compressible Euler equations and related systems is still an unsolved problem. As revealed by convex integration, the classical notion of admissible weak solutions (also known as weak entropy solutions) does not lead to uniqueness and allows for solutions which do not seem to be physical. For this reason, people have studied additional criteria in view of their ability to rule out the counterintuitive solutions generated by convex integration. Recently, in [H. Gimperlein, M. Grinfeld, R. J. Knops and M. Slemrod: The least action admissibility principle, Arch. Ration. Mech. Anal., 249 (2025), Paper No. 22, https://doi.org/10.1007/s00205-025-02094-z], it was suggested that the least action admissibility principle serves as the desired selection criterion. In this paper, however, we show that the least action admissibility principle rules out the solution which is intuitively the physically relevant one. Consequently, one either has to reconsider one’s intuition, or the least action admissibility principle must be discarded.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 4, Page 3585-3598, August 2026.   Abstract. Finding a proper solution concept for the multidimensional barotropic compressible Euler equations and related systems is still an unsolved problem. As revealed by convex integration, the classical notion of admissible weak solutions (also known as weak entropy solutions) does not lead to uniqueness and allows for solutions which do not seem to be physical. For this reason, people have studied additional criteria in view of their ability to rule out the counterintuitive solutions generated by convex integration. Recently, in [H. Gimperlein, M. Grinfeld, R. J. Knops and M. Slemrod: The least action admissibility principle, Arch. Ration. Mech. Anal., 249 (2025), Paper No. 22, https://doi.org/10.1007/s00205-025-02094-z], it was suggested that the least action admissibility principle serves as the desired selection criterion. In this paper, however, we show that the least action admissibilit",
     "summary_zh": "抽象的。 为多维正压可压缩欧拉方程及相关系统寻找合适的解概念仍然是一个未解决的问题。正如凸积分所揭示的，可接受的弱解（也称为弱熵解）的经典概念不会导致唯一性，并且允许看似不物理的解。为此，人们研究了额外的标准，以排除凸积分产生的反直觉解的能力。最近，在[H. Gimperlein、M. Grinfeld、R. J. Knops 和 M. Slemrod：最小作用允许原则，Arch。配给。机甲。 Anal., 249 (2025), Paper No. 22, https:/…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "f0b49569030bc14232a36c628f730779af64556f9d6de7d3576c98ef7ec32167"
+    "enrichment_hash": "de93a9b4e233b8bf536a02076242677ac0b462bb80e4b5c051e367c0c0e27af8"
   },
   {
     "id": "arxiv:2607.17844",
@@ -14811,9 +14811,9 @@
     "submitted_at": "",
     "published_online_at": "",
     "issue_date": "2026",
-    "source": "J. Math. Pures Appl.",
+    "source": "J. Funct. Anal.",
     "source_group": "math-fluid-pde",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001388?dgcid=rss_sd_all",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022123626003538?dgcid=rss_sd_all",
     "doi": "",
     "arxiv_url": "",
     "abstract_en": "无摘要提供，请点击原文链接查看。",
@@ -14822,8 +14822,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-math-pures-appliquees",
-    "enrichment_hash": "485e76b97f2d755902cf46d742fa94445863d87359ce5f6189a4af9aa43551c5"
+    "source_id": "journal-functional-analysis",
+    "enrichment_hash": "a7fbaa9a69e127488d89c1a3918c36c8ef36fa509a2e22e070dc03b205373251"
   },
   {
     "id": "title:90ea63fb4f639d7e0575f934",
