@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generation_id": "7039a35c3c7eafd5",
-  "generated_at": "2026-10-12T07:26:37Z",
+  "generation_id": "5dc5391d4fdc6942",
+  "generated_at": "2026-10-13T02:33:45Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 628,
-    "archived": 0,
+    "current": 623,
+    "archived": 7,
     "review": 2000
   },
   "sources": {
@@ -16,9 +16,17 @@
   },
   "current": {
     "path": "fluids.json",
-    "count": 628,
-    "sha256": "e0c71558658cd46fb35b66857293436d5254290f0fca599fe11a55030619c91c",
-    "bytes": 1287980
+    "count": 623,
+    "sha256": "7e99a19d9fba06365b38004956da6f443ad3e8b238ba156e9a53d6c8db7dcc74",
+    "bytes": 1281971
   },
-  "archives": []
+  "archives": [
+    {
+      "year": 2026,
+      "path": "archive/archive_2026.json",
+      "count": 7,
+      "sha256": "278f10fe7d36d8aaa75a93ee2a22eb42824755b5f170467861949b3831051cec",
+      "bytes": 8748
+    }
+  ]
 }
