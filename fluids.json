@@ -1,5 +1,28 @@
 [
   {
+    "id": "doi:10.1088/1361-6544/aead3f",
+    "title": "Steady vortex-patch flows with circulation past an obstacle in an infinitely long strip",
+    "authors": "Weilin Yu",
+    "date": "2026-10-14",
+    "discovered_at": "2026-10-14",
+    "submitted_at": "",
+    "published_online_at": "2026-10-13",
+    "issue_date": "2026-10-30",
+    "source": "Nonlinearity",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1088/1361-6544/aead3f",
+    "doi": "10.1088/1361-6544/aead3f",
+    "arxiv_url": "",
+    "abstract_en": "Abstract\n                  We consider the steady Euler flows past an obstacle in an infinitely long strip with horizontal constant velocity at infinity, prescribed circulation around the obstacle and sharply concentrated patch-type vorticity. The construction of these flows is based on the structure of a new Green function, the existence of stable minimum points of the Kirchhoff–Routh functions and the existence of maximizers of the kinetic energy for the vorticity. We mainly focus on the effect of the obstacle, the velocity at infinity and the circulation around the obstacle on the existence of minimum points of the Kirchhoff–Routh function, and consequently on the existence of vortex patch flows.",
+    "summary_zh": "Abstract We consider the steady Euler flows past an obstacle in an infinitely long strip with horizontal constant velocity at infinity, prescribed circulation around the obstacle and sharply concentrated patch-type vorticity. The construct…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "nonlinearity",
+    "enrichment_hash": "5298d1d268bb2cf0bf70003f8fac7562c25a17ba1188f5a45d0af669e71ae112"
+  },
+  {
     "id": "title:67339f833a8e4ec7c3752477",
     "title": "Diffusive limit of the Vlasov–Poisson–Boltzmann system for the full range of cutoff potentials",
     "authors": "Weijun Wu, Fujun Zhou, Yongsheng Li",
