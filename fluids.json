@@ -10051,14 +10051,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
+    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
+    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
   },
   {
     "id": "arxiv:2609.17362",
