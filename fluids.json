@@ -1,5 +1,55 @@
 [
   {
+    "id": "arxiv:2610.19453",
+    "title": "Global solvability with arbitrary mass for a chemotaxis--fluid model with sensitivity growth between linear and quadratic",
+    "authors": "Lili Wang",
+    "date": "2026-10-15",
+    "discovered_at": "2026-10-15",
+    "submitted_at": "2026-10-14",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.19453",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.19453",
+    "abstract_en": "We study a Patlak--Keller--Segel--Navier--Stokes system on $\\mathbb T\\times\\mathbb R$ with density-dependent diffusion and chemotactic sensitivity growing like $n^{1+α}$, where $0<α<1$. The coefficients satisfy the constitutive relation of Painter and Hillen (Can. Appl. Math. Q. 2002; 10(4): 501--543). Near a sufficiently strong Couette flow, we prove global classical solvability and uniform density bounds for smooth initial data with arbitrary finite cell mass. A key ingredient is a joint energy estimate for the full density and the non-zero-mode vorticity, which preserves the positive nonlinear diffusion and avoids the mixed diffusion terms arising from separate estimates of the density modes. Bounded Fourier corrections yield enhanced dissipation within this energy, allowing the non-zero-mode density--fluid interactions to be controlled. For the density zero mode, which is not mixed by Couette transport, we observe that $α<1$ allows one-dimensional interpolation to absorb its chemotactic production into diffusion for every finite mass. Together, these estimates control the nonlinear diffusion and fluid coupling without imposing a smallness condition on the initial cell mass.",
+    "summary_zh": "We study a Patlak--Keller--Segel--Navier--Stokes system on $\\mathbb T\\times\\mathbb R$ with density-dependent diffusion and chemotactic sensitivity growing like $n^{1+α}$, where $0<α<1$. The coefficients satisfy the constitutive relation of…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "Couette flow"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "3d199d4f6218cd2459f630f89b2b86ad8b0d791ba16cf8662d2fe396770ddc7d"
+  },
+  {
+    "id": "arxiv:2610.19303",
+    "title": "Relative Entropy and the Inviscid Limit for Planar Shocks of the Multi-D Burgers' Equation",
+    "authors": "Geng Chen, Jeffrey Cheng, Alexis F. Vasseur, Yi Wang",
+    "date": "2026-10-15",
+    "discovered_at": "2026-10-15",
+    "submitted_at": "2026-10-13",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.19303",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.19303",
+    "abstract_en": "In recent work (arXiv:2610.10341), the authors introduced a framework for studying the vanishing viscosity limit for sequences of weak solutions of the multi-dimensional compressible Navier-Stokes equations to planar shocks of the compressible Euler equations. In this paper, we introduce these methods and apply them to the multi-dimensional viscous Burgers' equation. We show that arbitrarily large viscous shocks enjoy $L^2$-stability among perturbations whose gradients in the directions transverse to the shock are controlled in an appropriate manner. As an application, we study the rate of convergence to the inviscid shock in the vanishing viscosity limit.",
+    "summary_zh": "In recent work (arXiv:2610.10341), the authors introduced a framework for studying the vanishing viscosity limit for sequences of weak solutions of the multi-dimensional compressible Navier-Stokes equations to planar shocks of the compress…",
+    "topic": "Boundary Layers & Inviscid Limits",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "00bd72e1441dc9ebcc29dcbcacf8ef43ba55ba69d55bd89f3acc1bc7403ce79c"
+  },
+  {
     "id": "doi:10.1088/1361-6544/aead3f",
     "title": "Steady vortex-patch flows with circulation past an obstacle in an infinitely long strip",
     "authors": "Weilin Yu",
