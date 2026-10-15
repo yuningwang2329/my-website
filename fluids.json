@@ -1,5 +1,51 @@
 [
   {
+    "id": "arxiv:2610.20540",
+    "title": "Fast separation of Euler and Navier--Stokes flows in two dimensions",
+    "authors": "Siming He, Yupei Huang, Jincheng Yang",
+    "date": "2026-10-15",
+    "discovered_at": "2026-10-15",
+    "submitted_at": "2026-10-14",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.20540",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.20540",
+    "abstract_en": "We study the long-time validity of the inviscid limit problem by measuring when the two-dimensional ideal fluid ceases to accurately approximate a slightly viscous fluid with the same initial datum. We construct a stationary solution of the Euler equation from which the Navier--Stokes solution separates at a time scale proportional to the logarithm of the inverse viscosity, achieving the fastest separation from Euler steady states.",
+    "summary_zh": "We study the long-time validity of the inviscid limit problem by measuring when the two-dimensional ideal fluid ceases to accurately approximate a slightly viscous fluid with the same initial datum. We construct a stationary solution of th…",
+    "topic": "Boundary Layers & Inviscid Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "5d07752bee1a6b74ae89404259e764a43fc24834fba1d628d8e21ccea543572a"
+  },
+  {
+    "id": "arxiv:2610.20480",
+    "title": "Transference principles for divergence sets of dispersive equations and their applications",
+    "authors": "Utsav Dewan",
+    "date": "2026-10-15",
+    "discovered_at": "2026-10-15",
+    "submitted_at": "2026-10-14",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.20480",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.20480",
+    "abstract_en": "In this article, we study the fractal refinement of the Carleson's problem: (1) We introduce an equivalence relation on linear dispersive PDEs on $\\mathbb{R}^{n}$ based on the high-frequency oscillation of their Fourier multipliers, proving that equations in the same class share the same Hausdorff dimension of divergence sets. As applications, we estimate these dimensions for abstract dispersive families. Consequently, we recover known $1$-dimensional results for linearized Boussinesq and Beam propagations, while establishing new results for both in higher dimensions and for Klein-Gordon propagations in all dimensions. (2) Next, we study the effect of radial symmetry by obtaining dimension estimates for fractional Schrödinger equations with concave phase and radial initial data. Applying a transference principle, dimension estimates are extended to families of abstract dispersive equations. As special cases, we recover the known result for the Beam propagation and also obtain new results for the linearized Boussinesq and the Klein-Gordon propagations in the radial setting. (3) We study analogues of (2) for the $3$-dimensional real hyperbolic space by obtaining dimension estimates for a wide class of dispersive propagations: the Schrödinger, fractional Schrödinger (with convex and concave phases), Beam, linearized Boussinesq, Wave and Klein-Gordon equations. This is the first result of its kind, outside the setting of flat Euclidean geometry. Our arguments are based on an inter-spatial transference principle of geometric-analytic flavour. In the process, we also obtain a quantitative result on the singular sets of Sobolev functions, in the spirit of Žubrinić, which may be of independent interest.",
+    "summary_zh": "In this article, we study the fractal refinement of the Carleson's problem: (1) We introduce an equivalence relation on linear dispersive PDEs on $\\mathbb{R}^{n}$ based on the high-frequency oscillation of their Fourier multipliers, provin…",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "a333838981fdeee5f4ebd221fe2f4f88ede280365aa04ae1be24fba5adacd6e1"
+  },
+  {
     "id": "arxiv:2610.19453",
     "title": "Global solvability with arbitrary mass for a chemotaxis--fluid model with sensitivity growth between linear and quadratic",
     "authors": "Lili Wang",
@@ -99,7 +145,7 @@
   },
   {
     "id": "arxiv:2610.18775",
-    "title": "Sharp Global Well-Posedness for the Logarithmically Regularized $2$D Euler Equations",
+    "title": "Sharp Global Well-Posedness for the Logarithmically Regularized 2D Euler Equations",
     "authors": "Zachary Radke",
     "date": "2026-10-14",
     "discovered_at": "2026-10-14",
@@ -120,7 +166,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "3cd3bffad480e47f1eaa7b59e031f8b273f036b68866bdf3871c3253885f077d"
+    "enrichment_hash": "238c027abd23217594d35e968ba2e8494d35c6af9e25df357bb35a05e0ba5175"
   },
   {
     "id": "arxiv:2610.18367",
@@ -10005,14 +10051,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
+    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
   },
   {
     "id": "arxiv:2609.17362",
