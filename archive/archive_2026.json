@@ -6,14 +6,14 @@
     "date": "2026-07-17",
     "discovered_at": "2026-07-17",
     "submitted_at": "",
-    "published_online_at": "2026-04-24",
+    "published_online_at": "2026-10-07",
     "issue_date": "2026-12",
     "source": "Commun. Pure Appl. Math.",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1002/cpa.70048",
     "doi": "10.1002/cpa.70048",
     "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
+    "abstract_en": "Communications on Pure and Applied Mathematics, Volume 79, Issue 12, Page 2435-2490, December 2026.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -25,7 +25,7 @@
     ],
     "relevance": "unknown",
     "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "ce918c4f4ee48e7eac74c878bef3b8c59adec03eddfbd5c998d1d2dbb094c4f9"
+    "enrichment_hash": "1bd5d72aed03fed6017b3e6ec84c7832c152e209879d656bda4b40f57a73f99b"
   },
   {
     "id": "arxiv:2607.15256",
