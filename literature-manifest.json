@@ -1,32 +1,34 @@
 {
   "schema_version": 1,
-  "generation_id": "8d12ccfd71afe956",
-  "generated_at": "2026-10-19T06:17:27Z",
+  "generation_id": "d4ad1667dadacb2f",
+  "generated_at": "2026-10-20T00:18:26Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 643,
-    "archived": 30,
+    "current": 639,
+    "archived": 35,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 29,
-    "failed_ids": []
+    "succeeded": 28,
+    "failed_ids": [
+      "arxiv-math-ap"
+    ]
   },
   "current": {
     "path": "fluids.json",
-    "count": 643,
-    "sha256": "a806b86cec8863e77a2ed39760477d17ef1d5e5c7a8c66940dac70f23f68c701",
-    "bytes": 1319190
+    "count": 639,
+    "sha256": "746fc475b2d44b409ade9094bfdfd6d4f681d135f5a177c8aa7b7e6159d23c09",
+    "bytes": 1308327
   },
   "archives": [
     {
       "year": 2026,
       "path": "archive/archive_2026.json",
-      "count": 30,
-      "sha256": "892546cc7859203e627b0fe6b82e3964815d07b34528b7473209bda545a52e6a",
-      "bytes": 51898
+      "count": 35,
+      "sha256": "f9b6fd461ef48c05e4133f9a6734d4a6d63e550f2e99365a3c5ca732450f3a84",
+      "bytes": 63589
     }
   ]
 }
