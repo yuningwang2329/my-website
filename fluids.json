@@ -4926,14 +4926,14 @@
     "link": "https://doi.org/10.1137/25m1786106",
     "doi": "10.1137/25m1786106",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5331-5360, October 2026.   Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [math]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
+    "abstract_en": "Abstract.\n                  We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [ Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [ J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
     "summary_zh": "Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "f2b41ec2bb965374e187c113b4b916f541125959133af76d351cd0db0da246b2"
+    "enrichment_hash": "7f7cd48c88514f72fea05ef1503f0ffe939eb61d662094e9b954cc47a132c4fc"
   },
   {
     "id": "doi:10.1007/s00021-026-01061-2",
@@ -10702,14 +10702,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
+    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
+    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
