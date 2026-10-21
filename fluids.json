@@ -25,6 +25,32 @@
     "enrichment_hash": "8d7397856e2bc09e1a2c805d94d98d35c32e168d01aeb02f7d825ff381568488"
   },
   {
+    "id": "doi:10.1088/1361-6544/aeb19d",
+    "title": "Stability and decay estimates for the 3D MHD equations with horizontal dissipation in half space R + 3",
+    "authors": "Jiajing Wang, Wanrong Yang",
+    "date": "2026-10-21",
+    "discovered_at": "2026-10-21",
+    "submitted_at": "",
+    "published_online_at": "2026-10-21",
+    "issue_date": "2026-10-30",
+    "source": "Nonlinearity",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1088/1361-6544/aeb19d",
+    "doi": "10.1088/1361-6544/aeb19d",
+    "arxiv_url": "",
+    "abstract_en": "Abstract\n                  \n                    This paper focuses on the initial-boundary value problem for the three-dimensional incompressible magnetohydrodynamic (MHD) equations with horizontal dissipation in the half space\n                    \n                      \n                        \n                      \n                      \n                        \n                          Ω\n                          :=\n                          \n                            \n                              \n                                R\n                              \n                            \n                            +\n                            3\n                          \n                        \n                      \n                    \n                    under the slip boundary conditions. The goal here is to assess the stability and long-time behavior of perturbations near a background magnetic field\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            \n                              B\n                              ¯\n                            \n                          \n                          =\n                          (\n                          1\n                          ,\n                          0\n                          ,\n                          0\n                          )\n                        \n                      \n                    \n                    . By utilizing the structure of the system and boundary conditions to overcome difficulties arising from boundary integral terms, we prove the global stability in the Sobolev space\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            H\n                            3\n                          \n                          (\n                          \n                            \n                              \n                                R\n                              \n                            \n                            +\n                            3\n                          \n                          )\n                        \n                      \n                    \n                    . After taking the Fourier cosine transforms in\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            x\n                            h\n                          \n                          =\n                          (\n                          \n                            x\n                            1\n                          \n                          ,\n                          \n                            x\n                            2\n                          \n                          )\n                        \n                      \n                    \n                    and the Fourier sine transforms in\n                    \n                      \n                        \n                      \n                      \n                        \n                          \n                            x\n                            3\n                          \n                        \n                      \n                    \n                    , and by the means of bootstrapping argument, we obtain the decay rates for the global solution itself as well as its derivatives.",
+    "summary_zh": "Abstract This paper focuses on the initial-boundary value problem for the three-dimensional incompressible magnetohydrodynamic (MHD) equations with horizontal dissipation in the half space Ω := R + 3 under the slip boundary conditions. The…",
+    "topic": "MHD & Plasma",
+    "topic_tags": [
+      "stability",
+      "decay"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "nonlinearity",
+    "enrichment_hash": "d6d20de9e22108bce86fdf2db88e3b349fae0bc75957b9b62bd3d48753ccae14"
+  },
+  {
     "id": "doi:10.1002/cpa.70055",
     "title": "A Geometric Characterization of Steady Laminar Flow",
     "authors": "Theodore D. Drivas, Marc Nualart",
@@ -1053,7 +1079,7 @@
     "link": "https://doi.org/10.1137/25m1777025",
     "doi": "10.1137/25m1777025",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5598-5622, October 2026.   Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
+    "abstract_en": "Abstract.\n                  In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
     "summary_zh": "Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores th…",
     "topic": "MHD & Plasma",
     "topic_tags": [
@@ -1062,7 +1088,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "169165abc21bf44aebd5dd456f156f423921fb8fdb1b11a32f1e3790c4ad707b"
+    "enrichment_hash": "552cbee05daec751466411a9ba359af93b0bb865fa2cac07493215061ee80b3e"
   },
   {
     "id": "arxiv:2610.22090",
