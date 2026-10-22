@@ -1,40 +1,32 @@
 {
   "schema_version": 1,
-  "generation_id": "f3f619c8091fcd07",
-  "generated_at": "2026-10-22T05:04:19Z",
+  "generation_id": "09bb344aa8c9918a",
+  "generated_at": "2026-10-22T06:09:20Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 674,
+    "current": 675,
     "archived": 39,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 22,
-    "failed_ids": [
-      "analysis-pde",
-      "annales-henri-poincare-c",
-      "annals-math",
-      "forum-mathematics-pi",
-      "journal-math-fluid-mechanics",
-      "journal-reine-angewandte-mathematik",
-      "nonlinearity"
-    ]
+    "succeeded": 29,
+    "failed_ids": []
   },
   "current": {
     "path": "fluids.json",
-    "count": 674,
-    "sha256": "87d26374d08cd0f6b971830773e9dd9c0f14dcb3b054d04cb498f7b8f0577d86",
-    "bytes": 1376332
+    "count": 675,
+    "sha256": "1a993f195204ebe04ddfa5d9bd7fd30c5ad4a3f4e14f369d93de68c83634b475",
+    "bytes": 1379074
   },
   "archives": [
     {
       "year": 2026,
       "path": "archive/archive_2026.json",
       "count": 39,
-      "sha256": "52a700d94d9727dda191505f1fd610de876ce21aeade869ec92e8da476d384aa",
-      "bytes": 72483
+      "sha256": "a46f4e7423a1d9682d4b2869bb81e8c2bb6c2ff0b6e2d7c0c14e641776c6d2ba",
+      "bytes": 73117
     }
   ]
 }
