@@ -1,5 +1,102 @@
 [
   {
+    "id": "arxiv:2610.32603",
+    "title": "From kinetic activation dynamics to Holling type reaction-diffusion predator-prey systems",
+    "authors": "Paolo Buttà",
+    "date": "2026-10-26",
+    "discovered_at": "2026-10-26",
+    "submitted_at": "2026-10-23",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.32603",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.32603",
+    "abstract_en": "We consider a kinetic model of predator-prey dynamics in which predation is characterized by a sequence of behavioral transitions. Prey and predators are described by distribution functions in phase space, with the predator population further structured into internal states corresponding to inactive, active, and saturated individuals. We show that different macroscopic functional responses emerge from distinct mechanisms governing predator activation. More precisely, activation driven uniquely by pairwise encounters leads to a saturating Holling type II response, whereas activation additionally modulated by local prey density produces a generalized sigmoidal Holling type III response. This is achieved by means of a diffusive scaling and a formal hydrodynamic limit, from which we derive a closed reaction-diffusion system of Rosenzweig-MacArthur type for the prey and total predator spatial densities.",
+    "summary_zh": "We consider a kinetic model of predator-prey dynamics in which predation is characterized by a sequence of behavioral transitions. Prey and predators are described by distribution functions in phase space, with the predator population furt…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "6cc3102fea1b01da7842d838226049405411af2c6d923a1b4c799efb93b2f2e3"
+  },
+  {
+    "id": "arxiv:2610.32454",
+    "title": "Uniform Regularity for the Compressible Navier-Stokes-Poisson System under Navier-Slip Boundary Conditions",
+    "authors": "Hairong Liu, Jinlong Wu",
+    "date": "2026-10-26",
+    "discovered_at": "2026-10-26",
+    "submitted_at": "2026-10-23",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.32454",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.32454",
+    "abstract_en": "In this paper, we establish the existence of a local-in-time strong solution to the compressible Navier--Stokes--Poisson system in a three-dimensional bounded smooth domain, subject to the general Navier--slip boundary condition. The solution is shown to be uniformly bounded in conormal Sobolev spaces, with uniform regularity estimates that are independent of the viscosity coefficients. As a consequence, we obtain the inviscid limit to the corresponding compressible Euler--Poisson system via a strong compactness argument.",
+    "summary_zh": "In this paper, we establish the existence of a local-in-time strong solution to the compressible Navier--Stokes--Poisson system in a three-dimensional bounded smooth domain, subject to the general Navier--slip boundary condition. The solut…",
+    "topic": "Boundary Layers & Inviscid Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "3fc4c83b3eda5f2bc949dbd97869df097715d00fd8da9714ade0e06745796c18"
+  },
+  {
+    "id": "arxiv:2610.32296",
+    "title": "Optimal time decay of the Boltzmann equation with cutoff soft potentials in the whole space",
+    "authors": "Yuanjie Lei, Xiongju Wei, Tong Yang, Huijiang Zhao",
+    "date": "2026-10-26",
+    "discovered_at": "2026-10-26",
+    "submitted_at": "2026-10-23",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.32296",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.32296",
+    "abstract_en": "Since Strain's work \\cite{Strain-2012-KRM} on almost optimal time decay rates for the microscopic part of perturbative classical solutions to the Boltzmann system with soft potentials via the time-velocity splitting method, how to obtain the optimal decay of the microscopic part has remained unsolved. In this paper, we resolve this problem by developing a nonlinear energy estimate method different from the time-velocity splitting approach. The proof relies on a combination of a hierarchy of time-weighted energy estimates, the damping factor \\(e^{-ν(v)(t-τ)}\\), and a dyadic decomposition of velocity space.",
+    "summary_zh": "Since Strain's work \\cite{Strain-2012-KRM} on almost optimal time decay rates for the microscopic part of perturbative classical solutions to the Boltzmann system with soft potentials via the time-velocity splitting method, how to obtain t…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [
+      "decay"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "c2d7b9c1354ba3785f914e3016407e7d51105f428353bfb0ec061cf7b6062d04"
+  },
+  {
+    "id": "arxiv:2610.31790",
+    "title": "Rapid stabilization for Stokes and Navier-Stokes systems with localized disturbance",
+    "authors": "Christian Calle, Patricio Guzmán, Hugo Parada, Jefferson Prada",
+    "date": "2026-10-26",
+    "discovered_at": "2026-10-26",
+    "submitted_at": "2026-10-22",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.31790",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.31790",
+    "abstract_en": "In this study, we analyze the rapid stabilization of Stokes and the two- and three-dimensional Navier-Stokes systems in the presence of an unknown spatially localized disturbance. A multivalued feedback control strategy is proposed which combines the Lyapunov frequency method with the multivalued sign operator. This methodology connects Lyapunov-based stability analysis with spectral inequalities, while the inclusion of the sign operator provides robustness against disturbance. The closed-loop system is governed by a differential inclusion, for which well-posedness is proved via the theory of maximal monotone operators. This approach guarantees global rapid exponential stabilization for the Stokes system and local rapid exponential stabilization for the two- and three-dimensional Navier-Stokes systems, with arbitrarily large disturbance bounds. In three dimensions, we obtain global strong solutions and rapid exponential stabilization for initial data sufficiently small in the $L^2$-norm with a prescribed, arbitrarily large bound in the $H^1$-norm.",
+    "summary_zh": "In this study, we analyze the rapid stabilization of Stokes and the two- and three-dimensional Navier-Stokes systems in the presence of an unknown spatially localized disturbance. A multivalued feedback control strategy is proposed which c…",
+    "topic": "Navier–Stokes & Viscous Flow",
+    "topic_tags": [
+      "stability",
+      "well-posedness"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "b4834b355fcf8e543e69d1bfdf6110427b47549e2bcb174bb8cc8b148fcd826f"
+  },
+  {
     "id": "doi:10.1002/cpa.70055",
     "title": "A Geometric Characterization of Steady Laminar Flow",
     "authors": "Theodore D. Drivas, Marc Nualart",
@@ -1555,7 +1652,7 @@
     "link": "https://doi.org/10.1137/25m1777025",
     "doi": "10.1137/25m1777025",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5598-5622, October 2026.   Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
     "summary_zh": "Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores th…",
     "topic": "MHD & Plasma",
     "topic_tags": [
@@ -1564,7 +1661,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "552cbee05daec751466411a9ba359af93b0bb865fa2cac07493215061ee80b3e"
+    "enrichment_hash": "169165abc21bf44aebd5dd456f156f423921fb8fdb1b11a32f1e3790c4ad707b"
   },
   {
     "id": "arxiv:2610.22090",
@@ -2144,7 +2241,7 @@
     "link": "https://arxiv.org/abs/2610.15588",
     "doi": "",
     "arxiv_url": "https://arxiv.org/abs/2610.15588",
-    "abstract_en": "We study the initial boundary value problem for the compressible Navier-Stokes-Poisson equations without damping in the three-dimensional half-space. The velocity satisfies the no-slip boundary condition, and the electric potential satisfies the homogeneous Neumann boundary condition. For small perturbations of a constant state in $H^3$, with a small initial electric field in $L^2$, we establish global existence and uniqueness of strong solutions. The uniform estimates combine density dissipation, tangential and normal derivative estimates, and a modified energy that accounts for the electric boundary contribution through the Helmholtz projection. We also prove algebraic decay under an additional low-frequency assumption on the initial data. If the density perturbation, velocity and electric field have finite tangential negative Sobolev norms of order $-s$, where $1/2\\leq s<1$, then the solution decays at the rate $(1+t)^{-s/2}$ in the full energy norm. The decay estimate follows from the formulation in terms of the momentum $ρu$, uniform negative-order estimates and interpolation with the dissipation.",
+    "abstract_en": "We study the initial boundary value problem for the compressible Navier--Stokes--Poisson equations without damping in the three-dimensional half-space and in smooth exterior domains. The velocity satisfies the no-slip boundary condition, and the electric potential satisfies the homogeneous Neumann boundary condition. For small perturbations of a constant state in $H^3$, with a small initial electric field in $L^2$, we establish global existence and uniqueness of strong solutions. The uniform estimates combine density dissipation, tangential and normal derivative estimates, and a modified energy expressed through the Helmholtz projection. In exterior domains, boundary normal coordinates and localized elliptic estimates control the geometric terms. We also obtain algebraic decay in the full energy norm. In the half-space, finite tangential negative Sobolev norms of order $-s$, with $\\frac12\\leq s<1$, yield the rate $(1+t)^{-s/2}$. In exterior domains, integrable initial density and velocity perturbations yield the same form of estimate for $0<s<\\frac14$. The exterior decay proof uses whole-space negative-order estimates for localized variables and the time integrability of the dissipation.",
     "summary_zh": "We study the initial boundary value problem for the compressible Navier-Stokes-Poisson equations without damping in the three-dimensional half-space. The velocity satisfies the no-slip boundary condition, and the electric potential satisfi…",
     "topic": "Other",
     "topic_tags": [
@@ -2154,7 +2251,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "2a473b0abb2622155ff4f0a73944d8604ae6baad7218b32178b346c6aaf726bd"
+    "enrichment_hash": "71ac77a9ec845343864028d1973f79659896a1355d74e6650193f3318a04416c"
   },
   {
     "id": "arxiv:2610.15584",
@@ -3845,29 +3942,6 @@
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
     "enrichment_hash": "8aad7ed5513e8d6b8cbb3f74e1fb65b618bbe18d5bddfe35e56449f291a350b1"
-  },
-  {
-    "id": "arxiv:2610.02551",
-    "title": "Asymptotic behavior of the one-dimensional Vlasov--Poisson system with a repulsive harmonic potential",
-    "authors": "Huang, Wenrui",
-    "date": "2026-10-05",
-    "discovered_at": "2026-10-05",
-    "submitted_at": "2026-10-01",
-    "published_online_at": "",
-    "issue_date": "",
-    "source": "Arxiv (math.AP)",
-    "source_group": "math-fluid-pde",
-    "link": "https://arxiv.org/abs/2610.02551",
-    "doi": "",
-    "arxiv_url": "https://arxiv.org/abs/2610.02551",
-    "abstract_en": "We consider the one-dimensional Vlasov--Poisson system with a repulsive harmonic potential. For repulsive self-interactions, we establish modified scattering for initial data of arbitrary size in some weighted Sobolev spaces without symmetry, compact support, or spatial moment assumptions. The proof uses a Hamilton-Jacobi momentum correction and the sign of the repulsive interaction to obtain large-data bounds. We also construct modified wave operators. These results complement the higher-dimensional theory in \\cite{HK26,VR24,BVR25}. We expect our methods to be useful in the study of a broader class of kinetic equations with very long-range interactions.",
-    "summary_zh": "We consider the one-dimensional Vlasov--Poisson system with a repulsive harmonic potential. For repulsive self-interactions, we establish modified scattering for initial data of arbitrary size in some weighted Sobolev spaces without symmet…",
-    "topic": "Kinetic Theory & Hydrodynamic Limits",
-    "topic_tags": [],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "465db8ae172fc373eec37aa0a36c4e5af39208569b8652255442e622a283fadd"
   },
   {
     "id": "arxiv:2610.02509",
@@ -5648,14 +5722,14 @@
     "link": "https://doi.org/10.1137/25m1786106",
     "doi": "10.1137/25m1786106",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [ Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [ J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5331-5360, October 2026.   Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [math]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
     "summary_zh": "Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "7f7cd48c88514f72fea05ef1503f0ffe939eb61d662094e9b954cc47a132c4fc"
+    "enrichment_hash": "f2b41ec2bb965374e187c113b4b916f541125959133af76d351cd0db0da246b2"
   },
   {
     "id": "doi:10.1007/s00021-026-01061-2",
@@ -11640,14 +11714,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
+    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
   },
   {
     "id": "arxiv:2609.17362",
