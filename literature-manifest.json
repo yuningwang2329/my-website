@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "b78223a49c67e0b1",
-  "generated_at": "2026-10-26T05:01:14Z",
+  "generation_id": "24810d2bebf7571f",
+  "generated_at": "2026-10-26T06:22:11Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,8 +11,10 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 29,
-    "failed_ids": []
+    "succeeded": 28,
+    "failed_ids": [
+      "arxiv-math-ap"
+    ]
   },
   "current": {
     "path": "fluids.json",
