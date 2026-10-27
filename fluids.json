@@ -1,5 +1,28 @@
 [
   {
+    "id": "doi:10.1007/s00021-026-01065-y",
+    "title": "Invariant Geometric Properties in the Dynamics of Bounded Planar Hele-Shaw Flows",
+    "authors": "Mihai Aron",
+    "date": "2026-10-27",
+    "discovered_at": "2026-10-27",
+    "submitted_at": "",
+    "published_online_at": "2026-10-26",
+    "issue_date": "2026-11",
+    "source": "J. Math. Fluid Mech.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1007/s00021-026-01065-y",
+    "doi": "10.1007/s00021-026-01065-y",
+    "arxiv_url": "",
+    "abstract_en": "Abstract\n                  \n                    The geometric property of\n                    \n                      \n                        $$\\sigma $$\n                        \n                          σ\n                        \n                      \n                    \n                    -superstarlikeness, along with its related notions–\n                    \n                      \n                        $$\\sigma $$\n                        \n                          σ\n                        \n                      \n                    \n                    -superstarlikeness of order \n                    \n                      \n                        $$\\alpha $$\n                        \n                          α\n                        \n                      \n                    \n                    and\n                    \n                      \n                        $$\\sigma $$\n                        \n                          σ\n                        \n                      \n                    \n                    -superstarlikeness of complex order–are introduced and studied in this paper. These concepts are shown not only to cover but also to generalize a wide range of known time-invariant geometric properties of the moving boundary in the inner Hele-Shaw flow problem for bounded domains, i.e., two-dimensional bounded viscous fluid flows under injection in the absence of surface tension. We prove that, under suitable parameter constraints, these properties are preserved in time. Consequently, this work extends, unifies, and completes recent research on the Hele-Shaw flow problem in the absence of surface tension.",
+    "summary_zh": "Abstract The geometric property of $$\\sigma $$ σ -superstarlikeness, along with its related notions– $$\\sigma $$ σ -superstarlikeness of order $$\\alpha $$ α and $$\\sigma $$ σ -superstarlikeness of complex order–are introduced and studied i…",
+    "topic": "Free Boundary, Water Waves & Multiphase",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-math-fluid-mechanics",
+    "enrichment_hash": "5df2479486e1aba80622b60c631c87322e861c1f8ef9b4cc64056b6f6683e8f4"
+  },
+  {
     "id": "arxiv:2610.32893",
     "title": "From entropy waves to vortex sheets for the Euler equations",
     "authors": "Yuri Trakhinin, Wei Wang, Zhifei Zhang, Wenbin Zhao",
@@ -222,7 +245,7 @@
     "discovered_at": "2026-10-23",
     "submitted_at": "",
     "published_online_at": "",
-    "issue_date": "2026-10",
+    "issue_date": "2027-01",
     "source": "J. Math. Pures Appl.",
     "source_group": "math-fluid-pde",
     "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001534?dgcid=rss_sd_all",
@@ -413,7 +436,7 @@
     "discovered_at": "2026-10-22",
     "submitted_at": "",
     "published_online_at": "",
-    "issue_date": "2026-10",
+    "issue_date": "2027-01",
     "source": "J. Math. Pures Appl.",
     "source_group": "math-fluid-pde",
     "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001522?dgcid=rss_sd_all",
@@ -1617,13 +1640,13 @@
   },
   {
     "id": "title:cf7c12edcfdc1e55644dd0d0",
-    "title": "Partial Regularity and Blowup for an Averaged Three-Dimensional Navier-Stokes Equation",
+    "title": "Partial regularity and blowup for an averaged three-dimensional Navier-Stokes equation",
     "authors": "Matei P. Coiculescu",
     "date": "2026-10-17",
     "discovered_at": "2026-10-17",
     "submitted_at": "",
     "published_online_at": "",
-    "issue_date": "2026-10",
+    "issue_date": "2027-02",
     "source": "J. Funct. Anal.",
     "source_group": "math-fluid-pde",
     "link": "https://www.sciencedirect.com/science/article/pii/S002212362600385X?dgcid=rss_sd_all",
@@ -1636,7 +1659,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "journal-functional-analysis",
-    "enrichment_hash": "0f16912c8bb59773d1cf43f0c78d25ce41a4eb6b25e5a0dae739a748f015f9ec"
+    "enrichment_hash": "fc913918fb44053f3ac9b0ba149d414965e3e42e5754ea2d901fbd0a2fe7d907"
   },
   {
     "id": "doi:10.1007/s00205-026-02260-x",
@@ -11760,14 +11783,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
+    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
   },
   {
     "id": "arxiv:2609.17362",
@@ -12118,14 +12141,14 @@
     "link": "https://doi.org/10.1137/25m1805291",
     "doi": "10.1137/25m1805291",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4990-5011, October 2026.   Abstract. The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "663b58dd885f391bf66f747a6954f3fbdf282c244bc043c52fdc534996c10f18"
+    "enrichment_hash": "3c74c412ca473d2ab317473dc2f7e16ce0465a9a8973f2431aa362baa308a34e"
   },
   {
     "id": "doi:10.1137/24m1695592",
@@ -16545,28 +16568,5 @@
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
     "enrichment_hash": "c0d988a02da680095aae37ed28d57422704a8f4878be7de27d028ae1e9e05326"
-  },
-  {
-    "id": "arxiv:2607.24635",
-    "title": "Positive-regularity norm inflation for the 3D hypodissipative Navier--Stokes equations",
-    "authors": "Guirong Tang, Shiyang Xiong",
-    "date": "2026-07-28",
-    "discovered_at": "2026-07-28",
-    "submitted_at": "2026-07-27",
-    "published_online_at": "",
-    "issue_date": "",
-    "source": "Arxiv (math.AP)",
-    "source_group": "math-fluid-pde",
-    "link": "https://arxiv.org/abs/2607.24635",
-    "doi": "",
-    "arxiv_url": "https://arxiv.org/abs/2607.24635",
-    "abstract_en": "We prove same-space norm inflation for the three-dimensional hypodissipative Navier--Stokes equations with dissipation $(-Δ)^α$, $0<α<1$. Let $2\\le p<\\infty$ and \\[   0<s<1-2α+\\frac3p. \\] In the Besov case, let also $1\\le q\\le\\infty$. There exist divergence-free $C_c^\\infty(\\mathbb R^3)$ initial data that are arbitrarily small in $W^{s,p}$, respectively in $B^s_{p,q}$, while the corresponding unique local smooth solution becomes arbitrarily large in the same space in arbitrarily short time. The proof adapts the anisotropic vortex-ring mixing mechanism to fractional dissipation; the strict scaling-supercritical gap makes both the curvature error and the nonlocal dissipative error perturbative.",
-    "summary_zh": "我们证明了三维低耗散纳维-斯托克斯方程的同空间范数膨胀，耗散$(-Δ)^α$，$0<α<1$。设 $2\\le p<\\infty$ 和 \\[ 0<s<1-2α+\\frac3p。 \\] 在 Besov 情况下，也设 $1\\le q\\le\\infty$。 $W^{s,p}$ 和 $B^s_{p,q}$ 中分别存在无散的 $C_c^\\infty(\\mathbb R^3)$ 初始数据任意小，而相应的唯一局部平滑解在任意短的时间内在同一空间内变得任意大。证明采用各向异性涡环混合机制来适…",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "39ff2c6e6f03a0589e55b75b17eb773686245e93d527152d9c8c4e4bf12f6fba"
   }
 ]

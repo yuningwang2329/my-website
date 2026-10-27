@@ -1,5 +1,28 @@
 [
   {
+    "id": "arxiv:2607.24635",
+    "title": "Positive-regularity norm inflation for the 3D hypodissipative Navier--Stokes equations",
+    "authors": "Guirong Tang, Shiyang Xiong",
+    "date": "2026-07-28",
+    "discovered_at": "2026-07-28",
+    "submitted_at": "2026-07-27",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2607.24635",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2607.24635",
+    "abstract_en": "We prove same-space norm inflation for the three-dimensional hypodissipative Navier--Stokes equations with dissipation $(-Δ)^α$, $0<α<1$. Let $2\\le p<\\infty$ and \\[   0<s<1-2α+\\frac3p. \\] In the Besov case, let also $1\\le q\\le\\infty$. There exist divergence-free $C_c^\\infty(\\mathbb R^3)$ initial data that are arbitrarily small in $W^{s,p}$, respectively in $B^s_{p,q}$, while the corresponding unique local smooth solution becomes arbitrarily large in the same space in arbitrarily short time. The proof adapts the anisotropic vortex-ring mixing mechanism to fractional dissipation; the strict scaling-supercritical gap makes both the curvature error and the nonlocal dissipative error perturbative.",
+    "summary_zh": "我们证明了三维低耗散纳维-斯托克斯方程的同空间范数膨胀，耗散$(-Δ)^α$，$0<α<1$。设 $2\\le p<\\infty$ 和 \\[ 0<s<1-2α+\\frac3p。 \\] 在 Besov 情况下，也设 $1\\le q\\le\\infty$。 $W^{s,p}$ 和 $B^s_{p,q}$ 中分别存在无散的 $C_c^\\infty(\\mathbb R^3)$ 初始数据任意小，而相应的唯一局部平滑解在任意短的时间内在同一空间内变得任意大。证明采用各向异性涡环混合机制来适…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "39ff2c6e6f03a0589e55b75b17eb773686245e93d527152d9c8c4e4bf12f6fba"
+  },
+  {
     "id": "arxiv:2607.21265",
     "title": "Neutral curves and traveling waves in plane Poiseuille flow",
     "authors": "Hui Li, Yuxi Wang, Zhifei Zhang",
