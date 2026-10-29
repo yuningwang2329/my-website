@@ -1,5 +1,28 @@
 [
   {
+    "id": "title:87caab0e15f493e29a2e33a0",
+    "title": "Velocity evolution in deep water with vorticity",
+    "authors": "Jian Li, Chengfa Wu, Shaojie Yang",
+    "date": "2026-10-29",
+    "discovered_at": "2026-10-29",
+    "submitted_at": "",
+    "published_online_at": "",
+    "issue_date": "2027-02",
+    "source": "J. Differ. Equ.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022039626007758?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Euler, Vorticity & Inviscid Flow",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-differential-equations",
+    "enrichment_hash": "a36b90e83e702c390f211b453cf6db76a8fe0bb31318f009b59a1ddcd8000a49"
+  },
+  {
     "id": "doi:10.4171/jems/1813",
     "title": "Sedimentation of particles with very small inertia II: Derivation, Cauchy problem and hydrodynamic limit of the Vlasov–Stokes equation",
     "authors": "Richard M. Höfer, Richard Schubert",
@@ -1224,14 +1247,14 @@
     "link": "https://doi.org/10.1137/25m1812737",
     "doi": "10.1137/25m1812737",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5731-5751, October 2026.   Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
     "summary_zh": "Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "bbeac2c40c34ffb456d26f5b82bb1e844f523e98f511efadd13cbab736323de1"
+    "enrichment_hash": "ba7773051ca688eecec61714bdd5a243f16487f80671644ae899f37ebef4bdf0"
   },
   {
     "id": "doi:10.1007/s00021-026-01066-x",
