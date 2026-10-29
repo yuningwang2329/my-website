@@ -1,32 +1,35 @@
 {
   "schema_version": 1,
-  "generation_id": "2969e951dc7059e7",
-  "generated_at": "2026-10-29T00:52:55Z",
+  "generation_id": "4b521648eb153e0e",
+  "generated_at": "2026-10-29T02:55:19Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 718,
+    "current": 717,
     "archived": 43,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 29,
-    "failed_ids": []
+    "succeeded": 27,
+    "failed_ids": [
+      "duke-mathematical-journal",
+      "journal-math-fluid-mechanics"
+    ]
   },
   "current": {
     "path": "fluids.json",
-    "count": 718,
-    "sha256": "0bcf6c079866e5f201ba2bd8be9d5603db12299d94b4737193522eaadd7482dc",
-    "bytes": 1467101
+    "count": 717,
+    "sha256": "6022d5f4c8aa74e678153db718fd79f7d3d61daa001ab161b071d6577f4d2576",
+    "bytes": 1465066
   },
   "archives": [
     {
       "year": 2026,
       "path": "archive/archive_2026.json",
       "count": 43,
-      "sha256": "984e91404d44b263e2af6f8043667e1b4a2187e898d938ebca907e0850dc9cbf",
-      "bytes": 82381
+      "sha256": "4f8839379d9571655b78ce0ea37b1e52e8ee1822ce3c4c75d241471d0be7bbb2",
+      "bytes": 82243
     }
   ]
 }
