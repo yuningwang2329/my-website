@@ -1,5 +1,28 @@
 [
   {
+    "id": "doi:10.1007/s00021-026-01068-9",
+    "title": "Vorticity Confinement for 2D Incompressible Flows in an Infinite Cylinder",
+    "authors": "Paolo Buttà, Guido Cavallaro",
+    "date": "2026-10-30",
+    "discovered_at": "2026-10-30",
+    "submitted_at": "",
+    "published_online_at": "2026-10-28",
+    "issue_date": "2026-11",
+    "source": "J. Math. Fluid Mech.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1007/s00021-026-01068-9",
+    "doi": "10.1007/s00021-026-01068-9",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-math-fluid-mechanics",
+    "enrichment_hash": "e14331fab897acb7f3423c037ff8cf63313911c7554987362d38b6e92a347ae8"
+  },
+  {
     "id": "title:87caab0e15f493e29a2e33a0",
     "title": "Velocity evolution in deep water with vorticity",
     "authors": "Jian Li, Chengfa Wu, Shaojie Yang",
