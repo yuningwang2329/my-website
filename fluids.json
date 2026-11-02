@@ -1,5 +1,104 @@
 [
   {
+    "id": "arxiv:2610.41250",
+    "title": "A Good-Vorticity Low-Regularity Integrator for the Inviscid Oldroyd--B System with Stress Diffusion",
+    "authors": "Xinyu Cheng, Zhaonan Luo, Zhaojie Yang, Cheng Yuan",
+    "date": "2026-11-02",
+    "discovered_at": "2026-11-02",
+    "submitted_at": "2026-10-30",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.41250",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.41250",
+    "abstract_en": "We establish sharp convergence results for a sequential semi-implicit good-vorticity integrator for the two-dimensional inviscid Oldroyd--B system with stress diffusion on the torus. For exact solutions satisfying $u\\in C_tB^{1+α}_{\\infty,1}$ and $τ\\in C_tB^α_{\\infty,1}\\cap L^1_tB^{2+α}_{\\infty,1}$, $0\\leα\\le2$, we prove convergence in the critical norms $B^1_{\\infty,1}\\times B^0_{\\infty,1}$, uniformly over the time nodes on every finite interval where these regularity assumptions hold, including the critical endpoint $α=0$. For $0<α\\le2$, we obtain the rate $O(h^{α/2})$ without any additional time Hölder assumption, reaching first order at $α=2$. These algebraic exponents are optimal for this Eulerian scheme over the stated solution classes, as shown by fixed-data lower bounds in the case $a=b=0$ with nonzero velocity mean. For a fixed shear solution at critical regularity, we establish matching logarithmic upper and lower bounds on the numerical error, ruling out every positive algebraic convergence rate. We also prove that the gain of one stress derivative at the time nodes is optimal when the velocity is controlled in $B^1_{\\infty,1}$, even for smooth initial stress.",
+    "summary_zh": "We establish sharp convergence results for a sequential semi-implicit good-vorticity integrator for the two-dimensional inviscid Oldroyd--B system with stress diffusion on the torus. For exact solutions satisfying $u\\in C_tB^{1+α}_{\\infty,…",
+    "topic": "Euler, Vorticity & Inviscid Flow",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "369b777d0e014ade2a270947a15db94dd68440d436c9ea27852455b488a0c4d7"
+  },
+  {
+    "id": "arxiv:2610.41106",
+    "title": "Long-Time Behavior towards Generic Riemann Solutions for Radiative Euler Equations",
+    "authors": "Jeffrey Cheng, Namhyun Eun",
+    "date": "2026-11-02",
+    "discovered_at": "2026-11-02",
+    "submitted_at": "2026-10-30",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.41106",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.41106",
+    "abstract_en": "We study the time-asymptotic stability of generic Riemann solutions for the one-dimensional radiative Euler equations, where the Riemann pattern consists of a $1$-rarefaction wave, a $2$-contact discontinuity, and a $3$-shock wave. We prove that, for sufficiently small wave strengths and initial perturbations, the Cauchy problem admits a unique global solution, which converges uniformly as $t\\to \\infty$ to a composite wave of the $1$-rarefaction wave, $2$-viscous contact wave, and $3$-radiative shock profile with a time-dependent shift. As a key ingredient, we establish a comprehensive set of quantitative estimates for weak radiative shock profiles.   Our proof is based on the method of $a$-contraction with shifts. In all previous applications of the $a$-contraction method to the study of long-time behavior, the proof has relied essentially on the parabolic structure provided by either viscosity or heat conduction. In this work, we extend the method to a hyperbolic-elliptic system without parabolic structure.",
+    "summary_zh": "We study the time-asymptotic stability of generic Riemann solutions for the one-dimensional radiative Euler equations, where the Riemann pattern consists of a $1$-rarefaction wave, a $2$-contact discontinuity, and a $3$-shock wave. We prov…",
+    "topic": "Other",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "4437087fbdd6f86e8a7ac0f3821b3ceb61bad55ea0e48a5d130a0a97474b3b32"
+  },
+  {
+    "id": "arxiv:2610.40942",
+    "title": "Immersed Boundary Electrodiffusion in the Wasserstein Gradient Flow Formalism: Global Well-Posedness, Non-Equilibrium Thermodynamics, and Singular Asymptotics",
+    "authors": "Pilhwa Lee",
+    "date": "2026-11-02",
+    "discovered_at": "2026-11-02",
+    "submitted_at": "2026-10-29",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.40942",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.40942",
+    "abstract_en": "We introduce a unified optimal transport framework for the Immersed Boundary (IB) electrodiffusion active pump model. By representing membrane chemical potential barriers and active pump potentials via smoothed Eulerian kernels ($Ψ_w, \\mathcal{H}_w$), we formulate the passive dynamics as an $L^2$-Wasserstein ($W_2$) gradient flow coupled to non-conservative active pushing fields representing ATP-driven $3:2$ $\\text{Na}^+/\\text{K}^+$ exchangers. We establish global weak existence of solutions to the continuous Poisson--Nernst--Planck--IB system via a split-step Jordan--Kinderlehrer--Otto (JKO) variational scheme, backed by Calderón--Zygmund bounds for non-local Poisson drift and $H^3(\\mathbb{S}^1)$ interface regularity under Stokes flow. We prove the continuous Rayleighian energy balance and establish exponential $W_2$-stability of Non-Equilibrium Steady States (NESS) under a quantitative Bakry--Émery curvature threshold. Furthermore, we analyze the dual singular limits of kernel smoothing width $w \\to 0$ and dimensionless Debye length $g = λ_D / L \\to 0$. We establish the precise asymptotic regime connecting regularized and sharp models, prove the $Γ$-convergence of regularized energy functionals, derive distributional interface flux jump conditions, and resolve $O(λ_D)$ Debye space-charge boundary layers to confirm bulk electroneutrality.",
+    "summary_zh": "We introduce a unified optimal transport framework for the Immersed Boundary (IB) electrodiffusion active pump model. By representing membrane chemical potential barriers and active pump potentials via smoothed Eulerian kernels ($Ψ_w, \\mat…",
+    "topic": "Boundary Layers & Inviscid Limits",
+    "topic_tags": [
+      "stability",
+      "well-posedness"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "c38959cef0a83d0c1889d707c0350407f335cb50f2494aa62d59b9b4a24c70eb"
+  },
+  {
+    "id": "arxiv:2610.40898",
+    "title": "Global strong solutions of the three-dimensional Cahn--Hilliard--Navier--Stokes system via finite-dimensional scalar forcing",
+    "authors": "Víctor Hernández-Santamaría, Subrata Majumdar, Yingying Wu-Zhang",
+    "date": "2026-11-02",
+    "discovered_at": "2026-11-02",
+    "submitted_at": "2026-10-29",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2610.40898",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2610.40898",
+    "abstract_en": "In this paper, we establish global existence of strong solutions for the three-dimensional Cahn--Hilliard--Navier--Stokes system on the torus through finite-dimensional scalar modifications of a prescribed external force. For arbitrary initial data in $H^1\\times H^2$ and any force that is locally bounded in time, we construct two smooth scalar corrections, one added to the third component of the fluid force and the other to the phase source. These corrections involve three fixed Fourier frequencies in the fluid equation and one in the phase equation, and act only on a set of times of arbitrarily small total measure. The proof combines a quantitative local theory with repeated returns of the solution to a fixed ball around zero. These returns rely on small-time asymptotic limits that balance the different scales of the two equations, together with a saturation procedure carefully adapted to the structure of the coupled system. Fluid transport generates the phase frequencies that the chosen phase forcing cannot produce on its own. As a consequence, we also obtain global strong solutions for the three-dimensional Navier--Stokes equations with a single smooth scalar correction acting on one component of the force at three fixed Fourier frequencies.",
+    "summary_zh": "In this paper, we establish global existence of strong solutions for the three-dimensional Cahn--Hilliard--Navier--Stokes system on the torus through finite-dimensional scalar modifications of a prescribed external force. For arbitrary ini…",
+    "topic": "Other",
+    "topic_tags": [
+      "global existence"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "fc8f0f0e9360b3ad19f54a7497129ba3ab20bfd50e68aaeba8c85128af800934"
+  },
+  {
     "id": "title:f0a136c83460bcf20d1addc2",
     "title": "Liouville type theorems for 3D stationary Navier-Stokes equations beyond critical exponents $3/2$ and $9/2$",
     "authors": "Zhibing Zhang, Huizhen Zhou",
@@ -2471,7 +2570,7 @@
   },
   {
     "id": "arxiv:2610.25694",
-    "title": "On the effects of rotation on stationary Navier--Stokes equations in the half spaces in scale-critical spaces",
+    "title": "On the stabilizing effects of rotation on stationary Navier--Stokes equations in the half spaces in scale-critical spaces",
     "authors": "Taiki Okazaki",
     "date": "2026-10-20",
     "discovered_at": "2026-10-20",
@@ -2483,7 +2582,7 @@
     "link": "https://arxiv.org/abs/2610.25694",
     "doi": "",
     "arxiv_url": "https://arxiv.org/abs/2610.25694",
-    "abstract_en": "In this paper, we study the three-dimensional incompressible stationary Navier--Stokes equations with the Coriolis force in the half space with the inhomogeneous Dirichlet boundary condition. We show the existence of a unique small solution in the scale-critical Besov spaces. In particular, for any boundary data with only the normal component assumed to be sufficiently small, and for any external forces, we establish the well-posedness of the inhomogeneous Dirichlet boundary value problem when the speed of rotation is sufficiently large. In the proof, to exploit the stabilizing effect of the Coriolis term, we employ two explicit formulas depending on the relation between the horizontal frequency and the magnitude of the rotation speed.",
+    "abstract_en": "In this paper, we study the three-dimensional incompressible stationary Navier--Stokes equations with the Coriolis force in the half space with the inhomogeneous Dirichlet boundary condition. We show the existence of a unique small solution in the scale-critical Besov spaces. In particular, for any boundary data with a vanishing normal component, and for any external forces, we establish the well-posedness of the inhomogeneous Dirichlet boundary value problem when the speed of rotation is sufficiently large. In the proof, to exploit the stabilizing effect of the Coriolis term, we employ two explicit formulas depending on the relation between the horizontal frequency and the magnitude of the rotation speed.",
     "summary_zh": "In this paper, we study the three-dimensional incompressible stationary Navier--Stokes equations with the Coriolis force in the half space with the inhomogeneous Dirichlet boundary condition. We show the existence of a unique small solutio…",
     "topic": "Other",
     "topic_tags": [
@@ -2492,7 +2591,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "43c19b7c21fdf9759c97c25cb0792064cf37150d9664aaf71a08db94d37274f7"
+    "enrichment_hash": "6e1c49675ff3fb28bea361a2c1051e825dc0cc3139f7ca0306115ad0f67a96a1"
   },
   {
     "id": "arxiv:2610.25614",
@@ -8623,7 +8722,7 @@
   },
   {
     "id": "arxiv:2609.06944",
-    "title": "Local Well-Posedness of the Boundary Layer Equations for Dilatant Power-Law Fluids",
+    "title": "Local Well-Posedness of the Unsteady Boundary Layer System for Dilatant Power-Law Fluids",
     "authors": "Mingxue Zhang, Zhonger Wu",
     "date": "2026-09-21",
     "discovered_at": "2026-09-21",
@@ -8635,7 +8734,7 @@
     "link": "https://arxiv.org/abs/2609.06944",
     "doi": "",
     "arxiv_url": "https://arxiv.org/abs/2609.06944",
-    "abstract_en": "We establish the local-in-time existence and uniqueness of monotone solutions to the two-dimensional nonstationary boundary-layer equations for a dilatant power-law fluid in a periodic half-space for $1<n<\\frac{7}{3}$. Under Oleinik's monotonicity condition and suitable weighted Sobolev assumptions on the initial data and outer flow, we construct solutions through tangential regularization and derive uniform a priori estimates. A suitable good unknown compensates for the loss of one tangential derivative caused by the normal velocity. By combining weighted energy estimates, the Faà di Bruno formula, and the maximum and minimum principles, we control the nonlinear degenerate diffusion term $\\partial_y^2(ω^n)$, whose effective diffusion coefficient vanishes as $ω=\\partial_yu$ decays at infinity, and propagate the weighted monotonicity of the vorticity. Within this exponent range, our result partially resolves the eleventh open problem posed by Oleinik and Samokhin \\cite{OAO} on the existence and uniqueness of solutions to nonstationary boundary-layer systems for dilatant fluids.",
+    "abstract_en": "We establish local-in-time existence and uniqueness of monotone classical solutions to the two-dimensional nonstationary boundary layer equations for dilatant power-law fluids in a periodic half-space, for every fixed exponent $n>1$. The result holds under Oleinik's monotonicity condition and suitable weighted Sobolev, algebraic decay, and compatibility assumptions. The main difficulties are the tangential derivative loss caused by the normal velocity and the degeneracy at infinity of the principal coefficient $nω^{n-1}$ in the nonlinear vorticity diffusion $\\partial_y^2(ω^n)$, where $ω=\\partial_y u$. We adapt the Masmoudi-Wong energy method and use a good unknown to control the tangential derivative loss. For the nonlinear diffusion, we separate the estimates near the boundary from the treatment of degeneracy in the far field. Nonlinear boundary reduction and localized trace estimates control the boundary terms, while weighted estimates exploit the compensating decay of vorticity derivatives to control the diffusion commutators. Together with tangential regularization and weighted maximum and minimum principles, these estimates yield bounds uniform in the regularization parameter and preserve weighted monotonicity. Under these assumptions, the result provides an affirmative local-in-time answer to the existence and uniqueness question in Open Problem~11 of Oleinik and Samokhin.",
     "summary_zh": "We establish the local-in-time existence and uniqueness of monotone solutions to the two-dimensional nonstationary boundary-layer equations for a dilatant power-law fluid in a periodic half-space for $1<n<\\frac{7}{3}$. Under Oleinik's mono…",
     "topic": "Boundary Layers & Inviscid Limits",
     "topic_tags": [
@@ -8645,7 +8744,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "8f1774fc3112eac0b90fc8b157a9a7d72c7468c7541939f341b180fe88d5745d"
+    "enrichment_hash": "a7070368778bdd8869ddcd0cd627caa447a3325571498108e49342c8bbad87e4"
   },
   {
     "id": "arxiv:2608.29138",
