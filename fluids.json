@@ -3161,14 +3161,14 @@
     "link": "https://doi.org/10.1137/25m1812737",
     "doi": "10.1137/25m1812737",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5731-5751, October 2026.   Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
+    "abstract_en": "Abstract.\n                  We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
     "summary_zh": "Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "ba7773051ca688eecec61714bdd5a243f16487f80671644ae899f37ebef4bdf0"
+    "enrichment_hash": "bbeac2c40c34ffb456d26f5b82bb1e844f523e98f511efadd13cbab736323de1"
   },
   {
     "id": "doi:10.1007/s00021-026-01066-x",
@@ -3362,7 +3362,7 @@
   },
   {
     "id": "doi:10.1137/25m1812063",
-    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on [math]",
+    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on \\({\\mathbb{S}^2}\\)",
     "authors": "Matias G. Delgadino, Luca Melzi",
     "date": "2026-10-21",
     "discovered_at": "2026-10-21",
@@ -3374,7 +3374,7 @@
     "link": "https://doi.org/10.1137/25m1812063",
     "doi": "10.1137/25m1812063",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5709-5730, October 2026.   Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [math] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
+    "abstract_en": "Abstract.\n                  We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "summary_zh": "Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [
@@ -3383,7 +3383,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "fe6616a9b3af6ceadb7f802395f37df05f457bb7368b09f92c50ed18673aa986"
+    "enrichment_hash": "8d7397856e2bc09e1a2c805d94d98d35c32e168d01aeb02f7d825ff381568488"
   },
   {
     "id": "doi:10.1088/1361-6544/aeb19d",
