@@ -1,5 +1,28 @@
 [
   {
+    "id": "doi:10.1007/s00205-026-02265-6",
+    "title": "Wall Laws for Viscous Flows in 3D Randomly Rough Pipes: Optimal Convergence Rates and Stochastic Integrability",
+    "authors": "Mitsuo Higaki, Yulong Lu, Jinping Zhuge",
+    "date": "2026-11-07",
+    "discovered_at": "2026-11-07",
+    "submitted_at": "",
+    "published_online_at": "2026-11-06",
+    "issue_date": "2026-12",
+    "source": "Arch. Ration. Mech. Anal.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1007/s00205-026-02265-6",
+    "doi": "10.1007/s00205-026-02265-6",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "archive-rational-mechanics-analysis",
+    "enrichment_hash": "897446f2cf211c03a3049f3f5d88fc7bd3c97b57df0b9b184ef0833a8a996e5e"
+  },
+  {
     "id": "arxiv:2611.08260",
     "title": "Shock solutions of a 3D spherical piston problem for the compressible Euler equations",
     "authors": "Pengfei Zhou, Huimin Yu, Xiaomin Zhang",
@@ -3138,14 +3161,14 @@
     "link": "https://doi.org/10.1137/25m1812737",
     "doi": "10.1137/25m1812737",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5731-5751, October 2026.   Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
     "summary_zh": "Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "bbeac2c40c34ffb456d26f5b82bb1e844f523e98f511efadd13cbab736323de1"
+    "enrichment_hash": "ba7773051ca688eecec61714bdd5a243f16487f80671644ae899f37ebef4bdf0"
   },
   {
     "id": "doi:10.1007/s00021-026-01066-x",
@@ -3339,7 +3362,7 @@
   },
   {
     "id": "doi:10.1137/25m1812063",
-    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on \\({\\mathbb{S}^2}\\)",
+    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on [math]",
     "authors": "Matias G. Delgadino, Luca Melzi",
     "date": "2026-10-21",
     "discovered_at": "2026-10-21",
@@ -3351,7 +3374,7 @@
     "link": "https://doi.org/10.1137/25m1812063",
     "doi": "10.1137/25m1812063",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5709-5730, October 2026.   Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [math] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "summary_zh": "Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [
@@ -3360,7 +3383,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "8d7397856e2bc09e1a2c805d94d98d35c32e168d01aeb02f7d825ff381568488"
+    "enrichment_hash": "fe6616a9b3af6ceadb7f802395f37df05f457bb7368b09f92c50ed18673aa986"
   },
   {
     "id": "doi:10.1088/1361-6544/aeb19d",
@@ -14203,14 +14226,14 @@
   },
   {
     "id": "arxiv:2606.24733",
-    "title": "On Serrin Interior Regularity Criterion for Navier-Stokes Equations",
+    "title": "On Serrin interior regularity criterion for Navier-Stokes equations",
     "authors": "Robin Ming Chen, Giovanni P. Galdi, Bruno Poggi, Armin Schikorra",
     "date": "2026-09-21",
     "discovered_at": "2026-09-21",
     "submitted_at": "2026-06-23",
     "published_online_at": "",
-    "issue_date": "",
-    "source": "Arxiv (math.AP)",
+    "issue_date": "2027-02",
+    "source": "J. Differ. Equ.",
     "source_group": "math-fluid-pde",
     "link": "https://arxiv.org/abs/2606.24733",
     "doi": "",
@@ -14221,8 +14244,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "872a7e9214276ca1b746c350226a80a2fd42a1aac9a61ac41628087219dff2dd"
+    "source_id": "journal-differential-equations",
+    "enrichment_hash": "2a7e546f8ffff800dd43c4f0eb6b85bcb2bcf52ad11105692c9aa95e0f9df3fe"
   },
   {
     "id": "doi:10.1137/25m1724778",
