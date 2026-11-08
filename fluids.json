@@ -1,5 +1,30 @@
 [
   {
+    "id": "doi:10.1137/25m177521x",
+    "title": "Time-Asymptotic Behavior of the Boltzmann Equation with Random Inputs in Whole Space and its Stochastic Galerkin Approximation",
+    "authors": "Shi Jin, Qi Shao, Haitao Wang",
+    "date": "2026-11-08",
+    "discovered_at": "2026-11-08",
+    "submitted_at": "",
+    "published_online_at": "2026-11-06",
+    "issue_date": "2026-12-31",
+    "source": "SIAM J. Math. Anal.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1137/25m177521x",
+    "doi": "10.1137/25m177521x",
+    "arxiv_url": "",
+    "abstract_en": "Abstract.\n                  We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
+    "summary_zh": "Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [
+      "decay"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "siam-journal-mathematical-analysis",
+    "enrichment_hash": "18ca2fc1a347afa5ee08b0f390a9253ca68ec5f7fc2d29875d70191826ae0a46"
+  },
+  {
     "id": "doi:10.1007/s00205-026-02265-6",
     "title": "Wall Laws for Viscous Flows in 3D Randomly Rough Pipes: Optimal Convergence Rates and Stochastic Integrability",
     "authors": "Mitsuo Higaki, Yulong Lu, Jinping Zhuge",
