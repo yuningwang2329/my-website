@@ -1482,7 +1482,7 @@
   },
   {
     "id": "title:f0a136c83460bcf20d1addc2",
-    "title": "Liouville type theorems for 3D stationary Navier-Stokes equations beyond critical exponents 3/2 and 9/2",
+    "title": "Liouville type theorems for 3D stationary Navier-Stokes equations beyond critical exponents $3/2$ and $9/2$",
     "authors": "Zhibing Zhang, Huizhen Zhou",
     "date": "2026-10-31",
     "discovered_at": "2026-10-31",
@@ -1501,7 +1501,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "journal-differential-equations",
-    "enrichment_hash": "e5b3d05a4602b27a333d811c60bb4003cd335638ff00d11413b39c355af99a98"
+    "enrichment_hash": "4fe7f76edf2804d0ed58cdef785f1cf52aed99f6613623b6bbedde75016e3475"
   },
   {
     "id": "doi:10.1007/s00021-026-01068-9",
