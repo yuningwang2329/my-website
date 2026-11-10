@@ -1,24 +1,28 @@
 {
   "schema_version": 1,
-  "generation_id": "984021f6c0dc7659",
-  "generated_at": "2026-11-10T04:48:21Z",
+  "generation_id": "7e3fb20cad6108dc",
+  "generated_at": "2026-11-10T07:31:22Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 810,
+    "current": 819,
     "archived": 43,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 29,
-    "failed_ids": []
+    "succeeded": 26,
+    "failed_ids": [
+      "dcds",
+      "journal-european-mathematical-society",
+      "journal-reine-angewandte-mathematik"
+    ]
   },
   "current": {
     "path": "fluids.json",
-    "count": 810,
-    "sha256": "61ff1faa35a54d47532fccca08a773c6089cbe661509a8600d65cab831520d81",
-    "bytes": 1661124
+    "count": 819,
+    "sha256": "18ef7a8988390bbb980c9b33c7d42a94408c00403683c1e66730d158edc303b3",
+    "bytes": 1680270
   },
   "archives": [
     {
