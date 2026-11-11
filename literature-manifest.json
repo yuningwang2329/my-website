@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "7e3fb20cad6108dc",
-  "generated_at": "2026-11-10T07:31:22Z",
+  "generation_id": "b7e7e7a91241db89",
+  "generated_at": "2026-11-11T01:13:36Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,12 +11,8 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 26,
-    "failed_ids": [
-      "dcds",
-      "journal-european-mathematical-society",
-      "journal-reine-angewandte-mathematik"
-    ]
+    "succeeded": 29,
+    "failed_ids": []
   },
   "current": {
     "path": "fluids.json",
