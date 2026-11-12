@@ -1,5 +1,60 @@
 [
   {
+    "id": "arxiv:2608.10951",
+    "title": "Couette-Taylor instabilities in the small gap regime: the very counter-rotating case",
+    "authors": "Dongfen Bian, Gérard Iooss",
+    "date": "2026-08-13",
+    "discovered_at": "2026-08-13",
+    "submitted_at": "2026-08-11",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2608.10951",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2608.10951",
+    "abstract_en": "In this paper, we study the Couette-Taylor instability of a viscous fluid between two rotating cylinders in the small-gap, slow rescaled rotation rate, high Reynolds number regime, focusing on the very counter-rotating case $μ< μ_c \\approx -0.8$ where the primary instability is non-axisymmetric. Starting from the Navier-Stokes equations, we derive a limit system that captures the leading-order dynamics and compute the critical Taylor number $T_c(μ)$ together with the critical axial and azimuthal wavenumbers. Near criticality, the weakly nonlinear behaviour is governed by a system of two coupled complex Ginzburg-Landau equations. All coefficients of this amplitude system including the cubic nonlinear terms are evaluated numerically from the linearised eigenfunctions and the associated adjoint problem. The reduced equations admit helicoidal waves (travelling in both the axial and azimuthal directions) and ribbon waves (standing axially, travelling azimuthally), and their existence and stability criteria are discussed. We also examine more exotic spatially modulated solutions that satisfy a third-order dynamical system, whose complete classification remains an open challenge.",
+    "summary_zh": "在本文中，我们研究了两个旋转圆柱体之间的粘性流体在小间隙、慢速旋转速率、高雷诺数状态下的库埃特-泰勒不稳定性，重点关注非常反向旋转的情况 $μ< μ_c \\approx -0.8$，其中主要不稳定性是非轴对称的。从纳维-斯托克斯方程出发，我们推导了一个极限系统，该系统捕获主阶动力学并计算临界泰勒数 $T_c(μ)$ 以及临界轴向和方位波数。接近临界点时，弱非线性行为由两个耦合的复杂 Ginzburg-Landau 方程组控制。该振幅系统的所有系数（包括三次非线性项）均根据线…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "stability",
+      "Couette flow"
+    ],
+    "tags": [
+      "stability"
+    ],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "75368fb85f1e2e23c6ff5cdd07dd48c81683ad1335d5be5b3db2e8255c2dd2f8"
+  },
+  {
+    "id": "arxiv:2608.06899",
+    "title": "Long-Wave Stability And Instability Of Periodic Shear Flows For The 2D Navier-Stokes Equations On The $β$-Plane",
+    "authors": "Robin Ming Chen, Tian Dai, Dehua Wang, Weiqiang Wang",
+    "date": "2026-08-13",
+    "discovered_at": "2026-08-13",
+    "submitted_at": "2026-08-07",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2608.06899",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2608.06899",
+    "abstract_en": "We study the spectral stability of periodic shear flows for the two-dimensional Navier--Stokes equations on the $β$-plane in the long-wave regime. While it is known that non-rotating periodic shear flows are generically unstable to sufficiently long-wave perturbations, our results show that planetary rotation suppresses this instability mechanism. Using a perturbative analysis based on Kato's reduction, we derive an asymptotic expansion for the principal eigenvalue of the linearized operator that is uniform in the Rossby parameter $β\\geq 0$, and establish an explicit stability criterion in terms of the shear profile, the viscosity, and the Rossby parameter. Under the critical scaling where the Rossby parameter $β$ and the rescaled longitudinal wavenumber $\\varepsilon$ are of comparable size, this criterion extends Yudovich's classical long-wave instability threshold to rotating flows and reveals a sharp transition between stability and instability governed by the range of the ratio $β/\\varepsilon$. These results provide a rigorous analysis of how viscosity, shear, and planetary rotation interact to determine long-wave stability on the $β$-plane.",
+    "summary_zh": "我们研究了长波区域$β$平面上二维纳维-斯托克斯方程的周期性剪切流的谱稳定性。众所周知，非旋转周期性剪切流通常对于足够长的波扰动是不稳定的。我们证明行星自转可以抑制这种不稳定性：使用基于加藤约简的微扰分析，我们推导了线性算子主特征值的渐近展开式，并获得了剪切剖面、粘度和科里奥利参数方面的显式稳定性准则。在科里奥利效应和长波扰动具有相当大小的临界标度下，该准则将 Yudovich 的经典长波不稳定阈值扩展到旋转流，并揭示了由 $K$ 比率控制的稳定与不稳定之间的急剧转变。这些…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [
+      "stability"
+    ],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "0c78273b51a0234fdcfe7ff5aaffac65dd18445ab94153fd500bc837713a2e29"
+  },
+  {
     "id": "arxiv:2607.25836",
     "title": "Long-wave instability of periodic shear flows with constant magnetic field for the 2D resistive MHD equations",
     "authors": "Roberto Feola, Luca Franzoi, Riccardo Montalto, Claudia Peña",
