@@ -48,6 +48,213 @@
     "enrichment_hash": "e57f847909684da2f5faeada9217ed3fa92f2c42a74d56caa11923e9ca18bd9f"
   },
   {
+    "id": "arxiv:2611.17151",
+    "title": "Convergence rates for smoothed particle hydrodynamics (SPH) with nonlinear pressure",
+    "authors": "Piotr Gwiazda, Jakub Skrzeczkowski, Jakub Woźnicki",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-12",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.17151",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.17151",
+    "abstract_en": "We establish quantitative convergence results for the smoothed particle hydrodynamics (SPH) method approximating the compressible Euler equations with nonlinear pressure laws $ρ^γ$, $γ\\geq 2$. Our approach is based on a nonlocal approximation of the pressure force that preserves the energy structure of the original system, including an exact energy balance. Using the relative entropy method, we prove convergence towards smooth solutions of the compressible Euler equations as the nonlocality parameter $\\varepsilon\\to0$, with algebraic convergence rates and an explicit algebraic relationship between $\\varepsilon$ and the number of particles $N$. In particular, we obtain quantitative convergence rates for the density in the Wasserstein distance and negative Sobolev norms, and for the momentum in the flat metric. A key feature of our analysis is that it applies to measure-valued densities in the nonlocal system, providing a unified framework for both continuum and particle solutions. Our results extend the existing rigorous convergence theory for SPH beyond quadratic pressure ($γ=2$) to general nonlinear pressure laws with $γ\\geq 2$ on the periodic domain.",
+    "summary_zh": "We establish quantitative convergence results for the smoothed particle hydrodynamics (SPH) method approximating the compressible Euler equations with nonlinear pressure laws $ρ^γ$, $γ\\geq 2$. Our approach is based on a nonlocal approximat…",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "219463c25eaa5fb48fd24903de30a316b1181fda7c500c0fbcde94be4c4c0e34"
+  },
+  {
+    "id": "arxiv:2611.16868",
+    "title": "Cavity collapse and vorticity gradient blow-up in free-boundary Euler flow",
+    "authors": "Tao Luo, Siqi Yang",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-12",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.16868",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.16868",
+    "abstract_en": "We construct smooth solutions of the three-dimensional incompressible free-boundary Euler equations with surface tension whose vorticity remains bounded while its full spatial gradient blows up in finite time. The solutions are axisymmetric without swirl and occupy bounded domains in which a tubular cavity collapses onto a circle at time $T$, while the outer free surface converges smoothly. The vorticity $ω$ can be chosen arbitrarily small in $L^\\infty$, uniformly up to collapse, and satisfies $\\|\\nablaω(t)\\|_{L^\\infty}\\asymp (T-t)^{-1/2}|\\log(T-t)|^{1/4}$ as $t\\uparrow T$. A nonconstant material trace of the relative vorticity on the shrinking surface determines direction-dependent limits of the terminal vorticity, which therefore has no continuous extension across the collapse circle. The kinetic energy measure converges to the sum of a uniform line measure on this circle and a nonzero bulk part carried by a bounded rotational field. The construction couples vorticity transport to the boundary dynamics through weighted estimates in the collapsing collar and a cancellation in the normal acceleration.",
+    "summary_zh": "We construct smooth solutions of the three-dimensional incompressible free-boundary Euler equations with surface tension whose vorticity remains bounded while its full spatial gradient blows up in finite time. The solutions are axisymmetri…",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "348d89b1556714b3d5ea96cd2c9ae30c3d23c0008d70f07b06d77c5e6be630de"
+  },
+  {
+    "id": "arxiv:2611.16688",
+    "title": "An Analytic Toroidal MHD Equilibrium with Trivial Euclidean Symmetry Group",
+    "authors": "Kooper de Lacy, Naoki Sato",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-12",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.16688",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.16688",
+    "abstract_en": "We provide a method to construct a real-analytic ideal MHD equilibrium $(B,p)$ in a solid toroidal domain $Ω\\subset\\mathbb{R}^{3}$, with $B$ tangential to the boundary $\\partialΩ$. The regular pressure level sets foliate $Ω\\setminusΓ$ by nested tori surrounding a magnetic axis $Γ$, with $\\nabla p\\neq0$ away from the axis. We construct an example where the magnetic field is nonvanishing on $Ω$, and the rotational transform equals 2 on every regular pressure surface. The equilibrium has a trivial Euclidean symmetry group. It is non-isolated in the sense that it belongs to a real-analytic one-parameter family connecting it to an axisymmetric equilibrium. The toroidal domain, magnetic field and pressure vary smoothly along this family. Under the MHD--Euler correspondence, the construction also yields a real-analytic steady incompressible Euler flow with a nonconstant Bernoulli function. This constructively disproves one formulation of Grad's conjecture by exhibiting a smooth toroidal MHD equilibrium with nested pressure surfaces whose Euclidean symmetry group is trivial.",
+    "summary_zh": "We provide a method to construct a real-analytic ideal MHD equilibrium $(B,p)$ in a solid toroidal domain $Ω\\subset\\mathbb{R}^{3}$, with $B$ tangential to the boundary $\\partialΩ$. The regular pressure level sets foliate $Ω\\setminusΓ$ by n…",
+    "topic": "MHD & Plasma",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "c443e5eefa0321c830514179afe05c2ac35e673ea1ccc5d93572fafcf57fed89"
+  },
+  {
+    "id": "arxiv:2611.16682",
+    "title": "The coercivity conjecture for nonlocal energies",
+    "authors": "Linus Behn, Roberto Colombo, Xavier Fernández-Real, Florian Grube, Harsh Prasad, Xavier Ros-Oton",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-12",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.16682",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.16682",
+    "abstract_en": "The coercivity conjecture for nonlocal energies asks whether uniform ellipticity implies $H^s$-coercivity for symmetric nonlocal kernels of order $2s$, with $0<s<1$. We show that the conjecture fails whenever $n>2s$ for every $s \\in (0,1)$ and $n \\geq 1$, even for smooth compactly supported test functions; for $n=1$ and $s>1/2$, we show that it holds. The construction also gives bounded discontinuous weak solutions in $H^s_{\\rm loc}$ to nonlocal equations in divergence form with kernels in this class. Despite the failure, we show that the conjecture holds for several important classes of kernels. We establish a general local coercivity criterion based on annular cancellation, which applies in particular to kernels satisfying both divergence- and nondivergence-form symmetry. The criterion also allows us to treat kernels comparable to stable kernels with bounded measurable coefficients, as well as non-cutoff Boltzmann kernels under a geometric nonconcentration assumption. As an application, we obtain a short and self-contained proof of the Gressman--Strain anisotropic coercivity estimate. Furthermore, by combining our new criterion with existing regularity results, we obtain Hölder estimates under ellipticity and cancellation assumptions.",
+    "summary_zh": "The coercivity conjecture for nonlocal energies asks whether uniform ellipticity implies $H^s$-coercivity for symmetric nonlocal kernels of order $2s$, with $0<s<1$. We show that the conjecture fails whenever $n>2s$ for every $s \\in (0,1)$…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "bb46e57ab9c1b6a9cbecf542a10deefb3f225a0241c85a1dcc296ca134528280"
+  },
+  {
+    "id": "arxiv:2611.16668",
+    "title": "Refined critical flux bounds for Leray's problem in a pipe with the Navier-slip boundary",
+    "authors": "Zijin Li, Zhipeng Wu",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-12",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.16668",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.16668",
+    "abstract_en": "We study uniqueness for stationary incompressible Navier--Stokes flows in infinite pipes with the Navier-slip boundary. For a cylindrical pipe of unit radius and a positive friction ratio, uniqueness holds when $|Φ|\\leq 2π\\sqrt{40/7}\\approx 15$. This significantly improves upon the result of the first author, Liu and Zhou (J. Differential Equations 461:114108, 2026) where the uniqueness requires $|Φ|\\leq π/16\\approx 0.2$. For small positive friction ratio $α$, this flux condition can be improved to $|Φ|\\leq 4\\sqrt{2}\\,π^2/α$. For an infinite pipe with a bounded, smooth, simply connected cross-section $Σ$, we prove uniqueness for every $0<α<\\infty$ provided that $|Φ|\\leq c_Σ(1+α)/α$, where $c_Σ>0$ depends only on $Σ$.",
+    "summary_zh": "We study uniqueness for stationary incompressible Navier--Stokes flows in infinite pipes with the Navier-slip boundary. For a cylindrical pipe of unit radius and a positive friction ratio, uniqueness holds when $|Φ|\\leq 2π\\sqrt{40/7}\\appro…",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "f14ceb46bad7639dbe5029b8ceb199cefee38d402d20f8a9be784b5ce42d7a25"
+  },
+  {
+    "id": "arxiv:2611.16615",
+    "title": "Optimal control for an anisotropic Stokes-Nernst-Planck-Poisson system",
+    "authors": "Giulia Cavalleri, Luisa Plato",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-12",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.16615",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.16615",
+    "abstract_en": "We study an optimal control problem aimed at enhancing mixing in anisotropic electrolytes described by an instationary Stokes-Nernst-Planck-Poisson system in three space dimensions, where the anisotropy is encoded by a given director field in the diffusion and permittivity matrices. The control is the external electric potential entering through the Robin boundary condition of the Poisson equation. The cost functional combines tracking-type terms for the charge concentrations and an $L^2$-regularization of the control with a negative vorticity term that favors rotational flow. Assuming that the diffusion and permittivity matrices coincide, we first prove existence and uniqueness of weak solutions with nonnegative, essentially bounded concentrations, together with Lipschitz continuous dependence on the control. Since, through the negative vorticity term, the cost functional is no longer weakly lower semicontinuous, existence of an optimal control relies on strong convergence of the velocity gradients. Finally, we prove Fréchet differentiability of the control-to-state operator, introduce the adjoint system, and derive first-order necessary optimality conditions in the form of a variational inequality.",
+    "summary_zh": "We study an optimal control problem aimed at enhancing mixing in anisotropic electrolytes described by an instationary Stokes-Nernst-Planck-Poisson system in three space dimensions, where the anisotropy is encoded by a given director field…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "75259e3f1da85b4fa9124cc3639c5664f9bd910115c158e85392c3353df43a20"
+  },
+  {
+    "id": "arxiv:2611.16319",
+    "title": "Global-in-time dynamics of the pressureless Euler/incompressible non-Newtonian equations",
+    "authors": "Jinwook Jung, Subin Kim",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-12",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.16319",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.16319",
+    "abstract_en": "This paper addresses a two-phase fluid system on the periodic domain $\\mathbb{T}^3$, consisting of the pressureless Euler equations and the incompressible non-Newtonian equations coupled through a drag force. We prove the global-in-time existence of strong solutions to this system for a certain class of stress tensors in the non-Newtonian fluid. Our proof combines a priori large-time behavior estimates for classical solutions with a bootstrapping argument on the $L^2$-Sobolev norms, which effectively handles the difficulties caused by the lack of dissipation in the density of the Euler equation.",
+    "summary_zh": "This paper addresses a two-phase fluid system on the periodic domain $\\mathbb{T}^3$, consisting of the pressureless Euler equations and the incompressible non-Newtonian equations coupled through a drag force. We prove the global-in-time ex…",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "5d75d297b32f0d50781a1669987975edc967cf775ca2917a8e1c33dc05fc99c3"
+  },
+  {
+    "id": "arxiv:2611.15900",
+    "title": "Gaussian fluctuations and moderate deviations for two-dimensional stochastic nematic liquid crystal flows",
+    "authors": "Akash Ashirbad Panda, Utpal Manna",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-11",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.15900",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.15900",
+    "abstract_en": "We study the small-noise behaviour of a two-dimensional stochastic nematic liquid crystal model, where the Navier--Stokes equations with multiplicative noise are coupled with a Ginzburg--Landau equation for the director field driven by geometric Stratonovich noise. While large deviations for stochastic nematic liquid crystal models have been studied earlier, the central limit and moderate deviation regimes have not been considered. We first prove a central limit theorem in the natural energy space and show that the rescaled fluctuations converge, in every $L^p$-norm and with rate $\\sqrt{\\eps}$, to the solution of a linear stochastic system. The limiting process is centred Gaussian. We then establish a moderate deviation principle with a quadratic rate function determined by the corresponding linearised skeleton equation, which coincides with the Cameron--Martin form of the Gaussian limit. We also show that the moderate deviation principle holds uniformly over bounded sets of initial data. The main arguments use a cancellation between the coupling terms, a one-sided estimate for the polynomial potential, and energy estimates with deterministic Gronwall coefficients, thereby avoiding exponential moment estimates.",
+    "summary_zh": "We study the small-noise behaviour of a two-dimensional stochastic nematic liquid crystal model, where the Navier--Stokes equations with multiplicative noise are coupled with a Ginzburg--Landau equation for the director field driven by geo…",
+    "topic": "Fluid–Structure & Complex Fluids",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "cf9e38439208112479c457d4dfc139d86c55ab62c0b06235ca36435e145a6b3c"
+  },
+  {
+    "id": "arxiv:2611.15703",
+    "title": "Energy rigidity and weak--strong uniqueness for the anisotropic Navier--Stokes equations in $\\mathbb{R}^2_+$",
+    "authors": "Wenke Tan, Fan Wu",
+    "date": "2026-11-13",
+    "discovered_at": "2026-11-13",
+    "submitted_at": "2026-11-11",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.15703",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.15703",
+    "abstract_en": "In this paper, we study the two-dimensional incompressible Navier--Stokes equations with only horizontal dissipation in the upper half-plane $\\mathbb{R}^2_+$. The combination of the missing directional regularity and the influence of the boundary presents an essential difficulty for the pressure estimates. We circumvent this difficulty by establishing an extension theorem for the weak formulation, based on the divergence-free condition and the homogeneous impermeability boundary condition. A key feature of this extension principle is that no boundary condition is required for the tangential velocity component. Consequently, every weak solution in the natural energy class on $\\mathbb{R}^2_+$ admits a reflection extension that is a weak solution of the corresponding whole-space problem on $\\mathbb{R}^2$. This extension allows us to transfer the energy rigidity and weak--strong uniqueness properties established by Demmel and Wiedemann \\cite{E-W} to the half-plane setting. In particular, we prove the energy equality for weak solutions in the natural energy class and establish weak--strong uniqueness under the corresponding additional regularity assumptions.",
+    "summary_zh": "In this paper, we study the two-dimensional incompressible Navier--Stokes equations with only horizontal dissipation in the upper half-plane $\\mathbb{R}^2_+$. The combination of the missing directional regularity and the influence of the b…",
+    "topic": "Other",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "c27c3d27703eae4911840880b24ade3526584cd26ffe3983aa3d8729b49e7c73"
+  },
+  {
     "id": "arxiv:2611.15083",
     "title": "Rayleigh--Taylor instability and Hadamard ill-posedness for the rotating free-boundary Euler equations in three dimensions",
     "authors": "Chengchun Hao",
@@ -788,7 +995,7 @@
     "link": "https://doi.org/10.1137/25m177521x",
     "doi": "10.1137/25m177521x",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6165-6205, December 2026.   Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
+    "abstract_en": "Abstract.\n                  We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
     "summary_zh": "Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we…",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [
@@ -797,7 +1004,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "2090ec74fd15d9ee48f39d2ceda08c09bb28398dec6a195dae2cc770aab3e193"
+    "enrichment_hash": "18ca2fc1a347afa5ee08b0f390a9253ca68ec5f7fc2d29875d70191826ae0a46"
   },
   {
     "id": "doi:10.1007/s00205-026-02265-6",
@@ -3961,14 +4168,14 @@
     "link": "https://doi.org/10.1137/25m1812737",
     "doi": "10.1137/25m1812737",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5731-5751, October 2026.   Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
+    "abstract_en": "Abstract.\n                  We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
     "summary_zh": "Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "ba7773051ca688eecec61714bdd5a243f16487f80671644ae899f37ebef4bdf0"
+    "enrichment_hash": "bbeac2c40c34ffb456d26f5b82bb1e844f523e98f511efadd13cbab736323de1"
   },
   {
     "id": "doi:10.1007/s00021-026-01066-x",
@@ -4162,7 +4369,7 @@
   },
   {
     "id": "doi:10.1137/25m1812063",
-    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on [math]",
+    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on \\({\\mathbb{S}^2}\\)",
     "authors": "Matias G. Delgadino, Luca Melzi",
     "date": "2026-10-21",
     "discovered_at": "2026-10-21",
@@ -4174,7 +4381,7 @@
     "link": "https://doi.org/10.1137/25m1812063",
     "doi": "10.1137/25m1812063",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5709-5730, October 2026.   Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [math] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
+    "abstract_en": "Abstract.\n                  We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "summary_zh": "Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [
@@ -4183,7 +4390,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "fe6616a9b3af6ceadb7f802395f37df05f457bb7368b09f92c50ed18673aa986"
+    "enrichment_hash": "8d7397856e2bc09e1a2c805d94d98d35c32e168d01aeb02f7d825ff381568488"
   },
   {
     "id": "doi:10.1088/1361-6544/aeb19d",
@@ -4618,17 +4825,18 @@
     "link": "https://arxiv.org/abs/2610.25889",
     "doi": "",
     "arxiv_url": "https://arxiv.org/abs/2610.25889",
-    "abstract_en": "In this paper, we study the global regularity of the one-dimensional hypo-viscous compressible Navier--Stokes equations in the critical Besov spaces, where the initial data are close to the constant equilibrium state. We introduce an effective velocity, constructed as a combination of the density and the velocity, which is used to capture the high-frequency behavior of $a$. By performing elaborate high-frequency and low-frequency estimates together with a bootstrap argument, we obtain global existence for $\\frac{1}{2}\\leβ<1$. In particular, when $\\frac{1}{2}\\leβ<\\frac{3}{4}$, we also prove the uniqueness of solutions. Furthermore, under an additional low-frequency assumption, we establish the optimal time decay rates.",
+    "abstract_en": "In this paper, we study the global regularity for the one-dimensional hypo-viscous compressible Navier-Stokes equations in the critical Besov spaces, where the initial data are close to the constant equilibrium state. We introduce an effective velocity, constructed as a combination of the density and the velocity, which is used to capture the high-frequency behavior of $a$. By performing elaborate high-frequency and low-frequency estimates together with a bootstrap argument, we obtain global existence for $\\frac{1}{2}\\leβ<1$. In particular, when $β=\\frac{1}{2}$, we also prove the system is well-posed in critical space. Furthermore, under an additional low-frequency assumption, we establish the optimal time decay rates.",
     "summary_zh": "In this paper, we study the global regularity of the one-dimensional hypo-viscous compressible Navier--Stokes equations in the critical Besov spaces, where the initial data are close to the constant equilibrium state. We introduce an effec…",
     "topic": "Other",
     "topic_tags": [
+      "well-posedness",
       "global existence",
       "decay"
     ],
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "007eec965a5a8ef6c2e37a19f7a608a1439b148cc316722f7989bada9f9f6794"
+    "enrichment_hash": "45d631d76926371e6365f8c320dec46b1986515d438c64c47adda6dcd1243837"
   },
   {
     "id": "arxiv:2610.25888",
@@ -5194,14 +5402,14 @@
     "link": "https://doi.org/10.1137/25m1793870",
     "doi": "10.1137/25m1793870",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5623-5651, October 2026.   Abstract. We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [math] under the optimal regularity condition [math]. In the case [math], we further prove a Beale–Kato–Majda-type criterion that relates blowup in the [math] norm to the [math] norm of the variable vorticity.",
+    "abstract_en": "Abstract.\n                  We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [Formula: see text] under the optimal regularity condition [Formula: see text]. In the case [Formula: see text], we further prove a Beale–Kato–Majda-type criterion that relates blowup in the [Formula: see text] norm to the [Formula: see text] norm of the variable vorticity.",
     "summary_zh": "Abstract. We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [Formula: see text] under the optimal regularity condition [Formula: see text].…",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "99d15684d0b96ef41f774297db612d77e299672ee448872fa71d9ed4920b4588"
+    "enrichment_hash": "214580462ca14227c4aff3200965881f5da7148f5a1be1040a5ecf51758a5b1b"
   },
   {
     "id": "doi:10.1137/25m1777025",
@@ -5217,7 +5425,7 @@
     "link": "https://doi.org/10.1137/25m1777025",
     "doi": "10.1137/25m1777025",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5598-5622, October 2026.   Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
+    "abstract_en": "Abstract.\n                  In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
     "summary_zh": "Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores th…",
     "topic": "MHD & Plasma",
     "topic_tags": [
@@ -5226,7 +5434,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "169165abc21bf44aebd5dd456f156f423921fb8fdb1b11a32f1e3790c4ad707b"
+    "enrichment_hash": "552cbee05daec751466411a9ba359af93b0bb865fa2cac07493215061ee80b3e"
   },
   {
     "id": "arxiv:2610.22090",
@@ -5975,7 +6183,7 @@
     "link": "https://doi.org/10.1137/25m1798034",
     "doi": "10.1137/25m1798034",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5548-5582, October 2026.   Abstract. In this paper, we investigate the time of existence of the solutions to two full dispersion models derived from the water waves equations in the shallow water regime: the Whitham equation and a Whitham–Boussinesq system in dimensions one and two. The regime is characterized by the nonlinearity parameter [math] and the shallow water parameter [math]. We extend the lifespan of the solution beyond the hyperbolic time [math]. More precisely, we establish well-posedness on the timescale of order [math] in the one-dimensional case and of order [math] in dimension two. We emphasize that for the two-dimensional case, we obtain a time of existence of order [math] in the long wave regime [math]. This kind of result seems to be new, even for the Boussinesq systems. The proofs combine energy methods with Strichartz estimates. Here, a key ingredient is to obtain new refined Strichartz estimates that",
+    "abstract_en": "Abstract.\n                  In this paper, we investigate the time of existence of the solutions to two full dispersion models derived from the water waves equations in the shallow water regime: the Whitham equation and a Whitham–Boussinesq system in dimensions one and two. The regime is characterized by the nonlinearity parameter [Formula: see text] and the shallow water parameter [Formula: see text]. We extend the lifespan of the solution beyond the hyperbolic time [Formula: see text]. More precisely, we establish well-posedness on the timescale of order [Formula: see text] in the one-dimensional case and of order [Formula: see text] in dimension two. We emphasize that for the two-dimensional case, we obtain a time of existence of order [Formula: see text] in the long wave regime [Formula: see text]. This kind of result seems to be new, even for the Boussinesq systems. The proofs combine energy methods with Strichartz estimates. Here, a key ingredient is to obtain new refined Strichartz estimates that include the small parameter [Formula: see text]. These techniques are robust and could be adapted to improve the lifespan of solutions for other equations and systems of the same form.",
     "summary_zh": "Abstract. In this paper, we investigate the time of existence of the solutions to two full dispersion models derived from the water waves equations in the shallow water regime: the Whitham equation and a Whitham–Boussinesq system in dimens…",
     "topic": "Free Boundary, Water Waves & Multiphase",
     "topic_tags": [
@@ -5984,7 +6192,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "f28aae84c4810436eccd780c09c426ded7ed8c288099465505db3d27d80c5c32"
+    "enrichment_hash": "3ee859519c949ab7b11d86466c6c8d70992cc11d22395b41f3d8290e9596f58d"
   },
   {
     "id": "arxiv:2610.13921",
@@ -9289,14 +9497,14 @@
     "link": "https://doi.org/10.1137/25m1786106",
     "doi": "10.1137/25m1786106",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5331-5360, October 2026.   Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [math]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
+    "abstract_en": "Abstract.\n                  We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We provide sufficient conditions inspired by Bedrossian et al. [ Arch. Ration. Mech. Anal., 237 (2020), pp. 103–145] and Xie and Bühler [ J. Fluid Mech., 851 (2018), pp. 672–686] to prove that at small scales, in the presence of the Coriolis force, the so-called third-order structure function’s asymptotics follows the third-order universal law of two-dimensional turbulence without the Coriolis force. Our result indicates that at small scales, the enstrophy flux from larger to smaller scales is not affected by the Coriolis force, confirming experimental and numerical observations. To the best of our knowledge, this is the first mathematically rigorous study of the above equations.",
     "summary_zh": "Abstract. We study the direct enstrophy cascade at small spatial scales in statistically stationary forced-dissipated two-dimensional Navier–Stokes equations subject to the Coriolis force in the [Formula: see text]-plane approximation. We…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "f2b41ec2bb965374e187c113b4b916f541125959133af76d351cd0db0da246b2"
+    "enrichment_hash": "7f7cd48c88514f72fea05ef1503f0ffe939eb61d662094e9b954cc47a132c4fc"
   },
   {
     "id": "doi:10.1007/s00021-026-01061-2",
@@ -9335,14 +9543,14 @@
     "link": "https://doi.org/10.1137/25m1810258",
     "doi": "10.1137/25m1810258",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5258-5273, October 2026.   Abstract. We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations with a free upper boundary that evolves according to the motion of the structure, coupled via the velocity- and stress-matching conditions. Under the natural energy bounds and additional regularity assumptions on the weak solutions, we prove a non-contact property with a uniform separation of the plate from the rigid boundary. The result does not require damping in the plate equation.",
+    "abstract_en": "Abstract.\n                  We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations with a free upper boundary that evolves according to the motion of the structure, coupled via the velocity- and stress-matching conditions. Under the natural energy bounds and additional regularity assumptions on the weak solutions, we prove a non-contact property with a uniform separation of the plate from the rigid boundary. The result does not require damping in the plate equation.",
     "summary_zh": "Abstract. We address the fluid-structure interaction between a viscous incompressible fluid and an elastic plate forming its moving upper boundary in three dimensions. The fluid is described by the incompressible Navier–Stokes equations wi…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "d58b9550b7a1e96256f9e558c08adecace609b04094dc6f8f016fdae698540d2"
+    "enrichment_hash": "d207ec474f41d35c67b678e69e26d132f3bf80f58ea5a0c092d8d235b13e5c72"
   },
   {
     "id": "doi:10.1112/jlms.70712",
@@ -11209,14 +11417,14 @@
     "link": "https://arxiv.org/abs/2608.21805",
     "doi": "",
     "arxiv_url": "https://arxiv.org/abs/2608.21805",
-    "abstract_en": "For a stochastic partial differential equation posed on a Gelfand triple and satisfying the fully local monotone conditions of Röckner, Shang and Zhang, we compute the logarithmic derivative of the law of the solution at a fixed time along a prescribed direction of the state space. The formula is intrinsic, being expressed through the Hilbert-Schmidt Malliavin derivative $Φ_r = \\mathcal{D}_r X(t)$ and the covariance $γ_t = \\int_0^t Φ_r Φ_r^{*} \\,\\mathrm{d}r$ alone, so that neither the inversion of the first variation used in finite dimensions nor uniform Malliavin-Sobolev bounds on the Tikhonov family are called upon. It is obtained from an integration-by-parts identity on an abstract Hilbert space, a Moore-Penrose construction of a covering field on Wiener space, and a trace formula for the Tikhonov limit, specialised to the equation through the representation $Φ_r = Y(t,r)\\mathcal{B}(r,X(r))$ of the Malliavin derivative by the first variation; the stochastic $p$-Laplacian and the two-dimensional Navier-Stokes equation are treated in detail. Beyond the variational class, a scalar reduction gives an integration-by-parts identity for the law of a pairing $\\langle u(t),\\varphi\\rangle$ which passes to the renormalised limit for the singular equations of Bruned, Chandra, Chevyrev and Hairer, and which is represented by a logarithmic derivative under second-order Malliavin smoothness and negative-moment hypotheses.",
+    "abstract_en": "For a stochastic partial differential equation posed on a Gelfand triple and satisfying the fully local monotone conditions of Röckner, Shang and Zhang, we compute the logarithmic derivative of the law of the solution at a fixed time along a prescribed direction of the state space. The formula is intrinsic, expressed through the Hilbert-Schmidt Malliavin derivative $Φ_r = \\mathcal{D}_r X(t)$ and the covariance $γ_t = \\int_0^t Φ_r Φ_r^{*}\\,\\mathrm{d}r$ alone, so that neither the inversion of the first variation nor uniform Malliavin-Sobolev bounds on the Tikhonov family are needed. It follows from an integration-by-parts identity on a Hilbert space, a Moore-Penrose covering field on Wiener space and a trace formula for the Tikhonov limit, brought to the equation by the representation $Φ_r = Y(t,r)\\mathcal{B}(r,X(r))$. The linearised theory is carried by $Φ$ and by its own Malliavin derivative $\\mathcal{W} = \\mathcal{D}Φ$, whose regularity is measured in the time-integrated quadratic energy that the dissipative structure of the linearisation produces, so that no operator norm of the first variation between the spaces of the triple occurs. The stochastic $p$-Laplacian and the two-dimensional Navier-Stokes equation are treated in detail; for the latter the dissipative, forcing and exponential-moment hypotheses are established together under trace-class additive noise and a smallness threshold on the noise covariance. A scalar reduction carries the identity beyond the variational class, to the law of a pairing $\\langle u(t), \\varphi\\rangle$ for the singular equations of Bruned, Chandra, Chevyrev and Hairer, on the same Hölder triangle of moment exponents.",
     "summary_zh": "For a stochastic partial differential equation posed on a Gelfand triple and satisfying the fully local monotone conditions of Röckner, Shang and Zhang, we compute the logarithmic derivative of the law of the solution at a fixed time along…",
     "topic": "Navier–Stokes & Viscous Flow",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "218ded5ed1e8652e6cd3301a55cfab9fb193b047325f469d3a905ec01402b003"
+    "enrichment_hash": "b0c523dd3fa1488b39228547e9830c61cf810ce05075f1985a501568d805a80f"
   },
   {
     "id": "arxiv:2608.21738",
@@ -15063,14 +15271,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
+    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
+    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
@@ -15279,14 +15487,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
+    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
+    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
   },
   {
     "id": "arxiv:2609.17362",
@@ -15636,14 +15844,14 @@
     "link": "https://doi.org/10.1137/25m1805291",
     "doi": "10.1137/25m1805291",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4990-5011, October 2026.   Abstract. The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
+    "abstract_en": "Abstract.\n                  The weak–strong uniqueness of solutions to a broad class of cross-diffusion systems with volume filling is established. In general, the diffusion matrices are neither symmetric nor positive definite. This issue is overcome by assuming that the equations possess a Boltzmann-type entropy structure, which ensures the existence of bounded weak solutions. In this framework, general conditions on the mobility matrix are identified that allow for the proof of the weak–strong uniqueness property by means of the relative entropy method. The core idea consists of analyzing an augmented mobility matrix that is positive definite only on a specific subspace. Several examples that meet the required assumptions are provided, together with a discussion on possible extensions.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "3c74c412ca473d2ab317473dc2f7e16ce0465a9a8973f2431aa362baa308a34e"
+    "enrichment_hash": "663b58dd885f391bf66f747a6954f3fbdf282c244bc043c52fdc534996c10f18"
   },
   {
     "id": "doi:10.1137/24m1695592",
@@ -15659,7 +15867,7 @@
     "link": "https://doi.org/10.1137/24m1695592",
     "doi": "10.1137/24m1695592",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4814-4853, October 2026.   Abstract. In this paper we explore the extent to which discretely self-similar (DSS) solutions to the 3D Navier–Stokes equations with rough data almost have the same asymptotics as DSS flows with smoother data. In a previous work [Bradshaw and Phelps, Pure Appl. Anal., 5 (2023), pp. 377–407], we established algebraic spatial decay rates for data in [math] for [math]. The optimal rate occurs when [math] and rates degrade as [math] decreases. In this paper, we show that these solutions can be further decomposed into a term satisfying the optimal [math] decay rate—i.e., have asymptotics like [math]—and a term with the [math] decay rate multiplied by a prefactor which can be taken to be arbitrarily small. This smallness property is new and implies the [math] asymptotics should be understood in a little-o sense. The decay rates in Bradshaw and Phelps break down when [math], in which case spatial asymp",
+    "abstract_en": "Abstract.\n                  In this paper we explore the extent to which discretely self-similar (DSS) solutions to the 3D Navier–Stokes equations with rough data almost have the same asymptotics as DSS flows with smoother data. In a previous work [ Bradshaw and Phelps, Pure Appl. Anal., 5 (2023), pp. 377–407 ], we established algebraic spatial decay rates for data in [Formula: see text] for [Formula: see text]. The optimal rate occurs when [Formula: see text] and rates degrade as [Formula: see text] decreases. In this paper, we show that these solutions can be further decomposed into a term satisfying the optimal [Formula: see text] decay rate—i.e., have asymptotics like [Formula: see text]—and a term with the [Formula: see text] decay rate multiplied by a prefactor which can be taken to be arbitrarily small. This smallness property is new and implies the [Formula: see text] asymptotics should be understood in a little-o sense. The decay rates in Bradshaw and Phelps break down when [Formula: see text], in which case spatial asymptotics have not been explored. The second result of this paper shows that DSS solutions with data in [Formula: see text] can be expanded into a term satisfying the [Formula: see text] decay rate and a term that can be taken to be arbitrarily small in a scaling invariant class. A Besov space version of this result is also included.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Navier–Stokes & Viscous Flow",
     "topic_tags": [
@@ -15668,7 +15876,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "236b16150558e2f45d2d0c495aa692dbfe0afe38a2aa5759184a529b818a7b22"
+    "enrichment_hash": "946423a1494a085604489ff13d575a4d45ed162071e1fb0ee0f8757928fbad0f"
   },
   {
     "id": "title:a49e1d211c09a6374830e0e7",
@@ -15778,7 +15986,7 @@
     "link": "https://doi.org/10.1137/25m1772769",
     "doi": "10.1137/25m1772769",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4723-4771, October 2026.   Abstract. Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicat",
+    "abstract_en": "Abstract.\n                  Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicate cancelation of several highly non-linear terms, making it challenging to ensure similar cancelations for approximating systems. Our first main result is to prove the existence of global weak solutions for our ferrofluid system based on a carefully constructed sequence of approximation steps. Additionally, we also study the relaxation towards the quasi-equilibrium, in which case the magnetization equation degenerates to a linear relation between the magnetic field and the magnetization. As our second main result, we prove the rigorous convergence to this limiting system.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Free Boundary, Water Waves & Multiphase",
     "topic_tags": [
@@ -15787,7 +15995,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "6cfe33b4f2557f68f0ed5ced0440116663f23d5cf43eb89d8251903b5fca2c2e"
+    "enrichment_hash": "24f927fb5685b18b36e6510eefdd443de402ac6f5b70bafbcb467570b42670f0"
   },
   {
     "id": "doi:10.1088/1361-6544/ae9dd9",
@@ -16315,7 +16523,7 @@
     "submitted_at": "2026-09-06",
     "published_online_at": "2026-11-09",
     "issue_date": "2027-02",
-    "source": "Arxiv (math.AP)",
+    "source": "J. Math. Fluid Mech.",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1007/s00021-026-01074-x",
     "doi": "10.1007/s00021-026-01074-x",
@@ -16326,8 +16534,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "f88bc6b1bbe37853256f3c277174e506f924d68a16ea249da0e996029608cea4"
+    "source_id": "journal-math-fluid-mechanics",
+    "enrichment_hash": "f1d406edba82ff0135ff49da12a54501ee3fe754e912ff91ef6d16c0e675f884"
   },
   {
     "id": "arxiv:2609.09014",
