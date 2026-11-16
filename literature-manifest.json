@@ -1,26 +1,24 @@
 {
   "schema_version": 1,
-  "generation_id": "08d153ed6aa41bd9",
-  "generated_at": "2026-11-16T00:59:07Z",
+  "generation_id": "f8f7eb05b01e4ab3",
+  "generated_at": "2026-11-16T03:12:56Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 840,
+    "current": 844,
     "archived": 45,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 28,
-    "failed_ids": [
-      "arxiv-math-ap"
-    ]
+    "succeeded": 29,
+    "failed_ids": []
   },
   "current": {
     "path": "fluids.json",
-    "count": 840,
-    "sha256": "cab8682d7a2abb40a1756bb3424e9901ed933aae474ccc77c2606349500da66e",
-    "bytes": 1717116
+    "count": 844,
+    "sha256": "912eb99ecb229be9038f99e30e1699e0467f859079c839c4242100e6b8be2823",
+    "bytes": 1724284
   },
   "archives": [
     {
