@@ -1,5 +1,28 @@
 [
   {
+    "id": "arxiv:2611.18554",
+    "title": "Sharp nonuniqueness for the Vlasov--Navier--Stokes system",
+    "authors": "Xingyu Li",
+    "date": "2026-11-16",
+    "discovered_at": "2026-11-16",
+    "submitted_at": "2026-11-13",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.18554",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.18554",
+    "abstract_en": "We consider the Vlasov--Navier--Stokes system on $\\mathbb T^d\\times\\mathbb R^d$, $d\\ge2$. For smooth data and every $p<2$, $q<\\infty$, we construct infinitely many weak solutions with velocity in $L^p_tL^\\infty\\cap L^1_tW^{1,q}$ and bounded, renormalized distribution function; infinitely many of them violate the energy inequality. For smooth velocity data, weak solutions with velocity in $L^2_tL^\\infty$ are unique, so the result is sharp at the endpoint of the Ladyzhenskaya--Prodi--Serrin scale. The fluid carries the nonuniqueness, through the convex integration scheme of Cheskidov and Luo, and the kinetic equation is solved exactly. The main new difficulty is the memory of the particles: the kinetic state at time $t$ depends on the whole past of the velocity, so a modification on a short interval changes the system at all later times. We overcome it by a causal gluing, carried out from left to right in time, which re-solves the system on every interval of regularity. This yields wild solutions that are strong outside a closed set of times of arbitrarily small Hausdorff dimension. A causal mollification extends the construction to rough data, including every finite-energy velocity datum in dimensions two and three; in two dimensions the energy class is thus exactly the borderline of uniqueness. Finally, in three dimensions we construct Leray solutions satisfying the strong energy inequality and show that they are strong outside a closed set of times of vanishing $\\mathcal H^{1/2}$ measure.",
+    "summary_zh": "We consider the Vlasov--Navier--Stokes system on $\\mathbb T^d\\times\\mathbb R^d$, $d\\ge2$. For smooth data and every $p<2$, $q<\\infty$, we construct infinitely many weak solutions with velocity in $L^p_tL^\\infty\\cap L^1_tW^{1,q}$ and bounde…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "cf323e8e3ddaf21f6abf08140596716145d0e586f4172b62b65cbcb35419a6e7"
+  },
+  {
     "id": "arxiv:2611.18269",
     "title": "Inverse energy transfer for 2D Navier--Stokes near a self-similar vortex collapse",
     "authors": "Trinh T. Nguyen",
