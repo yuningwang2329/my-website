@@ -1,5 +1,81 @@
 [
   {
+    "id": "arxiv:2611.19694",
+    "title": "Boundary regularity, finiteness and stability of energy-maximizing vortex patches",
+    "authors": "Daomin Cao, Guodong Wang, Yuchen Wang",
+    "date": "2026-11-17",
+    "discovered_at": "2026-11-17",
+    "submitted_at": "2026-11-15",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.19694",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.19694",
+    "abstract_en": "We establish boundary regularity for energy-maximizing vortex patches of the 2-D incompressible Euler equations in a bounded Jordan domain. These results resolve Turkington's free-boundary regularity question throughout the full range of admissible parameters. For bounded convex domains, we further prove that the set of energy maximizers is finite at each prescribed patch area. When the domain is smooth, the number of maximizers is uniformly bounded over all admissible patch areas, and every maximizer is Lyapunov stable in $L^p$ for any $1<p<\\infty$.",
+    "summary_zh": "We establish boundary regularity for energy-maximizing vortex patches of the 2-D incompressible Euler equations in a bounded Jordan domain. These results resolve Turkington's free-boundary regularity question throughout the full range of a…",
+    "topic": "Other",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "dc7d1ae2b2c8f6487e3f38089c2d3bf1be8192d3361521ceb08cb35866775944"
+  },
+  {
+    "id": "arxiv:2611.19239",
+    "title": "Global dynamics and the diffusive limit of the one-species non-cutoff Vlasov-Maxwell-Boltzmann system",
+    "authors": "Shuangqian Liu, Yuan Xu, Fujun Zhou",
+    "date": "2026-11-17",
+    "discovered_at": "2026-11-17",
+    "submitted_at": "2026-11-14",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.19239",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.19239",
+    "abstract_en": "The rigorous derivation of incompressible plasma equations from kinetic plasma models is a fundamental problem in kinetic theory. For the one-species Vlasov--Maxwell--Boltzmann system without angular cutoff, global well-posedness and the diffusive limit have remained largely open in the soft-potential regime. We resolve both problems for $0<s<1$ and $\\max\\{-3,-\\frac32-2s\\}<γ<-2s$. For sufficiently small initial perturbations, we construct unique global classical solutions with energy and time-decay estimates uniform in the Knudsen number $\\varepsilon\\in(0,1]$. The key analytical contribution is a family of coercivity and trilinear estimates for the non-cutoff collision operators with time-dependent quadratic exponential velocity weights. Exploiting conservation of energy in collisions, these estimates combine with weighted interpolation to control the high-order electromagnetic terms despite the slow decay of the electric field. For well-prepared initial data, we prove strong convergence to the incompressible Navier--Stokes--Fourier--Maxwell system as $\\varepsilon\\to0$.",
+    "summary_zh": "The rigorous derivation of incompressible plasma equations from kinetic plasma models is a fundamental problem in kinetic theory. For the one-species Vlasov--Maxwell--Boltzmann system without angular cutoff, global well-posedness and the d…",
+    "topic": "MHD & Plasma",
+    "topic_tags": [
+      "well-posedness",
+      "decay"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "455febff4eca8f1b5212796e088563677b8075ef5671280b40ed50eb0b92959d"
+  },
+  {
+    "id": "arxiv:2611.19069",
+    "title": "Stokes Waves in a Finite-Depth Fluid via a Conformal Transformation",
+    "authors": "Ali Aghayev, Eleanor Byrnes, Dmitry E. Pelinovsky",
+    "date": "2026-11-17",
+    "discovered_at": "2026-11-17",
+    "submitted_at": "2026-11-14",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.19069",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.19069",
+    "abstract_en": "Euler equations for a spatially periodic surface in a two-dimensional fluid of a finite depth are reduced to a system of evolution equations after a conformal transformation. Compared to the previously developed formal approach, we show that the system of evolution equations is complemented by two constraints which determine the new depth in conformal variables and the Bernoulli integration constant. A locally unique continuation of the traveling Stokes waves with respect to the wave speed is studied by using arguments based on the implicit function theorem. We show that the constraints on the traveling wave profile recover the correct small-amplitude expansion of Stokes waves in physical variables. We also prove for the co-periodic stability problem that the real unstable eigenvalues may bifurcate from the zero eigenvalue only at a critical point of the wave energy. Finally, we perform numerical approximations of the wave profiles for both small and large amplitudes and illustrate different bifurcations along the solution family.",
+    "summary_zh": "Euler equations for a spatially periodic surface in a two-dimensional fluid of a finite depth are reduced to a system of evolution equations after a conformal transformation. Compared to the previously developed formal approach, we show th…",
+    "topic": "Euler, Vorticity & Inviscid Flow",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "54496baabdabbce2a1d5efabdb093367fffa83747c2b5b0da25d86e330d3b171"
+  },
+  {
     "id": "arxiv:2611.18554",
     "title": "Sharp nonuniqueness for the Vlasov--Navier--Stokes system",
     "authors": "Xingyu Li",
@@ -20320,58 +20396,5 @@
     "relevance": "unknown",
     "source_id": "applied-mathematics-letters",
     "enrichment_hash": "d348d47efaae463efb4fa1c24429744a9849f2f87158e902731005f4047dfa1e"
-  },
-  {
-    "id": "arxiv:2608.16437",
-    "title": "A Liouville theorem for the two-dimensional stationary hypodissipative Navier--Stokes system",
-    "authors": "Nicola De Nitti, Lukas Niebel, Jiaqi Yang",
-    "date": "2026-08-18",
-    "discovered_at": "2026-08-18",
-    "submitted_at": "2026-08-17",
-    "published_online_at": "",
-    "issue_date": "",
-    "source": "Arxiv (math.AP)",
-    "source_group": "math-fluid-pde",
-    "link": "https://arxiv.org/abs/2608.16437",
-    "doi": "",
-    "arxiv_url": "https://arxiv.org/abs/2608.16437",
-    "abstract_en": "We study the two-dimensional stationary incompressible Navier--Stokes equations on $\\mathbb R^2$ with fractional dissipation $(-Δ)^s$. In the full range $s \\in (0,1)$, we prove that every smooth solution satisfying the natural energy condition $u\\in\\dot{\\mathrm H}^s(\\mathbb R^2;\\mathbb R^2)$ has $u\\equiv0$ and constant pressure. This is a fractional counterpart of the planar finite-Dirichlet theorem of Gilbarg and Weinberger at $s=1$. The proof uses different arguments in three ranges. For $0<s<\\frac13$, we combine an $\\mathrm L^2$-estimate derived from the equation with a stream-function truncation argument. For $\\frac13\\leq s\\leq\\frac23$, we use a localized energy estimate whose boundary terms are supported on expanding annuli. For $\\frac23<s<1$, we establish regularity and decay via a Lorentz-space bootstrap and then apply the maximum principle to the vorticity. We also treat the stationary damped Euler system at $s=0$ by combining the Bernoulli identity with a cut-off argument under an annular growth condition that includes $u\\in \\mathrm L^r(\\mathbb R^2)$ for every $1\\le r\\le2$.",
-    "summary_zh": "我们研究 $\\mathbb R^2$ 上具有分数耗散 $(-Δ)^s$ 的二维稳态不可压缩纳维-斯托克斯方程。在全范围$s \\in (0,1)$中，我们证明满足自然能量条件$u\\in\\dot{\\mathrm H}^s(\\mathbb R^2;\\mathbb R^2)$的每个平滑解都具有$u\\equiv0$和恒定压力。这是吉尔巴格和温伯格在 $s=1$ 处的平面有限狄利克雷定理的分数对应部分。该证明在三个范围内使用不同的参数。对于 $0<s<\\frac13$，我们将从方程导出…",
-    "topic": "Other",
-    "topic_tags": [
-      "decay"
-    ],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "e4266328ebd90662a5c55780a549501ff69e7a7a6e108f8dc951ad788224aa3a"
-  },
-  {
-    "id": "arxiv:2608.15730",
-    "title": "Long-Wave Spectral Instability of Shear Layers for the Compressible Euler Equations",
-    "authors": "Chao Wang, Yuxi Wang, Wenzhi Wu, Zhifei Zhang",
-    "date": "2026-08-18",
-    "discovered_at": "2026-08-18",
-    "submitted_at": "2026-08-16",
-    "published_online_at": "",
-    "issue_date": "",
-    "source": "Arxiv (math.AP)",
-    "source_group": "math-fluid-pde",
-    "link": "https://arxiv.org/abs/2608.15730",
-    "doi": "",
-    "arxiv_url": "https://arxiv.org/abs/2608.15730",
-    "abstract_en": "We study the long-wave spectral instability of the two-dimensional compressible Euler equations around smooth monotone shear layers. We construct decaying half-line solutions of the compressible Rayleigh equation through a long-wave expansion and derive a second-order expansion of the matching Wronskian. For every fixed Mach number $m>0$, we prove the existence of unstable modes for sufficiently small wavenumbers. For $m<\\sqrt2$, this holds for a class of profiles, with $c_i$ tending to a positive constant as $α\\to0$. At $m=\\sqrt{2}$, the profile $U_s(Y)=\\tanh Y$ admits an unstable mode with $c\\to0$ and $c_i$ of order $α^{1/3}$. For $m>\\sqrt2$, the same profile remains unstable, with $c\\to c_*(m)\\in(0,1)$ and $c_i>0$ of order $α$. The corresponding temporal growth rates are of order $α$, $α^{4/3}$ and $α^2$, respectively, showing a change in the long-wave instability scaling at $m=\\sqrt2$. In the zero-thickness limit, the supercritical unstable eigenvalue approaches the real axis, consistently with the stability results for supersonic compressible vortex sheets in \\cite{CS1,CS2}.",
-    "summary_zh": "我们研究了光滑单调剪切层周围二维可压缩欧拉方程的长波谱不稳定性。我们通过长波展开构造了可压缩瑞利方程的衰减半线解，并导出了匹配朗斯基方程的二阶展开。对于每个固定马赫数 $m>0$，我们证明对于足够小的波数存在不稳定模式。对于 $m<\\sqrt2$，这适用于一类配置文件，其中 $c_i$ 趋向于正常数 $α\\to0$。在 $m=\\sqrt{2}$ 处，轮廓 $U_s(Y)=\\tanh Y$ 承认 $c\\to0$ 和 $c_i$ 阶为 $α^{1/3}$ 的不稳定模式。对于 $…",
-    "topic": "Other",
-    "topic_tags": [
-      "stability",
-      "decay"
-    ],
-    "tags": [
-      "stability"
-    ],
-    "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "6d816f7d04b3f88bf25546372813ad68b64dc95ffc3894c900e518cac4bcd881"
   }
 ]
