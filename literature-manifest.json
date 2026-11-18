@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "4db3f4d8d8e1a91d",
-  "generated_at": "2026-11-18T07:43:53Z",
+  "generation_id": "ab2a2c0815548b64",
+  "generated_at": "2026-11-18T08:36:40Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,19 +11,27 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 18,
+    "succeeded": 10,
     "failed_ids": [
+      "acta-mathematica",
       "analysis-pde",
       "annales-henri-poincare-c",
+      "annales-scientifiques-ens",
       "annals-math",
       "archive-rational-mechanics-analysis",
-      "arxiv-math-ap",
       "calculus-variations-pde",
       "communications-mathematical-physics",
       "dcds",
+      "duke-mathematical-journal",
+      "forum-mathematics-pi",
+      "inventiones-mathematicae",
+      "jams",
+      "journal-european-mathematical-society",
       "journal-math-fluid-mechanics",
       "journal-reine-angewandte-mathematik",
-      "nonlinearity"
+      "nonlinearity",
+      "publications-math-ihes",
+      "selecta-mathematica"
     ]
   },
   "current": {
@@ -37,8 +45,8 @@
       "year": 2026,
       "path": "archive/archive_2026.json",
       "count": 47,
-      "sha256": "b71b6b3b4e4f8f3668b6a116d6f494374b33e92fc91fa0c57cfdb689f05b3364",
-      "bytes": 92751
+      "sha256": "949a17d124485f6cb8bdf6d643ba8c0a86d115e1ce114c47e95f2bd41b167eb9",
+      "bytes": 92255
     }
   ]
 }
