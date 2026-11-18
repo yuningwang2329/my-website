@@ -1,5 +1,30 @@
 [
   {
+    "id": "arxiv:2611.22008",
+    "title": "Stokes flow in a wedge with a moving contact point: well-posedness with a fixed contact angle and Navier slip",
+    "authors": "Manuel V. Gnann, Hans Knüpfer, King Ming Lam, Nader Masmoudi, Jonas Sauer",
+    "date": "2026-11-18",
+    "discovered_at": "2026-11-18",
+    "submitted_at": "2026-11-16",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.22008",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.22008",
+    "abstract_en": "We study 2D Stokes flow in a wedge-like region bounded by a solid substrate with Navier slip and by a free surface driven by surface tension. The two meet at a moving contact point with a fixed contact angle. This is the model of a moving contact line at scales below the slip length, in its simplest setting. The slip length is the only length scale, and nothing is prescribed at the contact point beyond the angle: no relaxation law for the angle, and no contact-point dissipation. Slip removes the paradox found by Huh and Scriven, the infinite dissipation at a contact line that moves without slip, but in this model a weaker singularity remains. We give, to our knowledge, the first rigorous characterisation of this singularity for solutions of the free-boundary problem near the stationary state. For small contact angles and small initial data satisfying two compatibility conditions, we prove local existence, uniqueness and Lipschitz dependence on the data. The compatibility conditions are the price of the fixed angle for solutions regular in time up to the initial time. Rather than hiding the singularity, the solution class carries it explicitly in corner expansions. The velocity is continuous up to the contact point. The pressure has a logarithmic singularity, the slip-regularised version of that of Huh and Scriven. Its coefficient is proportional to the contact-point velocity. The slope of the free boundary has a corresponding logarithmic correction, the slip-scale counterpart of the Cox-Voinov relation. The linearised problem combines terms of different scaling, which prevents a direct treatment by the Mellin transform. We solve it by a Lax-Milgram argument, and an auxiliary test function problem shows that the variational solution satisfies the equations. Explicit Mellin representations then yield the corner expansions, and the nonlinear problem is solved by a contraction argument.",
+    "summary_zh": "We study 2D Stokes flow in a wedge-like region bounded by a solid substrate with Navier slip and by a free surface driven by surface tension. The two meet at a moving contact point with a fixed contact angle. This is the model of a moving…",
+    "topic": "Free Boundary, Water Waves & Multiphase",
+    "topic_tags": [
+      "well-posedness"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "92284ce65f6fcbb07e356926183ee6e8e1980213ef0ddcfcb7029a7ca8ab4a20"
+  },
+  {
     "id": "arxiv:2611.21130",
     "title": "Vanishing Dissipation Limit to Planar Euler Shock for the Full Compressible Navier-Stokes Equations in $\\mathbb{R}^3$",
     "authors": "Yujie Wang",
@@ -507,29 +532,6 @@
     "relevance": "unknown",
     "source_id": "applied-mathematics-letters",
     "enrichment_hash": "8e33d5350d7873e83bc1cec5e726864a7a92b6381acf989e97dbda8af74ac069"
-  },
-  {
-    "id": "doi:10.1002/cpa.70055",
-    "title": "A Geometric Characterization of Steady Laminar Flow",
-    "authors": "Theodore D. Drivas, Marc Nualart",
-    "date": "2026-11-14",
-    "discovered_at": "2026-11-14",
-    "submitted_at": "",
-    "published_online_at": "2026-07-07",
-    "issue_date": "2026-07-07",
-    "source": "Commun. Pure Appl. Math.",
-    "source_group": "math-fluid-pde",
-    "link": "https://doi.org/10.1002/cpa.70055",
-    "doi": "10.1002/cpa.70055",
-    "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either parallel or circular flows. We also show that a large subset of these shear flows are isolated from non‐shear stationary states. For Poiseuille flow, , our result shows that all stationary solutions in a sufficiently small  neighbourhood are shear flows. We then show that if  with , then in any  neighbourhood, there exist smooth non‐shear steady states, traveling waves, and quasiperiodic solutions of any number of non‐commensurate frequencies. This proves the rigidity near Poiseuille is sharp. Finally, we prove that on general compact doubly connected domains, laminar steady Euler flows with constant velocity on the boundary must also be either parallel or circular, and the domain a periodic channel or an annulus. This shows that laminar free boundary Euler solutions must have Euclidean symmetry.",
-    "summary_zh": "ABSTRACT We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either para…",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "e569c81675a2a476ce880d6ffcac9e80329ee000a7e8fe523257d655071f5502"
   },
   {
     "id": "doi:10.1007/s00021-026-01076-9",
@@ -1527,7 +1529,7 @@
     "link": "https://doi.org/10.1137/25m177521x",
     "doi": "10.1137/25m177521x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6165-6205, December 2026.   Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
     "summary_zh": "Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we…",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [
@@ -1536,7 +1538,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "18ca2fc1a347afa5ee08b0f390a9253ca68ec5f7fc2d29875d70191826ae0a46"
+    "enrichment_hash": "2090ec74fd15d9ee48f39d2ceda08c09bb28398dec6a195dae2cc770aab3e193"
   },
   {
     "id": "doi:10.1007/s00205-026-02265-6",
@@ -2996,7 +2998,7 @@
   },
   {
     "id": "title:f0a136c83460bcf20d1addc2",
-    "title": "Liouville type theorems for 3D stationary Navier-Stokes equations beyond critical exponents $3/2$ and $9/2$",
+    "title": "Liouville type theorems for 3D stationary Navier-Stokes equations beyond critical exponents 3/2 and 9/2",
     "authors": "Zhibing Zhang, Huizhen Zhou",
     "date": "2026-10-31",
     "discovered_at": "2026-10-31",
@@ -3015,7 +3017,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "journal-differential-equations",
-    "enrichment_hash": "4fe7f76edf2804d0ed58cdef785f1cf52aed99f6613623b6bbedde75016e3475"
+    "enrichment_hash": "e5b3d05a4602b27a333d811c60bb4003cd335638ff00d11413b39c355af99a98"
   },
   {
     "id": "doi:10.1007/s00021-026-01068-9",
@@ -4878,7 +4880,7 @@
   },
   {
     "id": "doi:10.1137/25m1812063",
-    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on \\({\\mathbb{S}^2}\\)",
+    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on [math]",
     "authors": "Matias G. Delgadino, Luca Melzi",
     "date": "2026-10-21",
     "discovered_at": "2026-10-21",
@@ -4890,7 +4892,7 @@
     "link": "https://doi.org/10.1137/25m1812063",
     "doi": "10.1137/25m1812063",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5709-5730, October 2026.   Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [math] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "summary_zh": "Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [
@@ -4899,7 +4901,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "8d7397856e2bc09e1a2c805d94d98d35c32e168d01aeb02f7d825ff381568488"
+    "enrichment_hash": "fe6616a9b3af6ceadb7f802395f37df05f457bb7368b09f92c50ed18673aa986"
   },
   {
     "id": "doi:10.1088/1361-6544/aeb19d",
@@ -5911,14 +5913,14 @@
     "link": "https://doi.org/10.1137/25m1793870",
     "doi": "10.1137/25m1793870",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [Formula: see text] under the optimal regularity condition [Formula: see text]. In the case [Formula: see text], we further prove a Beale–Kato–Majda-type criterion that relates blowup in the [Formula: see text] norm to the [Formula: see text] norm of the variable vorticity.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5623-5651, October 2026.   Abstract. We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [math] under the optimal regularity condition [math]. In the case [math], we further prove a Beale–Kato–Majda-type criterion that relates blowup in the [math] norm to the [math] norm of the variable vorticity.",
     "summary_zh": "Abstract. We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [Formula: see text] under the optimal regularity condition [Formula: see text].…",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "214580462ca14227c4aff3200965881f5da7148f5a1be1040a5ecf51758a5b1b"
+    "enrichment_hash": "99d15684d0b96ef41f774297db612d77e299672ee448872fa71d9ed4920b4588"
   },
   {
     "id": "doi:10.1137/25m1777025",
@@ -5934,7 +5936,7 @@
     "link": "https://doi.org/10.1137/25m1777025",
     "doi": "10.1137/25m1777025",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5598-5622, October 2026.   Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores the stabilizing role of magnetic fields satisfying the Syrovatskij condition .",
     "summary_zh": "Abstract. In this paper, under violation of the Syrovatskij stability condition, we prove the ill-posedness of the well-known Kelvin–Helmholtz problem of incompressible ideal magnetohydrodynamics (MHD) equations. This result underscores th…",
     "topic": "MHD & Plasma",
     "topic_tags": [
@@ -5943,7 +5945,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "552cbee05daec751466411a9ba359af93b0bb865fa2cac07493215061ee80b3e"
+    "enrichment_hash": "169165abc21bf44aebd5dd456f156f423921fb8fdb1b11a32f1e3790c4ad707b"
   },
   {
     "id": "arxiv:2610.22090",
@@ -15780,14 +15782,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
+    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
@@ -16350,7 +16352,7 @@
     "link": "https://doi.org/10.1137/24m1695592",
     "doi": "10.1137/24m1695592",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  In this paper we explore the extent to which discretely self-similar (DSS) solutions to the 3D Navier–Stokes equations with rough data almost have the same asymptotics as DSS flows with smoother data. In a previous work [ Bradshaw and Phelps, Pure Appl. Anal., 5 (2023), pp. 377–407 ], we established algebraic spatial decay rates for data in [Formula: see text] for [Formula: see text]. The optimal rate occurs when [Formula: see text] and rates degrade as [Formula: see text] decreases. In this paper, we show that these solutions can be further decomposed into a term satisfying the optimal [Formula: see text] decay rate—i.e., have asymptotics like [Formula: see text]—and a term with the [Formula: see text] decay rate multiplied by a prefactor which can be taken to be arbitrarily small. This smallness property is new and implies the [Formula: see text] asymptotics should be understood in a little-o sense. The decay rates in Bradshaw and Phelps break down when [Formula: see text], in which case spatial asymptotics have not been explored. The second result of this paper shows that DSS solutions with data in [Formula: see text] can be expanded into a term satisfying the [Formula: see text] decay rate and a term that can be taken to be arbitrarily small in a scaling invariant class. A Besov space version of this result is also included.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4814-4853, October 2026.   Abstract. In this paper we explore the extent to which discretely self-similar (DSS) solutions to the 3D Navier–Stokes equations with rough data almost have the same asymptotics as DSS flows with smoother data. In a previous work [Bradshaw and Phelps, Pure Appl. Anal., 5 (2023), pp. 377–407], we established algebraic spatial decay rates for data in [math] for [math]. The optimal rate occurs when [math] and rates degrade as [math] decreases. In this paper, we show that these solutions can be further decomposed into a term satisfying the optimal [math] decay rate—i.e., have asymptotics like [math]—and a term with the [math] decay rate multiplied by a prefactor which can be taken to be arbitrarily small. This smallness property is new and implies the [math] asymptotics should be understood in a little-o sense. The decay rates in Bradshaw and Phelps break down when [math], in which case spatial asymp",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Navier–Stokes & Viscous Flow",
     "topic_tags": [
@@ -16359,7 +16361,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "946423a1494a085604489ff13d575a4d45ed162071e1fb0ee0f8757928fbad0f"
+    "enrichment_hash": "236b16150558e2f45d2d0c495aa692dbfe0afe38a2aa5759184a529b818a7b22"
   },
   {
     "id": "title:a49e1d211c09a6374830e0e7",

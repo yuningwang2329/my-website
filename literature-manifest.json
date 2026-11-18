@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "4b194e112c277f78",
-  "generated_at": "2026-11-17T08:09:51Z",
+  "generation_id": "c866e96b5a1eb8a2",
+  "generated_at": "2026-11-18T02:52:32Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,22 +11,24 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 29,
-    "failed_ids": []
+    "succeeded": 28,
+    "failed_ids": [
+      "duke-mathematical-journal"
+    ]
   },
   "current": {
     "path": "fluids.json",
     "count": 855,
-    "sha256": "ad4cd6f029818c37d7e0fb6f01199bc34eab4437adb319aa7f52ae15ba109071",
-    "bytes": 1745249
+    "sha256": "22d8450ca339f9eae1d921fcc9a785c2d9727722fce5eb4328607351e1509186",
+    "bytes": 1746010
   },
   "archives": [
     {
       "year": 2026,
       "path": "archive/archive_2026.json",
       "count": 47,
-      "sha256": "b71b6b3b4e4f8f3668b6a116d6f494374b33e92fc91fa0c57cfdb689f05b3364",
-      "bytes": 92751
+      "sha256": "949a17d124485f6cb8bdf6d643ba8c0a86d115e1ce114c47e95f2bd41b167eb9",
+      "bytes": 92255
     }
   ]
 }
