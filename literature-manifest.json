@@ -1,27 +1,24 @@
 {
   "schema_version": 1,
-  "generation_id": "ff61dd3e710ed866",
-  "generated_at": "2026-11-19T02:31:49Z",
+  "generation_id": "7d562bce14c11b83",
+  "generated_at": "2026-11-19T04:33:22Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 866,
+    "current": 874,
     "archived": 48,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 27,
-    "failed_ids": [
-      "arxiv-math-ap",
-      "journal-reine-angewandte-mathematik"
-    ]
+    "succeeded": 29,
+    "failed_ids": []
   },
   "current": {
     "path": "fluids.json",
-    "count": 866,
-    "sha256": "b331e61a57e9c73468c38c88e9c6ec57e06ac2ebc645de6ab16e395dee4f3c2d",
-    "bytes": 1767709
+    "count": 874,
+    "sha256": "1347d71d51e325fe424fe987924215bf349305c0241357423a11c0ea2dd9989e",
+    "bytes": 1786478
   },
   "archives": [
     {
