@@ -1,5 +1,53 @@
 [
   {
+    "id": "title:21d63e6cbe023e08265ae612",
+    "title": "Quantitative estimates for the forced Navier-Stokes equations and applications",
+    "authors": "Tobias Barker, Henry Popkin",
+    "date": "2026-11-19",
+    "discovered_at": "2026-11-19",
+    "submitted_at": "",
+    "published_online_at": "",
+    "issue_date": "2027-02",
+    "source": "J. Differ. Equ.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022039626008077?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Navier–Stokes & Viscous Flow",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-differential-equations",
+    "enrichment_hash": "56540da5fc6a0b4d245f5fe5203c4146c4371bbd505c6f0d9acb5da52a6a15f8"
+  },
+  {
+    "id": "doi:10.1088/1361-6544/aebfe2",
+    "title": "Global regularity of dilute solutions of three-dimensional multispecies Nernst–Planck systems",
+    "authors": "Fizay-Noah Lee",
+    "date": "2026-11-19",
+    "discovered_at": "2026-11-19",
+    "submitted_at": "",
+    "published_online_at": "2026-11-18",
+    "issue_date": "2026-11-30",
+    "source": "Nonlinearity",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1088/1361-6544/aebfe2",
+    "doi": "10.1088/1361-6544/aebfe2",
+    "arxiv_url": "",
+    "abstract_en": "Abstract\n                  We study the three-dimensional Nernst–Planck (NP), Nernst–Planck–Stokes (NPS), and Nernst–Planck–Navier–Stokes (NPNS) systems on bounded domains with nonequilibrium Dirichlet boundary conditions. For general multispecies electrolytes with arbitrary diffusivities and valences, we prove global existence and uniqueness of strong solutions corresponding to sufficiently dilute ion concentrations and sufficiently small initial data. In particular, we show that solutions arising from sufficiently small perturbations of the harmonic extensions of the boundary data remain globally regular for all time in each of the NP, NPS, and NPNS settings. To the best of our knowledge, these are the first global regularity results for three-dimensional multispecies NP, NPS, and NPNS systems with nonequilibrium boundary conditions that do not rely on assumptions such as equal diffusivities, equal valence magnitudes, or the presence of only two oppositely charged ionic species.",
+    "summary_zh": "Abstract We study the three-dimensional Nernst–Planck (NP), Nernst–Planck–Stokes (NPS), and Nernst–Planck–Navier–Stokes (NPNS) systems on bounded domains with nonequilibrium Dirichlet boundary conditions. For general multispecies electroly…",
+    "topic": "Navier–Stokes & Viscous Flow",
+    "topic_tags": [
+      "global existence"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "nonlinearity",
+    "enrichment_hash": "d6e031f5b6ef2262dff1e35067ed22e43f9c5c0c0a431171523ae9d8f6309674"
+  },
+  {
     "id": "arxiv:2611.23145",
     "title": "Global strong solutions and large-time behavior for the two-dimensional compressible Navier-Stokes-Poisson system with general bulk viscosity and Navier slip boundary conditions",
     "authors": "Hongyu Wang, Rong Zhang",
@@ -16216,14 +16264,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
+    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
+    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
   },
   {
     "id": "arxiv:2609.17362",
@@ -17252,7 +17300,7 @@
     "submitted_at": "2026-09-06",
     "published_online_at": "2026-11-09",
     "issue_date": "2027-02",
-    "source": "Arxiv (math.AP)",
+    "source": "J. Math. Fluid Mech.",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1007/s00021-026-01074-x",
     "doi": "10.1007/s00021-026-01074-x",
@@ -17263,8 +17311,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "f88bc6b1bbe37853256f3c277174e506f924d68a16ea249da0e996029608cea4"
+    "source_id": "journal-math-fluid-mechanics",
+    "enrichment_hash": "f1d406edba82ff0135ff49da12a54501ee3fe754e912ff91ef6d16c0e675f884"
   },
   {
     "id": "arxiv:2609.09014",
@@ -20836,33 +20884,5 @@
     "relevance": "unknown",
     "source_id": "calculus-variations-pde",
     "enrichment_hash": "d73657ccc99d9c8a61bbb7a4857a65fa869d7d2683d80b53dc3e1152c066fa12"
-  },
-  {
-    "id": "title:ad0a53440baf02ec8217ac69",
-    "title": "Linear stability of the 2D Boussinesq equations near Couette flow",
-    "authors": "Wanrong Yang, Jiajing Wang",
-    "date": "2026-08-20",
-    "discovered_at": "2026-08-20",
-    "submitted_at": "",
-    "published_online_at": "",
-    "issue_date": "2027-01",
-    "source": "Appl. Math. Lett.",
-    "source_group": "math-fluid-pde",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0893965926002466?dgcid=rss_sd_all",
-    "doi": "",
-    "arxiv_url": "",
-    "abstract_en": "无摘要提供，请点击原文链接查看。",
-    "summary_zh": "无摘要提供，请点击原文链接查看。",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [
-      "stability",
-      "Couette flow"
-    ],
-    "tags": [
-      "stability"
-    ],
-    "relevance": "unknown",
-    "source_id": "applied-mathematics-letters",
-    "enrichment_hash": "d348d47efaae463efb4fa1c24429744a9849f2f87158e902731005f4047dfa1e"
   }
 ]

@@ -1,5 +1,33 @@
 [
   {
+    "id": "title:ad0a53440baf02ec8217ac69",
+    "title": "Linear stability of the 2D Boussinesq equations near Couette flow",
+    "authors": "Wanrong Yang, Jiajing Wang",
+    "date": "2026-08-20",
+    "discovered_at": "2026-08-20",
+    "submitted_at": "",
+    "published_online_at": "",
+    "issue_date": "2027-01",
+    "source": "Appl. Math. Lett.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0893965926002466?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "无摘要提供，请点击原文链接查看。",
+    "summary_zh": "无摘要提供，请点击原文链接查看。",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "stability",
+      "Couette flow"
+    ],
+    "tags": [
+      "stability"
+    ],
+    "relevance": "unknown",
+    "source_id": "applied-mathematics-letters",
+    "enrichment_hash": "d348d47efaae463efb4fa1c24429744a9849f2f87158e902731005f4047dfa1e"
+  },
+  {
     "id": "arxiv:2608.16437",
     "title": "A Liouville theorem for the two-dimensional stationary hypodissipative Navier--Stokes system",
     "authors": "Nicola De Nitti, Lukas Niebel, Jiaqi Yang",
