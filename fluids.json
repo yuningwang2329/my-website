@@ -2229,7 +2229,7 @@
     "link": "https://doi.org/10.1137/25m177521x",
     "doi": "10.1137/25m177521x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6165-6205, December 2026.   Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
     "summary_zh": "Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we…",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [
@@ -2238,7 +2238,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "18ca2fc1a347afa5ee08b0f390a9253ca68ec5f7fc2d29875d70191826ae0a46"
+    "enrichment_hash": "2090ec74fd15d9ee48f39d2ceda08c09bb28398dec6a195dae2cc770aab3e193"
   },
   {
     "id": "doi:10.1007/s00205-026-02265-6",
@@ -5379,14 +5379,14 @@
     "link": "https://doi.org/10.1137/25m1812737",
     "doi": "10.1137/25m1812737",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5731-5751, October 2026.   Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
     "summary_zh": "Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "bbeac2c40c34ffb456d26f5b82bb1e844f523e98f511efadd13cbab736323de1"
+    "enrichment_hash": "ba7773051ca688eecec61714bdd5a243f16487f80671644ae899f37ebef4bdf0"
   },
   {
     "id": "doi:10.1007/s00021-026-01066-x",
@@ -5580,7 +5580,7 @@
   },
   {
     "id": "doi:10.1137/25m1812063",
-    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on \\({\\mathbb{S}^2}\\)",
+    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on [math]",
     "authors": "Matias G. Delgadino, Luca Melzi",
     "date": "2026-10-21",
     "discovered_at": "2026-10-21",
@@ -5592,7 +5592,7 @@
     "link": "https://doi.org/10.1137/25m1812063",
     "doi": "10.1137/25m1812063",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5709-5730, October 2026.   Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [math] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "summary_zh": "Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [
@@ -5601,7 +5601,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "8d7397856e2bc09e1a2c805d94d98d35c32e168d01aeb02f7d825ff381568488"
+    "enrichment_hash": "fe6616a9b3af6ceadb7f802395f37df05f457bb7368b09f92c50ed18673aa986"
   },
   {
     "id": "doi:10.1088/1361-6544/aeb19d",
@@ -16482,14 +16482,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
+    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
