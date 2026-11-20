@@ -1,34 +1,32 @@
 {
   "schema_version": 1,
-  "generation_id": "479a8bc5c02ea6e7",
-  "generated_at": "2026-11-20T02:17:09Z",
+  "generation_id": "85a33f74dfeebf92",
+  "generated_at": "2026-11-20T04:21:18Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
-    "current": 876,
+    "current": 882,
     "archived": 48,
     "review": 2000
   },
   "sources": {
     "total": 29,
-    "succeeded": 28,
-    "failed_ids": [
-      "archive-rational-mechanics-analysis"
-    ]
+    "succeeded": 29,
+    "failed_ids": []
   },
   "current": {
     "path": "fluids.json",
-    "count": 876,
-    "sha256": "82bd453ea58ab0ddc0a183613e3a5b1f026c971a9c0c6b5f742c4717f3ccdbee",
-    "bytes": 1790162
+    "count": 882,
+    "sha256": "a0918ca76cd906429e8f1b9c6716fd0018d5d26773355f070addd25565e2bb2c",
+    "bytes": 1803793
   },
   "archives": [
     {
       "year": 2026,
       "path": "archive/archive_2026.json",
       "count": 48,
-      "sha256": "6f9eb46daff068d043d1ea387321dd457e5f8e8a0a836fc60aac40c76f625cb9",
-      "bytes": 93733
+      "sha256": "4f54365870bd0120df8434fb5cee0cbb786b443775eb619d73077c58d20e8a90",
+      "bytes": 93237
     }
   ]
 }
