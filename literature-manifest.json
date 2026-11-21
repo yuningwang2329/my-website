@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "9dfcc0c1dcf9b3bb",
-  "generated_at": "2026-11-21T02:11:00Z",
+  "generation_id": "93a111d09413d884",
+  "generated_at": "2026-11-21T04:18:34Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,7 +11,7 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 9,
+    "succeeded": 11,
     "failed_ids": [
       "acta-mathematica",
       "analysis-pde",
@@ -19,11 +19,9 @@
       "annales-scientifiques-ens",
       "annals-math",
       "archive-rational-mechanics-analysis",
-      "arxiv-math-ap",
       "calculus-variations-pde",
       "communications-mathematical-physics",
       "dcds",
-      "duke-mathematical-journal",
       "forum-mathematics-pi",
       "inventiones-mathematicae",
       "jams",
@@ -38,8 +36,8 @@
   "current": {
     "path": "fluids.json",
     "count": 882,
-    "sha256": "2c17d537d5f8a62bfe36f3a288d5c5402abf46bc4380be04e4975c8bdca70e7b",
-    "bytes": 1803922
+    "sha256": "939384906f8b5f2701b92d134d7d6f85a4241f1c9e7f0226364a820b13c46f56",
+    "bytes": 1803902
   },
   "archives": [
     {
