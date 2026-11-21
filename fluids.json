@@ -17708,7 +17708,7 @@
     "submitted_at": "2026-09-06",
     "published_online_at": "2026-11-09",
     "issue_date": "2027-02",
-    "source": "Arxiv (math.AP)",
+    "source": "J. Math. Fluid Mech.",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1007/s00021-026-01074-x",
     "doi": "10.1007/s00021-026-01074-x",
@@ -17719,8 +17719,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "f88bc6b1bbe37853256f3c277174e506f924d68a16ea249da0e996029608cea4"
+    "source_id": "journal-math-fluid-mechanics",
+    "enrichment_hash": "f1d406edba82ff0135ff49da12a54501ee3fe754e912ff91ef6d16c0e675f884"
   },
   {
     "id": "arxiv:2609.09014",
