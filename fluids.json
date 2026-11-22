@@ -1,5 +1,28 @@
 [
   {
+    "id": "title:d512cb22b8da667d4d332d86",
+    "title": "A two-dimensional attraction-repulsion-Navier–Stokes system with logarithmic sensitivity. II. Eventual smoothness and exponential stabilization",
+    "authors": "",
+    "date": "2026-11-22",
+    "discovered_at": "2026-11-22",
+    "submitted_at": "",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "J. Differ. Equ.",
+    "source_group": "math-fluid-pde",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022039626008661?dgcid=rss_sd_all",
+    "doi": "",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Navier–Stokes & Viscous Flow",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-differential-equations",
+    "enrichment_hash": "ea124e96dfa9892e421c34a0a2b005c63bdeff515f0c85e716aaf9a48ebce0d7"
+  },
+  {
     "id": "title:e48f212b712fa464ec473de9",
     "title": "Vanishing viscosity limit to the superposition of shock and rarefaction waves for one-dimensional compressible Navier-Stokes equations with Riemann initial data",
     "authors": "Lin-An Li",
@@ -17708,7 +17731,7 @@
     "submitted_at": "2026-09-06",
     "published_online_at": "2026-11-09",
     "issue_date": "2027-02",
-    "source": "J. Math. Fluid Mech.",
+    "source": "Arxiv (math.AP)",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1007/s00021-026-01074-x",
     "doi": "10.1007/s00021-026-01074-x",
@@ -17719,8 +17742,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-math-fluid-mechanics",
-    "enrichment_hash": "f1d406edba82ff0135ff49da12a54501ee3fe754e912ff91ef6d16c0e675f884"
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "f88bc6b1bbe37853256f3c277174e506f924d68a16ea249da0e996029608cea4"
   },
   {
     "id": "arxiv:2609.09014",
@@ -21264,33 +21287,5 @@
     "relevance": "unknown",
     "source_id": "communications-mathematical-physics",
     "enrichment_hash": "675ef10e22107a069233f15a8861b7d5973e899d6aef8d3576a42c4ad1ac0d3f"
-  },
-  {
-    "id": "doi:10.1007/s00526-026-03417-y",
-    "title": "On the Sobolev stability threshold for 3D Navier-Stokes equations with rotation near the Couette flow",
-    "authors": "Wenting Huang, Ying Sun, Xiaojing Xu",
-    "date": "2026-08-23",
-    "discovered_at": "2026-08-23",
-    "submitted_at": "",
-    "published_online_at": "2026-08-22",
-    "issue_date": "2026-09",
-    "source": "Calc. Var. Partial Differ. Equ.",
-    "source_group": "math-fluid-pde",
-    "link": "https://doi.org/10.1007/s00526-026-03417-y",
-    "doi": "10.1007/s00526-026-03417-y",
-    "arxiv_url": "",
-    "abstract_en": "",
-    "summary_zh": "无摘要内容。",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [
-      "stability",
-      "Couette flow"
-    ],
-    "tags": [
-      "stability"
-    ],
-    "relevance": "unknown",
-    "source_id": "calculus-variations-pde",
-    "enrichment_hash": "d73657ccc99d9c8a61bbb7a4857a65fa869d7d2683d80b53dc3e1152c066fa12"
   }
 ]
