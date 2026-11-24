@@ -1,5 +1,60 @@
 [
   {
+    "id": "doi:10.1007/s00220-026-05707-0",
+    "title": "Nonlinear Stability of 2-D Couette Flow for the Compressible Navier–Stokes Equations at High Reynolds Number",
+    "authors": "Minling Li, Chao Wang, Zhifei Zhang",
+    "date": "2026-08-25",
+    "discovered_at": "2026-08-25",
+    "submitted_at": "",
+    "published_online_at": "2026-08-01",
+    "issue_date": "2026-09",
+    "source": "Commun. Math. Phys.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1007/s00220-026-05707-0",
+    "doi": "10.1007/s00220-026-05707-0",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "stability",
+      "Couette flow"
+    ],
+    "tags": [
+      "stability"
+    ],
+    "relevance": "unknown",
+    "source_id": "communications-mathematical-physics",
+    "enrichment_hash": "2f199ca37518aa31d09cff1438098fc6bf7a8916b09adc1861755b53e5657e6c"
+  },
+  {
+    "id": "doi:10.1007/s00220-026-05689-z",
+    "title": "The Transition Threshold for the 2D Couette Flow in the Infinite Channel",
+    "authors": "Qionglei Chen, Zhen Li, Changxing Miao",
+    "date": "2026-08-25",
+    "discovered_at": "2026-08-25",
+    "submitted_at": "",
+    "published_online_at": "2026-08-01",
+    "issue_date": "2026-09",
+    "source": "Commun. Math. Phys.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1007/s00220-026-05689-z",
+    "doi": "10.1007/s00220-026-05689-z",
+    "arxiv_url": "",
+    "abstract_en": "",
+    "summary_zh": "无摘要内容。",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "Couette flow"
+    ],
+    "tags": [
+      "stability"
+    ],
+    "relevance": "unknown",
+    "source_id": "communications-mathematical-physics",
+    "enrichment_hash": "675ef10e22107a069233f15a8861b7d5973e899d6aef8d3576a42c4ad1ac0d3f"
+  },
+  {
     "id": "doi:10.1007/s00526-026-03417-y",
     "title": "On the Sobolev stability threshold for 3D Navier-Stokes equations with rotation near the Couette flow",
     "authors": "Wenting Huang, Ying Sun, Xiaojing Xu",
@@ -566,14 +621,14 @@
     "date": "2026-07-17",
     "discovered_at": "2026-07-17",
     "submitted_at": "",
-    "published_online_at": "2026-04-24",
+    "published_online_at": "2026-10-07",
     "issue_date": "2026-12",
     "source": "Commun. Pure Appl. Math.",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1002/cpa.70048",
     "doi": "10.1002/cpa.70048",
     "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
+    "abstract_en": "Communications on Pure and Applied Mathematics, Volume 79, Issue 12, Page 2435-2490, December 2026.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -585,7 +640,7 @@
     ],
     "relevance": "unknown",
     "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "ce918c4f4ee48e7eac74c878bef3b8c59adec03eddfbd5c998d1d2dbb094c4f9"
+    "enrichment_hash": "1bd5d72aed03fed6017b3e6ec84c7832c152e209879d656bda4b40f57a73f99b"
   },
   {
     "id": "arxiv:2607.15256",
@@ -1047,9 +1102,9 @@
     "submitted_at": "",
     "published_online_at": "",
     "issue_date": "2026",
-    "source": "J. Differ. Equ.",
+    "source": "J. Math. Pures Appl.",
     "source_group": "math-fluid-pde",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0022039626008430?dgcid=rss_sd_all",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0021782426001388?dgcid=rss_sd_all",
     "doi": "",
     "arxiv_url": "",
     "abstract_en": "无摘要提供，请点击原文链接查看。",
@@ -1058,8 +1113,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-differential-equations",
-    "enrichment_hash": "1d4e2d5e4afbade180beb076beec9ba7f33b2394601eb62a440a3d989c2a29eb"
+    "source_id": "journal-math-pures-appliquees",
+    "enrichment_hash": "485e76b97f2d755902cf46d742fa94445863d87359ce5f6189a4af9aa43551c5"
   },
   {
     "id": "title:90ea63fb4f639d7e0575f934",
