@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "d195bd05d38f6342",
-  "generated_at": "2026-11-24T10:07:55Z",
+  "generation_id": "1b0c3ccd8c86ac66",
+  "generated_at": "2026-11-24T11:04:09Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -17,16 +17,16 @@
   "current": {
     "path": "fluids.json",
     "count": 905,
-    "sha256": "a94a78959360654e22a46f76a2f8af8ee77184a8bade6c548ebeb8b5132620df",
-    "bytes": 1848332
+    "sha256": "6f4df209273506cb90e45b8e984e237bbf935f9243039484875e37e050c154f1",
+    "bytes": 1848922
   },
   "archives": [
     {
       "year": 2026,
       "path": "archive/archive_2026.json",
       "count": 51,
-      "sha256": "2580bae1f06e0d8a9aa4f83f24ceee96a1bb7fa7ab9cf1986b50cc806bb7eb25",
-      "bytes": 96573
+      "sha256": "f5bcb338b60bf4b1b3cb8da24d104baba76f2c257a15ae28213c9737736e4783",
+      "bytes": 96077
     }
   ]
 }
