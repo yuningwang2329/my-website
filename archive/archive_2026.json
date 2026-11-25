@@ -1,5 +1,33 @@
 [
   {
+    "id": "arxiv:2608.24840",
+    "title": "Inviscid damping without derivatives near Couette flow",
+    "authors": "Dengjun Guo, Xiaoyutao Luo",
+    "date": "2026-08-26",
+    "discovered_at": "2026-08-26",
+    "submitted_at": "2026-08-25",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2608.24840",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2608.24840",
+    "abstract_en": "We study the long-time dynamics near Couette flow for the 2D Euler equations in unbounded geometries. We identify a mechanism of nonlinear inviscid damping at Yudovich regularity, distinct from classical phase mixing: velocity decay driven by spatial evacuation of vorticity.   The mechanism leads to a geometry-sign classification of the dynamics. In the infinite channel, small nonnegative bounded-vorticity perturbations undergo global damping without derivative assumptions. In the whole plane, small nonnegative perturbations exhibit enhanced dispersion and velocity damping, while non-positive perturbations remain confined and do not damp, even when arbitrarily small in Gevrey classes. Moreover, damping can coexist with infinite-time growth of vorticity derivatives, even under arbitrary shear modulation. The classification is obtained through an interplay between new Lyapunov functionals and Hamiltonian conservation.",
+    "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [
+      "Couette flow",
+      "decay"
+    ],
+    "tags": [
+      "stability"
+    ],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "812e84ad09b26ffd530f7316a05958856e2877722ea4be9864ef1a27f85b93f9"
+  },
+  {
     "id": "doi:10.1007/s00220-026-05707-0",
     "title": "Nonlinear Stability of 2-D Couette Flow for the Compressible Navier–Stokes Equations at High Reynolds Number",
     "authors": "Minling Li, Chao Wang, Zhifei Zhang",
@@ -621,14 +649,14 @@
     "date": "2026-07-17",
     "discovered_at": "2026-07-17",
     "submitted_at": "",
-    "published_online_at": "2026-10-07",
+    "published_online_at": "2026-04-24",
     "issue_date": "2026-12",
     "source": "Commun. Pure Appl. Math.",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1002/cpa.70048",
     "doi": "10.1002/cpa.70048",
     "arxiv_url": "",
-    "abstract_en": "Communications on Pure and Applied Mathematics, Volume 79, Issue 12, Page 2435-2490, December 2026.",
+    "abstract_en": "ABSTRACT\n                  This article explores the stability of stratified Couette flow in the viscous  Boussinesq equations. In this system, mixing effects arise from the shearing background, and gravity acts as a restoring force leading to dispersive internal gravity waves. These mechanisms are of fundamentally different nature and relevant in complementary dynamical regimes. Our study combines them to establish a bound for the non‐linear transition threshold, which is quantitatively larger than the inverse Reynolds number , and increases with stronger stratification resp. gravity.",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -640,7 +668,7 @@
     ],
     "relevance": "unknown",
     "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "1bd5d72aed03fed6017b3e6ec84c7832c152e209879d656bda4b40f57a73f99b"
+    "enrichment_hash": "ce918c4f4ee48e7eac74c878bef3b8c59adec03eddfbd5c998d1d2dbb094c4f9"
   },
   {
     "id": "arxiv:2607.15256",
