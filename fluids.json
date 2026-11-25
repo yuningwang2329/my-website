@@ -75,6 +75,29 @@
     "enrichment_hash": "d9bfdec97a083c4f20a82ddd63607ec6176e1107c83def7a5e699aa9d38b9571"
   },
   {
+    "id": "doi:10.1002/cpa.70055",
+    "title": "A Geometric Characterization of Steady Laminar Flow",
+    "authors": "Theodore D. Drivas, Marc Nualart",
+    "date": "2026-11-25",
+    "discovered_at": "2026-11-25",
+    "submitted_at": "",
+    "published_online_at": "2026-07-07",
+    "issue_date": "2026-07-07",
+    "source": "Commun. Pure Appl. Math.",
+    "source_group": "math-fluid-pde",
+    "link": "https://doi.org/10.1002/cpa.70055",
+    "doi": "10.1002/cpa.70055",
+    "arxiv_url": "",
+    "abstract_en": "ABSTRACT\n                  We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either parallel or circular flows. We also show that a large subset of these shear flows are isolated from non‐shear stationary states. For Poiseuille flow, , our result shows that all stationary solutions in a sufficiently small  neighbourhood are shear flows. We then show that if  with , then in any  neighbourhood, there exist smooth non‐shear steady states, traveling waves, and quasiperiodic solutions of any number of non‐commensurate frequencies. This proves the rigidity near Poiseuille is sharp. Finally, we prove that on general compact doubly connected domains, laminar steady Euler flows with constant velocity on the boundary must also be either parallel or circular, and the domain a periodic channel or an annulus. This shows that laminar free boundary Euler solutions must have Euclidean symmetry.",
+    "summary_zh": "ABSTRACT We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either para…",
+    "topic": "Hydrodynamic Stability",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "communications-pure-applied-mathematics",
+    "enrichment_hash": "e569c81675a2a476ce880d6ffcac9e80329ee000a7e8fe523257d655071f5502"
+  },
+  {
     "id": "arxiv:2611.33110",
     "title": "Global Existence and Large-Time Behavior of Strong Solutions to the Two-Dimensional Full Compressible Navier-Stokes Equations with Degenerate Heat Conductivity and Large Initial Data",
     "authors": "Qinghao Lei, Xin Song",
@@ -784,7 +807,7 @@
     "link": "https://doi.org/10.1137/25m179703x",
     "doi": "10.1137/25m179703x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Motivated by the interactions between wind and water, this paper investigates the dynamics of interfacial waves in general two-phase flows, characterized as free-boundary problems governed by the Euler equations. We provide a comprehensive derivation of the linearized system for these general two-phase configurations. Then, we study the instability of wave perturbations around steady circular flows, deriving a semicircle law that restricts the locations of unstable modes. Finally, we establish necessary and sufficient conditions for the instability of such interfacial waves specifically in perturbed Taylor–Couette flows.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6400-6423, December 2026.   Abstract. Motivated by the interactions between wind and water, this paper investigates the dynamics of interfacial waves in general two-phase flows, characterized as free-boundary problems governed by the Euler equations. We provide a comprehensive derivation of the linearized system for these general two-phase configurations. Then, we study the instability of wave perturbations around steady circular flows, deriving a semicircle law that restricts the locations of unstable modes. Finally, we establish necessary and sufficient conditions for the instability of such interfacial waves specifically in perturbed Taylor–Couette flows.",
     "summary_zh": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6400-6423, December 2026. Abstract. Motivated by the interactions between wind and water, this paper investigates the dynamics of interfacial waves in general two-phase flows,…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -794,7 +817,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "2cb4e2568e581f845759a9dcc15c622abf8107aa7bbcffbb6dfd7f68d70c772b"
+    "enrichment_hash": "80587f9325efb4ce5fb0339b081768bd3db35d951b918663b2d30aa2885bfe44"
   },
   {
     "id": "doi:10.1137/25m1730120",
@@ -810,14 +833,14 @@
     "link": "https://doi.org/10.1137/25m1730120",
     "doi": "10.1137/25m1730120",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  In this paper we prove the existence of global weak dissipative martingale solutions for a one-dimensional compressible fluid model with capillarity and density dependent viscosity, driven by random initial data and a stochastic forcing term. These solutions are weak in both PDEs and Probability sense and may have vacuum regions. The proof relies on the construction of an approximating system which provides extra dissipation properties and the convergence is based on an appropriate truncation of the velocity field in the momentum equation and a stochastic compactness argument.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6365-6399, December 2026.   Abstract. In this paper we prove the existence of global weak dissipative martingale solutions for a one-dimensional compressible fluid model with capillarity and density dependent viscosity, driven by random initial data and a stochastic forcing term. These solutions are weak in both PDEs and Probability sense and may have vacuum regions. The proof relies on the construction of an approximating system which provides extra dissipation properties and the convergence is based on an appropriate truncation of the velocity field in the momentum equation and a stochastic compactness argument.",
     "summary_zh": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6365-6399, December 2026. Abstract. In this paper we prove the existence of global weak dissipative martingale solutions for a one-dimensional compressible fluid model with ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "706e23746420e30818da5d35e2a7a9125aaaf32c199b8ee9049e60004ef6de15"
+    "enrichment_hash": "52c7ac84d2e3c78ad8e53e8234590fdb2a1e5dbb5097dd36470b916365a03688"
   },
   {
     "id": "doi:10.1007/s00021-026-01073-y",
@@ -17681,14 +17704,14 @@
     "link": "https://doi.org/10.1137/25m1743491",
     "doi": "10.1137/25m1743491",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] and [Formula: see text] as [Formula: see text]. We also prove that for any [Formula: see text], [Formula: see text], [Formula: see text], [Formula: see text], there exist Schwartz class solutions [Formula: see text] on [Formula: see text] such that [Formula: see text] for each [Formula: see text] such that [Formula: see text]; [Formula: see text] for each [Formula: see text] such that [Formula: see text]; and [Formula: see text] as [Formula: see text] for each [Formula: see text] such that [Formula: see text]. In particular, when [Formula: see text], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [Formula: see text]-derivative blows up in finite time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5012-5048, October 2026.   Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [math], [math] and [math], we prove that there exist Schwartz class solutions [math] on [math] such that [math] and [math] as [math]. We also prove that for any [math], [math], [math], [math], there exist Schwartz class solutions [math] on [math] such that [math] for each [math] such that [math]; [math] for each [math] such that [math]; and [math] as [math] for each [math] such that [math]. In particular, when [math], this result establishes the existence of wave-breaking solutions, i.e., solutions that remain bounded but whose [math]-derivative blows up in finite time.",
     "summary_zh": "Abstract. We study blowup solutions of the “bad” Boussinesq equation and prove that a wide range of asymptotic scenarios can happen. For example, for each [Formula: see text], [Formula: see text] and [Formula: see text], we prove that ther…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "c45b3a89245f65881bb293eef24dd8ee716bf27f9bf6deea855263d898c4da9c"
+    "enrichment_hash": "0b200ca4fa9be372a205ccf34c9935d10234709091c9737e8aed679382a3a2ec"
   },
   {
     "id": "arxiv:2609.17362",
