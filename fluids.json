@@ -48,6 +48,77 @@
     "enrichment_hash": "74e86c11a72f6395b7b1b3f122bb569ab6561ef961d489d24317819fe865c264"
   },
   {
+    "id": "arxiv:2611.34679",
+    "title": "Boundary Observability for a Class of Degenerate Kolmogorov-Type Equations in a Cylindrical Domain",
+    "authors": "Dong-Hui Yang, Mengze Gu, Yuanzhi Zhou, Ghadir Shokor",
+    "date": "2026-11-26",
+    "discovered_at": "2026-11-26",
+    "submitted_at": "2026-11-25",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.34679",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.34679",
+    "abstract_en": "This paper investigates the boundary observability for a class of multi-dimensional degenerate Kolmogorov-type kinetic equations in a cylindrical domain $Ω= \\mathbb{T}_{x_1} \\times (0,1)_{x_2}$. The model features a horizontal drift term $x_2^γ\\partial_{x_1} \\varphi$ coupled with a boundary-degenerate diffusion operator $\\partial_{x_2}(x_2^α\\partial_{x_2} \\varphi)$ acting solely on the velocity variable, where $γ= 1$ and $α\\in (0,1)$. By leveraging the structural advantages of the cylindrical domain, we establish an analytical framework based on the method of separation of variables. Crucial Carleman estimates tailored to the degenerate dual operator are derived to capture the subtle dissipation effects under the influence of the transport term. Consequently, by virtue of a uniform a priori estimate, we establish the quantitative boundary observability inequality for the state function.",
+    "summary_zh": "This paper investigates the boundary observability for a class of multi-dimensional degenerate Kolmogorov-type kinetic equations in a cylindrical domain $Ω= \\mathbb{T}_{x_1} \\times (0,1)_{x_2}$. The model features a horizontal drift term $…",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "20cdde6e6b142d1f3a9bab90345c54d05fdc3c731877f29d940fb8127a6c166a"
+  },
+  {
+    "id": "arxiv:2611.34555",
+    "title": "A second-order relaxation system for a degenerate-parabolic quasilinear fourth-order rimming-flow equation with critical spectrum",
+    "authors": "Rahul Barthwal, Juri Joussen, Christina Lienstromberg, Christian Rohde",
+    "date": "2026-11-26",
+    "discovered_at": "2026-11-26",
+    "submitted_at": "2026-11-25",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.34555",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.34555",
+    "abstract_en": "For a spectrally critical nonlinear degenerate-parabolic PDE of fourth-order, describing a capillary-driven fluid flow in a rotating cylinder, we propose a second-order relaxation system of parabolic-elliptic type. For positive initial data, we prove local existence and uniqueness of solutions to the relaxation system. Thereby, the lifespan of the approximate solutions turns out to be independent of the relaxation parameter. Moreover, we prove convergence of non-negative weak solutions of the relaxation system to weak solutions of the original equation on compact time intervals. We classify positive steady states of the relaxed system, prove a stability result yielding global strong solutions, and show that the long-time dynamics remain consistent under the relaxation limit.",
+    "summary_zh": "For a spectrally critical nonlinear degenerate-parabolic PDE of fourth-order, describing a capillary-driven fluid flow in a rotating cylinder, we propose a second-order relaxation system of parabolic-elliptic type. For positive initial dat…",
+    "topic": "Other",
+    "topic_tags": [
+      "stability"
+    ],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "2ac9a781edb86edde156a862172316503f4224db12d9e692a5d0a65634dc4aab"
+  },
+  {
+    "id": "arxiv:2611.34443",
+    "title": "Prandtl Batchelor flow in a Periodic Channel with Counter Moving Walls",
+    "authors": "Zeyu Jia, Tao Tao",
+    "date": "2026-11-26",
+    "discovered_at": "2026-11-26",
+    "submitted_at": "2026-11-25",
+    "published_online_at": "",
+    "issue_date": "",
+    "source": "Arxiv (math.AP)",
+    "source_group": "math-fluid-pde",
+    "link": "https://arxiv.org/abs/2611.34443",
+    "doi": "",
+    "arxiv_url": "https://arxiv.org/abs/2611.34443",
+    "abstract_en": "We study the vanishing viscosity limit of steady two dimensional incompressible Navier Stokes flows in a horizontally periodic channel with counter moving walls. The prescribed wall velocities are small periodic perturbations of constant velocities with opposite signs. The Batchelor Wood relations select an affine Euler shear with constant vorticity and a unique interior zero. We establish the existence of steady Navier Stokes solutions that are uniformly approximated by the selected Euler shear together with two Prandtl boundary layers. Moreover, the vorticity converges locally uniformly to the selected constant vorticity.   The principal analytical difficulty is the loss of global coercivity caused by the interior zero of the Euler shear. To overcome this difficulty, we develop a compactness rigidity argument that combines signed near wall positivity estimates, interior vorticity estimates, adjoint tests eliminating the affine limiting modes, and a streamline circulation equation ruling out concentration near the walls. These ingredients yield an estimate for the linearized inverse, which, together with a high order Euler Prandtl approximation, enables us to solve the nonlinear error equations. Our result provides a rigorous realization of the Prandtl Batchelor selection principle in a periodic channel with counter moving walls.",
+    "summary_zh": "We study the vanishing viscosity limit of steady two dimensional incompressible Navier Stokes flows in a horizontally periodic channel with counter moving walls. The prescribed wall velocities are small periodic perturbations of constant v…",
+    "topic": "Boundary Layers & Inviscid Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "516144e8dd5240306a8bb5046458535a659daeb352b454967885c251b48770a2"
+  },
+  {
     "id": "arxiv:2611.34227",
     "title": "Weak-strong stability and uniqueness of measure-valued solutions to (nonlocal) pressureless Euler-type systems",
     "authors": "Piotr Gwiazda, David N. Reynolds, Agnieszka Świerczewska-Gwiazda, Jakub Woźnicki",
@@ -169,29 +240,6 @@
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
     "enrichment_hash": "f7d884bcec3facd4a9c8fe331de9ba97044f2c36b6015cd04b4aac25c96b7472"
-  },
-  {
-    "id": "doi:10.1002/cpa.70055",
-    "title": "A Geometric Characterization of Steady Laminar Flow",
-    "authors": "Theodore D. Drivas, Marc Nualart",
-    "date": "2026-11-25",
-    "discovered_at": "2026-11-25",
-    "submitted_at": "",
-    "published_online_at": "2026-07-07",
-    "issue_date": "2026-07-07",
-    "source": "Commun. Pure Appl. Math.",
-    "source_group": "math-fluid-pde",
-    "link": "https://doi.org/10.1002/cpa.70055",
-    "doi": "10.1002/cpa.70055",
-    "arxiv_url": "",
-    "abstract_en": "ABSTRACT\n                  We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either parallel or circular flows. We also show that a large subset of these shear flows are isolated from non‐shear stationary states. For Poiseuille flow, , our result shows that all stationary solutions in a sufficiently small  neighbourhood are shear flows. We then show that if  with , then in any  neighbourhood, there exist smooth non‐shear steady states, traveling waves, and quasiperiodic solutions of any number of non‐commensurate frequencies. This proves the rigidity near Poiseuille is sharp. Finally, we prove that on general compact doubly connected domains, laminar steady Euler flows with constant velocity on the boundary must also be either parallel or circular, and the domain a periodic channel or an annulus. This shows that laminar free boundary Euler solutions must have Euclidean symmetry.",
-    "summary_zh": "ABSTRACT We study the steady states of the Euler equations on the periodic channel or annulus. We show that if these flows are laminar (layered by closed non‐contractible streamlines which foliate the domain), then they must be either para…",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [],
-    "tags": [],
-    "relevance": "unknown",
-    "source_id": "communications-pure-applied-mathematics",
-    "enrichment_hash": "e569c81675a2a476ce880d6ffcac9e80329ee000a7e8fe523257d655071f5502"
   },
   {
     "id": "arxiv:2611.33110",
@@ -3356,7 +3404,7 @@
     "link": "https://doi.org/10.1137/25m177521x",
     "doi": "10.1137/25m177521x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6165-6205, December 2026.   Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
     "summary_zh": "Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we…",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [
@@ -3365,7 +3413,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "18ca2fc1a347afa5ee08b0f390a9253ca68ec5f7fc2d29875d70191826ae0a46"
+    "enrichment_hash": "2090ec74fd15d9ee48f39d2ceda08c09bb28398dec6a195dae2cc770aab3e193"
   },
   {
     "id": "doi:10.1007/s00205-026-02265-6",
@@ -4579,7 +4627,7 @@
   },
   {
     "id": "arxiv:2611.00998",
-    "title": "Separation points and pressure gradients for the nonstationary Stokes system in the half-space with localized boundary data",
+    "title": "Separation points and pressure gradients for the nonstationary Stokes system with localized boundary data in the half-space",
     "authors": "Kyungkeun Kang, Chanhong Min",
     "date": "2026-11-03",
     "discovered_at": "2026-11-03",
@@ -4591,14 +4639,14 @@
     "link": "https://arxiv.org/abs/2611.00998",
     "doi": "",
     "arxiv_url": "https://arxiv.org/abs/2611.00998",
-    "abstract_en": "We study separation points for the nonstationary Stokes system in a half-space with zero initial data and boundary data compactly supported in space and time. We call a space-time point on the boundary and outside the spatial support of the data a separation point of a velocity component if the component takes both signs on sets of positive measure in every sufficiently small adjacent neighborhood. The main ingredient of the analysis is the explicit representation of the velocity and pressure in terms of the boundary data using the confluent hypergeometric functions.   For normal boundary data, under the regularity and unimodality assumptions, log-concavity of the temporal profile yields a unique separation time for the tangential component at every boundary point with \\(|x_i|>1\\), while the normal component has exactly two separation times for sufficiently large \\(|x'|\\). For every nonzero nonnegative temporal profile satisfying the regularity assumption, \\(\\partial_{x_n}^2w_n(x',0,\\cdot)\\) has a unique simple zero for \\(t>1\\) when \\(|x'|\\) is sufficiently large. We also obtain monotonicity and asymptotic behavior of the separation times and quantitative rates at which the corresponding normal derivatives vanish.   For tangential data in \\(n\\geq3\\), a separation time for the parallel component exists precisely when \\(\\partial_{x_1}R_1'ψ(x')>0\\), with \\(R_1'\\) the first Riesz transform; log-concavity makes the separation time unique. For the remaining components, we also prove existence and uniqueness. In both cases, we derive asymptotic formulas involving spatial moments and the geometry of \\(\\suppψ\\). We determine signs of tangential pressure derivatives and, for radial \\(ψ\\), establish uniqueness and asymptotics of their zeros.",
+    "abstract_en": "We study separation points of the nonstationary Stokes system in a half-space with zero initial data and nonnegative, space-time separable boundary data supported in the unit ball and in $[0,1]$, respectively. A separation point is a pair $(x',t)$, with $x'$ outside the spatial support, arbitrarily near which a velocity component takes both signs. The main ingredient is an explicit representation of the velocity and pressure via confluent hypergeometric functions.   For normal boundary data, if the temporal boundary data are regular and unimodal, log-concavity yields a unique separation time for the $i$th tangential component at every boundary point with $|x_i|>1$, and exactly two for the normal component at distant points, one before and one after the boundary data vanish. The later one, a simple zero of the second normal derivative of the normal component at the boundary, is unique even without unimodality. We obtain monotonicity and asymptotics of separation times and vanishing rates of normal derivatives.   For tangential boundary data with $n\\geq3$, under the same assumptions, a separation time for the velocity component in their direction exists at $x'$ with $|x'|>1$ precisely when the corresponding Riesz transform of the spatial boundary data has a positive derivative in that direction at $x'$, and log-concavity makes it unique. For the remaining components, we prove existence and uniqueness of separation points on distant lines parallel to the axes, with asymptotics in terms of spatial moments and support geometry.   For radial spatial boundary data, we determine the signs and zero sets of tangential pressure derivatives.",
     "summary_zh": "We study separation points of the nonstationary Stokes system in a half-space with zero initial data and localized boundary data $ψ(x')φ(t)\\mathbf e_j$, $1\\le j\\le n$, where $ψ$ is supported in the closed unit ball. A separation point is a…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "4807454b442e34fd208727126502ddeda08c289b7aeae07beb74b4ab13f10101"
+    "enrichment_hash": "352654608482deb10650727ef9711dc19e42614bd51cc9cbb228d4e54a20f028"
   },
   {
     "id": "arxiv:2611.00964",
@@ -10944,7 +10992,7 @@
     "link": "https://arxiv.org/abs/2609.33960",
     "doi": "",
     "arxiv_url": "https://arxiv.org/abs/2609.33960",
-    "abstract_en": "Since the pioneering work of Taylor and Goldstein in 1931 laid the foundation for the study of parallel stratified shear flows, non-parallel configurations have received comparatively little attention. We study the stability of the 3D Boussinesq system near the plane Couette flow $V^*=(y,0,0)$ under the vertically stratified background $η^*=αz$. The shear and stratification directions are perpendicular. This geometry produces two structural effects that are absent in the parallel configuration: an additional nonlocal coupling in the non-zero-mode system, which obstructs a directly useful symmetrization, and a wave-shear coupled lift-up mechanism for the zero modes. The $L^p$ transient growth due to the lift-up effect can be suppressed either by sufficiently strong stratification (for $p>2$) or under suitable assumptions on the initial data (for $p\\geq 2$). To study the nonzero-mode system, we introduce a reformulation based on the linearized potential vorticity (PV), a fundamental quantity in geophysical fluid dynamics, to recover a better energy structure. We establish the inviscid damping of $u_{1,\\neq}$ and $u_{2,\\neq}$. We further apply the linearized PV formulation to study the linear stability of the tilted Couette flow. Finally, we use this formulation to prove the nonlinear stability for perturbations on $\\mathbb{T}\\times\\mathbb{R}\\times\\mathbb{T}$.",
+    "abstract_en": "Since the pioneering work of Taylor and Goldstein in 1931 laid the foundation for the study of parallel stratified shear flows, non-parallel configurations have received comparatively little attention. We study the stability of the 3D Boussinesq system near the plane Couette flow $V^*=(y,0,0)$ under the vertically stratified background $η^*=αz$. The shear and stratification directions are perpendicular. This geometry produces two structural effects that are absent in the parallel configuration: an additional nonlocal coupling in the non-zero-mode system, which obstructs a directly useful symmetrization, and a wave-shear coupled lift-up mechanism for the zero modes. The transient growth due to the lift-up effect can be suppressed either by sufficiently strong stratification or under suitable assumptions on the initial data. To study the nonzero-mode system, we introduce a reformulation based on the linearized potential vorticity (PV), a fundamental quantity in geophysical fluid dynamics, to recover a better energy structure. We establish the inviscid damping of $u_{1,\\neq}$ and $u_{2,\\neq}$. We further apply the linearized PV formulation to study the linear stability of the tilted Couette flow. Finally, we use this formulation to prove the nonlinear stability for perturbations on $\\mathbb{T}\\times\\mathbb{R}\\times\\mathbb{T}$ and show that strong stratification can enhance the stability.",
     "summary_zh": "Since the pioneering work of Taylor and Goldstein in 1931 laid the foundation for the study of stratified shear flows, non-parallel configurations have received comparatively little attention. In this article, we study the stability of the…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -10954,7 +11002,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
-    "enrichment_hash": "18bcd1cf004f79836be077339d8d9c0b6131237e96a995dca443946404730b43"
+    "enrichment_hash": "f9dff8fc875368906359b43762e5af8916ea659267623f66cf835b153271019a"
   },
   {
     "id": "arxiv:2609.33578",
@@ -17610,14 +17658,14 @@
     "link": "https://doi.org/10.1137/25m1724778",
     "doi": "10.1137/25m1724778",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysis of fluid-solid interaction problems with a given nontrivial final state.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5154-5217, October 2026.   Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid is modeled by the incompressible Navier–Stokes equations, while the motion of the solid is described through Newton’s laws. In addition to the solid inertia and the hydrodynamic forces, we assume that the dynamics of the solid is driven by internal elastic restoring forces but without any structural damping. Through a precise description of the motion of the elliptic body whenever it comes close to the channel boundaries, we prove global-in-time existence of weak solutions. Our second main contribution is a proof of return to equilibrium in the case where the amplitude of the Poiseuille flow is small. To our knowledge, this represents the first long-time analysi",
     "summary_zh": "Abstract. We study the long-time behavior of an elliptic rigid body which is allowed to vertically translate and rotate in a 2-dimensional unbounded channel under the action of a Poiseuille flow at large distances. The motion of the fluid…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "40b13bdb92493f222fec9c5bbafd7b28798a07a3d3f0bd288053e544bdebcf4d"
+    "enrichment_hash": "c95a91a40bac9db81ba66a26031558d999ba8416f5138d23f23aa30dc4a6fecf"
   },
   {
     "id": "title:a006bf42c6ac93fc36bb0a2b",
@@ -18299,7 +18347,7 @@
     "link": "https://doi.org/10.1137/25m1772769",
     "doi": "10.1137/25m1772769",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicate cancelation of several highly non-linear terms, making it challenging to ensure similar cancelations for approximating systems. Our first main result is to prove the existence of global weak solutions for our ferrofluid system based on a carefully constructed sequence of approximation steps. Additionally, we also study the relaxation towards the quasi-equilibrium, in which case the magnetization equation degenerates to a linear relation between the magnetic field and the magnetization. As our second main result, we prove the rigorous convergence to this limiting system.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4723-4771, October 2026.   Abstract. Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicat",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Free Boundary, Water Waves & Multiphase",
     "topic_tags": [
@@ -18308,7 +18356,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "24f927fb5685b18b36e6510eefdd443de402ac6f5b70bafbcb467570b42670f0"
+    "enrichment_hash": "6cfe33b4f2557f68f0ed5ced0440116663f23d5cf43eb89d8251903b5fca2c2e"
   },
   {
     "id": "doi:10.1088/1361-6544/ae9dd9",
@@ -18836,7 +18884,7 @@
     "submitted_at": "2026-09-06",
     "published_online_at": "2026-11-09",
     "issue_date": "2027-02",
-    "source": "J. Math. Fluid Mech.",
+    "source": "Arxiv (math.AP)",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1007/s00021-026-01074-x",
     "doi": "10.1007/s00021-026-01074-x",
@@ -18847,8 +18895,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-math-fluid-mechanics",
-    "enrichment_hash": "f1d406edba82ff0135ff49da12a54501ee3fe754e912ff91ef6d16c0e675f884"
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "f88bc6b1bbe37853256f3c277174e506f924d68a16ea249da0e996029608cea4"
   },
   {
     "id": "arxiv:2609.09014",
