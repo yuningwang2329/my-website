@@ -23,6 +23,29 @@
     "enrichment_hash": "cbf6170eda275cb442f58d34aabd549f9cd10f259e970183c938e2c9383572fe"
   },
   {
+    "id": "doi:10.1112/jlms.70783",
+    "title": "Numerical analysis of the large deviations regime of a kinetic equation with a nonlocal Hamilton–Jacobi limit",
+    "authors": "",
+    "date": "2026-11-27",
+    "discovered_at": "2026-11-27",
+    "submitted_at": "",
+    "published_online_at": "2026-11-26",
+    "issue_date": "",
+    "source": "J. Lond. Math. Soc.",
+    "source_group": "high-general-math",
+    "link": "https://doi.org/10.1112/jlms.70783",
+    "doi": "10.1112/jlms.70783",
+    "arxiv_url": "",
+    "abstract_en": "Journal of the London Mathematical Society, Volume 114, Issue 6, December 2026.",
+    "summary_zh": "Journal of the London Mathematical Society, Volume 114, Issue 6, December 2026.",
+    "topic": "Kinetic Theory & Hydrodynamic Limits",
+    "topic_tags": [],
+    "tags": [],
+    "relevance": "unknown",
+    "source_id": "journal-london-mathematical-society",
+    "enrichment_hash": "38558217a0f6bf3eb4619699818641da451e3daa5828be4d5325e1c86a58fc0c"
+  },
+  {
     "id": "title:7299998d7043898b452cd6d6",
     "title": "Conditional weighted Fisher framework for degenerate signal-dependent chemotaxis–Navier–Stokes systems",
     "authors": "Jiguang Yu, Louis Shuo Wang",
@@ -974,7 +997,7 @@
     "link": "https://doi.org/10.1137/25m179703x",
     "doi": "10.1137/25m179703x",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Motivated by the interactions between wind and water, this paper investigates the dynamics of interfacial waves in general two-phase flows, characterized as free-boundary problems governed by the Euler equations. We provide a comprehensive derivation of the linearized system for these general two-phase configurations. Then, we study the instability of wave perturbations around steady circular flows, deriving a semicircle law that restricts the locations of unstable modes. Finally, we establish necessary and sufficient conditions for the instability of such interfacial waves specifically in perturbed Taylor–Couette flows.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6400-6423, December 2026.   Abstract. Motivated by the interactions between wind and water, this paper investigates the dynamics of interfacial waves in general two-phase flows, characterized as free-boundary problems governed by the Euler equations. We provide a comprehensive derivation of the linearized system for these general two-phase configurations. Then, we study the instability of wave perturbations around steady circular flows, deriving a semicircle law that restricts the locations of unstable modes. Finally, we establish necessary and sufficient conditions for the instability of such interfacial waves specifically in perturbed Taylor–Couette flows.",
     "summary_zh": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6400-6423, December 2026. Abstract. Motivated by the interactions between wind and water, this paper investigates the dynamics of interfacial waves in general two-phase flows,…",
     "topic": "Hydrodynamic Stability",
     "topic_tags": [
@@ -984,7 +1007,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "2cb4e2568e581f845759a9dcc15c622abf8107aa7bbcffbb6dfd7f68d70c772b"
+    "enrichment_hash": "80587f9325efb4ce5fb0339b081768bd3db35d951b918663b2d30aa2885bfe44"
   },
   {
     "id": "doi:10.1137/25m1730120",
@@ -6577,14 +6600,14 @@
     "link": "https://doi.org/10.1137/25m1812737",
     "doi": "10.1137/25m1812737",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5731-5751, October 2026.   Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We call these deformations isoperiodic. We derive a second order ordinary differential equation with rational coefficients governing the variations of the position of the unique pole of the differential under the isoperiodic deformations. The obtained equation depends on the order of the pole of the differential. We characterize the solutions of the obtained ordinary differential equations that correspond to the isoperiodic deformations. We apply these results to the theory of genus one solutions to the Boussinesq equation.",
     "summary_zh": "Abstract. We study deformations of a genus one Riemann surface and of a second order Abelian differential on the surface which preserve the periods of the differential with respect to a chosen canonical homology basis of the surface. We ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "bbeac2c40c34ffb456d26f5b82bb1e844f523e98f511efadd13cbab736323de1"
+    "enrichment_hash": "ba7773051ca688eecec61714bdd5a243f16487f80671644ae899f37ebef4bdf0"
   },
   {
     "id": "doi:10.1007/s00021-026-01066-x",
@@ -6778,7 +6801,7 @@
   },
   {
     "id": "doi:10.1137/25m1812063",
-    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on \\({\\mathbb{S}^2}\\)",
+    "title": "Quantitative Stability of the Rossby–Haurwitz Waves of Degree 2 for the Euler Equation on [math]",
     "authors": "Matias G. Delgadino, Luca Melzi",
     "date": "2026-10-21",
     "discovered_at": "2026-10-21",
@@ -6790,7 +6813,7 @@
     "link": "https://doi.org/10.1137/25m1812063",
     "doi": "10.1137/25m1812063",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5709-5730, October 2026.   Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [math] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "summary_zh": "Abstract. We show that the degree-2 Rossby–Haurwitz traveling waves on the Euler equation on [Formula: see text] are orbitally stable. Our proof is short, quantitative, and conceptually easy to follow.",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [
@@ -6799,7 +6822,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "8d7397856e2bc09e1a2c805d94d98d35c32e168d01aeb02f7d825ff381568488"
+    "enrichment_hash": "fe6616a9b3af6ceadb7f802395f37df05f457bb7368b09f92c50ed18673aa986"
   },
   {
     "id": "doi:10.1088/1361-6544/aeb19d",
@@ -7811,14 +7834,14 @@
     "link": "https://doi.org/10.1137/25m1793870",
     "doi": "10.1137/25m1793870",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [Formula: see text] under the optimal regularity condition [Formula: see text]. In the case [Formula: see text], we further prove a Beale–Kato–Majda-type criterion that relates blowup in the [Formula: see text] norm to the [Formula: see text] norm of the variable vorticity.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 5623-5651, October 2026.   Abstract. We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [math] under the optimal regularity condition [math]. In the case [math], we further prove a Beale–Kato–Majda-type criterion that relates blowup in the [math] norm to the [math] norm of the variable vorticity.",
     "summary_zh": "Abstract. We establish local-in-time existence for the Euler equations on a bounded domain with space-time dependent variable coefficients, given initial data [Formula: see text] under the optimal regularity condition [Formula: see text].…",
     "topic": "Euler, Vorticity & Inviscid Flow",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "214580462ca14227c4aff3200965881f5da7148f5a1be1040a5ecf51758a5b1b"
+    "enrichment_hash": "99d15684d0b96ef41f774297db612d77e299672ee448872fa71d9ed4920b4588"
   },
   {
     "id": "doi:10.1137/25m1777025",
@@ -18370,7 +18393,7 @@
     "link": "https://doi.org/10.1137/25m1772769",
     "doi": "10.1137/25m1772769",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicate cancelation of several highly non-linear terms, making it challenging to ensure similar cancelations for approximating systems. Our first main result is to prove the existence of global weak solutions for our ferrofluid system based on a carefully constructed sequence of approximation steps. Additionally, we also study the relaxation towards the quasi-equilibrium, in which case the magnetization equation degenerates to a linear relation between the magnetic field and the magnetization. As our second main result, we prove the rigorous convergence to this limiting system.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 5, Page 4723-4771, October 2026.   Abstract. Ferrofluids are a class of materials that exhibit both fluid and magnetic properties. We consider a two-phase diffuse interface model for the dynamics of ferrofluids on a bounded domain. One phase is assumed to be magnetic, the other phase can be magnetic or nonmagnetic. We derive a coupled system of partial differential equations consisting of the incompressible Navier–Stokes equations, an evolution equation for the magnetization, the magnetostatics equations for the magnetic field and the Cahn–Hilliard equations for the evolution of the phase field variable, which are all coupled through various source terms and parameters. In contrast to similar models in the literature, the system in this work formally satisfies an energy balance which remains meaningful even in singular limits such as a limit of zero relaxation time. However, the formal derivation of this balance requires a delicat",
     "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "topic": "Free Boundary, Water Waves & Multiphase",
     "topic_tags": [
@@ -18379,7 +18402,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "24f927fb5685b18b36e6510eefdd443de402ac6f5b70bafbcb467570b42670f0"
+    "enrichment_hash": "6cfe33b4f2557f68f0ed5ced0440116663f23d5cf43eb89d8251903b5fca2c2e"
   },
   {
     "id": "doi:10.1088/1361-6544/ae9dd9",
@@ -18907,7 +18930,7 @@
     "submitted_at": "2026-09-06",
     "published_online_at": "2026-11-09",
     "issue_date": "2027-02",
-    "source": "J. Math. Fluid Mech.",
+    "source": "Arxiv (math.AP)",
     "source_group": "math-fluid-pde",
     "link": "https://doi.org/10.1007/s00021-026-01074-x",
     "doi": "10.1007/s00021-026-01074-x",
@@ -18918,8 +18941,8 @@
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
-    "source_id": "journal-math-fluid-mechanics",
-    "enrichment_hash": "f1d406edba82ff0135ff49da12a54501ee3fe754e912ff91ef6d16c0e675f884"
+    "source_id": "arxiv-math-ap",
+    "enrichment_hash": "f88bc6b1bbe37853256f3c277174e506f924d68a16ea249da0e996029608cea4"
   },
   {
     "id": "arxiv:2609.09014",
