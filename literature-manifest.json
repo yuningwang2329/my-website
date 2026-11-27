@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation_id": "0db47d5aa8a8777a",
-  "generated_at": "2026-11-27T08:49:50Z",
+  "generation_id": "9ba92dba5c164b56",
+  "generated_at": "2026-11-27T09:43:50Z",
   "policy_version": "4",
   "window_days": 90,
   "counts": {
@@ -11,14 +11,13 @@
   },
   "sources": {
     "total": 29,
-    "succeeded": 10,
+    "succeeded": 11,
     "failed_ids": [
       "acta-mathematica",
       "analysis-pde",
       "annales-henri-poincare-c",
       "annales-scientifiques-ens",
       "annals-math",
-      "archive-rational-mechanics-analysis",
       "calculus-variations-pde",
       "communications-mathematical-physics",
       "dcds",
