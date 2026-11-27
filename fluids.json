@@ -3404,7 +3404,7 @@
     "link": "https://doi.org/10.1137/25m177521x",
     "doi": "10.1137/25m177521x",
     "arxiv_url": "",
-    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6165-6205, December 2026.   Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
+    "abstract_en": "Abstract.\n                  We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we show that the higher-order derivatives of the solution with respect to the random variable exhibit polynomial decay over time. These results are then applied to analyze the SG method for the SG system and to demonstrate the polynomial decay of the numerical error over time.",
     "summary_zh": "Abstract. We consider the Boltzmann equation with random uncertainties arising from the initial data and collision kernel in the whole space, along with its stochastic Galerkin (SG) approximations. By employing Green’s function method, we…",
     "topic": "Kinetic Theory & Hydrodynamic Limits",
     "topic_tags": [
@@ -3413,7 +3413,7 @@
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "2090ec74fd15d9ee48f39d2ceda08c09bb28398dec6a195dae2cc770aab3e193"
+    "enrichment_hash": "18ca2fc1a347afa5ee08b0f390a9253ca68ec5f7fc2d29875d70191826ae0a46"
   },
   {
     "id": "doi:10.1007/s00205-026-02265-6",
@@ -22329,33 +22329,5 @@
     "relevance": "unknown",
     "source_id": "arxiv-math-ap",
     "enrichment_hash": "24d73bcd9251bff4453c7b809cc4ea787e548c2da158b40bff11bb37e51b90a0"
-  },
-  {
-    "id": "arxiv:2608.27018",
-    "title": "Linear Stability and Inviscid Damping of Monotone Shear Flows for 2D Compressible Euler Equations",
-    "authors": "Zhile Li, Junyan Zhang, Lifeng Zhao",
-    "date": "2026-08-28",
-    "discovered_at": "2026-08-28",
-    "submitted_at": "2026-08-27",
-    "published_online_at": "",
-    "issue_date": "",
-    "source": "Arxiv (math.AP)",
-    "source_group": "math-fluid-pde",
-    "link": "https://arxiv.org/abs/2608.27018",
-    "doi": "",
-    "arxiv_url": "https://arxiv.org/abs/2608.27018",
-    "abstract_en": "We study 2D compressible Euler equations linearized around monotone shear flows $(U(y),0)$ on $\\mathbb{T} \\times \\mathbb{R}$. The shear rate $U'$ is strictly positive, not necessarily close to any constant, and varies sufficiently slowly. For every fixed Mach number $M > 0$, we prove that the density and the irrotational velocity obey algebraic growth bounds, whereas the solenoidal velocity undergoes componentwise inviscid damping. Although a non-uniform shear couples the transverse Fourier frequencies and precludes the full Fourier reduction available for Couette flow, we are still able to recover the Couette rates without loss. The proof hinges on two new ingredients: a time-dependent pseudodifferential energy that restores a coercive structure for the variable-coefficient shear dynamics, and terminal-time-dependent higher- and lower-order weighted energies that capture the long-time effects of shear mixing.",
-    "summary_zh": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-    "topic": "Hydrodynamic Stability",
-    "topic_tags": [
-      "stability",
-      "Couette flow"
-    ],
-    "tags": [
-      "stability"
-    ],
-    "relevance": "unknown",
-    "source_id": "arxiv-math-ap",
-    "enrichment_hash": "452391d159ef4ecede75752e698626549d1f71ba3ff47e33694fad126d8d1407"
   }
 ]
