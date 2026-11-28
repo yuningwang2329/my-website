@@ -1046,14 +1046,14 @@
     "link": "https://doi.org/10.1137/25m1730120",
     "doi": "10.1137/25m1730120",
     "arxiv_url": "",
-    "abstract_en": "Abstract.\n                  In this paper we prove the existence of global weak dissipative martingale solutions for a one-dimensional compressible fluid model with capillarity and density dependent viscosity, driven by random initial data and a stochastic forcing term. These solutions are weak in both PDEs and Probability sense and may have vacuum regions. The proof relies on the construction of an approximating system which provides extra dissipation properties and the convergence is based on an appropriate truncation of the velocity field in the momentum equation and a stochastic compactness argument.",
+    "abstract_en": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6365-6399, December 2026.   Abstract. In this paper we prove the existence of global weak dissipative martingale solutions for a one-dimensional compressible fluid model with capillarity and density dependent viscosity, driven by random initial data and a stochastic forcing term. These solutions are weak in both PDEs and Probability sense and may have vacuum regions. The proof relies on the construction of an approximating system which provides extra dissipation properties and the convergence is based on an appropriate truncation of the velocity field in the momentum equation and a stochastic compactness argument.",
     "summary_zh": "SIAM Journal on Mathematical Analysis, Volume 58, Issue 6, Page 6365-6399, December 2026. Abstract. In this paper we prove the existence of global weak dissipative martingale solutions for a one-dimensional compressible fluid model with ca…",
     "topic": "Other",
     "topic_tags": [],
     "tags": [],
     "relevance": "unknown",
     "source_id": "siam-journal-mathematical-analysis",
-    "enrichment_hash": "706e23746420e30818da5d35e2a7a9125aaaf32c199b8ee9049e60004ef6de15"
+    "enrichment_hash": "52c7ac84d2e3c78ad8e53e8234590fdb2a1e5dbb5097dd36470b916365a03688"
   },
   {
     "id": "doi:10.1007/s00021-026-01073-y",
